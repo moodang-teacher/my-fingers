@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.parkhana.com" />
+    <meta property="og:title" content="Hana's portfolio" />
+    <meta property="og:image" content="./img/ogimage.png" />
+    <meta property="og:description" content="박하나의 포트폴리오 사이트입니다." />
+    <meta property="og:site_name" content="Hana's portfolio" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <title>hana's portfolio site-work</title>
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/jquery.fullpage.min.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/work.css" />
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery.fullpage.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.1/dist/gsap.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/work.js"></script>
+  </head>
+  <body class="work">
+    <div class="loading">
+      <div class="load-mint"></div>
+    </div>
+    <a href="#fullpage"><i class="hidden">본문영역으로 바로가기</i></a>
+    <div class="cursor"><div class="circle"></div></div>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="./index.html"><i class="hidden">logo</i></a>
+        </h1>
+      </nav>
+    </header>
+
+    <div class="gnb">
+      <div class="btn-wrap">
+        <b>Brand new</b>
+        <div class="btn-gnb">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+        </div>
+        <b>UX/UI Designer</b>
+      </div>
+      <div class="menu-bg"></div>
+      <div class="menu-list-wrap">
+        <ul class="menu-list">
+          <li><a href="./about.html">About me</a></li>
+          <li class="left"><a href="./work.html">Work</a></li>
+          <li><a href="./process-portfolio.html">Process</a></li>
+        </ul>
+        <address class="my-info-wrap">
+          <strong>kakao ID: 332baka</strong>
+          <p>phn109@naver.com</p>
+        </address>
+      </div>
+    </div>
+
+    <div class="indicator">
+      <a href="#main" data-menuanchor="main" class="active"></a>
+      <a href="#merida" data-menuanchor="merida"></a>
+      <a href="#portfolio" data-menuanchor="portfolio"></a>
+      <a href="#pinkpong" data-menuanchor="pinkpong"></a>
+      <a href="#posilak" data-menuanchor="posilak"></a>
+      <a href="#micro" data-menuanchor="micro"></a>
+    </div>
+
+    <main id="fullpage">
+      <!-- s: page1: main -->
+      <section class="section main">
+        <div class="inner">
+          <div class="main-wrap">
+            <div>
+              <div class="work-main">
+                <h2>Work</h2>
+                <p><i>23. 2 .13 ~ 6. 29</i> UX/UI figma 교육과정 약 5개월의 기간 동안 진행한 작업물입니다.</p>
+              </div>
+              <div class="arrow-wrap">
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+              </div>
+            </div>
+
+            <ul class="work-list">
+              <li><a href="#merida">메리다 바이크</a></li>
+              <li><a href="#portfolio">포트폴리오 사이트</a></li>
+              <li><a href="#pinkpong">핑크퐁 스토어</a></li>
+              <li><a href="#posilak">포시락</a></li>
+              <li>
+                <a href="#micro">마이크로 웹 사이트<b>[2]</b></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- e: page1: main -->
+
+      <!-- s:merida -->
+      <section class="section merida">
+        <div class="inner">
+          <div class="work-title-wrap">
+            <h3 class="work-title">Redesign web site</h3>
+            <div class="work-subtitle">
+              <h4>responsive</h4>
+              <strong>web design</strong>
+            </div>
+          </div>
+
+          <article class="work-con">
+            <figure>
+              <img src="./img/work-merida.png" alt="rwd-merida" />
+            </figure>
+
+            <div class="work-item">
+              <h5>메리다 바이크</h5>
+              <p>
+                자전거를 타고 인천, 춘천의 아름다운 자전거 도로를 달렸던 경험을 바탕으로 자전거 유명 브랜드인 메리다
+                바이크 웹 사이트를 반응형으로 리디자인 하였습니다.
+              </p>
+
+              <ul class="work-info">
+                <li>
+                  <strong>Date</strong>
+                  <p class="number">23.03.- (3weeks)</p>
+                </li>
+                <li>
+                  <strong>Role</strong>
+                  <p>기획, 디자인, 코딩</p>
+                </li>
+                <li>
+                  <strong>Tools</strong>
+                  <ul class="tools-list">
+                    <li>figma</li>
+                    <li>vscode</li>
+                    <li>photoshop</li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="work-link">
+                <a href="./work/merida/coding/index.html" target="_blank" class="btn-work">사이트 보러가기</a>
+                <a href="./process-merida.html" class="btn-work">프로세스 페이지</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- e:  merida -->
+
+      <!-- s:  portfolio -->
+      <section class="section portfolio">
+        <div class="inner">
+          <div class="work-title-wrap">
+            <h3 class="work-title">Web site design</h3>
+            <div class="work-subtitle">
+              <h4>brandnew</h4>
+              <strong>web design</strong>
+            </div>
+          </div>
+
+          <article class="work-con">
+            <figure>
+              <img src="./img/work-portfolio.png" alt="portfolio" />
+            </figure>
+
+            <div class="work-item">
+              <h5>포트폴리오 웹 사이트</h5>
+              <p>
+                제로베이스의 첫걸음을 시작으로 5개월간의 배움을 토대로 제작된 개인 포트폴리오 사이트입니다. 디자이너로서
+                큰 도약의 시작점으로 앞으로 꾸준히 채워갈 예정입니다.
+              </p>
+
+              <ul class="work-info">
+                <li>
+                  <strong>Date</strong>
+                  <p class="number">23.06.- (1month)</p>
+                </li>
+                <li>
+                  <strong>Role</strong>
+                  <p>기획, 디자인, 코딩</p>
+                </li>
+                <li>
+                  <strong>Tools</strong>
+                  <ul class="tools-list">
+                    <li>figma</li>
+                    <li>vscode</li>
+                    <li>photoshop</li>
+                    <li>illustrator</li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="work-link">
+                <a href="./process-portfolio.html" class="btn-work">프로세스 바로가기</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- e: page4: portfolio -->
+
+      <!-- s:pinkpong -->
+      <section class="section pinkpong">
+        <div class="inner">
+          <div class="work-title-wrap">
+            <h3 class="work-title">Redesign web site</h3>
+            <div class="work-subtitle">
+              <h4>redesign</h4>
+              <strong>web design</strong>
+            </div>
+          </div>
+
+          <article class="work-con">
+            <figure>
+              <img src="./img/work-pinkpong.png" alt="pinkpong" />
+            </figure>
+
+            <div class="work-item">
+              <h5>핑크퐁 스토어</h5>
+              <p>
+                핑크퐁 컴퍼니의 대표 캐릭터 중 하나인 아기 상어를 모티브로 하여 바닷속 여행을 컨셉으로 핑크퐁 스토어
+                사이트를 리디자인하였습니다.
+              </p>
+
+              <ul class="work-info">
+                <li>
+                  <strong>Date</strong>
+                  <p class="number">23.06.- (7 days)</p>
+                </li>
+                <li>
+                  <strong>Role</strong>
+                  <p>기획, 디자인, 코딩</p>
+                </li>
+                <li>
+                  <strong>Tools</strong>
+                  <ul class="tools-list">
+                    <li>figma</li>
+                    <li>vscode</li>
+                    <li>photoshop</li>
+                    <li>illustrator</li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="work-link">
+                <a href="./work/pinkpong/coding/index.html" target="_blank" class="btn-work">사이트 보러가기</a>
+                <a href="./process-pinkpong.html" class="btn-work">프로세스 페이지</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- e:  pinkpong -->
+
+      <!-- s: posilak -->
+      <section class="section posilak">
+        <div class="inner">
+          <div class="work-title-wrap">
+            <h3 class="work-title">App service</h3>
+            <div class="work-subtitle">
+              <h4>team project</h4>
+              <strong>prototype</strong>
+            </div>
+          </div>
+
+          <article class="work-con">
+            <figure>
+              <img src="./img/work-posilak1.png" alt="app-posilak" />
+            </figure>
+
+            <div class="work-item">
+              <h5>포시락</h5>
+              <p>
+                치솟는 물가 상승으로 인한 식비 절약의 니즈를 반영하여 도시락 레시피 추천 서비스를 기획하였습니다.<br />
+                총 4명의 팀원으로 구성되어 진행하였고 , 팀 리더를 맡아 프로젝트의 진행을 총괄적으로 관리하며
+                진행하였습니다.
+              </p>
+              <strong>기획 및 컨텐츠 플래닝, 로고 제작을 주로 하였으며, 전체적인 디자인 작업에 참여하였습니다.</strong>
+
+              <ul class="work-info">
+                <li>
+                  <strong>Date</strong>
+                  <p class="number">23.05.- (1 month)</p>
+                </li>
+                <li>
+                  <strong>Role</strong>
+                  <p>기획, 디자인</p>
+                </li>
+                <li>
+                  <strong>Tools</strong>
+                  <ul class="tools-list">
+                    <li>figma</li>
+                    <li>photoshop</li>
+                    <li>illustrator</li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="work-link">
+                <a
+                  href="https://www.figma.com/proto/tEg4E4EXeYIooBevVYArdg/%ED%8F%AC%EC%8B%9C%EB%9D%BD-%3A-%EC%9C%BC%EC%8C%B0%EC%9C%BC%EC%8C%B0?page-id=227%3A4130&type=design&node-id=278-4830&viewport=716%2C29%2C0.17&scaling=min-zoom&starting-point-node-id=773%3A9290&mode=design"
+                  target="_blank"
+                  class="btn-work"
+                  >프로토타입 보러가기</a
+                >
+                <a href="./process-posilak.html" class="btn-work">프로세스 페이지</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- e:posilak -->
+
+      <!-- s: microsite -->
+      <section class="section microsite">
+        <div class="inner">
+          <div class="work-title-wrap">
+            <h3 class="work-title">Micro web site</h3>
+
+            <ul class="work-info">
+              <li>
+                <strong>Date</strong>
+                <p class="number">23.05. | 06. (1 week)</p>
+              </li>
+              <li>
+                <strong>Role</strong>
+                <p>기획, 디자인</p>
+              </li>
+              <li>
+                <strong>Tools</strong>
+                <ul class="tools-list">
+                  <li>figma</li>
+                  <li>photoshop</li>
+                  <li>illustrator</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="micro-list">
+            <li>
+              <strong>가디언즈 오브 갤럭시 Vol 03</strong>
+              <!-- <figure>
+                <img src="./img/work-galaxy.png" alt="gardians of galaxy vol3" />
+              </figure> -->
+              <a href="./micro-gog.html" class="btn-work">디자인 보러가기</a>
+            </li>
+            <li>
+              <strong>뷰티 컬리</strong>
+              <!-- <figure>
+                <img src="./img/work-beautycurly.png" alt="beauty curly" />
+              </figure> -->
+              <a href="./micro-beautycurly.html" class="btn-work">디자인 보러가기</a>
+            </li>
+          </ul>
+        </div>
+        <div class="moving-img"></div>
+      </section>
+      <!-- e:  microsite -->
+    </main>
+  </body>
+</html>

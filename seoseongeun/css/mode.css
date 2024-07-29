@@ -1,0 +1,135 @@
+@charset 'utf-8';
+
+body.light-mode {
+  width: 100%;
+  height: 100%;
+  background: url(../img/light-bg.jpg) no-repeat 0 0 / cover;
+  color: #333;
+}
+
+body.light-mode a:hover {
+  color: #f57651;
+}
+
+body.light-mode .logo {
+  background-image: url(../img/logo.png);
+}
+
+body.light-mode .open-gnb ul {
+  color: #fff;
+}
+
+body.light-mode .btn-menu b {
+  background: #333;
+}
+body.light-mode .btn-menu::before,
+body.light-mode .btn-menu::after {
+  background: #333;
+}
+
+body.light-mode strong {
+  border-color: #166071;
+  color: #166071;
+}
+
+body.light-mode .indicator > a {
+  border: 1px solid #333;
+}
+body.light-mode .indicator > a.active {
+  border: none;
+  background: #166071;
+}
+
+body.light-mode .go-top {
+  background: #333;
+  color: #fff;
+}
+
+body.light-mode .slider-wrap-1 {
+  background-image: url(../img/swiper-info-light.png);
+}
+
+body.light-mode .swiper-info h2 {
+  color: #166071;
+}
+body.light-mode h2 {
+  color: #f57651;
+}
+
+body.light-mode .swiper-info p {
+  color: #fff;
+}
+body.light-mode .swiper-info .date {
+  color: #fff;
+}
+
+body.light-mode .slider-wrap2 .btn.btn-prev {
+  background-image: url(../img/btn-pre-light.svg);
+}
+body.light-mode .slider-wrap2 .btn.btn-next {
+  background-image: url(../img/btn-next-light.svg);
+}
+
+body.light-mode .paging2 span {
+  border: 1px solid #333;
+}
+
+body.light-mode .paging2 .slick-active span {
+  background: #333;
+}
+
+body.light-mode .btn-link a {
+  color: #f57651;
+  border: 2px solid #f57651;
+}
+
+body.light-mode .btn-link a:hover {
+  color: #fff;
+  background: #f57651;
+}
+
+body.light-mode .info-wrap strong {
+  color: #333;
+}
+
+body.light-mode .info-wrap strong b {
+  color: #fff;
+  background: #166071;
+}
+
+body.light-mode .info-wrap dl dt {
+  color: #f57651;
+}
+/* 체크박스 디자인 */
+.mode-wrap {
+  position: absolute;
+  top: 43px;
+  right: 125px;
+}
+#mode {
+  display: none;
+}
+#mode + label {
+  /* background: #ff5; */
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#mode + label::before {
+  content: '';
+  display: block;
+  width: 3.6rem;
+  height: 3.6rem;
+  background: url(../img/btn-light.svg) no-repeat 50%;
+  background-size: 90%;
+  margin: 0 auto;
+}
+
+/* 폼 요소에 체크가 된 상태 */
+#mode:checked + label::before {
+  background-image: url(../img/btn-dark.svg);
+  background-size: 80%;
+}

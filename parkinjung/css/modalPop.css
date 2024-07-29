@@ -1,0 +1,81 @@
+@charset 'utf-8';
+
+/* 팝업 */
+
+.lightbox-target {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.76);
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 300;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  z-index: 999;
+}
+
+.lightbox-target::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+/* view */
+.lightbox-target > .container {
+  margin: auto;
+  position: absolute;
+  top: 30%;
+  left: 50vw;
+  width: 80%;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  text-align: left;
+  transform: translate3d(-50%, -1.4%, 0);
+}
+.worklighboxVE > .container {
+  top: 14%;
+  width: 40%;
+  height: 60%;
+}
+
+.lightbox-target .container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 100;
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+.lightbox-target .container p span {
+  font-weight: 400;
+  font-size: 18px;
+  padding-right: 20px;
+}
+a.lightbox-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  color: var(--sub-color-SoftRed);
+  text-decoration: none;
+  position: fixed;
+  top: 10%;
+  right: 5%;
+  margin: 0;
+  z-index: 99;
+}
+
+.lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}

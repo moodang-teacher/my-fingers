@@ -1,0 +1,4 @@
+$(function () {
+  Splitting();
+  AOS.init();
+});

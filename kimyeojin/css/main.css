@@ -1,0 +1,163 @@
+@charset 'utf-8';
+
+.note-wrap {
+  width: 1610px;
+  height: 866px;
+  position: relative;
+
+  transform: rotate(4deg);
+}
+
+.underline-wrap {
+  position: relative;
+}
+.underline {
+  position: absolute;
+  top: 390px;
+  left: 740px;
+  width: 450px;
+  height: 150px;
+  transform: rotate(-2deg);
+}
+.circle-wrap {
+  position: relative;
+}
+.line-circle {
+  position: absolute;
+  top: 465px;
+  left: 770px;
+  width: 250px;
+  height: 150px;
+  transform: rotate(-10deg);
+}
+.cls-2 {
+  stroke-dasharray: 1248.94140625;
+  stroke-dashoffset: 1248.94140625;
+}
+.cls-1 {
+  stroke-dasharray: 2165.069580078125;
+  stroke-dashoffset: 2165.069580078125;
+}
+.cls-2.on {
+  animation: pathAni 0.8s ease-in-out both 2.5s;
+}
+.cls-1.on {
+  animation: pathAni 1.5s ease-in-out both 3s;
+}
+
+@keyframes pathAni {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.note {
+  position: absolute;
+  top: -100px;
+  left: -50px;
+  width: 1610px;
+  height: 866px;
+  background: url(../img/note-background.jpg) no-repeat 0 0 / cover;
+  z-index: 1;
+  box-shadow: var(--img-shadow);
+}
+
+.note h1 {
+  position: absolute;
+  bottom: 300px;
+  right: 100px;
+  font-size: 86px;
+  color: #000;
+  transform: rotate(-5deg);
+}
+
+.note h1 strong {
+  display: flex;
+  align-items: end;
+  font-size: 86px;
+  color: #000;
+  margin-top: 50px;
+}
+
+.note h1 strong b {
+  font-size: 128px;
+}
+
+.sticker {
+  width: 192px;
+  height: 192px;
+  position: absolute;
+  bottom: 450px;
+  right: 200px;
+  z-index: 100;
+
+  filter: drop-shadow(var(--sticker-shadow));
+}
+
+.example-1 .sticker-img {
+  background: url(../img/main_sticker.png) no-repeat 50% / cover;
+}
+
+.main-gnb {
+  position: absolute;
+  bottom: 272px;
+  right: 10px;
+  font-size: 50px;
+}
+
+.main-gnb li a {
+  width: 250px;
+  height: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  box-shadow: var(--img-shadow);
+}
+.main-gnb li {
+  transition: 0.4s;
+}
+.main-gnb li:hover {
+  transform: translateX(180px);
+}
+
+.main-gnb li:nth-child(1) {
+  background: #ffbde1;
+}
+.main-gnb li:nth-child(2) {
+  background: #ffeaa0;
+}
+.main-gnb li:nth-child(3) {
+  background: #c7d6ff;
+}
+
+main > strong {
+  position: absolute;
+  bottom: 85px;
+  left: 151px;
+  font-size: 36px;
+  color: var(--type-color);
+  font-family: 'X type';
+}
+
+/* loading */
+.loading {
+  font-family: 'X type';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/paper-texture_tile2.jpg);
+  font-size: 64px;
+  color: var(--type-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  pointer-events: none;
+  user-select: none;
+
+  z-index: 9999;
+}

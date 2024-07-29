@@ -1,0 +1,348 @@
+@charset 'utf-8';
+.work section {
+  background: url(../img/bg-txt-work-g.svg) no-repeat 50%/50%;
+}
+.fp-tableCell {
+  vertical-align: top;
+}
+.indicator {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100px;
+  z-index: 99;
+}
+.indicator a {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 0.5px solid rgba(255, 255, 255, 0.4);
+  background: rgb(16, 57, 57);
+  background: radial-gradient(
+    circle,
+    rgba(16, 57, 57, 0.4) 50%,
+    rgba(16, 57, 57, 0.4) 50%,
+    rgba(16, 57, 57, 0.1) 50%,
+    rgba(16, 57, 57, 0.1) 100%,
+    rgba(16, 57, 57, 0.1) 100%
+  );
+  margin-top: 4rem;
+  text-indent: -9rem;
+
+  position: relative;
+}
+.indicator a.active {
+  background: rgb(16, 57, 57);
+  background: radial-gradient(
+    circle,
+    rgba(16, 57, 57, 1) 50%,
+    rgba(16, 57, 57, 1) 50%,
+    rgba(16, 57, 57, 0.1) 50%,
+    rgba(16, 57, 57, 0.1) 100%,
+    rgba(16, 57, 57, 0.1) 100%
+  );
+}
+.indicator a.active::before {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: rgb(16, 57, 57);
+  background: radial-gradient(circle, rgba(16, 57, 57, 0.3) 50%, rgba(16, 57, 57, 0.1) 100%);
+  position: absolute;
+  top: -42.2%;
+  left: -42.5%;
+  animation: gnb-ani 2s infinite;
+}
+@keyframes gnb-ani {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.indicator a::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 4.1rem;
+  position: absolute;
+  background: var(--main-colorG);
+  top: 100%;
+  left: 50%;
+}
+.indicator a:last-child::after {
+  display: none;
+}
+
+.section {
+  height: 100vh;
+}
+/* section main */
+.main {
+  position: relative;
+}
+.inner {
+  width: 140rem;
+  margin: 0 auto;
+  padding: 10rem 0rem;
+}
+.main-wrap {
+  display: flex;
+  gap: 20rem;
+  justify-content: space-between;
+}
+.main .work-main {
+  margin-top: 5rem;
+}
+.main .work-main i {
+  font-family: 'Eulyoo1945';
+}
+.main h2 {
+  font-size: 12rem;
+}
+.main .arrow-wrap {
+  position: absolute;
+  top: 64rem;
+  left: 34.5rem;
+  display: flex;
+  gap: 8rem;
+}
+.main .arrow-wrap .arrow {
+  width: 7.7rem;
+  height: 12.8rem;
+  background: url(../img/icon-arrow.svg) no-repeat 0 0 / contain;
+  animation: arrow-ani 2s infinite;
+}
+.main .arrow-wrap .arrow:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.main .arrow-wrap .arrow:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.main .work-list {
+  font-size: 5.5rem;
+  margin-top: 10rem;
+}
+.main .work-list li {
+  margin: 2rem 3rem 0;
+  text-align: right;
+}
+.main .work-list li a b {
+  font-size: 3rem;
+  font-family: 'Eulyoo1945';
+}
+
+@keyframes arrow-ani {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* section merida */
+.work-title-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.work-title {
+  font-size: 9rem;
+}
+.work-subtitle {
+  font-size: 6.5rem;
+  line-height: 8rem;
+  text-align: right;
+}
+.work-con {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.work-con figure {
+  width: 75rem;
+  height: 45rem;
+}
+.work-con figure img {
+  object-fit: contain;
+}
+.work-item {
+  width: 58rem;
+}
+.work-item h5 {
+  font-size: 5rem;
+}
+.work-item p {
+  margin-top: 2.5rem;
+}
+.work-info {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.work-info li {
+  width: 30%;
+}
+.work-info li strong {
+  border-bottom: 1px solid var(--main-colorG);
+  display: block;
+  font-weight: bold;
+}
+.work-info li p {
+  font-size: 1.6rem;
+  margin-top: 1.5rem;
+}
+.work-info .tools-list {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.work-info .tools-list li {
+  width: 3rem;
+  height: 3rem;
+  background: no-repeat 0 0 / contain;
+  text-indent: -999px;
+  overflow: hidden;
+}
+.work-info .tools-list li:nth-child(1) {
+  background-image: url(../img/icon-figma.svg);
+}
+.work-info .tools-list li:nth-child(2) {
+  background-image: url(../img/icon-vscode.svg);
+}
+.work-info .tools-list li:nth-child(3) {
+  background-image: url(../img/icon-photoshop.svg);
+}
+
+.work-info li .number {
+  font-family: 'Eulyoo1945';
+}
+.work-link {
+  margin-top: 5rem;
+  display: flex;
+  gap: 4rem;
+}
+.btn-work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22rem;
+  height: 5rem;
+  border: 1px solid var(--main-colorG);
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  transition: 0.4s;
+}
+.btn-work:hover {
+  background: var(--main-colorG);
+  color: var(--main-colorW);
+}
+
+/* portfolio */
+.portfolio .work-con {
+  flex-direction: row-reverse;
+}
+.portfolio .tools-list li:nth-child(4) {
+  background: url(../img/icon-illust.svg);
+}
+
+/* pinkpong */
+.pinkpong .tools-list li:nth-child(4) {
+  background: url(../img/icon-illust.svg);
+}
+
+/* posilak */
+.posilak {
+  position: relative;
+}
+.posilak .work-con {
+  margin-top: 3rem;
+}
+.posilak .work-con figure {
+  width: 100rem;
+  height: 86rem;
+  position: absolute;
+  top: 17rem;
+  left: 10rem;
+}
+.posilak .work-item {
+  margin-left: auto;
+}
+.posilak .work-item p {
+  margin-top: 1.5rem;
+}
+.posilak .work-item strong {
+  display: block;
+  margin-top: 1.5rem;
+}
+.posilak .work-item .work-info {
+  margin-top: 1.5rem;
+}
+.microsite .tools-list li:nth-child(2),
+.posilak .tools-list li:nth-child(2) {
+  background: url(../img/icon-photoshop.svg);
+}
+.microsite .tools-list li:nth-child(3),
+.posilak .tools-list li:nth-child(3) {
+  background: url(../img/icon-illust.svg);
+}
+
+/* micro website */
+.microsite {
+  position: relative;
+}
+.microsite .work-title-wrap {
+  display: block;
+}
+.microsite .work-info {
+  width: 58rem;
+}
+.microsite .micro-list {
+  border-top: 1px solid var(--main-colorG);
+  border-bottom: 1px solid var(--main-colorG);
+  position: absolute;
+  top: 53rem;
+  left: 0;
+}
+.microsite .micro-list li {
+  width: 165rem;
+  height: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 26rem;
+  position: relative;
+}
+.microsite .micro-list li:first-child {
+  border-bottom: 1px solid var(--main-colorG);
+}
+.microsite .micro-list li strong {
+  font-size: 5rem;
+}
+.microsite .micro-list li a {
+  position: relative;
+  z-index: 10;
+}
+.moving-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.4s;
+  transform-origin: 0 0;
+  pointer-events: none;
+  user-select: none;
+}

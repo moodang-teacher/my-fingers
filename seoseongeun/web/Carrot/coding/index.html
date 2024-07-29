@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>당근마켓</title>
+
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <!-- 오프닝 -->
+    <div class="opening">
+      <div class="opening-title">당근이세요?</div>
+
+      <figure class="rabbit">
+        <a href="#header"><img src="./img/opening-rabbit.png" alt="당근이" /></a>
+      </figure>
+    </div>
+
+    <header id="header">
+      <div class="inner">
+        <nav>
+          <h1 class="logo">
+            <a href="./index.html"><i class="hidden">당근마켓</i></a>
+          </h1>
+          <ul class="gnb">
+            <li><a href="#">중고거래</a></li>
+            <li><a href="#">동네가게</a></li>
+            <li><a href="#">알바</a></li>
+            <li><a href="./sub.html">이벤트</a></li>
+          </ul>
+
+          <div class="util-menu">
+            <a href="#"><i class="hidden">menu</i></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <hr />
+
+    <main id="container">
+      <section class="visual">
+        <div class="inner">
+          <h2 class="hidden">메인 비주얼</h2>
+          <div class="visual-item">
+            <strong>당신 근처에서 만나요</strong>
+            <figure class="emoticon-left">
+              <img src="./img/emoticon-left.png" alt="왼쪽사람들" />
+            </figure>
+            <figure class="emoticon-rabbit">
+              <img src="./img/emoticon-rabbit.png" alt="손든당근이" />
+            </figure>
+            <figure class="emoticon-right">
+              <img src="./img/emoticon-right.png" alt="오른쪽사람들" />
+            </figure>
+          </div>
+          <div class="visual-btn">
+            <button class="btn btn-prev"><i class="hidden">이전</i></button>
+            <button class="btn btn-next"><i class="hidden">다음</i></button>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <div class="tab">
+        <div class="tab-menu">
+          <ul class="lnb-list">
+            <li><a href="#">중고거래</a></li>
+            <li><a href="#">동네생활</a></li>
+            <li><a href="#">동네가게</a></li>
+          </ul>
+        </div>
+        <hr />
+
+        <!-- s: tab-content -->
+        <div class="tab-content">
+          <section class="used">
+            <div class="inner">
+              <div class="used-con-top">
+                <div class="used-con-left">
+                  <div class="title">
+                    <div class="h2-wrap">
+                      <h2>우리동네</h2>
+                      <h2>중고 직거래 마켓</h2>
+                    </div>
+                    <p>동네 주민들과 가깝고 따뜻한 거래를 지금 경험해보세요.</p>
+                  </div>
+
+                  <span><img src="./img/used.png" alt="중고거래" /></span>
+                </div>
+                <div class="used-con-right">
+                  <h3>인기매물</h3>
+                  <!-- s: popular-item-list-->
+                  <ul class="popular-item-list">
+                    <li>
+                      <a href="#">
+                        <figure>
+                          <img src="./img/Dehumidifier.jpg" alt="제습기" />
+                        </figure>
+                        <dl>
+                          <dt>제습기 팔아요</dt>
+                          <dd>20,000원</dd>
+                          <dd>대전 서구 복수동</dd>
+                        </dl>
+                        <div class="used-info">
+                          <p>1</p>
+                          <p>5</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <figure>
+                          <img src="./img/Dyson.jpg" alt="다이슨" />
+                        </figure>
+                        <dl>
+                          <dt>다이슨 청소기</dt>
+                          <dd>40,000원</dd>
+                          <dd>경기도 광주시 오포읍</dd>
+                        </dl>
+                        <div class="used-info">
+                          <p>1</p>
+                          <p>3</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <figure>
+                          <img src="./img/refrigerator.jpg" alt="냉장고" />
+                        </figure>
+                        <dl>
+                          <dt>하이메이드 냉장고</dt>
+                          <dd>20,000원</dd>
+                          <dd>인천 미추홀구 주안동</dd>
+                        </dl>
+                        <div class="used-info">
+                          <p>3</p>
+                          <p>4</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <figure>
+                          <img src="./img/Shelf.jpg" alt="선반" />
+                        </figure>
+                        <dl>
+                          <dt>접이식 철재 선반</dt>
+                          <dd>10,000원</dd>
+                          <dd>부산 동래구 온천제3동</dd>
+                        </dl>
+                        <div class="used-info">
+                          <p>2</p>
+                          <p>1</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <figure>
+                          <img src="./img/hanger.jpg" alt="행거" />
+                        </figure>
+                        <dl>
+                          <dt>행거 팔아요</dt>
+                          <dd>10,000원</dd>
+                          <dd>경남 창원시 의창구 팔룡동</dd>
+                        </dl>
+                        <div class="used-info">
+                          <p>5</p>
+                          <p>3</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <figure>
+                          <img src="./img/Cosmetics.jpg" alt="화장품" />
+                        </figure>
+                        <dl>
+                          <dt>화장품 팔아요</dt>
+                          <dd>7,000원</dd>
+                          <dd>전북 전주시 완산구 효자1동</dd>
+                        </dl>
+                        <div class="used-info">
+                          <p>2</p>
+                          <p>4</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- //e: popular-item-list-->
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 두번째 탭 : 동네생활 -->
+          <section class="life">
+            <div class="inner">
+              <div class="life-con-top">
+                <div class="life-con-left">
+                  <div class="title">
+                    <div class="h2-wrap">
+                      <h2>이웃과 함께하는</h2>
+                      <h2>동네생활</h2>
+                    </div>
+
+                    <p>우리 동네의 다양한 이야기를 이웃과 함께 나누어요.</p>
+                  </div>
+                  <div class="life-button">
+                    <ul class="life-list">
+                      <li>
+                        <a href="#">
+                          <dl>
+                            <dt>같이해요</dt>
+                            <dd>관심사가 비슷한 이웃과 온오프라인으로 만나요.</dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <dl>
+                            <dt>궁금해요</dt>
+                            <dd>궁금한 게 있을 땐 이웃에게 물어보세요.</dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <dl>
+                            <dt>도와줘요</dt>
+                            <dd>무언가를 잃어버렸을 때, 함께 찾을 수 있어요.</dd>
+                          </dl>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="life-con-right">
+                  <div class="mobile-slide-wrap">
+                    <div class="mobile-slide slider">
+                      <div class="slide-item">
+                        <figure class="mobile-together">
+                          <img src="./img/together.png" alt="together" />
+                        </figure>
+                      </div>
+                      <div class="slide-item">
+                        <figure class="mobile-curiosity">
+                          <img src="./img/curiosity.png" alt="curiosity" />
+                        </figure>
+                      </div>
+                      <div class="slide-item3">
+                        <figure class="mobile-help">
+                          <img src="./img/help.png" alt="help" />
+                        </figure>
+                      </div>
+                    </div>
+
+                    <button class="mobile-btn-prev">
+                      <i class="hidden">이전</i>
+                    </button>
+                    <button class="mobile-btn-next">
+                      <i class="hidden">다음</i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 세번째 탭 : 동네가게 -->
+          <section class="shop">
+            <div class="inner">
+              <div class="shop-job-con">
+                <div class="shop-content-wrap">
+                  <div class="title">
+                    <h2>내 근처에서 찾는 동네가게</h2>
+                    <p>우리 동네 가게를 찾고 있나요? 동네 주민이 남긴 진짜 후기를 함께 확인해보세요!</p>
+                  </div>
+
+                  <div class="menu-button-warp">
+                    <a class="menu-button restaurant" href="#">식당</a>
+                    <a class="menu-button cafe" href="#">카페</a>
+                    <a class="menu-button Beauty" href="#">뷰티</a>
+                    <a class="menu-button exercise" href="#">운동</a>
+                    <a class="menu-button move" href="#">이사</a>
+                  </div>
+
+                  <div class="restaurant">
+                    <ul class="content-list">
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/shop1.jpg" alt="찐신선 정육점" />
+                          </figure>
+                          <dl>
+                            <dt>찐신선 정육점</dt>
+                            <dd>세계적인 육류 선두 기업들로부터 직수입하여 유통마진없이 최종소비자에게 ...</dd>
+                            <dd>팔탄면 / 정육점</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>1</p>
+                            <p>5</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/shop2.jpeg" alt="식품명가 파란거북" />
+                          </figure>
+                          <dl>
+                            <dt>식품명가 파란거북</dt>
+                            <dd>[지역회사가 아닌 산지직발송 원청업체입니다.] 식품 명가 파란거북.</dd>
+                            <dd>만촌동 / 수산물</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>4</p>
+                            <p>3</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/shop3.jpeg" alt="갑을 농수산" />
+                          </figure>
+                          <dl>
+                            <dt>갑을 농수산</dt>
+                            <dd>안녕하세요! 새벽에 수산물을 받아와 도매가로 드리는 갑을농수산입니다.</dd>
+                            <dd>천곡동 / 식자재판매</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>2</p>
+                            <p>1</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/shop4.jpeg" alt="제주농협" />
+                          </figure>
+                          <dl>
+                            <dt>제주농협</dt>
+                            <dd>부득이 채팅 답변이 어렵습니다. 문의사항은 서비스 센터로 부탁드립니다!</dd>
+                            <dd>삼도1동 / 유기농 식품</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>6</p>
+                            <p>3</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cafe">
+                    <ul class="content-list">
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/cafe1.png" alt="오후의 빵집" />
+                          </figure>
+                          <dl>
+                            <dt>오후의 빵집</dt>
+                            <dd>오후의빵집 베이커리 유럽빵 전문점 정식 오픈 매주 수 ...</dd>
+                            <dd>구의동 / 제과∙제빵</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>2</p>
+                            <p>6</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/cafe2.png" alt="크라상점" />
+                          </figure>
+                          <dl>
+                            <dt>크라상점</dt>
+                            <dd>▫️▫️ 좋은 재료로 만들고 합리적인 가격으로 ▫️▫️ 당일 생산, 당일 판매하는...</dd>
+                            <dd>은행동 / 제과∙제빵</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>5</p>
+                            <p>1</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/cafe3.png" alt="블레스콘" />
+                          </figure>
+                          <dl>
+                            <dt>블레스콘</dt>
+                            <dd>블레스콘은 당일생산/당일판매가 원칙으로 합니다🤗 ...</dd>
+                            <dd>북변동 / 카페</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>4</p>
+                            <p>1</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/cafe4.png" alt="슈츠" />
+                          </figure>
+                          <dl>
+                            <dt>슈츠</dt>
+                            <dd>팔공산에 위치한 카페 슈츠입니다. 좋은 기억으로 ...</dd>
+                            <dd>동명면 / 마카롱</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>7</p>
+                            <p>3</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="beauty">
+                    <ul class="content-list">
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/beauty1.png" alt="뷰티로움" />
+                          </figure>
+                          <dl>
+                            <dt>뷰티로움</dt>
+                            <dd>✧충분한 상담 후 눈매에 맞춤 시술 들어갑니다! 전주뷰티로움...</dd>
+                            <dd>효자동3가 / 속눈썹펌∙연장</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>2</p>
+                            <p>6</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/beauty2.png" alt="수인스타일 헤어샵" />
+                          </figure>
+                          <dl>
+                            <dt>수인스타일 헤어샵</dt>
+                            <dd>애정어린 소중한 의견에 귀 기울이며 더욱더 발전 할 수 있는 수인스타일...</dd>
+                            <dd>삼성동 / 미용실</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>2</p>
+                            <p>3</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/beauty3.png" alt="마스터브로우" />
+                          </figure>
+                          <dl>
+                            <dt>마스터브로우</dt>
+                            <dd>부천 고객만족도 1위! 수천명의 단골샵, 마스터브로우 [ 예약 양식 ] • 성함 ...</dd>
+                            <dd>중동 / 속눈썹펌∙연장</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>4</p>
+                            <p>1</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/beauty4.png" alt="수원체형교정" />
+                          </figure>
+                          <dl>
+                            <dt>수원체형교정</dt>
+                            <dd>💫 국가대표 선수가 받는 체형교정 통증관리를 영통에서 받을 수 있답니다 💫</dd>
+                            <dd>영통동 / 체형관리</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>5</p>
+                            <p>3</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="exercise">
+                    <ul class="content-list">
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/exercise1.png" alt="필라테스클리닉" />
+                          </figure>
+                          <dl>
+                            <dt>필라테스클리닉</dt>
+                            <dd>대학병원 물리치료사 대표 원장, 물리치료사 강사 다수의 차별화된 ...</dd>
+                            <dd>달동 / 필라테스</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>2</p>
+                            <p>4</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/exercise2.png" alt="에이블짐" />
+                          </figure>
+                          <dl>
+                            <dt>에이블짐</dt>
+                            <dd>EVENT.1 - PT 등록 시 회원권 무료제공 ! EVENT.2 - 지인소개...</dd>
+                            <dd>응암동 / 헬스</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>2</p>
+                            <p>3</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/exercise3.png" alt="좋은습관 PT STUDIO" />
+                          </figure>
+                          <dl>
+                            <dt>좋은습관 PT STUDIO</dt>
+                            <dd>현재 신규 지점 특별 가입 할인 이벤트 중! 지금 바로 이 좋은 기회를 놓치지 마세요!...</dd>
+                            <dd>중동 / 헬스</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>4</p>
+                            <p>3</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/exercise4.png" alt="인헬서짐" />
+                          </figure>
+                          <dl>
+                            <dt>인헬서짐</dt>
+                            <dd>1월 31일 GRAND OPEN 오픈기념 이벤트 진행중...</dd>
+                            <dd>월계동 / 헬스</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>5</p>
+                            <p>4</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="move">
+                    <ul class="content-list">
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/move1.png" alt="훈민용달,이사,용달이사 화물" />
+                          </figure>
+                          <dl>
+                            <dt>훈민용달</dt>
+                            <dd>훈민용달은 예약제로 운행되고 있습니다. 물건,지역,엘베유.무, ....</dd>
+                            <dd>신정동 / 용달</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>2</p>
+                            <p>4</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/move2.png" alt="용달홍반장" />
+                          </figure>
+                          <dl>
+                            <dt>용달홍반장</dt>
+                            <dd>
+                              기본운송3만원~!! (단거리,단품,차앞상하차,후기조건) 원룸이사, 오피스텔이사. 이사전문,
+                              1톤용달전문...
+                            </dd>
+                            <dd>동춘동 / 용달</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>2</p>
+                            <p>3</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/move3.png" alt="노랑이사" />
+                          </figure>
+                          <dl>
+                            <dt>노랑이사</dt>
+                            <dd>
+                              원룸이사! 가전/가구 용달! 언제든지 연락주세요~! 눈,비 걱정없는 호루 장착 차량으로 안전하게
+                              옮겨드립니다...
+                            </dd>
+                            <dd>봉천동 / 용달</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>4</p>
+                            <p>1</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/move4.png" alt="신군용달이사" />
+                          </figure>
+                          <dl>
+                            <dt>신군용달이사</dt>
+                            <dd>
+                              25년 이사짐 경력으로 고객님들의 가전 가구 모든 이송이 가능 합니다 저렴한 가격으로 최고의
+                              실력으로 배송하겠습니다 걱정 말고...
+                            </dd>
+                            <dd>탑동 / 이사</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>5</p>
+                            <p>3</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="job-content-wrap">
+                  <div class="title">
+                    <h2>내 근처 인기알바</h2>
+                    <p>내 근처 10분거리 인기알바를 찾아보세요!</p>
+                  </div>
+                  <!-- s:job-content-list -->
+                  <div class="content-btn-wrap">
+                    <ul class="content-list slider">
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/job1.jpg" alt="전단지 배포 알바" />
+                          </figure>
+                          <dl>
+                            <dt>전단지 배포 알바</dt>
+                            <dd>시급 10,000원</dd>
+                            <dd>광주광역시 북구 동림동</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>2</p>
+                            <p>5</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/job2.jpeg" alt="단순 작업 부업하실분" />
+                          </figure>
+                          <dl>
+                            <dt>단순 작업 부업하실분~</dt>
+                            <dd>건당 10,000원</dd>
+                            <dd>광주광역시 광산구 신가동</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>6</p>
+                            <p>2</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/job3.jpeg" alt="간식박스 포장 알바" />
+                          </figure>
+                          <dl>
+                            <dt>간식박스 포장 알바</dt>
+                            <dd>시급 10,000원</dd>
+                            <dd>충청남도 천안시 성정동</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>12</p>
+                            <p>8</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/job4.jpg" alt="윈더스의원 구인" />
+                          </figure>
+                          <dl>
+                            <dt>윈더스의원 구인</dt>
+                            <dd>시급 13,000원</dd>
+                            <dd>강원도 원주시 단계동</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>1</p>
+                            <p>3</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/job5.png" alt="태양광보조" />
+                          </figure>
+                          <dl>
+                            <dt>태양광보조</dt>
+                            <dd>일급 20만원</dd>
+                            <dd>전북 익산시 궁동로</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>4</p>
+                            <p>3</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/job6.png" alt="판매 보조" />
+                          </figure>
+                          <dl>
+                            <dt>행사부스 판매 보조</dt>
+                            <dd>시급 1만원</dd>
+                            <dd>천안시 서북구 불당동</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>2</p>
+                            <p>3</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/job7.png" alt="악세 제작" />
+                          </figure>
+                          <dl>
+                            <dt>악세 제작&손 모델 알바</dt>
+                            <dd>시급 2만원</dd>
+                            <dd>청주시 흥덕구 봉명동</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>1</p>
+                            <p>5</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <figure>
+                            <img src="./img/job8.png" alt="메이크업모델" />
+                          </figure>
+                          <dl>
+                            <dt>메이크업모델 구합니다!</dt>
+                            <dd>일급 10만원</dd>
+                            <dd>서울특별시 서초구 서초동</dd>
+                          </dl>
+                          <div class="shop-info">
+                            <p>1</p>
+                            <p>3</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- //e:job-content-list -->
+
+                    <button class="job-btn-prev">
+                      <i class="hidden">이전</i>
+                    </button>
+                    <button class="job-btn-next">
+                      <i class="hidden">다음</i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- //e: tab-content -->
+
+        <a href="#header" class="top-button"><i class="hidden">탑버튼</i></a>
+      </div>
+    </main>
+    <hr />
+
+    <footer id="footer">
+      <div class="inner">
+        <div class="foot-con-top">
+          <div class="foot-con">
+            <div class="foot-copyright">
+              <address>
+                <p>대표 김용현, 황도연사업자번호 375-87-00088 직업정보제공사업</p>
+                <p>신고번호 2016-서울서초-0051 주소 서울특별시 구로구 디지털로 30길</p>
+                <p>28, 609호 (당근서비스) 전화 1544-9796고객문의 cs@daangnservice.com</p>
+              </address>
+            </div>
+            <div class="app-down">
+              <strong>당근마켓 앱 다운로드</strong>
+              <div class="app-down-btn">
+                <button class="app-down-apple">App store</button>
+                <button class="app-down-google">Google play</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="foot-con-bottom">
+          <div class="foot-link-wrap">
+            <div>
+              <div class="foot-links1">
+                <ul>
+                  <li><a href="#">제휴문의</a></li>
+                  <li><a href="#">광고문의</a></li>
+                  <li><a href="#">PR 문의</a></li>
+                  <li><a href="#">IR문의</a></li>
+                </ul>
+              </div>
+              <div class="foot-links2">
+                <ul>
+                  <li><a href="#">이용약관</a></li>
+                  <li><a href="#">개인정보처리방침</a></li>
+                  <li><a href="#">위치기반 서비스 이용약관</a></li>
+                  <li><a href="#">이용자보호 비전과 계획</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="sns">
+              <a class="sns facebook" href="#"><i class="hidden">페이스북</i></a>
+              <a class="sns instagram" href="#"><i class="hidden">인스타그램</i></a>
+              <a class="sns youTube" href="#"><i class="hidden">유튜브</i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

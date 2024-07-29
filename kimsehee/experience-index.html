@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience</title>
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/hover-min.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/experience.css" />
+
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/lenis-code.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <script src="./js/script-experience.js" defer></script>
+    <script src="js/common-script.js"></script>
+  </head>
+  <body>
+    <!-- loading - spinner -->
+    <div class="spinner-wrap">
+      <div class="container">
+        <div class="spinner">
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+      </div>
+    </div>
+    <svg>
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="
+                                                             1 0 0 0 0 
+                                                             0 1 0 0 0
+                                                             0 0 1 0 0
+                                                             0 0 0 50 -8"
+            result="goo"
+          />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+    <!-- cursor -->
+    <div class="cursor"></div>
+    <div class="spark"></div>
+
+    <!-- menu -->
+    <div class="menu-wrap">
+      <ul class="menu-list">
+        <li class="menu1"><a href="./index.html">Home</a></li>
+        <li class="menu2"><a href="./aboutme-index.html">About me</a></li>
+        <li class="menu3"><a href="./myworks-index.html">My works</a></li>
+        <li class="menu4"><a href="./experience-index.html">Experience</a></li>
+      </ul>
+      <button class="close"></button>
+    </div>
+    ›
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="./index.html"><i class="hidden">SH</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a class="hvr-float hvr-underline-reveal" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="hvr-float hvr-underline-reveal" href="./aboutme-index.html">About me</a>
+          </li>
+          <li>
+            <a class="hvr-float hvr-underline-reveal" href="./myworks-index.html">My works</a>
+          </li>
+          <li>
+            <a class="hvr-float hvr-underline-reveal" href="./experience-index.html">Experience</a>
+          </li>
+        </ul>
+        <div class="wrap">
+          <div class="contact-me">
+            <strong
+              >contact <br />
+              <b>me!</b></strong
+            >
+          </div>
+          <div class="menu"></div>
+        </div>
+      </nav>
+      <div class="menu-wrap">
+        <ul class="menu-list">
+          <li class="menu1"><a href="./index.html">Home</a></li>
+          <li class="menu2"><a href="./aboutme-index.html">About me</a></li>
+          <li class="menu3"><a href="./myworks-index.html">My works</a></li>
+          <li class="menu4">
+            <a href="./experience-index.html">Experience</a>
+          </li>
+        </ul>
+        <button class="close"></button>
+      </div>
+    </header>
+
+    <!-- container -->
+    <main id="container">
+      <div class="experience">
+        <h2>Experience</h2>
+        <div class="main-deco1">
+          <img src="./images/experience-main-deco1.png" alt="" />
+        </div>
+        <div class="main-deco2">
+          <img src="./images/experience-main-deco2.png" alt="" />
+        </div>
+      </div>
+
+      <section class="design-goals">
+        <div class="inner">
+          <h3 data-aos="fade-down-right">My design <b>goals</b></h3>
+          <div class="deco-spark-title">
+            <figure>
+              <img src="./images/main-deco-spark.png" alt="deco-spark" />
+            </figure>
+          </div>
+          <h4>
+            저는 (<b data-splitting>모두</b>)가 사용할 수 있고 복잡하지 않고
+            <br />
+            제품의 의도를 알 수 있게 (<b data-splitting>직관적</b>)인 디자인을 중시하였습니다.
+          </h4>
+          <ul class="goal-list">
+            <li data-aos="zoom-out-down">
+              Everyone
+              <div class="bg"></div>
+            </li>
+            <li data-aos="zoom-out-down" data-aos-delay="300">
+              Intuitive
+              <div class="bg"></div>
+            </li>
+            <li data-aos="zoom-out-down" data-aos-delay="600">
+              Universal Design
+              <div class="bg"></div>
+            </li>
+            <li data-aos="zoom-out-down" data-aos-delay="900">
+              Public design
+              <div class="bg"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="product-design">
+        <h3 class="hidden">product</h3>
+        <div class="inner">
+          <div class="product-list slider">
+            <div class="sec sec1">
+              <div class="deco-bg deco-bg1">
+                <figure>
+                  <img src="./images/deco-bg.png" alt="deco-bg" />
+                </figure>
+              </div>
+              <div class="deco-spark deco-spark1">
+                <figure>
+                  <img src="./images/main-deco-spark.png" alt="deco-spark" />
+                </figure>
+              </div>
+              <h4 data-aos="zoom-out-right">
+                모두가 가능하고 사용할 수 있는 <br />
+                (<b data-splitting>공공 디자인</b>)이란 목표를 갖고 디자인했습니다.
+              </h4>
+              <p>
+                어린이 교통 사고가 점점 증가한다는 점에서 시작하게 되었고
+                <br />어린이의 시점에서 가장 눈높이가 가까운 볼라드를 선정하여
+                <br />
+                표정과 팔을 더해 어린이의 흥미를 유발할 수 있게 디자인한 제품입니다.
+              </p>
+              <div class="kignal-wrap">
+                <span class="sketch">
+                  <img src="./images/experience-product1-sketch.png" alt="product1" />
+                </span>
+                <figure class="kignal-img">
+                  <img src="./images/experience-product1.png" alt="product1" />
+                </figure>
+              </div>
+              <button class="btn nextpg"><i class="hidden">next</i></button>
+            </div>
+            <div class="sec sec2">
+              <div class="deco-bg deco-bg2">
+                <figure>
+                  <img src="./images/deco-bg.png" alt="deco-bg" />
+                </figure>
+              </div>
+              <div class="deco-spark deco-spark2">
+                <figure>
+                  <img src="./images/main-deco-spark.png" alt="deco-spark" />
+                </figure>
+              </div>
+              <h4 data-aos="zoom-out-right">
+                다른 기능보다는 정수기의 (<b data-splitting>본질</b>)을 중시한 제품입니다.
+              </h4>
+              <p>
+                현대 큐밍 공모전에서 수상을 한 제품입니다. <br />
+                기존 정수기의 크기가 작았던 출수 면을 크게하여 정수기의 본질에 중시하였습니다.
+              </p>
+              <div class="p2-img-wrap">
+                <figure>
+                  <img src="./images/experience-product2.png" alt="product2" />
+                </figure>
+              </div>
+              <!-- <figure class="sketch"><img src="./images/experience-product1-sketch.png" alt="product2" /></figure> -->
+              <button class="btn nextpg"><i class="hidden">next</i></button>
+            </div>
+            <div class="sec sec3">
+              <div class="deco-bg deco-bg3">
+                <figure>
+                  <img src="./images/deco-bg.png" alt="deco-bg" />
+                </figure>
+              </div>
+              <div class="deco-spark deco-spark3">
+                <figure>
+                  <img src="./images/main-deco-spark.png" alt="deco-spark" />
+                </figure>
+              </div>
+              <h4 data-aos="zoom-out-right">
+                (<b data-splitting>환경 디자인</b>), (<b data-splitting>추억</b>)이란 목표를 갖고 디자인한 제품입니다.
+              </h4>
+              <p>
+                버려지는 장난감이 증가하고 폐기 되기 어렵다는 점과 어린시절 가지고 놀던 장난감이 <br />
+                나도 모르는 사이 버려져 아쉽고 속상했던 기억을 더해 시작하게 되었습니다. <br />
+                어린시절 사용한 장난감을 버리지 않고 청소년, 성인이 되어서도 다른 소품으로 <br />사용할 수 있는 장난감을
+                기획하였습니다.
+              </p>
+
+              <div class="p3-img-wrap">
+                <figure class="toyimg-1" data-aos="zoom-out-right">
+                  <img src="./images/experience-product3-1.png" alt="product3-1" />
+                </figure>
+                <figure class="toyimg-2">
+                  <img src="./images/experience-product3-2.png" alt="product3-2" />
+                </figure>
+                <figure class="toyimg-3">
+                  <img src="./images/experience-product3-3.png" alt="product3-3" />
+                </figure>
+                <figure class="toyimg-4">
+                  <img src="./images/experience-product3-4.png" alt="product3-4" />
+                </figure>
+                <figure class="toyimg-5">
+                  <img src="./images/experience-product3-5.jpg" alt="product3-5" />
+                </figure>
+              </div>
+
+              <button class="btn nextpg"><i class="hidden">next</i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="after-experience" data-aos="flip-down">
+          <div class="inner">
+            <div class="after-experience-wrap">
+              <h3>After<b data-splitting>experience</b></h3>
+              <p>
+                저는 제품 디자인을 하면서 디자인 뿐만 아니라 현 상황, 흐름을 반영한 기획 또한 배우면서 어떻게 조사를
+                하고 어떤 방법으로
+                <br />
+                다가가야하는지 배웠습니다. 좋은 결과물이 나오려면 초기 기획이 중요하다는 것을 알게 되었고 그래야 과정이
+                더 순조롭게 <br />
+                진행됨을 경험하였습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="foot-info">
+          <strong>contact(<b>me</b>)!</strong>
+          <p>010-3018-3998</p>
+          <p>bobbby3998@naver.com</p>
+        </div>
+      </div>
+      <div class="letter-deco foot-deco">
+        <span>
+          &copy;KIMSEHEE PORTFOLIO &copy;KIMSEHEE PORTFOLIO &copy;KIMSEHEE PORTFOLIO &copy;KIMSEHEE PORTFOLIO
+          &copy;KIMSEHEE PORTFOLIO
+        </span>
+        <span>
+          &copy;KIMSEHEE PORTFOLIO &copy;KIMSEHEE PORTFOLIO &copy;KIMSEHEE PORTFOLIO &copy;KIMSEHEE PORTFOLIO
+          &copy;KIMSEHEE PORTFOLIO
+        </span>
+      </div>
+    </footer>
+
+    <div class="go-top">
+      <a href="#Top"
+        ><figure><img src="./images/go-top.png" alt="" /></figure
+      ></a>
+    </div>
+  </body>
+</html>

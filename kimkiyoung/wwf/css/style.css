@@ -1,0 +1,642 @@
+@charset 'utf-8';
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;900&display=swap");
+
+body {
+  word-break: keep-all;
+  font: 1rem /1.5 "Nanum+Gothic", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sec-title {
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 38px;
+  text-align: center;
+  line-height: 1.3;
+  margin-top: 200px;
+}
+
+.sec-title-p {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
+  color: #535353;
+}
+
+#header {
+  justify-content: center;
+  background: #262626;
+  width: 100%;
+}
+
+#header nav {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.gnb {
+  display: flex;
+  padding: 0 500px;
+}
+
+.gnb li {
+  padding: 20px;
+}
+
+.gnb li a {
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.gnb li a:hover {
+  font-weight: 700;
+  color: #e98300;
+}
+
+.container {
+  justify-content: center;
+}
+
+.visual {
+  position: relative;
+  height: 700px;
+  /* 넘치는 것 자르기 */
+  overflow: hidden;
+}
+
+.slide {
+  height: 100%;
+}
+
+.slide .slide-img {
+  width: 100%;
+}
+
+
+/* 슬라이드 버튼 */
+.visual .btn {
+  display: block;
+  text-indent: -999px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 54px;
+  height: 54px;
+}
+
+.visual .btn.btn-prev {
+  background: url(../images/slider.icon-1.png);
+  left: 100px;
+}
+
+.visual .btn.btn-next {
+  right: 100px;
+  background: url(../images/slider.icon.next-1.png);
+}
+
+/* 인디케이터 */
+.paging {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.paging span {
+  align-items: center;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #bebebe;
+  text-indent: -999px;
+  overflow: hidden;
+}
+
+.paging .slick-active span {
+  background: #e98300;
+}
+
+.visual-con {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 60px;
+}
+
+.slider-img p {
+  font-weight: 300;
+}
+
+.slider-img h2 {
+  font-weight: 700;
+}
+
+.slider-img:hover {
+  transform: scale(1.2);
+  transition: 0.4s;
+  transition-duration: 1s;
+  transition-timing-function: 1s;
+  transition-delay: 0.3s;
+}
+
+.slider-list {
+  position: absolute;
+  top: 150%;
+  left: 20%;
+  justify-content: center;
+  display: flex;
+}
+
+.slider-list li a {
+  font-weight: 700;
+  font-size: 25px;
+  background: #e98300;
+  border: 1px solid #fffefe;
+  letter-spacing: 2px;
+  color: #fff;
+  padding: 10px 30px;
+  margin: 0px 20px;
+}
+
+.slider-list li a:hover {
+  background: #fff;
+  border: 3px solid #e98300;
+  color: #e98300;
+  transition: 0.4s;
+}
+
+/* 빙하가 녹으면 */
+
+.inner {
+  width: 1044px;
+  margin: 0 auto;
+}
+
+.glacier-list {
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.glacier-list li {
+  padding: 30px;
+}
+
+.glacier-list li figure {
+  width: 490px;
+  height: 400px;
+}
+
+.glacier-list li figure::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glacier-list li div {
+  position: absolute;
+  top: 15%;
+  padding: 0 120px;
+  text-align: center;
+}
+
+.glacier-list li div strong {
+  font-weight: 700;
+  font-size: 28px;
+  color: #ffff;
+}
+
+.glacier-list li div p {
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffff;
+}
+
+/* 3월의 소식 */
+.news {
+  margin: 0 110px;
+}
+
+.news-list {
+  justify-content: space-between;
+  /* 가로배치 */
+  display: flex;
+  position: relative;
+}
+
+.news-list li {
+  height: 286px;
+  width: 708px;
+  margin: 0 30px;
+}
+
+.news-list li a {
+  display: flex;
+  width: 100%;
+}
+
+.news-list li a figure {
+  width: 60%;
+}
+
+.news-list li a figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 이미지 꽉차게 */
+}
+
+.news-list li a div {
+  width: 40%;
+  padding: 30px;
+  background: #d1d1d1;
+}
+
+.news-list li div strong {
+  font-weight: 700;
+  font-size: 20px;
+  color: #313030;
+  padding: 30px;
+}
+
+.news-list li div p {
+  padding: 30px;
+  font-weight: 300;
+  font-size: 15px;
+  color: #666;
+  word-break: keep-all;
+}
+
+.news-list li a:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: 1s;
+  transition-delay: 0.3s;
+}
+
+.news-list .slick-prev {
+  padding: 30px;
+  text-indent: -999em;
+  overflow: hidden;
+  transform: translateY(180%);
+  width: 50px;
+  height: 50px;
+  background: url(../images/slider.icon.png) no-repeat 0 0 / cover;
+}
+
+.news-list .slick-next {
+  padding: 30px;
+  text-indent: -999em;
+  overflow: hidden;
+  transform: translateY(180%);
+  width: 50px;
+  height: 50px;
+  background: url(../images/slider.icon.next.png) no-repeat 0 0 / cover;
+}
+
+/* WWF 활동 분야 */
+.activity {
+  margin-top: 150px;
+  margin: 0 110px;
+}
+
+.activity-list {
+  margin-top: 30px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.activity-list li {
+  margin: 0 20px;
+  width: 398px;
+  height: 417px;
+  position: relative;
+}
+
+.activity-list li a {
+  width: 100%;
+}
+
+.activity-list li a figure {
+  height: 80%;
+}
+
+.activity-list li a figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.activity-list li a strong {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+  padding: 20px 0;
+  height: 20%;
+  width: 100%;
+  background: #d6cece;
+}
+
+/* 후버 */
+.hover-info {
+  padding: 0 50px;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  /* flex-direction: column; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  /* 보이지 않게 */
+  transition: 0.4s;
+  font-size: 20px;
+}
+
+.hover-info p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.activity-list li:hover .hover-info {
+  opacity: 1;
+  /* 후버됬을때 hover-0info내용이 보여짐 */
+}
+
+.activity-list .slick-prev {
+  padding: 30px;
+  text-indent: -999em;
+  overflow: hidden;
+  transform: translateY(300%);
+  width: 50px;
+  height: 50px;
+  background: url(../images/slider.icon.png) no-repeat 0 0 / cover;
+}
+
+.activity-list .slick-next {
+  padding: 30px;
+  text-indent: -999em;
+  overflow: hidden;
+  transform: translateY(300%);
+  width: 50px;
+  height: 50px;
+  background: url(../images/slider.icon.next.png) no-repeat 0 0 / cover;
+}
+
+/* 캠페인 */
+
+.campaign-list {
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+.campaign-list li {
+  margin: 20px;
+  transition: 0.4s;
+}
+
+.campaign-list li div {
+  height: 200px;
+  border: 1px solid #cccaca;
+  background: #ffff;
+  padding: 20px;
+}
+
+.campaign-list li div strong {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0a0a0a;
+  line-height: 1.5;
+}
+
+.campaign-list li div p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #666;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+/* hover */
+.campaign-list li:hover {
+  transform: scale(1.1);
+  border: 5px solid #e98300;
+}
+
+/* WWF와 후원자님이 함께 만들어가는 변화 */
+
+.support-list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.support-list li {
+  padding: 40px;
+}
+
+.support-list li p {
+  width: 336px;
+  height: 36px;
+  color: #535353;
+  margin-top: 20px;
+  line-height: 1.3;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.support-list li p:hover {
+  width: 336px;
+  height: 36px;
+  color: #e98300;
+  margin-top: 20px;
+  line-height: 1.3;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* 동영상 */
+
+.video {
+  margin-top: 50px;
+  aspect-ratio: 16/9;
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* 후원 */
+.donation {
+  position: relative;
+  background: url(../images/WWF-with-sup-park-bg.jpg) no-repeat 0 0 / cover;
+  /* 이미지 고정 */
+  background-attachment: fixed;
+  /* 내부 글씨와 여백 */
+  padding: 200px;
+}
+
+.donation-con {
+  text-align: center;
+}
+
+.donation-con h2 {
+  font-weight: 700;
+  font-size: 50px;
+  color: #ffff;
+}
+
+.donation-list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.donation-list li {
+  /* 테두리 */
+  border: 1px solid #ffff;
+  border-radius: 20px 20px 20px 20px;
+  /* 여백 */
+  padding: 10px 10px;
+  margin: 50px 20px;
+  /* 색상 */
+  color: #ffff;
+  background: rgba(0, 0, 0, 0.5);
+  /* 글씨 */
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.donation-list li:hover {
+  background: #e98300;
+  border: 3px solid #fff;
+}
+
+.donation-list li strong {
+  font-weight: 700;
+}
+
+/* 후원버튼 */
+.btns a {
+  font-size: 25px;
+  background: #e98300;
+  padding: 10px 30px;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: 20px;
+}
+
+.btns a:hover {
+  font-size: 25px;
+  background: #fff;
+  padding: 10px 30px;
+  letter-spacing: 2px;
+  color: #e98300;
+  border: 1px solid #e98300;
+  margin: 20px;
+}
+
+/* 하단 마지막 */
+#footer {
+  /* 색상 */
+  background: #515151;
+  color: #ffff;
+  /* 여백 */
+  text-align: center;
+  padding: 30px;
+  line-height: 2;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer strong {
+  padding: 20px;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+#footer address {
+  border-top: 0.5px solid #ffff;
+}
+
+.footer-wrap address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.address-1 {
+  display: flex;
+  width: 748px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.address-2 {
+  display: flex;
+  width: 1215px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.address-3 {
+  display: flex;
+  margin-top: 30px;
+}
+
+#footer address p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#footer address p:hover {
+  font-size: 15px;
+  font-weight: 500;
+  color: #e98300;
+  transition: 0.4s;
+}
+
+/* inner 크기 */
+@media screen and (max-width: 1044px) {
+  .inner {
+    width: 90%;
+  }
+}

@@ -1,0 +1,239 @@
+@charset 'utf-8';
+
+.indicator {
+  position: fixed;
+  top: 50%;
+  right: 110px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.indicator a.active {
+  background: url(../img/indicator_active.png);
+}
+
+.about-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding-bottom: 200px;
+}
+
+.about-wrap figure {
+  width: 550px;
+  height: 550px;
+  border: 20px solid #fff2cf;
+  box-shadow: var(--img-shadow);
+  position: relative;
+}
+
+.about-wrap figure::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-5deg);
+  width: 195px;
+  height: 54px;
+  background: url(../img/aboutme-maskingtape.png) no-repeat 50% / contain;
+}
+
+.info-content h2 {
+  font-size: 40px;
+}
+.info-content h2 strong {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+}
+.info-content h2 strong b {
+  font-size: 60px;
+}
+.info-content h2 span {
+  display: block;
+  transform: translateX(100px);
+}
+.info-content p {
+  font-family: 'Pretendard';
+  font-weight: 300;
+  width: 528px;
+  margin-top: 25px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.hashtag {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.hashtag li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 33px;
+  background: url(../img/nametag.png) no-repeat 50% / contain;
+  font-size: 20px;
+  box-shadow: var(--sticker-shadow);
+}
+
+.profile {
+  font-family: 'Pretendard';
+  margin-top: 150px;
+  font-size: 16px;
+  display: flex;
+  justify-content: end;
+}
+
+.profile dl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  color: #333;
+}
+.profile dl dt {
+  width: 30%;
+  margin-top: 10px;
+  border-right: 1px solid var(--point-color);
+}
+.profile dl dd {
+  width: 70%;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+.about-2-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-2-wrap h3 {
+  font-size: 48px;
+}
+
+.about-2-top {
+  display: flex;
+  gap: 60px;
+}
+
+.experience dl {
+  font-family: 'Pretendard';
+  display: flex;
+  flex-wrap: wrap;
+  width: 570px;
+  margin-top: 20px;
+}
+.experience dl dt {
+  width: 110px;
+  border-right: 1px solid var(--point-color);
+  margin-top: 20px;
+}
+.experience dl dd {
+  width: 76%;
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
+.certificate dl {
+  font-family: 'Pretendard';
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  margin-top: 20px;
+}
+.certificate dl dt {
+  width: 75px;
+  border-right: 1px solid var(--point-color);
+  margin-top: 20px;
+}
+.certificate dl dd {
+  width: 70%;
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
+.skills {
+  margin-top: 100px;
+  padding-bottom: 200px;
+}
+.skills ul {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+.skills ul li {
+  text-align: center;
+}
+.skills ul li figure {
+  width: 70px;
+  height: 70px;
+}
+
+.skills ul li figure img {
+  filter: drop-shadow(var(--sticker-shadow));
+  object-fit: contain;
+}
+.skills ul li p {
+  font-size: 36px;
+}
+
+.chapter strong {
+  position: relative;
+  /* border: 1px solid #000; */
+  display: inline-block;
+  width: 200px;
+}
+.chapter strong::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 50px;
+  background: url(../img/aboutme_highlighter.png) no-repeat 0 0 / cover;
+  opacity: 0.8;
+  transform: rotate(-2deg);
+
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+  z-index: -1;
+
+  animation: highlighter 1s both linear 0.5s;
+}
+
+@keyframes highlighter {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  40% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+  1000% {
+    transform: rotate(0deg);
+  }
+}
+
+.wiggle {
+  animation: wiggle 0.4s both;
+}

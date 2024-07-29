@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프린지</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/sub1.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/navpc.js"></script>
+  </head>
+
+  <body>
+    <!-- 모바일 햄버거 버튼 -->
+    <a href="#" class="btn_menu">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </a>
+    <div class="lnb_bg"><i class="hidden">배경 어둡게</i></div>
+
+    <div class="hidden">
+      <a href="#top_bar">header</a>
+      <a href="#content">main</a>
+      <a href="#bottom_bar">footer</a>
+    </div>
+
+    <!-- header:s -->
+    <header id="top_bar">
+      <div class="inner">
+        <nav class="flexsb">
+          <h1 class="logo">
+            <a href="./index.html">
+              <img src="./img/logo.png" alt="프린지" />
+            </a>
+          </h1>
+
+          <!-- gnb_lnb : s pc-->
+          <ul id="gnbA" class="gnb">
+            <li>
+              <a href="#">페스티벌 소개</a>
+              <ul class="submenu">
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#">서울프린지페스티벌 2023</a></li>
+                <li><a href="#">만드는 사람들</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">프로그램 소개</a>
+              <ul class="submenu">
+                <li><a href="#">자유참가프로그램</a></li>
+                <li><a href="#">기획프로그램</a></li>
+                <li><a href="#">에코프린지</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">티켓 구매</a>
+              <ul class="submenu">
+                <li><a href="#">만드는 사람들</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">페스티벌 가이드</a>
+              <ul class="submenu submenu4">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">페스티벌 일정</a></li>
+                <li><a href="#">현장 가이드</a></li>
+                <li><a href="#">자주 묻는 질문</a></li>
+                <li><a href="#">오시는 길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">아카이브</a>
+              <ul class="submenu submenu5">
+                <li><a href="#">역대 프린지</a></li>
+                <li><a href="#">뉴스레터</a></li>
+                <li><a href="#">현장스케치</a></li>
+                <li><a href="#">페스티벌 사진</a></li>
+                <li><a href="#">언론 속 프린지</a></li>
+                <li><a href="#">축제기록집</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">후원하기</a>
+              <ul class="submenu submenu6">
+                <li><a href="#">프린지 후원</a></li>
+                <li><a href="#">함께하는 사람들</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- gnb_lnb :e pc-->
+
+          <!-- my_list pc -->
+          <div class="my_list">
+            <ul class="flexsb">
+              <li><a href="#">join</a></li>
+              <li><a href="#">login</a></li>
+              <li><a href="#">eng</a></li>
+              <li><a href="#">search</a></li>
+            </ul>
+          </div>
+
+          <!-- 모바일 my_list -->
+          <div class="my_list_tamo">
+            <ul>
+              <li>
+                <a href="#"> <i class="hidden">eng</i></a>
+              </li>
+              <li>
+                <a href="#"> <i class="hidden">search</i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- 모바일 lnb tablet -->
+      <div id="lnb_mobile" class="menu_wrap .lnb_list">
+        <div id="lnb_TA" class="lnb_list_TA">
+          <div class="my_list_TA">
+            <ul class="subtex">
+              <li><a href="#">join</a></li>
+              <li><a href="#">login</a></li>
+              <li><a href="#">eng</a></li>
+              <li><a href="#">search</a></li>
+            </ul>
+          </div>
+
+          <ul id="lnb_inner_TA" class="lnb_inner_TA">
+            <li>
+              <a href="#" class="subtex">페스티벌 소개</a>
+              <ul class="subtex_list">
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#">서울프린지페스티벌 2023</a></li>
+                <li><a href="#">만드는 사람들</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="subtex">프로그램 소개</a>
+              <ul class="subtex_list">
+                <li><a href="#">자유참가프로그램</a></li>
+                <li><a href="#">기획프로그램</a></li>
+                <li><a href="#">에코프린지</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="subtex"> 티켓 구매</a>
+              <ul class="subtex_list">
+                <li><a href="#">만드는 사람들</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="subtex">페스티벌 가이드</a>
+              <ul class="subtex_list">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">페스티벌 일정</a></li>
+                <li><a href="#">현장 가이드</a></li>
+                <li><a href="#">자주 묻는 질문</a></li>
+                <li><a href="#">오시는 길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="subtex">아카이브</a>
+              <ul class="subtex_list">
+                <li><a href="#">역대 프린지</a></li>
+                <li><a href="#">뉴스레터</a></li>
+                <li><a href="#">현장스케치</a></li>
+                <li><a href="#">페스티벌 사진</a></li>
+                <li><a href="#">언론 속 프린지</a></li>
+                <li><a href="#">축제기록집</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="subtex">후원하기</a>
+              <ul class="subtex_list">
+                <li><a href="#">프린지 후원</a></li>
+                <li><a href="#">함께하는 사람들</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="lnb_sns_icon subtex">
+            <li>
+              <a href="#"><i class="hidden">페이스북</i><img src="./img/24iconoir_facebook.svg" alt="페이스북" /></a>
+            </li>
+            <li>
+              <a href="#"><i class="hidden">인스타그램</i><img src="./img/24instagram.svg" alt="인스타그램" /></a>
+            </li>
+            <li>
+              <a href="#"><i class="hidden">유튜브</i><img src="./img/24youtube.svg" alt="유튜브" /></a>
+            </li>
+            <li>
+              <a href="#"><i class="hidden">블로그</i><img src="./img/24tabler_brand-blogger.svg" alt="블로그" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header:e -->
+    <hr />
+
+    <!-- main :s -->
+    <main id="sub_content">
+      <div class="pc_location">
+        <div class="inner">
+          <div class="container_box">
+            <div class="location_ctn">
+              <ul class="location_list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">페스티벌 소개</a></li>
+                <li><a href="./about.html">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 타블렛 서브 네비 -->
+      <ul class="sub_nav">
+        <li>
+          <a href="#">About</a>
+          <ul class="sub_LNB_list">
+            <li><a href="#">서울프린지페스티벌 2022</a></li>
+            <li><a href="#">만드는 사람들</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <section class="about_pc_1">
+        <div class="inner">
+          <div class="container_box">
+            <div class="common_th">
+              <h1>About</h1>
+            </div>
+
+            <div class="sub_container_wrap">
+              <div class="about_title_pc about_title1">
+                <figure class="art_photo"><img src="./img/about01.jpg" alt="서울프린지페스티벌" /></figure>
+                <div class="txt_titpho">
+                  <div class="art_txt">
+                    <h2>본질부터 자유로운</h2>
+                    <h3>서울프린지페스티벌</h3>
+                  </div>
+                  <span>예술가의 자유로운 시도와 그들의 주체성을 지지하는 독립예술축제, 서울프린지페스티벌</span>
+                  <p>
+                    1998년 대학로에서 열린 ‘독립예술제’로 시작된 서울프린지페스티벌은 매년 여름, 연극, 무용, 음악,
+                    퍼포먼스, 시각, 영상 등의 다양한 분야의 예술가들이 참여하는 축제입니다.작품이나 예술가에 대한 심사,
+                    선정이 없는 자유참가의 원칙을 두고 있으며, 모두에게 참여의 기회를 개방하고 있습니다. 정형화된 틀에서
+                    벗어나 공간을 실험하고 장르와 형식을 넘나드는예술가들의 새로운 시도, 색다른 도전, 자유로운 작품
+                    발표가 가능한 축제 서울프린지페스티벌, 올해도 계속됩니다.
+                  </p>
+                </div>
+              </div>
+              <div class="about_title_pc about_title2">
+                <figure class="art_photo"><img src="./img/about02.jpg" alt="서울프린지페스티벌" /></figure>
+
+                <div class="txt_titpho">
+                  <span>예술로 세상을 움직이는 서울프린지네트워크</span>
+                  <p>
+                    서울프린지페스티벌을 주최하는 서울프린지네트워크는 독립적이고 주체적인 예술가들의 실험적인
+                    창작활동을 지속적으로 지원합니다. 문화행사 기획, 예술교육 및 문화예술매개공간운영, 축제 기획 및
+                    운영을 진행하는 문화예술분야 사회적 기업으로, 예술과 사회를 연결할 수 있는 지점을 고민합니다. 또한
+                    독립예술웹진 ‘인디언밥’과 연계하여 작품 연구 및 비평을 진행하며 예술 환경의 담론을 형성하며, 축제의
+                    다음을 바라보며 예술가들과 관객들의 관계망을 형성합니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about_pc_2">
+        <div class="img_box">
+          <figure><i class="hidden">사진프린지 예술가 선언문</i></figure>
+          <h4>프린지 예술가 선언문</h4>
+        </div>
+        <div class="txt_ctn">
+          <div class="inner">
+            <div class="container_box">
+              <pre>
+            서울프린지페스티벌에 참여한 예술가로서
+            나는 내가 축제에 이룬 성과들을
+            다양한 방식으로 나눌 것입니다.
+
+            나는 '나'의 예술이 존중받아야 하듯,
+            또 다른 '나'의 예술로 존중할 것입니다.
+
+            나는 동료 예술가들이 겪는 삶의 고통과 죽음을
+            외면하지 않을 것입니다.
+
+            나는 연대나 협력이라는 이름으로 행해지는
+            폭력에 반대할 것입니다.
+
+            나는 지속가능한 예술생태계를 구성하는
+            '우리'중 하나임을 약속합니다.
+            </pre
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main :e -->
+    <hr />
+
+    <!-- footer:s -->
+    <footer id="bottom_bar">
+      <div class="inner bottom_bar_line">
+        <div class="fsns_flex flexsb sec_col">
+          <div class="sns_ctn flexsb">
+            <div class="sns_txt">
+              <h3>서울프린지페스티벌</h3>
+              <p>sns</p>
+            </div>
+            <div class="sns_icon">
+              <ul class="flexsb">
+                <li>
+                  <a href="#"
+                    ><i class="hidden">페이스북</i><img src="./img/24iconoir_facebook.svg" alt="페이스북"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"><i class="hidden">인스타그램</i><img src="./img/24instagram.svg" alt="인스타그램" /></a>
+                </li>
+                <li>
+                  <a href="#"><i class="hidden">유튜브</i><img src="./img/24youtube.svg" alt="유튜브" /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="hidden">블로그</i><img src="./img/24tabler_brand-blogger.svg" alt="블로그"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="support_ctn">
+            <a href="#" class="support_txt flexscc">후원하기</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 개인정보취급방침 -->
+      <div class="fpolicy_flex">
+        <div class="inner">
+          <ul class="policy_list sec_col">
+            <li><a href="#">개인정보취급방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">이메일무단수집거부</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- footer 로고 및 주소 -->
+      <div class="ffringe_flex">
+        <div class="inner">
+          <div class="address_wid sec_col">
+            <div class="foot_logo">
+              <a href="#"><img src="./img/foot_logo.png" alt="프린지" /></a>
+            </div>
+            <address>
+              <p>
+                SEOUL FRINGE FESTIVAL 서울시 은평구 통일로 684, 서울혁신파크 미래청 4층 405호서울프린지네트워크 (우
+                03371)
+              </p>
+              <p>T. +82.2.325.8150 F. +82.2.325.8992 E-mail. seoulfringe@hanmail.net</p>
+              <p>
+                대표자 오성화 개인정보관리책임자 오성화 통신판매신고번호 제2005-03385호 사업자정보확인은
+                공정거래사이트와 연결됩니다.
+              </p>
+              <p>Copyright ⓒ 2017 Seoul Fringe Network All right reserved</p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer:e -->
+  </body>
+</html>

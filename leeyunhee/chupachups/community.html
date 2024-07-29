@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community</title>
+
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="inner">
+        <div class="top-nav">
+          <img src="./img/ico-top-2023.png" alt="top-ico" />
+        </div>
+        <nav>
+          <h1 class="logo">
+            <a href="./index.html"><i class="hidden">Chupachups</i></a>
+          </h1>
+
+          <ul class="gnb">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product.html">Product</a></li>
+            <li><a href="./event.html">Event</a></li>
+            <li><a href="./story.html">Story</a></li>
+            <li><a href="./community.html">Community</a></li>
+          </ul>
+
+          <div class="right-nav">
+            <img src="./img/ico-top-menu.png" alt="메뉴" />
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="main-wrap">
+        <h1 class="hidden">Community</h1>
+        <figure><img src="./img/img-community.jpg" alt="Community" /></figure>
+      </section>
+    </main>
+
+    <script>
+      let list = document.querySelectorAll('.gnb li a');
+      list.forEach((link) => {
+        let letters = link.textContent.split('');
+        link.textContent = '';
+        letters.forEach((letter, i) => {
+          i += 1;
+          let span = document.createElement('span');
+          let delay = i / 15;
+
+          let letterOut = document.createElement('span');
+          letterOut.textContent = letter;
+          letterOut.style.TransitionDelay = `${delay}s`;
+          letterOut.classList.add('out');
+          span.append(letterOut);
+
+          let letterIn = document.createElement('span');
+          letterIn.textContent = letter;
+          letterIn.style.webkitTransitionDelay = `${delay}s`;
+          letterIn.classList.add('in');
+          span.append(letterIn);
+
+          link.append(span);
+        });
+      });
+    </script>
+  </body>
+</html>

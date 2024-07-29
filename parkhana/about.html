@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.parkhana.com" />
+    <meta property="og:title" content="Hana's portfolio" />
+    <meta property="og:image" content="./img/ogimage.png" />
+    <meta property="og:description" content="박하나의 포트폴리오 사이트입니다." />
+    <meta property="og:site_name" content="Hana's portfolio" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <title>hana's portfolio site-about</title>
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/about.js"></script>
+  </head>
+  <body class="about">
+    <div class="loading">
+      <div class="load-mint"></div>
+    </div>
+    <a href="#container"><i class="hidden">본문영역으로 바로가기</i></a>
+    <div class="cursor"><div class="circle"></div></div>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="./index.html"><i class="hidden">logo</i></a>
+        </h1>
+      </nav>
+    </header>
+
+    <div class="gnb">
+      <div class="btn-wrap">
+        <b>Brand new</b>
+        <div class="btn-gnb">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+        </div>
+        <b>UX/UI Designer</b>
+      </div>
+      <div class="menu-bg"></div>
+      <div class="menu-list-wrap">
+        <ul class="menu-list">
+          <li><a href="./about.html">About me</a></li>
+          <li class="left"><a href="./work.html">Work</a></li>
+          <li><a href="./process-portfolio.html">Process</a></li>
+        </ul>
+        <address class="my-info-wrap">
+          <strong>kakao ID: 332baka</strong>
+          <p>phn109@naver.com</p>
+        </address>
+      </div>
+    </div>
+
+    <main id="container">
+      <section class="visual-about">
+        <div class="title-row line1">
+          <div class="mint"><img src="./img/mint.png" alt="mint" /></div>
+          <h2 data-splitting>About</h2>
+        </div>
+        <div class="title-row line2">
+          <h2 data-splitting>Me</h2>
+          <div class="video">
+            <video src="./img/flowerload.mp4" muted loop autoplay></video>
+          </div>
+        </div>
+        <div class="title-row line3">
+          <h2 data-splitting><i>from</i>Barista</h2>
+          <div class="video">
+            <video src="./img/coffee.mp4" muted loop autoplay controls></video>
+          </div>
+        </div>
+        <div class="title-row line4">
+          <h2 data-splitting>Administrator</h2>
+        </div>
+      </section>
+
+      <!-- s: active-partner -->
+      <section class="active-partner">
+        <div data-splitting class="partner-con">
+          <h3 class="sec-title">Active</h3>
+          <div class="con-item">
+            <h4 class="con-title">고객에게 완벽한 순간을 제공하는 파트너에서 디자이너로,</h4>
+            <p class="con-text">
+              창의적이고 아름다운 디자인을 접했을 때 사람들은 즐거움을 경험합니다. 커피라는 매개체로 다양한 사람들을
+              만나고 완벽한 순간을 제공하기 위해 달려온 파트너로서의 제 경험을 토대로 보는 이에게 공감과 즐거움을 주는
+              디자인을 하는 UX/UI 디자이너가 되겠습니다.
+            </p>
+          </div>
+        </div>
+        <div class="partner-img">
+          <figure class="partner-me">
+            <img src="./img/about-partner-me.jpg" alt="woody" />
+          </figure>
+          <figure class="img partner-with">
+            <img src="./img/about-partner-with.jpg" alt="coffeeseminar" />
+          </figure>
+          <figure class="img partner-coffee">
+            <img src="./img/active-mugbadge.jpg" alt="coffeeshot" />
+          </figure>
+        </div>
+      </section>
+      <!-- e: active-partner -->
+
+      <!-- s: active-together -->
+      <section class="active-together">
+        <div class="together-img">
+          <figure class="together-seminar">
+            <img src="./img/together-seminar.jpg" alt="coffee seminar" />
+          </figure>
+          <figure class="together-latteart">
+            <img src="./img/together-latteart.jpg" alt="latte art" />
+          </figure>
+        </div>
+        <div data-splitting class="together-con">
+          <figure class="together-teamwork">
+            <img src="./img/together-workboard.PNG" alt="appservice-workboard" />
+          </figure>
+          <h4 class="con-title">함께 일하기</h4>
+          <div class="con-item">
+            <p class="con-text">
+              바쁘고 촉박한 상황일수록 결국 중요한 것은 함께 일하는 동료들과의 호흡이었고, UX/UI 교육과정 속에서
+              이루어지는 팀 작업에서도 마찬가지였습니다. 열린 분위기에서 데이터를 토대로 한 활발한 토론이 이루어질수록
+              좋은 결과물을 향해 갈 수 있음을 배웠습니다. 디자이너로 근무하며 함께 일하기의 중요함을 잊지 않고, 항상
+              열린 마음으로 업무에 임하겠습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- e: active-together -->
+
+      <!-- s: active-marquee -->
+      <div class="active-marquee">
+        <div class="marquee marquee-active">
+          <span>
+            active active active<img src="./img/active-tracking.jpg" alt="" />active active active
+            <img src="./img/active-travel.jpg" alt="" />
+          </span>
+          <span>
+            active active active<img src="./img/active-tracking.jpg" alt="" />active active active
+            <img src="./img/active-travel.jpg" alt="" />
+          </span>
+        </div>
+        <div class="marquee marquee-static">
+          <span>
+            static static static<img src="./img/static-alc.jpg" alt="" />static static static
+            <img src="./img/static-leaf.jpg" alt="" />static static static<img src="./img/static-alc.jpg" alt="" />
+          </span>
+          <span>
+            static static static<img src="./img/static-alc.jpg" alt="" />static static static
+            <img src="./img/static-leaf.jpg" alt="" />static static static<img src="./img/static-alc.jpg" alt="" />
+          </span>
+        </div>
+      </div>
+      <!-- e: active-marquee -->
+
+      <!-- s: static-checklist-light -->
+      <section class="static-checklist">
+        <div class="static-wrap">
+          <div class="static-con">
+            <h3 class="sec-title">Static</h3>
+            <div class="con-item">
+              <h4 class="con-title">체크리스트 러버</h4>
+              <p class="con-text">
+                인천 소재의 건축, 건설회사의 사무원으로 근무할 당시, 원청사와 관공서에 제출할 다양한 서류 준비를 위해
+                일정이 정확히 지켜져야 했습니다.
+              </p>
+            </div>
+          </div>
+          <figure>
+            <img src="./img/active-coffee.jpg" alt="global coffee master" />
+          </figure>
+        </div>
+
+        <!-- 가로스크롤 시작 영역 -->
+        <div class="horizon-section">
+          <!-- s: static-checklist-dark -->
+          <section class="static-checklist2">
+            <div class="static-wrap">
+              <div class="static-con">
+                <h3 class="sec-title">Static</h3>
+                <div class="con-item">
+                  <h4 class="con-title">체크리스트 러버</h4>
+                  <p class="con-text">
+                    인천 소재의 건축, 건설회사의 사무원으로 근무할 당시, 원청사와 관공서에 제출할 다양한 서류 준비를
+                    위해 일정이 정확히 지켜져야 했습니다.
+                  </p>
+                </div>
+              </div>
+              <figure>
+                <img src="./img/office.jpg" alt="office" />
+              </figure>
+            </div>
+          </section>
+          <!-- e: static-checklist-dark -->
+
+          <!-- s: static-checklist3 -->
+          <section class="static-checklist3">
+            <div class="static-wrap">
+              <div class="static-img">
+                <h3 data-splitting class="sec-title">Static</h3>
+                <div class="static-img-wrap">
+                  <figure class="static-check">
+                    <img src="./img/static-check-list.png" alt="checklist" />
+                  </figure>
+                  <figure class="static-planer">
+                    <img src="./img/static-planner.png" alt="planner" />
+                  </figure>
+                </div>
+              </div>
+              <div data-splitting class="static-con">
+                <figure class="static-lover">
+                  <img src="./img/static-alc.jpg" alt="alc" />
+                </figure>
+                <div class="con-item">
+                  <h4 class="con-title">체크리스트 러버</h4>
+                  <p class="con-text">
+                    실수를 줄이기 위해 항상 일정표와 체크리스트를 만들어 관리하는 습관을 만들었고, 놓치는 업무가 없도록
+                    하였습니다. 디자이너로서 고객과의 약속을 정확하게 지킬 수 있는, 신뢰할 수 있는 디자이너가
+                    되겠습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- e: static-checklist3 -->
+
+          <!-- s: about-ending -->
+          <section class="about-ending">
+            <div class="wrapper">
+              <h5 data-splitting>to UX/UI Designer</h5>
+              <a href="./work.html" class="ending-wrap">
+                <div class="marquee ending">
+                  <span>
+                    work work work<video src="./img/flowerload.mp4" muted loop autoplay></video>work work work<video
+                      src="./img/coffee.mp4"
+                      muted
+                      loop
+                      autoplay
+                    ></video>
+                  </span>
+                  <span>
+                    work work work<video src="./img/flowerload.mp4" muted loop autoplay></video>work work work<video
+                      src="./img/coffee.mp4"
+                      muted
+                      loop
+                      autoplay
+                    ></video>
+                  </span>
+                  <span>
+                    work work work<video src="./img/flowerload.mp4" muted loop autoplay></video>work work work<video
+                      src="./img/coffee.mp4"
+                      muted
+                      loop
+                      autoplay
+                    ></video>
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="mint-wrap">
+              <div class="mint-fly"></div>
+            </div>
+          </section>
+        </div>
+        <!-- e: about-ending -->
+      </section>
+      <!-- e: static-checklist-light -->
+    </main>
+  </body>
+</html>

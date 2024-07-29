@@ -1,0 +1,142 @@
+@charset 'utf-8';
+
+.gnb li:nth-child(1) a {
+  border-bottom: 1px solid var(--point-color);
+}
+
+body.light-mode .gnb li:nth-child(1) a {
+  border-bottom: 1px solid #f57651;
+}
+
+.sec-inner {
+  width: 168.9rem;
+  /* background: rgba(255, 255, 85, 0.274); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem auto;
+}
+.section.Profile figure {
+  width: 53.6rem;
+  height: 71.5rem;
+}
+.section.Skill figure {
+  width: 69.5rem;
+  height: 66.5rem;
+  /* background: #9c2e2e; */
+  padding: 6rem 4rem;
+}
+.section.Background figure {
+  width: 61.2rem;
+  height: 61.2rem;
+  /* background: #9c2e2e; */
+}
+.section.Traveling figure {
+  width: 80rem;
+  height: 67.8rem;
+  /* background: #9c2e2e; */
+}
+.info {
+  width: 50%;
+  /* background: #4617c5; */
+}
+h2 {
+  font-size: 6rem;
+  font-family: 'ROKAF';
+  color: var(--main-color);
+}
+.strong-wrap {
+  display: flex;
+  gap: 1.8rem;
+  margin-top: 5rem;
+}
+strong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  border: 1px solid var(--point-color);
+  border-radius: 4rem;
+  width: 12rem;
+  height: 4rem;
+  color: var(--point-color);
+}
+p {
+  margin-top: 5rem;
+}
+
+.ico-wrap {
+  display: flex;
+  margin-top: 3.8rem;
+  gap: 1rem;
+}
+
+.ico {
+  display: block;
+  width: 4.1rem;
+  height: 4.1rem;
+  background: no-repeat 50%;
+}
+.ico.ps {
+  background-image: url(../img/icon-afterEffects.png);
+}
+.ico.ps {
+  background-image: url(../img/icon-photoshop.svg);
+}
+.ico.ai {
+  background-image: url(../img/icon-ai.svg);
+}
+.ico.figma {
+  background-image: url(../img/icon-figma.svg);
+}
+.ico.html {
+  background-image: url(../img/icon-html.svg);
+}
+.ico.css {
+  background-image: url(../img/icon-css.svg);
+}
+.ico.js {
+  background-image: url(../img/icon-js.svg);
+}
+.ico.jq {
+  background-image: url(../img/icon-jq.svg);
+}
+
+.go-top {
+  position: fixed;
+  bottom: 100px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+/* .fp-tableCell {
+  vertical-align: top;
+} */
+
+.indicator {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 50px;
+  z-index: 1;
+}
+
+.indicator > a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.indicator > a.active {
+  background: var(--main-color);
+  border: none;
+}

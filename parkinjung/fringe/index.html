@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>프린지</title>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="./css/aos.css">
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/slick.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <script src="./js/jquery-3.7.0.min.js"></script>
+  <!-- <script src="./js/jquery-3.3.1.min.js"></script> -->
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <script src="./js/aos.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/navpc.js"></script>
+  <script src="./js/notice.js"></script>
+  <script src="./js/sildImg.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- 모바일 햄버거 버튼 -->
+  <a href="#" class="btn_menu">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </a>
+  <div class="lnb_bg"><i class="hidden">배경 어둡게</i></div>
+
+  <div class="hidden">
+    <a href="#top_bar">header</a>
+    <a href="#content">main</a>
+    <a href="#bottom_bar">footer</a>
+  </div>
+
+  <!-- header:s -->
+  <header id="top_bar">
+    <div class="inner">
+      <nav class="flexsb">
+        <h1 class="logo">
+          <a href="./index.html">
+            <img src="./img/logo.png" alt="프린지" />
+          </a>
+        </h1>
+
+        <!-- gnb_lnb : s pc-->
+        <ul id="gnbA" class="gnb">
+          <li>
+            <a href="#">페스티벌 소개</a>
+            <ul class="submenu">
+              <li><a href="./about.html">About</a></li>
+              <li><a href="#">서울프린지페스티벌 2023</a></li>
+              <li><a href="#">만드는 사람들</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">프로그램 소개</a>
+            <ul class="submenu">
+              <li><a href="#">자유참가프로그램</a></li>
+              <li><a href="#">기획프로그램</a></li>
+              <li><a href="#">에코프린지</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">티켓 구매</a>
+            <ul class="submenu">
+              <li><a href="#">만드는 사람들</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">페스티벌 가이드</a>
+            <ul class="submenu submenu4">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">페스티벌 일정</a></li>
+              <li><a href="#">현장 가이드</a></li>
+              <li><a href="#">자주 묻는 질문</a></li>
+              <li><a href="#">오시는 길</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">아카이브</a>
+            <ul class="submenu submenu5">
+              <li><a href="#">역대 프린지</a></li>
+              <li><a href="#">뉴스레터</a></li>
+              <li><a href="#">현장스케치</a></li>
+              <li><a href="#">페스티벌 사진</a></li>
+              <li><a href="#">언론 속 프린지</a></li>
+              <li><a href="#">축제기록집</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">후원하기</a>
+            <ul class="submenu submenu6">
+              <li><a href="#">프린지 후원</a></li>
+              <li><a href="#">함께하는 사람들</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- gnb_lnb :e pc-->
+
+        <!-- my_list pc -->
+        <div class="my_list">
+          <ul class="flexsb">
+            <li><a href="#">join</a></li>
+            <li><a href="#">login</a></li>
+            <li><a href="#">eng</a></li>
+            <li><a href="#">search</a></li>
+          </ul>
+        </div>
+
+        <!-- 모바일 my_list -->
+        <div class="my_list_tamo">
+          <ul>
+            <li>
+              <a href="#"> <i class="hidden">eng</i></a>
+            </li>
+            <li>
+              <a href="#"> <i class="hidden">search</i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- 모바일 lnb tablet -->
+    <div id="lnb_mobile" class="menu_wrap .lnb_list">
+      <div id="lnb_TA" class="lnb_list_TA">
+        <div class="my_list_TA">
+          <ul class="subtex">
+            <li><a href="#">join</a></li>
+            <li><a href="#">login</a></li>
+            <li><a href="#">eng</a></li>
+            <li><a href="#">search</a></li>
+          </ul>
+        </div>
+
+        <ul id="lnb_inner_TA" class="lnb_inner_TA">
+          <li>
+            <a href="#" class="subtex">페스티벌 소개</a>
+            <ul class="subtex_list">
+              <li><a href="./about.html">About</a></li>
+              <li><a href="#">서울프린지페스티벌 2023</a></li>
+              <li><a href="#">만드는 사람들</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="subtex">프로그램 소개</a>
+            <ul class="subtex_list">
+              <li><a href="#">자유참가프로그램</a></li>
+              <li><a href="#">기획프로그램</a></li>
+              <li><a href="#">에코프린지</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="subtex"> 티켓 구매</a>
+            <ul class="subtex_list">
+              <li><a href="#">만드는 사람들</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="subtex">페스티벌 가이드</a>
+            <ul class="subtex_list">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">페스티벌 일정</a></li>
+              <li><a href="#">현장 가이드</a></li>
+              <li><a href="#">자주 묻는 질문</a></li>
+              <li><a href="#">오시는 길</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="subtex">아카이브</a>
+            <ul class="subtex_list">
+              <li><a href="#">역대 프린지</a></li>
+              <li><a href="#">뉴스레터</a></li>
+              <li><a href="#">현장스케치</a></li>
+              <li><a href="#">페스티벌 사진</a></li>
+              <li><a href="#">언론 속 프린지</a></li>
+              <li><a href="#">축제기록집</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="subtex">후원하기</a>
+            <ul class="subtex_list">
+              <li><a href="#">프린지 후원</a></li>
+              <li><a href="#">함께하는 사람들</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="lnb_sns_icon subtex">
+          <li>
+            <a href="#"><i class="hidden">페이스북</i><img src="./img/24iconoir_facebook.svg" alt="페이스북" /></a>
+          </li>
+          <li>
+            <a href="#"><i class="hidden">인스타그램</i><img src="./img/24instagram.svg" alt="인스타그램" /></a>
+          </li>
+          <li>
+            <a href="#"><i class="hidden">유튜브</i><img src="./img/24youtube.svg" alt="유튜브" /></a>
+          </li>
+          <li>
+            <a href="#"><i class="hidden">블로그</i><img src="./img/24tabler_brand-blogger.svg" alt="블로그" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- header:e -->
+  <hr />
+
+  <!-- main :s -->
+  <main id="content">
+    <!-- 좌측 고정 -->
+    <div class="layer_floating" data-aos="fade-right" data-aos-easing="ease-in-out-cubic" data-aos-anchor=".show">
+      <div class="top_icon">
+        <a href="#"><i class="hidden">1</i></a>
+        <a href="#"><i class="hidden">2</i></a>
+        <a href="#"><i class="hidden">3</i></a>
+      </div>
+
+      <div class="top_sec">
+        <a href="#sec01"><i class="hidden">1</i></a>
+        <a href="#sec02"><i class="hidden">2</i></a>
+        <a href="#sec03"><i class="hidden">3</i></a>
+        <a href="#sec04"><i class="hidden">4</i></a>
+      </div>
+    </div>
+
+    <!-- sild_contents:s 슬라이드-->
+    <section id="sec01" class="sild_contents">
+      <h2><i class="hidden">슬라이드</i></h2>
+      <div class="sild_img">
+        <ul class="flexsb slider">
+          <li>
+            <a href="#"><img src="./img/01.jpg" alt="슬라이드 이미지" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/02.jpg" alt="슬라이드 이미지" /></a>
+          </li>
+        </ul>
+        <!-- 제어버튼 -->
+        <button class="btn btn-prev">PREV</button>
+        <button class="btn btn-next">NEXT</button>
+      </div>
+
+      <!-- 비주얼 우측 고정 -->
+      <div class="sild_side_col">
+        <ul class="sild_side_list">
+          <li><a href="#">공연일정</a></li>
+          <li><a href="#">티켓예매</a></li>
+          <li><a href="#">오시는 길</a></li>
+          <li>
+            <ul class="sild_side_sns">
+              <li>
+                <a href="#"><i class="hidden">페이스북</i></a>
+              </li>
+              <li>
+                <a href="#"><i class="hidden">인스타그램</i></a>
+              </li>
+              <li>
+                <a href="#"><i class="hidden">유튜브</i></a>
+              </li>
+              <li>
+                <a href="#"><i class="hidden">블로그</i></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 인디게이터 -->
+      <div class="sild_dot">
+        <ul class="flexscc">
+          <li>
+            <a href="#"><i class="hidden">인디게이터 1</i></a>
+          </li>
+          <li>
+            <a href="#"><i class="hidden">인디게이터 2</i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- sild_contents:e 슬라이드-->
+    <hr />
+
+    <!--  모바일 스케줄-->
+    <section id="sec-schedule" class="schedule">
+      <div class="inner">
+        <h2 class="hidden">스케줄</h2>
+        <ul class="schedule_list">
+          <li><a href="#">공연일정</a></li>
+          <li><a href="#">티켓예매</a></li>
+          <li><a href="#">오시는 길</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- info_contents:s -->
+    <section id="sec02" class="info_contents">
+      <div class="inner">
+        <div class="sec_col flexsb info_tamo">
+          <!-- youtube -->
+          <div class="youtube_con info_ctns media_ctns_tamo">
+            <div class="tab_tit flexsb">
+              <h2 class="tab_tit_icon tab_tit_icon-1">youtube</h2>
+
+              <div class="contents_arrow flexsb you_contents_arrow">
+                <a href="#" class="cnt_prev cnt_hover_on"><i class="hidden">이전</i></a>
+                <a href="#" class="cnt_next cnt_hover_on"><i class="hidden">다음</i></a>
+              </div>
+            </div>
+
+            <div class="ctns_box you_ctns_box">
+              <iframe src="https://www.youtube.com/embed/_mfvWI1XXyk" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/_sKiDvg5ySI" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- instagram -->
+          <div class="info_ctns media_ctns_tamo">
+            <div class="tab_tit flexsb">
+              <h2 class="tab_tit_icon tab_tit_icon-2">instagram</h2>
+              <div class="contents_arrow flexsb">
+                <a href="#" class="cnt_prev cnt_hover_on"><i class="hidden">이전</i></a>
+                <a href="#" class="cnt_next cnt_hover_on"><i class="hidden">다음</i></a>
+              </div>
+            </div>
+            <div class="ctns_box ins_ctns_box">
+              <a href="#"><img src="./img/insta-img.jpg" alt="인스타그램" /></a>
+              <a href="#"><img src="./img/insta-img2.jpg" alt="인스타그램" /></a>
+            </div>
+          </div>
+
+          <!-- 공지사항/뉴스레터 -->
+          <div class="info_ctns notice_tamo">
+            <div id="tab_area" class="tab_tit">
+              <div class="tab_tit flexsb">
+                <ul class="tab_tit_list flexscc">
+                  <li class="li1 on">
+                    <a href="#notice">공지사항</a>
+                  </li>
+                  <li class="li2">
+                    <a href="#news">뉴스레터</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="info_tab_cont">
+                <div id="notice" class="notice tab_ctn_box info_ctns on">
+                  <a href="#" class="btn_more cnt_hover_on"><i class="hidden">더보기</i></a>
+                  <ul class="cotns_list">
+                    <li>
+                      <a href="#">[서울프린지페스티벌2023] 예술가 참가신청 OPEN!</a>
+                      <span class="day">2023-04-27</span>
+                    </li>
+                    <li>
+                      <a href="#">[서울프린지페스티벌2023] 작품 발표 공간 & 예술가 참가신청 안내</a>
+                      <span class="day">2023-04-24</span>
+                    </li>
+                    <li>
+                      <a href="#">[서울프린지페스티벌2023] 모두를 초대합니다.</a>
+                      <span class="day">2023-04-11</span>
+                    </li>
+                    <li>
+                      <a href="#">프린지와 함께 할 기획팀 스탭을 찾습니다! (연수단원)</a>
+                      <span class="day">2023-02-02</span>
+                    </li>
+                    <li>
+                      <a href="#">[서울프린지네트워크 X 완주문화재단] 완주탐사프로젝트가 11.5(토)~11.6(일)에 걸쳐
+                        진행됩니다.</a>
+                      <span class="day">2022-11-01</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div id="news" class="news tab_ctn_box info_ctns">
+                  <a href="#" class="btn_more cnt_hover_on"><i class="hidden">더보기</i></a>
+                  <ul class="cotns_list">
+                    <li>
+                      <a href="#">[프린지514호] 올 여름 지금부터 준비하세요! 예술가 참가신청 OPEN D-1</a>
+                      <span class="day">2023-04-26</span>
+                    </li>
+                    <li>
+                      <a href="#">[프린지513호] 올해도 축제해요. 이 날에...! D-126</a>
+                      <span class="day">2023-04-07</span>
+                    </li>
+                    <li>
+                      <a href="#">[프린지512호] 바쁘다 바빠 프린지 세상 / 근황보고 ② 네트워크 뉴스</a>
+                      <span class="day">2023-03-16</span>
+                    </li>
+                    <li>
+                      <a href="#">[프린지512호] 바쁘다 바빠 프린지 세상 / 근황보고 ① 페스티벌 뉴스</a>
+                      <span class="day">2023-03-16</span>
+                    </li>
+                    <li>
+                      <a href="#">[프린지511호] 우리 2023년에 만나요~</a>
+                      <span class="day">2022-12-29</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- info_contents:e -->
+    <hr />
+
+    <!-- program_indt:s 프로그램-->
+    <section id="sec03" class="program_indt show">
+      <div class="inner">
+        <div class="sec_col">
+          <div class="program_tab flexsb">
+            <div class="plus">
+              <h3>프로그램 <i class="tit_off">소개</i></h3>
+              <a class="cnt_hover_on" href="https://www.seoulfringefestival.net:5632/load.asp?subPage=270"></a>
+            </div>
+            <div class="sec_slide_arrow flexsb">
+              <a href="#" class="sec_slide_prev cnt_hover_on"><i class="hidden">이전</i></a>
+              <a href="#" class="sec_slide_next cnt_hover_on"><i class="hidden">다음</i></a>
+            </div>
+          </div>
+
+          <div class="program_indt_col">
+            <ul class="program_indt_list flexsb">
+              <li>
+                <a href="#"><img src="./img/program.png" alt="사진1" /> </a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/program-1.png" alt="사진2" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/program-2.png" alt="사진3" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/program-3.png" alt="사진4" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/program-4.png" alt="사진5" /></a>
+              </li>
+            </ul>
+
+            <!-- 모바일 사진 -->
+
+            <div class="program_tab_mob">
+              <div class="sec_slide_arrow flexsb">
+                <a href="#" class="sec_slide_prev cnt_hover_on"><i class="hidden">이전</i></a>
+                <a href="#" class="sec_slide_next cnt_hover_on"><i class="hidden">다음</i></a>
+              </div>
+              <ul class="pogram_tamo flexsb">
+                <li>
+                  <a href="#"><img src="./img/progam01.jpg" alt="프로그램" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/progam02.jpg" alt="프로그램" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/progam03.jpg" alt="프로그램" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/progam04.jpg" alt="프로그램" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/progam05.jpg" alt="프로그램" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- program_indt:e 프로그램-->
+    <hr />
+
+    <!-- festival:s 현장사진-->
+    <section id="sec04" class="festival_ctn">
+      <div class="inner">
+        <div class="sec_col">
+          <div class="festival_tab flexsb">
+            <div class="plus">
+              <h3>페스티벌 현장</h3>
+              <a class="cnt_hover_on" href="https://www.seoulfringefestival.net:5632/load.asp?subPage=510"></a>
+            </div>
+
+            <div class="sec_slide_arrow">
+              <a href="#" class="sec_slide_prev cnt_hover_on"><i class="hidden">이전</i></a>
+              <a href="#" class="sec_slide_next cnt_hover_on"><i class="hidden">다음</i></a>
+            </div>
+          </div>
+
+          <!-- 사진 글 -->
+          <div class="festival_list swiper mySwiper">
+            <div class="flexsb swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <figure>
+                    <img src="./img/festival.jpg" alt="페스티벌 사진1" />
+                  </figure>
+                  <div class="on">
+                    <p>[서울프린지페스티벌2022] 8.28 사회적협동조합 살판 @사회적협동조합 살판 photo by. 안부</p>
+                    <span>2022-09-05</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <figure>
+                    <img src="./img/festival-1.jpg" alt="페스티벌 사진2" />
+                  </figure>
+                  <div class="on">
+                    <p>[서울프린지페스티벌2022] 8.23-24 팔꿈치의 활동범위 @이너프라운지 photo by. 양승욱</p>
+                    <span>2022-09-07</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <figure>
+                    <img src="./img/festival-2.jpg" alt="페스티벌 사진3" />
+                  </figure>
+                  <div class="on">
+                    <p>[서울프린지페스티벌2022] 8.13-14 박웅 @이너프라운지 photo by. 우주동물</p>
+                    <span>2022-09-05</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <figure>
+                    <img src="./img/festival-3.jpg" alt="페스티벌 사진4" />
+                  </figure>
+                  <div class="on">
+                    <p>[서울프린지페스티벌2022] 8.25-26 지상두시간 @신촌문화발전소 photo by. 김성일</p>
+                    <span>2022-09-06</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <figure>
+                    <img src="./img/festival-4.jpg" alt="페스티벌 사진5" />
+                  </figure>
+                  <div class="on">
+                    <p>
+                      [서울프린지페스티벌2022] 8.23-25 미친존재감 프로젝트 @플레이스막1 사진제공:미친존재감 프로젝트
+                    </p>
+                    <span>2022-09-06</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <figure>
+                    <img src="./img/festival-5.jpg" alt="페스티벌 사진5" />
+                  </figure>
+                  <div class="on">
+                    <p>[서울프린지페스티벌2022] 8.26-28 타임앵글 @아트스페이스 블루스크린 photo by. 김성일</p>
+                    <span>2022-09-06</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- festival:e 현장사진-->
+  </main>
+  <!-- main :e -->
+  <hr />
+
+  <!-- footer:s -->
+  <footer id="bottom_bar">
+    <div class="inner bottom_bar_line">
+      <div class="fsns_flex flexsb sec_col">
+        <div class="sns_ctn flexsb">
+          <div class="sns_txt">
+            <h3>서울프린지페스티벌</h3>
+            <p>sns</p>
+          </div>
+          <div class="sns_icon">
+            <ul class="flexsb">
+              <li>
+                <a href="#"><i class="hidden">페이스북</i><img src="./img/24iconoir_facebook.svg" alt="페이스북" /></a>
+              </li>
+              <li>
+                <a href="#"><i class="hidden">인스타그램</i><img src="./img/24instagram.svg" alt="인스타그램" /></a>
+              </li>
+              <li>
+                <a href="#"><i class="hidden">유튜브</i><img src="./img/24youtube.svg" alt="유튜브" /></a>
+              </li>
+              <li>
+                <a href="#"><i class="hidden">블로그</i><img src="./img/24tabler_brand-blogger.svg" alt="블로그" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="support_ctn">
+          <a href="#" class="support_txt flexscc">후원하기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 개인정보취급방침 -->
+    <div class="fpolicy_flex">
+      <div class="inner">
+        <ul class="policy_list sec_col">
+          <li><a href="#">개인정보취급방침</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">이메일무단수집거부</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- footer 로고 및 주소 -->
+    <div class="ffringe_flex">
+      <div class="inner">
+        <div class="address_wid sec_col">
+          <div class="foot_logo">
+            <a href="#"><img src="./img/foot_logo.png" alt="프린지" /></a>
+          </div>
+          <address>
+            <p>
+              SEOUL FRINGE FESTIVAL 서울시 은평구 통일로 684, 서울혁신파크 미래청 4층 405호서울프린지네트워크 (우
+              03371)
+            </p>
+            <p>T. +82.2.325.8150 F. +82.2.325.8992 E-mail. seoulfringe@hanmail.net</p>
+            <p>
+              대표자 오성화 개인정보관리책임자 오성화 통신판매신고번호 제2005-03385호 사업자정보확인은
+              공정거래사이트와 연결됩니다.
+            </p>
+            <p>Copyright ⓒ 2017 Seoul Fringe Network All right reserved</p>
+          </address>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init({
+      easing: 'ease-in-out',
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+@charset 'utf-8';
+
+@font-face {
+  font-family: 'PT';
+  font-weight: 400;
+  font-display: swap;
+  src: local('Pretendard Regular'), url('../fonts/Pretendard-Regular.woff2') format('woff2'),
+    url('../fonts/Pretendard-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'PT';
+  font-weight: 500;
+  font-display: swap;
+  src: local('Pretendard Medium'), url('../fonts/Pretendard-Medium.woff2') format('woff2'),
+    url('../fonts/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'PT';
+  font-weight: 700;
+  font-display: swap;
+  src: local('Pretendard Bold'), url('../fonts/Pretendard-Bold.woff2') format('woff2'),
+    url('../fonts/Pretendard-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'PT';
+  font-weight: 800;
+  font-display: swap;
+  src: local('Pretendard ExtraBold'), url('../fonts/Pretendard-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Pretendard-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ROKAF';
+  font-weight: 800;
+  font-display: swap;
+  src: local('ROKAF Sans Bold'), url(../font/ROKAF-Sans-Bold.woff) format('woff');
+}
+
+:root {
+  --main-color: #fae043;
+  --point-color: #00d4de;
+  --text-color: #fff;
+  --bg-color: #000;
+  --trs: 0.4s;
+}
+
+html {
+  font-size: 100%; /* 16px */
+  font-size: 62.5%; /* 10px = 1rem */
+  scroll-behavior: smooth;
+}
+
+hr,
+.hidden {
+  position: absolute;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+::selection {
+  background: var(--main-color);
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font: 2rem/1.5 'PT', sans-serif;
+  color: var(--text-color);
+  word-break: keep-all; /* wbka */
+  text-transform: capitalize; /* ttc */
+  overflow-x: hidden; /* ovxh */
+  background: var(--bg-color);
+}
+
+/* GNB */
+header {
+  padding: 3.8rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.inner {
+  width: 178.4rem;
+  margin: 0 auto;
+  /* background: #ff5; */
+  display: flex;
+}
+.logo {
+  width: 9.9rem;
+  height: 3.9rem;
+  background: url(../img/logo-dark.png) no-repeat 50% / cover;
+  background-size: 90%;
+  cursor: pointer;
+}
+.logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.gnb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 9.5rem;
+  width: 50rem;
+}
+.gnb li a {
+  font-size: 2rem;
+  padding: 1rem 1rem;
+}
+
+.utill-menu {
+  position: absolute;
+  top: 48px;
+  right: 60px;
+}
+
+.open-gnb::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100rem;
+  height: 100vh;
+  background: url(../img/gnb.png) no-repeat 20px 0;
+  transition: 0.4s;
+  z-index: 100;
+}
+
+.open-gnb.active::after {
+  right: -10%;
+}
+
+.open-gnb ul {
+  font-size: 4rem;
+  position: absolute;
+  top: 240%;
+  right: 160px;
+  z-index: 200;
+
+  display: none;
+}
+.open-gnb ul li {
+  margin-top: 20px;
+}
+
+.dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 99;
+}
+
+.btn-menu {
+  display: block;
+  width: 38px;
+  height: 25px;
+  transition: 0.4s;
+  z-index: 200;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-menu b {
+  display: block;
+  width: 38px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 200;
+}
+.btn-menu::before,
+.btn-menu::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transition: 0.4s;
+  z-index: 200;
+}
+
+.btn-menu::before {
+  top: 0;
+  right: 0;
+}
+.btn-menu::after {
+  bottom: 0;
+  left: 0;
+}
+
+.btn-menu:hover.btn-menu::before,
+.btn-menu:hover.btn-menu::after {
+  width: 100%;
+}
+
+.btn-menu.active::before {
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
+  width: 100%;
+}
+.btn-menu.active::after {
+  transform: rotate(-45deg) translateY(-50%);
+  top: 50%;
+  width: 100%;
+}
+
+.btn-menu.active > b {
+  left: 200%;
+}
+
+/* mouse */
+.cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 80px;
+  background: url(../img/mouse-basics.png) no-repeat 0 0;
+  background-size: 80%;
+
+  z-index: 2000;
+
+  /* 포인터 관련 이벤트 막고  */
+  pointer-events: none;
+  /* 사용자에게 선택 되지도 마라 */
+  user-select: none;
+}
+.cursor.hover {
+  background-image: url(../img/mouse-hover.png);
+}
+.cursor.click {
+  background-image: url(../img/mouse-drag.png);
+}
+
+body,
+a,
+a:hover,
+button,
+label {
+  cursor: none !important;
+}
+.spark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(calc(-50% + 10px), -50%);
+  width: 10px;
+  height: 10px;
+  background: var(--point-color);
+  border-radius: 50%;
+  transition: 0.4s;
+  z-index: 1000;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+.spark.active {
+  animation: spark-ani 0.4s;
+}
+
+@keyframes spark-ani {
+  100% {
+    width: 70px;
+    height: 70px;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patagonia</title>
+    <link rel="shortcut icon" href="./img/favicon.jpeg" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+      /* loading-spinner */
+
+      .spinner-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+      }
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        height: 16rem;
+        width: 16rem;
+        filter: url('#goo');
+      }
+
+      @-webkit-keyframes move {
+        0% {
+          transform: translateX(0) translateY(0);
+        }
+        10% {
+          transform: translateX(0) translateY(-350%);
+        }
+        15% {
+          transform: translateX(0) translateY(-400%);
+        }
+        17% {
+          transform: translateX(0) translateY(-400%);
+        }
+        20% {
+          transform: translateX(0) translateY(-350%);
+        }
+        23% {
+          transform: translateX(0) translateY(0);
+        }
+        100% {
+          transform: translateX(0) translateY(0);
+        }
+      }
+
+      @keyframes move {
+        0% {
+          transform: translateX(0) translateY(0);
+        }
+        10% {
+          transform: translateX(0) translateY(-350%);
+        }
+        15% {
+          transform: translateX(0) translateY(-400%);
+        }
+        17% {
+          transform: translateX(0) translateY(-400%);
+        }
+        20% {
+          transform: translateX(0) translateY(-350%);
+        }
+        23% {
+          transform: translateX(0) translateY(0);
+        }
+        100% {
+          transform: translateX(0) translateY(0);
+        }
+      }
+
+      @-webkit-keyframes move2 {
+        0% {
+          transform: translateX(0) translateY(0);
+        }
+        10% {
+          transform: translateX(0) translateY(-370%);
+        }
+        15% {
+          transform: translateX(0) translateY(-530%);
+        }
+        17% {
+          transform: translateX(0) translateY(-530%);
+        }
+        20% {
+          transform: translateX(0) translateY(-450%);
+        }
+        23% {
+          transform: translateX(0) translateY(-150%);
+        }
+        26% {
+          transform: translateX(0) translateY(0);
+        }
+        100% {
+          transform: translateX(0) translateY(0);
+        }
+      }
+
+      @keyframes move2 {
+        0% {
+          transform: translateX(0) translateY(0);
+        }
+        10% {
+          transform: translateX(0) translateY(-370%);
+        }
+        15% {
+          transform: translateX(0) translateY(-530%);
+        }
+        17% {
+          transform: translateX(0) translateY(-530%);
+        }
+        20% {
+          transform: translateX(0) translateY(-450%);
+        }
+        23% {
+          transform: translateX(0) translateY(-150%);
+        }
+        26% {
+          transform: translateX(0) translateY(0);
+        }
+        100% {
+          transform: translateX(0) translateY(0);
+        }
+      }
+
+      .spinner {
+        position: relative;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+
+      .spinner:after {
+        content: '';
+        background: #8ce0ee;
+        border-radius: 50%;
+        height: 1.5rem;
+        width: 1.5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .spinner > .item {
+        height: 1.5rem;
+        width: 1.5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .spinner > .item:nth-of-type(1) {
+        transform: translateX(-100%) translateY(0) rotate(-90deg);
+      }
+
+      .spinner > .item:nth-of-type(2) {
+        transform: translateX(-70%) translateY(-70%) rotate(-45deg);
+      }
+
+      .spinner > .item:nth-of-type(3) {
+        transform: translateX(0) translateY(-100%) rotate(0);
+      }
+
+      .spinner > .item:nth-of-type(4) {
+        transform: translateX(70%) translateY(-70%) rotate(45deg);
+      }
+
+      .spinner > .item:nth-of-type(5) {
+        transform: translateX(100%) translateY(0) rotate(90deg);
+      }
+
+      .spinner > .item:nth-of-type(6) {
+        transform: translateX(70%) translateY(70%) rotate(135deg);
+      }
+
+      .spinner > .item:nth-of-type(7) {
+        transform: translateX(0) translateY(100%) rotate(180deg);
+      }
+
+      .spinner > .item:nth-of-type(8) {
+        transform: translateX(-70%) translateY(70%) rotate(-135deg);
+      }
+
+      .spinner > .item:nth-of-type(1):after {
+        -webkit-animation-delay: 0;
+        animation-delay: 0;
+      }
+
+      .spinner > .item:nth-of-type(2):after {
+        -webkit-animation-delay: 375ms;
+        animation-delay: 375ms;
+      }
+
+      .spinner > .item:nth-of-type(3):after {
+        -webkit-animation-delay: 750ms;
+        animation-delay: 750ms;
+      }
+
+      .spinner > .item:nth-of-type(4):after {
+        -webkit-animation-delay: 1125ms;
+        animation-delay: 1125ms;
+      }
+
+      .spinner > .item:nth-of-type(5):after {
+        -webkit-animation-delay: 1500ms;
+        animation-delay: 1500ms;
+      }
+
+      .spinner > .item:nth-of-type(6):after {
+        -webkit-animation-delay: 1875ms;
+        animation-delay: 1875ms;
+      }
+
+      .spinner > .item:nth-of-type(7):after {
+        -webkit-animation-delay: 2250ms;
+        animation-delay: 2250ms;
+      }
+
+      .spinner > .item:nth-of-type(8):after {
+        -webkit-animation-delay: 2625ms;
+        animation-delay: 2625ms;
+      }
+
+      .spinner > .item:nth-of-type(1):before {
+        -webkit-animation-delay: 0ms;
+        animation-delay: 0ms;
+      }
+
+      .spinner > .item:nth-of-type(2):before {
+        -webkit-animation-delay: 375ms;
+        animation-delay: 375ms;
+      }
+
+      .spinner > .item:nth-of-type(3):before {
+        -webkit-animation-delay: 750ms;
+        animation-delay: 750ms;
+      }
+
+      .spinner > .item:nth-of-type(4):before {
+        -webkit-animation-delay: 1125ms;
+        animation-delay: 1125ms;
+      }
+
+      .spinner > .item:nth-of-type(5):before {
+        -webkit-animation-delay: 1500ms;
+        animation-delay: 1500ms;
+      }
+
+      .spinner > .item:nth-of-type(6):before {
+        -webkit-animation-delay: 1875ms;
+        animation-delay: 1875ms;
+      }
+
+      .spinner > .item:nth-of-type(7):before {
+        -webkit-animation-delay: 2250ms;
+        animation-delay: 2250ms;
+      }
+
+      .spinner > .item:nth-of-type(8):before {
+        -webkit-animation-delay: 2625ms;
+        animation-delay: 2625ms;
+      }
+
+      .spinner > .item:after {
+        content: '';
+        background: #8ce0ee;
+        height: 0.8rem;
+        width: 0.8rem;
+        position: absolute;
+        top: 0.6rem;
+        left: 0.6rem;
+        transform: translateX(0) translateY(0);
+        border-radius: 50%;
+        -webkit-animation: move 3s linear infinite;
+        animation: move 3s linear infinite;
+      }
+
+      .spinner > .item:before {
+        content: '';
+        background: #8ce0ee;
+        height: 0.6rem;
+        width: 0.6rem;
+        position: absolute;
+        top: 0.45rem;
+        left: 0.45rem;
+        transform: translateX(0) translateY(0);
+        border-radius: 50%;
+        -webkit-animation: move2 3s linear infinite;
+        animation: move2 3s linear infinite;
+      }
+      /* e//spinner */
+    </style>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      $(function () {
+        $(window).on('load', function () {
+          setTimeout(function () {
+            $('.spinner-wrap').fadeOut();
+          }, 1500);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- loading - spinner -->
+
+    <div class="spinner-wrap">
+      <div class="container">
+        <div class="spinner">
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+      </div>
+      <svg>
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="
+                                                               1 0 0 0 0 
+                                                               0 1 0 0 0
+                                                               0 0 1 0 0
+                                                               0 0 0 50 -8"
+              result="goo"
+            />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+    <header id="header">
+      <div class="top-menu">
+        <p><a href="#">매장찾기</a></p>
+        <p><a href="#">로그인</a></p>
+      </div>
+
+      <nav>
+        <div class="menu">
+          <h1 class="logo">
+            <a href="./index.html"><i class="hidden">Patagonia</i></a>
+          </h1>
+          <ul class="gnb">
+            <li>
+              <a href="#">Shop</a>
+              <ul class="submenu">
+                <li>
+                  <a href="./index-sub.html">Men’s </a>
+                  <ul class="submenu-menu">
+                    <li><a href="#">모든 상품</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">아우터</a></li>
+                    <li><a href="#">상의</a></li>
+                    <li><a href="#">하의</a></li>
+                    <li><a href="#">언더웨어</a></li>
+                    <li><a href="#">모자</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Women’s</a>
+                  <ul class="submenu-menu">
+                    <li><a href="#">모든 상품</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">아우터</a></li>
+                    <li><a href="#">상의</a></li>
+                    <li><a href="#">하의</a></li>
+                    <li><a href="#">언더웨어</a></li>
+                    <li><a href="#">모자</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Kid’s & baby</a>
+                  <ul class="submenu-menu">
+                    <li><a href="#">모든 상품</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">영유아</a></li>
+                    <li><a href="#">남아</a></li>
+                    <li><a href="#">여아</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">bags & Luggage</a>
+                  <ul class="submenu-menu">
+                    <li><a href="#">모든 상품</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">백팩</a></li>
+                    <li><a href="#">토트,슬링 & 웨이스트 팩</a></li>
+                    <li><a href="#">더플 & 트래블 백</a></li>
+                    <li><a href="#">테크니컬 백</a></li>
+                    <li><a href="#">방수백</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Collections</a>
+                  <ul class="submenu-menu">
+                    <li><a href="#">온라인 전용</a></li>
+                    <li><a href="#">더 책임감 있는 티셔츠</a></li>
+                    <li><a href="#">시원한 여름 반바지</a></li>
+                    <li><a href="#">쿨데일리 티셔츠</a></li>
+                    <li><a href="#">파타고니아 키즈</a></li>
+                    <li><a href="#">MTB의류</a></li>
+                    <li><a href="#">클라이밍의류</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">Activism</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Stories</a></li>
+          </ul>
+          <ul class="icon-menu">
+            <li>
+              <a href="#"><i class="hidden">search</i></a>
+            </li>
+            <li>
+              <a href="#"><i class="hidden">shoppingbasket</i></a>
+            </li>
+            <li>
+              <a href="#"><i class="hidden">menu</i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="container">
+      <!-- s:visual -->
+      <section class="visual">
+        <h2 class="hidden">메인 비주얼</h2>
+        <div class="visual-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="visual-item swiper-slide">
+              <a href="#">
+                <div class="visual-info">
+                  <strong
+                    ><b>Eco-friendly</b> <br />
+                    global outdoor sports brand
+                  </strong>
+                  <strong class="visual-logo"><i class="hidden">Patagonia</i></strong>
+                  <p>There every step of the way.</p>
+                </div>
+                <figure>
+                  <video src="./img/visual-video.mp4" autoplay muted loop></video>
+                </figure>
+              </a>
+            </div>
+            <div class="visual-item swiper-slide">
+              <a href="#">
+                <div class="visual-info">
+                  <strong>Baggies™ & Funhoggers </strong>
+                  <strong class="visual-logo"><i class="hidden">Patagonia</i></strong>
+                  <p>There every step of the way.</p>
+                </div>
+                <figure>
+                  <video src="./img/visual-video02.mp4" autoplay muted loop></video>
+                </figure>
+              </a>
+            </div>
+            <div class="visual-item swiper-slide">
+              <a href="#">
+                <div class="visual-info">
+                  <strong
+                    ><b>With</b> <br />
+                    global outdoor sports brand
+                  </strong>
+                  <strong class="visual-logo"><i class="hidden">Patagonia</i></strong>
+                  <p>There every step of the way.</p>
+                </div>
+                <figure>
+                  <img src="./img/mainbanner-01.jpg" alt="비주얼01" />
+                </figure>
+              </a>
+            </div>
+          </div>
+          <button class="btn-visual btn-prev">
+            <i class="hidden">이전</i>
+          </button>
+          <button class="btn-visual btn-next">
+            <i class="hidden">다음</i>
+          </button>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- e//:visual -->
+      <!-- s:quickbtn -->
+      <div class="quickbtn">
+        <a href="#top"></a>
+      </div>
+      <!-- //e:quickbtn -->
+      <!-- s:category -->
+      <section class="category">
+        <div class="inner">
+          <h2>Category</h2>
+          <ul class="category-list swiper-wrapper">
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Men’s</a></li>
+            <li><a href="#">Women’s</a></li>
+            <li><a href="#">Kid’s & Baby</a></li>
+            <li><a href="#">bags &Luggage</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- //e:category -->
+      <!--s:stories -->
+      <section class="stories">
+        <div class="inner">
+          <h2>Stories</h2>
+          <div class="stories-slider swiper">
+            <ul class="stories-list swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <figure><img src="./img/stories01.jpg" alt="" /></figure>
+                  <div class="stories-info">
+                    <h3>Snow</h3>
+                    <p>Mind Over Mountain</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"
+                  ><figure><img src="./img/stories02.jpg" alt="" /></figure>
+                  <div class="stories-info">
+                    <h3>Surf</h3>
+                    <p>Surfing</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"
+                  ><figure><img src="./img/stories03.jpg" alt="" /></figure>
+                  <div class="stories-info">
+                    <h3>Trail running</h3>
+                    <p>Run to Run</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"
+                  ><figure><img src="./img/stories04.jpg" alt="" /></figure>
+                  <div class="stories-info">
+                    <h3>MountainBike</h3>
+                    <p>Mountain Biking</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"
+                  ><figure><img src="./img/stories05.jpg" alt="" /></figure>
+                  <div class="stories-info">
+                    <h3>Climbing</h3>
+                    <p>Clean Climbing Since 1972</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"
+                  ><figure><img src="./img/stories06.jpg" alt="" /></figure>
+                  <div class="stories-info">
+                    <h3>Fly Fishing</h3>
+                    <p>Fishing</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="paging">
+              <button class="btn-small btn-prev">
+                <i class="hidden">이전</i>
+              </button>
+              <div class="swiper-pagination"></div>
+              <button class="btn-small btn-next">
+                <i class="hidden">다음</i>
+              </button>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+      <!--//e:stories -->
+      <!--s:collection -->
+      <section class="collection">
+        <div class="inner">
+          <h2>Collection</h2>
+
+          <div class="cltn01">
+            <div class="cltn01-info">
+              <h3>Capilene® Cool Daily</h3>
+              <p>Capilene collection을 만나보세요</p>
+              <button class="more"><i class="hidden">more</i></button>
+            </div>
+            <div class="cltn01-slider swiper">
+              <ul class="cltn01-list swiper-wrapper">
+                <li class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img src="./img/collection-01.jpg" alt="" />
+                    </figure>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img src="./img/collection-02.jpg" alt="" />
+                    </figure>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img src="./img/collection-03.jpg" alt="" />
+                    </figure>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img src="./img/collection-04.jpg" alt="" />
+                    </figure>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img src="./img/collection-05.jpg" alt="" />
+                    </figure>
+                  </a>
+                </li>
+              </ul>
+              <div class="paging">
+                <button class="btn-cltn01 btn-prev">
+                  <i class="hidden">이전</i>
+                </button>
+                <div class="swiper-pagination"></div>
+                <button class="btn-cltn01 btn-next">
+                  <i class="hidden">다음</i>
+                </button>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--//e:collection -->
+
+      <!-- s:s-banner -->
+      <section class="s-banner">
+        <strong><a href="#">오직 하나뿐인 우리의 경이로운 터전, 지구를 보호하기 위한 여정에 함께 해주세요.</a></strong>
+      </section>
+      <!-- //e:s-banner -->
+
+      <!-- s:collection02 -->
+      <section class="collection2">
+        <div class="inner">
+          <h2 class="hidden">collection2</h2>
+          <div class="cltn02">
+            <div class="cltn02-info">
+              <h3>Black Hole® Collection</h3>
+              <p>Black Hole® Bags을 만나보세요</p>
+              <button class="more"><i class="hidden">more</i></button>
+            </div>
+            <div class="cltn02-slider swiper">
+              <ul class="cltn02-list swiper-wrapper">
+                <li class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img src="./img/collection-bag-01.jpg" alt="" />
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure>
+                      <img src="./img/collection-bag-02.jpg" alt="" />
+                    </figure>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img src="./img/collection-bag-03.jpg" alt="" />
+                    </figure>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img src="./img/collection-bag-04.jpg" alt="" />
+                    </figure>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img src="./img/collection-bag-05.jpg" alt="" />
+                    </figure>
+                  </a>
+                </li>
+              </ul>
+              <div class="paging">
+                <button class="btn-cltn02 btn-prev">
+                  <i class="hidden">이전</i>
+                </button>
+                <div class="swiper-pagination"></div>
+                <button class="btn-cltn02 btn-next">
+                  <i class="hidden">다음</i>
+                </button>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e:collection02 -->
+
+      <!-- s:latestpost -->
+      <section class="latestpost">
+        <h2>Latest posts</h2>
+        <div class="latest-slider swiper">
+          <ul class="latest-list swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="#">
+                <div class="title">파타고니아 &#124; 2023 NEW YEAR SKIING</div>
+                <figure>
+                  <img src="./img/latestpost-01.jpg" alt="파타고니아｜2023 NEW YEAR SKIING" />
+                </figure>
+                <div class="latest-hover">
+                  <p>
+                    2023년 새해의 첫 일출이 떠오르기 전인 새벽 5시, 전국에서 온 100여명의 백컨트리 스키어 • 스노우보더가
+                    휘닉스 평창 스노우 파크에 모였습니다.
+                  </p>
+                  <button class="latest-more">more</button>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <div class="title">2018 파타고니아 볼더러스 데이</div>
+                <figure>
+                  <img src="./img/latestpost-02.jpg" alt="2018 파타고니아 볼더러스 데이" />
+                </figure>
+                <div class="latest-hover">
+                  <p>‘볼더러스 데이’는 자연 암장을 보존하고 물려주기 위한 철학을 담은 클라이머들의 축제 입니다.</p>
+                  <button class="latest-more">more</button>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <div class="title">'Why I Run?' 에피소드 4: 김민지 편</div>
+                <figure>
+                  <img src="./img/latestpost-03.jpg" alt="'Why I Run?' 에피소드 4: 김민지 편" />
+                </figure>
+                <div class="latest-hover">
+                  <p>누군가에겐 안정적일 수 있는 매일 반복되는 삶, 하지만 이런 삶은 오히려 저를 불안하게 만듭니다.</p>
+                  <button class="latest-more">more</button>
+                </div></a
+              >
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <div class="title">'Why I Run?' 에피소드 3: 로렌 정 편</div>
+                <figure>
+                  <img src="./img/latestpost-04.jpg" alt="'Why I Run?' 에피소드 3: 로렌 정 편" />
+                </figure>
+                <div class="latest-hover">
+                  <p>
+                    한국에 와서 시작한 트레일러닝은 저에게 가족을 만들어 주었고, 포기하지 않는 사람이 되도록
+                    만들어줬습니다.
+                  </p>
+                  <button class="latest-more">more</button>
+                </div></a
+              >
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <div class="title">'Why I Run?' 에피소드 2: 고민철 편</div>
+                <figure>
+                  <img src="./img/latestpost-05.jpg" alt="'Why I Run?' 에피소드 2: 고민철 편" />
+                </figure>
+                <div class="latest-hover">
+                  <p>
+                    "14일 동안 하루에 4시간만 자며 약 770km를 연속으로 달린 적이 있습니다" , "그때를 생각하면 정말
+                    미쳤던 것 같아요⁠"⁠
+                  </p>
+                  <button class="latest-more">more</button>
+                </div></a
+              >
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <div class="title">'Why I Run?' 에피소드 3: 박준섭 편</div>
+                <figure>
+                  <img src="./img/latestpost-06.jpg" alt="'Why I Run?' 에피소드 3: 박준섭 편" />
+                </figure>
+                <div class="latest-hover">
+                  <p>“좋아하고 싫어하는 것을 말하지 못하는 사람이었어요.”</p>
+                  <button class="latest-more">more</button>
+                </div></a
+              >
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <div class="title">‘What’s next?’</div>
+                <figure>
+                  <img src="./img/latestpost-07.jpg" alt="‘What’s next?’" />
+                </figure>
+                <div class="latest-hover">
+                  <p>우리의 다음은, 지구를 되살리는 것입니다.</p>
+                  <button class="latest-more">more</button>
+                </div></a
+              >
+            </li>
+          </ul>
+          <div class="paging">
+            <button class="btn-latest btn-prev">
+              <i class="hidden">이전</i>
+            </button>
+            <div class="swiper-pagination"></div>
+            <button class="btn-latest btn-next">
+              <i class="hidden">다음</i>
+            </button>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+      <!-- //e:latestpost -->
+
+      <!-- s:promotion -->
+      <section class="promotion">
+        <h2>promotion</h2>
+        <div class="promotion-wrap">
+          <div class="pro-info">
+            <strong>팔공산 국립공원 지정을 위한 10,000개의 메아리</strong>
+            <p>팔공산을 국립 공원으로 지정하여 영구적으로 보전할 수 있도록 힘을 보태 주세요.</p>
+            <button class="pro-more">more</button>
+          </div>
+        </div>
+      </section>
+      <!-- //e:promotion -->
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <ul class="foot-list">
+          <li>
+            <a href="#">
+              <strong>제품에 대한 자부심</strong>
+              <p>
+                파타고니아는 제품의 내구성을 최우선으로 생각하며. 생산과정에서 물과 에너지를 아끼기 위해 노력합니다.
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <strong>환경과 사회적 책임</strong>
+              <p>
+                모든 생산과정은 환경과 사람에게 영향을 미칩니다. 파타고니아는 환경과 사회적 책임을 다하기 위해
+                노력합니다.
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <strong>오래입는 제품</strong>
+              <p>원웨어(Worn Wear) 서비스를 통해 옷과 장비 본연의 기능을 오랫동안 유지할 수 있습니다.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <strong> 1% for Planet </strong>
+              <p>
+                파타고니아는 1985년부터 매년 매출의 1%를 환경을 보호하고 되살리는 일을 하는 단체들을 후원하는 데 사용해
+                왔습니다.
+              </p>
+            </a>
+          </li>
+        </ul>
+
+        <div class="foot-info-wrap">
+          <div class="foot-add">
+            <p>
+              (주)파타고니아코리아서울 강남구 삼성로122길 25 (삼성동) 파타고니아코리아대표번호 : 1544-1876
+              (AS문의:내선번호2번/온라인쇼핑몰문의:내선번호3번)대표 : 브레멘볼프강슈멜츠개인정보보호책임자 :
+              최종필사업자등록번호 : 220-88-66550개인정보처리방침통신판매업신고 : 2016-서울강남-03669
+              [사업자정보확인]KG이니시스 구매안전 서비스 [서비스가입사실확인]
+            </p>
+          </div>
+          <div class="foot-info">
+            <p>patagoniakorea@patagonia.kr</p>
+            <div class="foot-logo"><i class="hidden">patagonia</i></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

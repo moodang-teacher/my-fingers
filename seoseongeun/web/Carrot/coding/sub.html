@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이벤트</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/jquery.fullpage.min.css" />
+    <link rel="stylesheet" href="./css/style-sub.css" />
+
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/jquery.fullpage.min.js"></script>
+    <script src="./js/script2.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="inner">
+        <nav>
+          <h1 class="logo">
+            <a href="./index.html"><i class="hidden">당근마켓</i></a>
+          </h1>
+          <ul class="gnb">
+            <li><a href="#">중고거래</a></li>
+            <li><a href="#">동네가게</a></li>
+            <li><a href="#">알바</a></li>
+            <li><a href="./sub.html">이벤트</a></li>
+          </ul>
+
+          <div class="util-menu">
+            <a href="#"><i class="hidden">menu</i></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <hr />
+
+    <!-- 페이지 이동 버튼 -->
+    <div class="indicator">
+      <a href="#event-1" data-menuanchor="event-1" class="active">1</a>
+      <a href="#event-2" data-menuanchor="event-2">2</a>
+      <a href="#event-3" data-menuanchor="event-3">3</a>
+    </div>
+    <main>
+      <div class="tab">
+        <!-- <div class="tab-menu">
+          <a href="#" class="event-menu now">진행중인 이벤트</a>
+          <a href="#" class="event-menu Previous">지나간 이벤트</a>
+        </div> -->
+
+        <div id="fullpage">
+          <!-- 1. 진행중 이벤트 -->
+          <!-- 첫번째 이벤트: 시작해요 당근페이 -->
+          <section class="section event-1">
+            <div class="inner">
+              <div class="event-1-main">
+                <div class="event-1-main-left">
+                  <div class="video-wrap">
+                    <iframe
+                      src="https://www.youtube.com/embed/06Uw0Nyjhh4"
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+
+                <div class="event-1-main-right">
+                  <div class="event-info">
+                    <div class="title">
+                      <strong>
+                        <img src="./img/Carrot-Pay.png" alt="당근페이 로고" />
+                      </strong>
+                      <h2>
+                        시작해요 <br />
+                        당근페이
+                      </h2>
+                    </div>
+                    <p>
+                      은행계좌를 연결하면 당근거래 지원금 1만원, <br />
+                      이벤트 공유하면 당근 장바구니를 드려요!
+                    </p>
+
+                    <dl>
+                      <dt>이벤트 기간</dt>
+                      <dd>2023.03.16~03.31</dd>
+
+                      <dt>당첨자 발표</dt>
+                      <dd>2023.04.08</dd>
+                    </dl>
+                    <div class="app-down">
+                      <strong class="app-down">당근마켓 앱 다운로드</strong>
+                      <div class="app-down-btn">
+                        <button class="app-down-apple">App store</button>
+                        <button class="app-down-google">Google play</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 두번째 이벤트: 당근이 필터 공개 -->
+          <section class="section event-2">
+            <div class="inner">
+              <div class="event-2-main-left">
+                <div class="event-info">
+                  <div class="title">
+                    <strong> 당근마켓 X 스노우 </strong>
+                    <figure>
+                      <img src="./img/event2-title.svg" alt="당근이 필터공개!" />
+                    </figure>
+                  </div>
+                  <p>스노우 앱에서 당근이 필터로 사진과 영상을 찍고 당근마켓 인스타그램에서 이벤트도 참여해보세요!</p>
+
+                  <dl>
+                    <dt>이벤트 기간</dt>
+                    <dd>2023.03.16~03.31</dd>
+
+                    <dt>당첨자 발표</dt>
+                    <dd>2023.04.08</dd>
+                  </dl>
+                  <div class="app-down">
+                    <strong class="app-down">스노우 앱 다운로드</strong>
+                    <div class="app-down-btn">
+                      <button class="app-down-apple">App store</button>
+                      <button class="app-down-google">Google play</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="event-2-main-right">
+                <figure>
+                  <img src="./img/event2-mobile.svg" alt="당근이필터 모바일" />
+                </figure>
+              </div>
+            </div>
+          </section>
+          <!-- 세번째 이벤트: 당근이 이모티콘 출시 -->
+          <section class="section event-3">
+            <div class="inner">
+              <div class="event-3-main">
+                <div class="event-3-main-left">
+                  <figure>
+                    <img src="./img/event3-mobile.svg" alt="당근이 이모티콘 모바일" />
+                  </figure>
+                </div>
+
+                <div class="event-3-main-right">
+                  <div class="event-info">
+                    <div class="title">
+                      <figure>
+                        <img src="./img/event3-title.svg" alt="당근이 이모티콘 출시!" />
+                      </figure>
+                    </div>
+                    <p>
+                      당근마켓 앱을 깔고 채팅방에서 당근이 이모티콘을 사용해 보세요. 채팅방에서 볼 수 없는 당근이
+                      이모티콘을 찾아 퀴즈에 참여하세요!
+                    </p>
+
+                    <dl>
+                      <dt>이벤트 기간</dt>
+                      <dd>2023.04.16~04.31</dd>
+
+                      <dt>당첨자 발표</dt>
+                      <dd>2023.05.08</dd>
+                    </dl>
+                    <div class="app-down">
+                      <strong class="app-down">당근마켓 앱 다운로드</strong>
+                      <div class="app-down-btn">
+                        <button class="app-down-apple">App store</button>
+                        <button class="app-down-google">Google play</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="go-top">TOP</a>
+          </section>
+          <footer class="section fp-auto-height">
+            <div class="inner">
+              <div class="foot-con-top">
+                <div class="foot-con">
+                  <div class="foot-copyright">
+                    <address>
+                      <p>대표 김용현, 황도연사업자번호 375-87-00088 직업정보제공사업</p>
+                      <p>신고번호 2016-서울서초-0051 주소 서울특별시 구로구 디지털로 30길</p>
+                      <p>28, 609호 (당근서비스) 전화 1544-9796고객문의 cs@daangnservice.com</p>
+                    </address>
+                  </div>
+                  <div class="app-down">
+                    <strong>당근마켓 앱 다운로드</strong>
+                    <div class="app-down-btn">
+                      <button class="app-down-apple">App store</button>
+                      <button class="app-down-google">Google play</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="foot-con-bottom">
+                <div class="foot-link-wrap">
+                  <div>
+                    <div class="foot-links1">
+                      <ul>
+                        <li><a href="#">제휴문의</a></li>
+                        <li><a href="#">광고문의</a></li>
+                        <li><a href="#">PR 문의</a></li>
+                        <li><a href="#">IR문의</a></li>
+                      </ul>
+                    </div>
+                    <div class="foot-links2">
+                      <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">위치기반 서비스 이용약관</a></li>
+                        <li><a href="#">이용자보호 비전과 계획</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sns">
+                    <a class="sns facebook" href="#"><i class="hidden">페이스북</i></a>
+                    <a class="sns instagram" href="#"><i class="hidden">인스타그램</i></a>
+                    <a class="sns youTube" href="#"><i class="hidden">유튜브</i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

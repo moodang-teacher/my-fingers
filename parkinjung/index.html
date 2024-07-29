@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="http://injungcom.dothome.co.kr/" />
+    <meta property="og:title" content="AO 아오!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./img/og_image.png" />
+    <meta property="og:description" content="즐거울 때도, 힘들 때도 아오!" />
+    <title>Ao!아오</title>
+    <link rel="icon" href="./img/AO_logo_new.png" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/loading.css" />
+    <link rel="stylesheet" href="./css/modalPop.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <script>
+      $(function () {
+        Splitting();
+        AOS.init();
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+
+    <div class="loading">
+      <div class="loading_wrap">
+        <div class="loa-logo_bg_1">
+          <img src="./img/logo_bg_1.png" alt="logo_bg_1" />
+
+          <svg width="100%" height="150" viewBox="0 0 161 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.99961 77.5C-11.2004 41.1 9.49961 14 22.4996 5C55.4992 -14.5 62.5 39 69.5 52C76.5 65 100.5 79.5 120 88.5C139.5 97.5 152 98 158.5 113C165 128 148.5 132.5 127.5 143.5C106.5 154.5 98.5 147 81 143.5C63.5 140 36.4996 123 9.99961 77.5Z"
+            />
+          </svg>
+          <div class="loa-visual_04"></div>
+          <div class="loa-visual_06"></div>
+          <div class="loa-visual_05"><img src="./img/visual_05.png" alt="visual_05" /></div>
+          <div class="loa-visual_07_Leaf loainGan"><img src="./img/visual_07_Leaf.png" alt="visual_07_Leaf" /></div>
+          <div class="loa-A">
+            <svg width="100%" height="75" viewBox="0 0 52 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M23.5 26C18.7 32.4 6.5 44.3333 1 49.5C3.5 51 6.5 49.5 12.5 44C18.5 38.5 16.5 40.5 27 44C37.5 47.5 38.5 47 40.5 53C42.5 59 37 62.5 35 68.5C33 74.5 32 81.5 42 68.5C52 55.5 50.5 22 50.5 11C50.5 -5.72205e-06 42 -1.00001 38.5 3.99999C35 8.99999 29.5 18 23.5 26Z"
+              />
+            </svg>
+            <img src="./img/A.png" alt="A" />
+          </div>
+          <div class="loa-mark"><img src="./img/mark.png" alt="mark" /></div>
+        </div>
+        <div class="loa-txt"><p>즐거울 때도, 힘들 때도 아오!</p></div>
+      </div>
+    </div>
+
+    <div class="dim"></div>
+    <div class="hidden">
+      <a href="#topBar">header</a>
+      <a href="#contents">main</a>
+      <a href="#bottomBar">footer</a>
+    </div>
+
+    <!-- top -->
+    <div class="TopBtn">
+      <a href="#topBar">TOP</a>
+    </div>
+
+    <!-- header :s -->
+    <header id="topBar">
+      <div class="inner">
+        <nav>
+          <!-- logo -->
+          <h1 class="logo">
+            <a href="http://injungcom.dothome.co.kr/">
+              <img src="./img/AO_logo_new.png" alt="AO logo" />
+            </a>
+          </h1>
+
+          <!-- menu -->
+          <div class="menu_wrap">
+            <div class="menu_icon">
+              <a href="#"><img src="./img/menu.png" alt="menu" /></a>
+            </div>
+
+            <div class="menu_list">
+              <div class="menu_icon_off">
+                <a href="#"><img src="./img/close-fill.png" alt="닫기" /></a>
+              </div>
+
+              <div class="menu_list_2set">
+                <ul>
+                  <li><a href="#sec01">HOME</a></li>
+                  <li><a href="#sec02">PROJECT</a></li>
+                  <li><a href="#sec03">WORK</a></li>
+                  <li><a href="#sec04MY">ABOUT ME</a></li>
+                </ul>
+
+                <div class="MyHomeView">
+                  <div class="MyHomeView_TxBn">
+                    <p>즐거울 때도, 힘들 때도 아오!</p>
+                    <div class="ViewBtn"><a href="#photo24">view</a></div>
+                  </div>
+                  <div class="logoPcs">
+                    <div class="logoPcs_img">
+                      <img src="./img/A.png" alt="A" />
+                      <img src="./img/mark.png" alt="느낌표" />
+                      <img src="./img/logo_bg_1.png" alt="배경과O" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- header :e -->
+
+    <!-- main :s -->
+    <main id="contents">
+      <!--  visual :s -->
+      <section id="sec01" class="sec sec_col1">
+        <div class="inner">
+          <div class="viaual_wrap">
+            <h2 data-splitting>디자이너는 똥꼬의 피가 마를때까지 앉아야 산다.</h2>
+            <div class="visual_imgs">
+              <ul>
+                <li class="pic_1">
+                  <a href="#"><img src="./img/visual_01.png" alt="visual_01" /></a>
+                </li>
+                <li class="pic_2">
+                  <a href="#"><img src="./img/visual_02.png" alt="visual_02" /></a>
+                </li>
+                <li class="pic_3">
+                  <a href="#"><img src="./img/visual_03.png" alt="visual_03" /></a>
+                </li>
+                <li class="pic_4">
+                  <a href="#"><img src="./img/visual_04.png" alt="visual_04" /></a>
+                </li>
+                <li class="pic_5">
+                  <a href="#"><img src="./img/visual_05.png" alt="visual_05" /></a>
+                </li>
+                <li class="pic_6">
+                  <a href="#"><img src="./img/visual_06.png" alt="visual_06" /></a>
+                </li>
+                <li class="pic_7">
+                  <a href="#"><img src="./img/visual_07_Leaf.png" alt="visual_07_Leaf" /></a>
+                </li>
+                <li class="pic_8">
+                  <a href="#"><img src="./img/visual_08_RT.png" alt="visual_08_RT" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- visual :e -->
+
+      <!-- PROJECT :s -->
+      <section id="sec02" class="sec sec_col2">
+        <div class="inner">
+          <div class="project_wrap" data-aos="fade-up" data-aos-anchor-placement="top-center">
+            <!-- 제목 -->
+            <div class="title">
+              <h3>PROJECT</h3>
+            </div>
+
+            <!-- 프로젝트 이미지 슬라이드 -->
+            <div class="swiper mySwiper">
+              <div class="project_slide_ctn swiper-wrapper">
+                <!-- 프린지 -->
+                <div class="project_list pringe swiper-slide">
+                  <ul>
+                    <li>
+                      <span>프린지</span>
+                    </li>
+                    <li>
+                      <p>반응형</p>
+                    </li>
+                    <li>
+                      <p>1920px</p>
+                    </li>
+                    <li>
+                      <p>834px</p>
+                    </li>
+                    <li>
+                      <p>360px</p>
+                    </li>
+                  </ul>
+
+                  <div class="proView">
+                    <div class="proImg1">
+                      <a href="./fringe/index.html" target="_blank">
+                        <i class="hidden">프린지 프로젝트 이미지</i>
+                      </a>
+                    </div>
+
+                    <div class="proImg2">
+                      <div class="pro_ImgBtn">
+                        <a href="#photo01">
+                          <div class="project_pic"><i class="hidden">프린지</i></div>
+                          <div class="proBtn">프로젝트</div>
+                        </a>
+                      </div>
+                      <div class="proBtn proBtn_col">
+                        <a
+                          href="https://www.figma.com/file/mdh5olcdF71VNn669SeFqU/RWD-%EB%94%94%EC%9E%90%EC%9D%B8-%EB%B0%95%EC%9D%B8%EC%A0%95?type=design&node-id=0%3A1&t=fOuYxDd0wWttvqpR-1"
+                          target="_blank"
+                          >와이어프레임(피그마)</a
+                        >
+                      </div>
+                      <div class="proBtn proBtn_col">
+                        <a
+                          href="https://www.figma.com/file/mdh5olcdF71VNn669SeFqU/RWD-%EB%94%94%EC%9E%90%EC%9D%B8-%EB%B0%95%EC%9D%B8%EC%A0%95?type=design&node-id=1%3A5&t=3748JLLUgBi4qYyp-1"
+                          target="_blank"
+                          >디자인(피그마)</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="proTool_col">
+                      <div class="pro_txt_icon proTool">
+                        <span>Tool</span>
+                        <div class="adobeHJ">
+                          <div class="icon"><img src="./img/ps.svg" alt="ps" /></div>
+                          <div class="icon"><img src="./img/ai.svg" alt="ai" /></div>
+                          <div class="icon"><img src="./img/figma.svg" alt="figma" /></div>
+                          <div class="icon"><img src="./img/html.svg" alt="html" /></div>
+                          <div class="icon"><img src="./img/js.svg" alt="js" /></div>
+                        </div>
+                      </div>
+                      <div class="pro_txt_icon proDate">
+                        <span>Date</span>
+                        <p>2023 May</p>
+                      </div>
+                      <div class="pro_txt_icon proTeam">
+                        <span>a personal Project</span>
+                        <p>RWD Design</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 길복순 -->
+                <div class="project_list gilBokSoon swiper-slide">
+                  <ul>
+                    <li>
+                      <span>길복순</span>
+                    </li>
+                    <li>
+                      <p>마이크로사이트</p>
+                    </li>
+                    <li>
+                      <p>1920px</p>
+                    </li>
+                  </ul>
+
+                  <div class="proView">
+                    <div class="proImg1">
+                      <a href="#photo02"><i class="hidden">길복순 프로젝트 이미지</i></a>
+                    </div>
+
+                    <div class="proImg2">
+                      <div class="proBtn proBtn_col">
+                        <a
+                          href="https://www.figma.com/file/BvWjRk2BsizkWIgFRNKzhe/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C-%EC%82%AC%EC%9D%B4%ED%8A%B8?type=whiteboard&node-id=0%3A1&t=VDpZz5ZsnjqeC8Vf-1"
+                          target="_blank"
+                          >마이크로사이트 기획 팀(피그마)</a
+                        >
+                      </div>
+                      <div class="proBtn proBtn_col">
+                        <a
+                          href="https://www.figma.com/file/a75G4vp8WZqMRQcNGaJGxn/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%82%AC%EC%9D%B4%ED%8A%B8-%EA%B8%B8%EB%B3%B5%EC%88%9C?type=design&node-id=109%3A210&t=zLoQ9Sh4ogqC38EC-1"
+                          target="_blank"
+                          >디자인 개별(피그마)</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="proTool_col">
+                      <div class="pro_txt_icon proTool">
+                        <span>Tool</span>
+                        <div class="adobeHJ">
+                          <div class="icon"><img src="./img/ps.svg" alt="ps" /></div>
+                          <div class="icon"><img src="./img/ai.svg" alt="ai" /></div>
+                          <div class="icon"><img src="./img/figma.svg" alt="figma" /></div>
+                        </div>
+                      </div>
+                      <div class="pro_txt_icon proDate">
+                        <span>Date</span>
+                        <p>2023 May</p>
+                      </div>
+                      <div class="pro_txt_icon proTeam">
+                        <span>Team Project</span>
+                        <p>microsite</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 홀로 -->
+                <div class="project_list holo swiper-slide">
+                  <ul>
+                    <li>
+                      <span>홀로</span>
+                    </li>
+                    <li>
+                      <p>UI/UX</p>
+                    </li>
+                    <li>
+                      <p>393px</p>
+                    </li>
+                  </ul>
+
+                  <div class="proView">
+                    <div class="proImg1">
+                      <a
+                        href="https://www.figma.com/proto/2tR9SbZHMvPBFbsbOx3ARs/%EC%9A%9C%EB%A1%9C%EC%98%AC%EB%A1%9C-%ED%99%80%EB%A1%9C?page-id=0%3A1&type=design&node-id=321-16609&viewport=1142%2C533%2C0.16&scaling=scale-down&starting-point-node-id=32%3A708&show-proto-sidebar=1"
+                        target="_blank"
+                        ><i class="hidden">홀로 프로젝트 이미지</i></a
+                      >
+                    </div>
+
+                    <div class="proImg2">
+                      <div class="pro_ImgBtn">
+                        <a href="#photo03">
+                          <div class="project_pic"><i class="hidden">홀로</i></div>
+                          <div class="proBtn">프로젝트</div>
+                        </a>
+                      </div>
+                      <div class="proBtn proBtn_col">
+                        <a
+                          href="https://www.figma.com/file/2tR9SbZHMvPBFbsbOx3ARs/%EC%9A%9C%EB%A1%9C%EC%98%AC%EB%A1%9C-%ED%99%80%EB%A1%9C?type=design&node-id=187%3A2632&t=K5qMQLQbgor0VDUQ-1"
+                          target="_blank"
+                          >조사 팀(피그마)</a
+                        >
+                      </div>
+                      <div class="proBtn proBtn_col">
+                        <a
+                          href="https://www.figma.com/file/2tR9SbZHMvPBFbsbOx3ARs/%EC%9A%9C%EB%A1%9C%EC%98%AC%EB%A1%9C-%ED%99%80%EB%A1%9C?type=design&node-id=187%3A2633&t=K5qMQLQbgor0VDUQ-1"
+                          target="_blank"
+                          >와이어프레임 팀(피그마)</a
+                        >
+                      </div>
+                      <div class="proBtn proBtn_col">
+                        <a
+                          href="https://www.figma.com/file/2tR9SbZHMvPBFbsbOx3ARs/%EC%9A%9C%EB%A1%9C%EC%98%AC%EB%A1%9C-%ED%99%80%EB%A1%9C?type=design&node-id=0%3A1&t=K5qMQLQbgor0VDUQ-1"
+                          target="_blank"
+                          >디자인 팀(피그마)</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="proTool_col">
+                      <div class="pro_txt_icon proTool">
+                        <span>Tool</span>
+                        <div class="adobeHJ">
+                          <div class="icon"><img src="./img/ps.svg" alt="ps" /></div>
+                          <div class="icon"><img src="./img/ai.svg" alt="ai" /></div>
+                          <div class="icon"><img src="./img/figma.svg" alt="figma" /></div>
+                        </div>
+                      </div>
+                      <div class="pro_txt_icon proDate">
+                        <span>Date</span>
+                        <p>2023 May</p>
+                      </div>
+                      <div class="pro_txt_icon proTeam">
+                        <span>Team Project</span>
+                        <p>UI/UX Design</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 방향 버튼 -->
+              <button class="btn swiper-button-prev"><i class="hidden">PREV</i></button>
+              <button class="btn swiper-button-next"><i class="hidden">NEXT</i></button>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PROJECT :e -->
+
+      <!-- work :s -->
+      <section id="sec03" class="sec sec_col3">
+        <div class="inner secFull_inner">
+          <div class="work_wrap" data-aos="fade-up" data-aos-anchor-placement="top-center">
+            <!-- 제목 -->
+            <div class="title">
+              <h3>WORK</h3>
+              <p>그래픽디자인 | 북디자인</p>
+            </div>
+
+            <div class="workImg_list swiper">
+              <div class="graphic slider swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#photo04"><img src="./img/3re.jpg" alt="leaflet" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo05"><img src="./img/20191123_H201726077.jpg" alt="package" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo06"><img src="./img/20200624.jpg" alt="package" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo07"><img src="./img/20210527.jpg" alt="package" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo08"><img src="./img/20211114.jpg" alt="watch" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo09"><img src="./img/designation.jpg" alt="designation" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo10"><img src="./img/freework.jpg" alt="free_work" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo11"><img src="./img/poster01.jpg" alt="poster" /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="workImg_list2 swiper">
+              <div class="book slider2 swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#photo12"><img src="./img/bookD20220618.jpg" alt="book" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo13"><img src="./img/202211301.jpg" alt="book" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo14"><img src="./img/2022113014.jpg" alt="book" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo15"><img src="./img/2022113013.jpg" alt="book" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo16"><img src="./img/2022113012.jpg" alt="book" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo17"><img src="./img/202211309.jpg" alt="book" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo18"><img src="./img/2022113010.jpg" alt="book" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo19"><img src="./img/202211308.jpg" alt="book" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo20"><img src="./img/202211307.jpg" alt="book" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo21"><img src="./img/202211305.jpg" alt="book" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo22"><img src="./img/202211304.jpg" alt="book" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#photo23"><img src="./img/20221130_00.jpg" alt="book" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- work :e -->
+
+      <!-- about me :s -->
+      <section id="sec04" class="sec sec_col4">
+        <div class="inner secFull_inner">
+          <div class="about_ctn" data-aos="fade-up" data-aos-anchor-placement="top-center">
+            <!-- 제목 -->
+            <div class="title">
+              <h3>ABOUT ME</h3>
+            </div>
+
+            <!-- 나의 대해서 : 가로 시작-->
+            <div class="about_ctn_sub">
+              <!-- in_profile -->
+              <div class="about_slide in_profile" id="sec04MY">
+                <div class="inImgTxt">
+                  <figure><img src="./img/me.png" alt="Profile Picture" /></figure>
+                  <div class="text">
+                    <p>
+                      디자인은 <br />
+                      언제나 힘들지만 <br />언제나 즐거운 일이다.
+                    </p>
+                    <p class="text_MT">
+                      그러니 <br />우리 모두 <br />앉자 앉자 앉자 <br />똥꼬의 피가 <br />
+                      마르는 그 날까지 <br />
+                      그래야 산다!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="history">
+                  <div class="nameYE">
+                    <h4>박인정</h4>
+                    <div class="yearEmail">
+                      <p>생년월일 : (여) 1986년생</p>
+                      <p>|</p>
+                      <p>E-mail : in5826@naver.com</p>
+                    </div>
+                  </div>
+                  <dl>
+                    <dt>학력사항</dt>
+                    <dd>한양사이버대학교 - 디자인학부 시각디자인학과(졸업) 2022. 2</dd>
+                    <dt>자격증</dt>
+                    <dd>웹디자인 기능사 2010. 10. 1</dd>
+                    <dd>컴퓨터그래픽스 운용기능사 2013. 6. 28</dd>
+                    <dd>전자출판 기능사 2013. 12. 27</dd>
+                    <dt>경력사항</dt>
+                    <dd>해드림출판사 - 편집디자인 2019. 11. 12 ~ 2022. 05. 31</dd>
+                    <dd>삼진기획 - 광고시각디자인 2014. 11. 14 ~ 2017. 7. 31</dd>
+                    <dd>제주장애인자립생활센터 - 장애인행동보조 및 행정업무 2007. 10. 1 ~ 2009. 3. 31</dd>
+                    <dt>교육 및 훈련</dt>
+                    <dd>
+                      하이미디어아카데미 강남점 - (디지털디자인)UI/UX웹디자인&웹퍼블리셔(Figma)A 2023. 02. 13 - 2023.
+                      06. 30
+                    </dd>
+                    <dd>
+                      이젠컴퓨터학원 화곡점 -(디지털디자인) 웹디자인 및 스마트 UI/UX 웹퍼블리셔 양성과정 C 2022. 07. 18
+                      - 2022. 12. 05
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+
+              <!-- skill  -->
+              <div class="about_slide in_skill">
+                <h5>Skill</h5>
+
+                <dl>
+                  <dt>Illustrator</dt>
+                  <dd><i class="hidden">Illustrator</i></dd>
+                  <dt>Photoshop</dt>
+                  <dd><i class="hidden">Photoshop</i></dd>
+                  <dt>InDesign</dt>
+                  <dd class="inD"><i class="hidden">InDesign</i></dd>
+                </dl>
+
+                <dl>
+                  <dt>figma</dt>
+                  <dd><i class="hidden">figma</i></dd>
+                  <dt>HTML&CSS</dt>
+                  <dd class="HTCSS"><i class="hidden">HTML&CSS</i></dd>
+                  <dt>Javascript</dt>
+                  <dd class="jvasc"><i class="hidden">Javascript</i></dd>
+                </dl>
+              </div>
+
+              <!-- timeline -->
+              <div class="about_slide in_timeline">
+                <h5>My way</h5>
+
+                <div class="timeline_list">
+                  <div class="dot_line"><i class="hidden">line</i></div>
+                  <div class="oneSet">
+                    <div class="one"><i class="hidden">dot</i></div>
+                    <div class="one"><i class="hidden">dot</i></div>
+                    <div class="one"><i class="hidden">dot</i></div>
+                    <div class="one"><i class="hidden">dot</i></div>
+                    <div class="one"><i class="hidden">dot</i></div>
+                    <div class="one"><i class="hidden">dot</i></div>
+                    <div class="one"><i class="hidden">dot</i></div>
+                  </div>
+
+                  <div class="dot_list_top Maylistcol May01">
+                    <div class="timelineTxtCtn">
+                      <div class="year">
+                        <h6>2010</h6>
+                        <p>디자인의 시작</p>
+                      </div>
+                      <div class="month_txt">
+                        <span>3월</span>
+                        <dl>
+                          <dt>제주네오C&C디자인학원</dt>
+                          <dd>&#xB7; 웹디자인 전문가과정(수료) 03.08~09.07</dd>
+                          <dd>&#xB7; 웹디자인 기능사 10.01</dd>
+                        </dl>
+                      </div>
+                    </div>
+
+                    <figure>
+                      <img src="./img/IMG_0122.png" class="MayPic-1" alt="내 사진" />
+                    </figure>
+                  </div>
+
+                  <div class="dot_list_bottom Maylistcol May02">
+                    <div class="timelineTxtCtn">
+                      <div class="year">
+                        <h6>2013</h6>
+                      </div>
+                      <div class="month_txt">
+                        <span>3월</span>
+                        <dl>
+                          <dt>한국폴리텍대학 제주캠퍼스</dt>
+                          <dd>&#xB7; 산업디자인과(졸업) 2013.03.04~2014.02.14</dd>
+                          <dd>&#xB7; 컴퓨터그래픽스 운용기능사 06.28</dd>
+                          <dd>&#xB7; 전자출판 기능사 12.27</dd>
+                        </dl>
+                      </div>
+                    </div>
+
+                    <figure>
+                      <img src="./img/IMG_0768.png" class="MayPic-1" alt="사진" />
+                    </figure>
+                  </div>
+
+                  <div class="dot_list_top Maylistcol May03">
+                    <div class="timelineTxtCtn">
+                      <div class="year">
+                        <h6>2014</h6>
+                      </div>
+                      <div class="month_txt">
+                        <span>11월</span>
+                        <dl>
+                          <dt>삼진기획(제주)</dt>
+                          <dd>&#xB7; 광고시각디자인-주임 2014.11.14~2017.07.31</dd>
+                          <dd>&#xB7; 명함, 전단지, 리플렛, 명찰, 어깨띠, 현수막, 실사, 등</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <figure>
+                      <img src="./img/IMG_0770.png" class="MayPic-1" alt="내 사진" />
+                      <img src="./img/IMG_0780.png" class="MayPic-1" alt="내 사진" />
+                    </figure>
+                  </div>
+
+                  <div class="dot_list_bottom Maylistcol May04">
+                    <div class="timelineTxtCtn">
+                      <div class="year">
+                        <h6>2017</h6>
+                      </div>
+                      <div class="month_txt">
+                        <span>2월</span>
+                        <dl>
+                          <dt>
+                            한양사이버대학교 디자인학부 <br />
+                            시각디자인학과 입학
+                          </dt>
+                          <dd>&#xB7; 시각디자인학과(졸업) 2017.02~2022.02</dd>
+                          <dd>&#xB7; 졸업 프로젝트 수심 16.5회 우수상 수상</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <figure>
+                      <img src="./img/designation.jpg" class="MayPic-1" alt="지정작품" />
+                      <img src="./img/freework.jpg" class="MayPic-1" alt="자유작품" />
+                      <img src="./img/image163.png" class="MayPic-1" alt="졸업장수료" />
+                    </figure>
+                  </div>
+
+                  <div class="dot_list_top Maylistcol May05">
+                    <div class="one"><i class="hidden">dot</i></div>
+                    <div class="timelineTxtCtn">
+                      <div class="year">
+                        <h6>2019</h6>
+                      </div>
+                      <div class="month_txt">
+                        <span>11월</span>
+                        <dl>
+                          <dt>해드림출판사(서울)</dt>
+                          <dd>&#xB7; 편집디자인-사원 2019.11.12~2022.05.31</dd>
+                          <dd>&#xB7; 에세이, 수필, 인문, 신문광고, 기타 인쇄물</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <figure>
+                      <img src="./img/IMG_0761.png" class="MayPic-1" alt="작품사진" />
+                      <img src="./img/IMG_0759.png" class="MayPic-1" alt="작품사진" />
+                    </figure>
+                  </div>
+
+                  <div class="dot_list_bottom Maylistcol May06">
+                    <div class="timelineTxtCtn">
+                      <div class="year">
+                        <h6>2022</h6>
+                      </div>
+                      <div class="month_txt">
+                        <span>7월</span>
+                        <dl>
+                          <dt>이젠컴퓨터학원 화곡점</dt>
+                          <dd>&#xB7; (디지털디자인)웹디자인 및 스마트 UI/UX 웹퍼블리셔 양성과정 C(수료)</dd>
+                          <dd>&#xB7; http://pij5826.dothome.co.kr/</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <figure>
+                      <img src="./img/IMG_0754.png" class="MayPic-1" alt="작품" />
+                    </figure>
+                  </div>
+
+                  <div class="dot_list_top Maylistcol May07">
+                    <div class="timelineTxtCtn">
+                      <div class="year">
+                        <h6>2023</h6>
+                      </div>
+                      <div class="month_txt">
+                        <span>2월</span>
+                        <dl>
+                          <dt>하이미디어아카데미 강남점</dt>
+                          <dd>&#xB7; (디지털디자인)UI/UX웹디자인&웹퍼블리셔(FIgma)A 02.13~06.30</dd>
+                          <dd>&#xB7; http://injungcom.dothome.co.kr/</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <figure>
+                      <img src="./img/IMG_0762.png" class="MayPic-1" alt="작품사진" class="IMG_0763" />
+                      <img src="./img/IMG_0763.png" class="MayPic-1" alt="작품사진" />
+                    </figure>
+                  </div>
+
+                  <div class="last_img">
+                    <img src="./img/IMG_0045.png" alt="작품사진" />
+                    <img src="./img/IMG_0807.png" alt="작품사진" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about me :e -->
+
+      <!-- link_sns :s -->
+      <section id="sec05" class="sec sec_col5">
+        <div class="inner">
+          <div class="link_sns_col">
+            <h5 class="sec5_title">나의 흔적들</h5>
+            <ul>
+              <li><a href="https://in5826.github.io/mypage/" target="_blank">프로필 사이트</a></li>
+              <!-- <li><a href="https://www.instagram.com/injungcom1216/" target="_blank">인스타그램</a></li> -->
+              <li><a href="https://in5826.github.io/momentum/" target="_blank">나의 홈화면</a></li>
+              <li><a href="./img/2019_portfolio_3.pdf" download="">다운로드</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- link_sns :e -->
+    </main>
+    <!-- main :e -->
+
+    <!-- 팝업 레이어들 모음 -->
+    <div class="modalPopAll_PROJECT">
+      <!-- 프린지 -->
+      <div class="lightbox-target" id="photo01">
+        <div class="container">
+          <p>
+            <span>반응형 리디자인</span>프린지 : 1998년 대학로에서 열린 ‘독립예술제’로 시작된 서울프린지페스티벌은 매년
+            여름, 연극, 무용, 음악, 퍼포먼스, 시각, 영상 등의 다양한 분야의 예술가들이 참여하는 축제입니다.
+          </p>
+          <img src="./img/rwd_pro1920.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <!-- 길복순 -->
+      <div class="lightbox-target" id="photo02">
+        <div class="container">
+          <p><span>마이크로 사이트</span> 영화 길복순</p>
+          <img src="./img/gilBokSoon.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <!-- 홀로 -->
+      <div class="lightbox-target" id="photo03">
+        <div class="container">
+          <p>
+            <span>UI/UX</span>1인가구가 증가하고 있는 지금, 밥집과 카페는 물론 놀러갈 장소와 공부할 장소 그리고 소통까지
+            취향에 맞게 도와주는 앱 서비스입니다.
+          </p>
+          <img src="./img/holo_page.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+    </div>
+
+    <!-- work 1 -->
+    <div class="modalPopAll_WORK">
+      <div class="lightbox-target worklighboxVE" id="photo04">
+        <div class="container">
+          <p><span>3단 리플렛</span>2022년 6월 15일 | 클래스101 편집디자인 수강 중 작업물</p>
+          <img src="./img/3re.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo05">
+        <div class="container">
+          <p><span>쭉빼커피</span>2019년 11월 23일 | 한양사이버대학교 시각디자인학과 패키지 디자인 작업물</p>
+          <img src="./img/20191123_H201726077.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo06">
+        <div class="container">
+          <p><span>홀로이와 친구들</span>2020년 06월 24일 | 한양사이버대학교 시각디자인학과 캐릭터 디자인 작업물</p>
+          <img src="./img/20200624.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo07">
+        <div class="container">
+          <p><span>라면수저 포스터</span>2020년 05월 27일 | 한양사이버대학교 시각디자인학과 아이디어 디자인 작업물</p>
+          <img src="./img/20210527.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo08">
+        <div class="container">
+          <p>
+            <span>스마트 워치</span>2021년 11월 14일 | 한양사이버대학교 시각디자인학과 스마트워치 디자인
+            작업물
+          </p>
+          <img src="./img/20211114.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo09">
+        <div class="container">
+          <p>
+            <span>지정작 - 원더우먼의 시작</span>2021년 06월 30일 | 한양사이버대학교 시각디자인학과 16.5회 졸업 프로젝트
+            작업물(우수상)
+          </p>
+          <p>
+            작품설명 : 영화 원더우먼의 기존 포스터와 달리 <br />
+            그녀의 상징들로 시작과 강하지만 부드러움을 표현했습니다.
+          </p>
+          <img src="./img/designation.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo10">
+        <div class="container">
+          <p>
+            <span>자유작 - 프리다 칼로 전시회</span>2021년 06월 30일 | 한양사이버대학교 시각디자인학과 16.5회 졸업
+            프로젝트 작업물(우수상)
+          </p>
+          <p>
+            작품설명 : “프리다 칼로는 삶 자체가 예술이다.”라는 주제로 <br />
+            그녀가 다친 척추를 중심으로 고통과 외로움의 의미를 주었습니다.
+          </p>
+          <img src="./img/freework.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo11">
+        <div class="container">
+          <p><span>포스터-힘차게 달라자</span>타 학원 수강 때 작업한 포스터</p>
+          <img src="./img/poster01.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+
+      <!-- work 2 -->
+      <div class="lightbox-target worklighboxVE" id="photo12">
+        <div class="container">
+          <p><span>꿈이 다시 나를...</span>20212 06월 18일 | 클래스101 편집디자인 수강 중 작업물</p>
+          <img src="./img/bookD20220618.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo13">
+        <div class="container">
+          <p><span>2021 문래도서관기록</span>이원진 발행인 | 2021년 12월 발행일 | 해드림출판사 작업물</p>
+          <img src="./img/202211301.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo14">
+        <div class="container">
+          <p>
+            <span>뒤돌아보니 인생은 찰나의 순간이더라</span>서동필 지음 | 2020년 11월 30일 출간 | 해드림출판사 작업물
+          </p>
+          <img src="./img/2022113014.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo15">
+        <div class="container">
+          <p><span>꼭! 봐요!</span>임재문 지음 | 2020년 12월 08일 출간 | 해드림출판사 작업물</p>
+          <img src="./img/2022113013.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo16">
+        <div class="container">
+          <p><span>인큐버스의 여인들</span>임지인 지음 | 2020년 06월 06일 출간 | 해드림출판사 작업물</p>
+          <img src="./img/2022113012.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo17">
+        <div class="container">
+          <p><span>B형 도시(시집)</span>양순복 지음 | 2021년 07월 17일 출간 | 해드림출판사 작업물</p>
+          <img src="./img/202211309.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo18">
+        <div class="container">
+          <p><span>인문학 산책</span>김동기 지음 | 2020년 12월 31일 출간 | 해드림출판사 작업물</p>
+          <img src="./img/2022113010.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo19">
+        <div class="container">
+          <p><span>어머니의 불</span>민혜 지음 | 2021년 06월 30일 출간 | 해드림출판사 작업물</p>
+          <img src="./img/202211308.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo20">
+        <div class="container">
+          <p><span>행복한 사거리 인생</span>마상만 지음 | 2021년 04월 30일 출간 | 해드림출판사 작업물</p>
+          <img src="./img/202211307.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo21">
+        <div class="container">
+          <p><span>순천만 그리고…</span>김광현 지음 | 2021년 11월 20일 출간 | 해드림출판사 작업물</p>
+          <img src="./img/202211305.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo22">
+        <div class="container">
+          <p><span>빈 들의 향기, 백비</span>임병식 지음 | 2022년 08월 08일 출간 | 해드림출판사 작업물</p>
+          <img src="./img/202211304.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+      <div class="lightbox-target worklighboxVE" id="photo23">
+        <div class="container">
+          <p><span>문득 새떼가 되어</span>유헌 지음 | 2020년 05월 28일 출간 | 해드림출판사 작업물</p>
+          <img src="./img/20221130_00.jpg" />
+        </div>
+        <a class="lightbox-close" href="#!">X</a>
+      </div>
+    </div>
+
+    <!-- 홈페이지 프로세스 -->
+    <div class="lightbox-target" id="photo24">
+      <div class="container">
+        <p><span>AO!(아오!)</span>즐거울 때도, 힘들 때도 아오!</p>
+        <img src="./img/Portfolio_Process.png" />
+      </div>
+      <a class="lightbox-close" href="#!">X</a>
+    </div>
+
+    <!-- footer :s -->
+    <footer id="bottomBar">
+      <div class="inner">
+        <div class="footer_box">
+          <div class="footer_logo">
+            <a href="http://injungcom.dothome.co.kr/"
+              ><img src="./img/footer_logo.png" alt="AO logo" />
+              <p>즐거울 때도, 힘들 때도 아오!</p></a
+            >
+          </div>
+          <div class="footer_txt">
+            <address>
+              <p>2023 Designed & Developed By parkinjeong</p>
+              <p>
+                이 웹사이트는 개인 포토폴리오로, 모든 작업물은 상업적 이용 목적이 없습니다. Chrome에 최적화되어
+                있습니다.
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer :e -->
+  </body>
+</html>

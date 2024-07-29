@@ -1,0 +1,136 @@
+@charset 'utf-8';
+
+.gnb li:nth-child(4) a {
+  border-bottom: 1px solid var(--point-color);
+}
+body.light-mode .gnb li:nth-child(4) a {
+  border-bottom: 1px solid #f57651;
+}
+.container .inner {
+  width: 1528px;
+  margin: 50px auto;
+  /* background: #ff5; */
+}
+
+body {
+  overflow: hidden;
+}
+
+.con-wrap {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.pic-wrap {
+  width: 50%;
+}
+
+/* .pic-wrap {
+  position: relative;
+} */
+.me-pic {
+  width: 691px;
+  margin: 50px 0 0 auto;
+}
+
+.pic-1 {
+  width: 171px;
+  height: 249px;
+  position: absolute;
+  top: 120px;
+  left: 90px;
+
+  animation: picAni 2s 6s both cubic-bezier(0.19, 0.26, 0, 1.1) infinite;
+}
+
+.pic-2 {
+  position: absolute;
+  top: 170px;
+  left: -100px;
+  width: 667px;
+  height: 429px;
+
+  animation: picAni 2s 4.6s both cubic-bezier(0.19, 0.26, 0, 1.1) infinite;
+}
+
+.pic-3 {
+  position: absolute;
+  top: 231px;
+  left: 118px;
+  width: 148px;
+  height: 78px;
+
+  animation: picAni 2s 2.8s both cubic-bezier(0.19, 0.26, 0, 1.1) infinite;
+}
+
+.pic-4 {
+  position: absolute;
+  top: 268px;
+  left: 41px;
+  width: 420px;
+  height: 261px;
+
+  animation: picAni 2s 1.8s both cubic-bezier(0.19, 0.26, 0, 1.1) infinite;
+}
+
+@keyframes picAni {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.info-wrap {
+  width: 50%;
+  margin-bottom: 200px;
+}
+
+.info-wrap strong {
+  font-size: 40px;
+}
+
+.info-wrap strong b {
+  color: #000;
+  background: var(--main-color);
+  font-weight: 700;
+}
+
+.p-wrap {
+  margin-top: 77px;
+}
+.info-wrap dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.info-wrap dl dt {
+  display: block;
+  width: 160px;
+  color: var(--point-color);
+  font-size: 24px;
+}
+.info-wrap dl dd {
+  font-size: 24px;
+  text-transform: lowercase;
+}
+
+footer {
+  width: 100%;
+  height: 347px;
+  background: url(../img/contact-me-footer.png) 0 0;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

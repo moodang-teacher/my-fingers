@@ -1,0 +1,109 @@
+@charset 'utf-8';
+
+@import url(//db.onlinewebfonts.com/c/69b8bafa9f2b006dd1dd33ac64470180?family=Formal436+BT);
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+@font-face {
+  font-family: 'Jeonju_gakR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Jeonju_gakR.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.go-top a {
+  width: 72px;
+  height: 72px;
+  border: 1px solid #ee964b;
+  background: url(../images/go-top.svg) no-repeat 50%;
+  position: fixed;
+  top: 800px;
+  right: 95px;
+}
+
+.bg {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+body {
+  background: #7a1011;
+  font: 'Formal436 BT';
+}
+
+img {
+  width: 100%;
+}
+.gnb {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: fixed;
+  top: 104px;
+  right: 76px;
+}
+
+.gnb li:hover a {
+  border-bottom: 2px solid #ee964b;
+}
+
+.gnb li a {
+  font: 22px/1.5 'Formal436 BT';
+  color: #fff;
+  text-decoration: none;
+}
+
+.visual {
+  position: relative;
+}
+
+.visual-logo {
+  position: absolute;
+  top: 270px;
+  left: 120px;
+  animation: logo-ani 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes logo-ani {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.visual-info {
+  position: absolute;
+  top: 700px;
+  left: 238px;
+}
+
+.visual-info strong {
+  font: 30px/1.7 'Jeonju_gakR';
+  font-weight: 300;
+  color: #fff;
+  animation: logo-ani 0.8s 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+#container {
+  position: relative;
+}
+
+.character-deco {
+  width: 518px;
+  height: 650px;
+  background: url(../images/character-deco.png) no-repeat 50%;
+  position: absolute;
+  top: 5048px;
+  right: 91px;
+  z-index: 100;
+}

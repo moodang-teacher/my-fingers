@@ -1,0 +1,486 @@
+@charset 'utf-8';
+
+html {
+  scroll-behavior: smooth;
+}
+
+#container {
+  position: relative;
+
+  padding: 150px 0 0;
+}
+.inner {
+  max-width: 1290px;
+  height: 100%;
+  /* background: rgba(255, 255, 85, 0.5); */
+  margin: 0 auto;
+}
+
+.mywork {
+  background: url(../images/myworks-mainbg.jpg) no-repeat;
+  height: 442px;
+  position: relative;
+}
+
+.mywork-wrap h2 {
+  color: #000;
+  font: 90px 'Noto Serif Display', serif;
+}
+
+.mywork-wrap p {
+  color: #fff;
+  display: block;
+  margin-top: 10px;
+}
+
+.mywork-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main-deco1 {
+  width: 83px;
+  height: 72px;
+  position: absolute;
+  top: 80px;
+  right: 620px;
+  animation: maindeco1 5s infinite linear;
+}
+
+.main-deco2 {
+  width: 115px;
+  height: 104px;
+  position: absolute;
+  bottom: 114px;
+  left: 550px;
+
+  animation: maindeco2 3s infinite ease;
+}
+
+@keyframes maindeco2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px) scale(1);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes maindeco1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px) scale(1.2) rotate(20deg);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.design-portfolio {
+  margin-top: 420px;
+}
+
+/* 공통 스타일 */
+
+.info {
+  position: relative;
+  z-index: 100;
+}
+
+.info-wrap {
+  display: flex;
+  gap: 18px;
+}
+section b {
+  color: #8ce0ee;
+  font: 54px 'IBM Plex Mono', monospace;
+  font-weight: 300;
+}
+strong {
+  font-size: 24px;
+  font-weight: 300;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #999999;
+  z-index: 102;
+  position: relative;
+}
+
+.info h2 {
+  font-size: 48px;
+  font-family: 'felixtitling', serif;
+}
+section,
+.marquee {
+  margin-top: 200px;
+  padding-top: 30px;
+}
+.info p {
+  display: block;
+
+  font-size: 16px;
+  color: #666;
+  margin-left: 52px;
+}
+
+.deco-bg {
+  z-index: -1;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  background: url(../images/myworks-deco-bgpng.png) no-repeat 50%;
+}
+
+.monitor-wrap {
+  position: relative;
+}
+
+.monitor {
+  width: 448px;
+  height: 251px;
+  background: #000;
+  overflow: hidden;
+  position: absolute;
+  top: 70px;
+  left: 438px;
+}
+
+.monitor > figure {
+  width: 448px;
+}
+
+.monitor:hover figure {
+  transform: translateY(calc(-100% + 251px));
+  transition: linear 12s;
+}
+
+.pc {
+  margin: 0 auto;
+  width: 807px;
+  height: 600px;
+}
+
+/* s: deco-spark */
+.deco-spark {
+  width: 46px;
+  height: 64px;
+  background: url(../images/main-deco-spark.png) no-repeat 50%;
+  background-size: contain;
+  animation: spark-ani 4s infinite linear;
+}
+
+@keyframes spark-ani {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.deco-spark.spark1 {
+  position: absolute;
+  top: -10px;
+  left: -70px;
+}
+.deco-spark.spark2 {
+  position: absolute;
+  top: 20px;
+  left: 160px;
+}
+.deco-spark.spark3 {
+  position: absolute;
+  top: -30px;
+  left: 300px;
+}
+
+.deco-spark.spark4 {
+  position: absolute;
+  top: 40px;
+  left: -50px;
+}
+.deco-spark.spark5 {
+  position: absolute;
+  top: -20px;
+  left: -50px;
+}
+.deco-spark.spark6 {
+  position: absolute;
+  top: -20px;
+  left: 270px;
+}
+.deco-spark.spark7 {
+  position: absolute;
+  top: -20px;
+  left: -60px;
+}
+.deco-spark.spark8 {
+  position: absolute;
+  top: 40px;
+  left: -60px;
+}
+/* //e: deco-spark */
+
+.process-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: 80px;
+}
+
+.process-info dl {
+  width: 294px;
+}
+
+.process-info dl dt {
+  font-size: 24px;
+  font-weight: 700;
+  color: #666;
+}
+
+.process-wrap {
+  display: flex;
+  gap: 60px;
+}
+
+.tool-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 280x;
+  align-items: center;
+  margin-top: 11px;
+}
+
+.tool-list li {
+  font-size: 20px;
+  font-weight: 400;
+
+  color: #999999;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.tool-list li:after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 19px;
+  background: #999;
+  position: absolute;
+  right: -14px;
+}
+
+.tool-list li:last-child:after {
+  width: 0;
+  height: 0;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  margin-top: 11px;
+}
+.project-list li {
+  font-size: 20px;
+  font-weight: 400;
+
+  color: #999999;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.project-list li:after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 19px;
+  background: #999;
+  position: absolute;
+  right: -8px;
+}
+
+.project-list li:last-child:after {
+  width: 0;
+  height: 0;
+}
+
+.btnpg {
+  display: flex;
+  gap: 10px;
+}
+
+/* down btn */
+.btn {
+  display: block;
+  width: 54px;
+  height: 54px;
+  background: url(../images/btn-nextpg.svg) no-repeat 50%;
+  margin: 30px auto 0;
+  animation: btn-down 3s infinite ease;
+}
+@keyframes btn-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px) scale(1);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.holo-img-wrap {
+  margin-left: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+}
+
+.holo-img {
+  display: flex;
+  gap: 23px;
+}
+
+.cando-img-wrap {
+  margin-left: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+}
+
+.cando-img {
+  display: flex;
+  gap: 23px;
+  width: 888px;
+}
+
+.cando-logo {
+  width: 200px;
+  height: 200px;
+}
+
+.marquee span {
+  color: #8ce0ee;
+  font-family: 'felixtitling', serif;
+  font-size: 64px;
+  display: block;
+  animation: marquee 15s linear infinite;
+
+  padding-right: 20px;
+}
+.marquee {
+  white-space: nowrap;
+  display: flex;
+  margin-top: 200px;
+}
+
+@keyframes marquee {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* btn */
+.mas {
+  position: absolute;
+  color: #000;
+  text-align: center;
+  width: 143px;
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+.button-container {
+  position: relative;
+  width: 143px;
+  height: 46px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8vh;
+  overflow: hidden;
+  border: 1px solid #000;
+
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 50px;
+}
+.button-container div {
+  width: 101%;
+  height: 100%;
+
+  font-size: 20px;
+  letter-spacing: 1px;
+
+  background: #8ce0ee;
+  -webkit-mask: url('https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png');
+  mask: url('https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png');
+  -webkit-mask-size: 7100% 100%;
+  mask-size: 7100% 100%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+
+  animation: ani2 0.7s steps(70) forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container a {
+  color: #fff;
+}
+.button-container div:hover {
+  animation: ani 0.7s steps(70) forwards;
+}

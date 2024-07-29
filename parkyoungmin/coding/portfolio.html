@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio | 박영민</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <a href="#container" class="hidden">본문 바로가기 </a>
+    <div class="cursor-bg"></div>
+
+    <header id="header">
+      <div class="inner">
+        <nav>
+          <h1 class="logo">
+            <a href="./index.html"><i class="hidden">영민</i> </a>
+          </h1>
+          <ul class="gnb">
+            <li><a href="./about-me.html">about me</a></li>
+            <li class="on"><a href="./portfolio.html">portfolio</a></li>
+            <li><a href="./contact.html">contact</a></li>
+          </ul>
+          <div class="mode-wrap"><input type="checkbox" id="mode" /><label for="mode"></label></div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="container">
+      <div class="inner">
+        <div class="portfolio-wrap">
+          <ol class="portfolio-text-wrap">
+            <li class="on">
+              <strong>1</strong>
+              <dl>
+                <dt>Personal Website</dt>
+                <dd>개인 포트폴리오 웹사이트</dd>
+              </dl>
+            </li>
+            <li>
+              <strong>2</strong>
+              <dl>
+                <dt>Website Redesign</dt>
+                <dd>하파크리스틴 웹사이트 리디자인</dd>
+              </dl>
+            </li>
+            <li>
+              <strong>3</strong>
+              <dl>
+                <dt>Website Redesign</dt>
+                <dd>신전떡볶이 웹사이트 리디자인</dd>
+              </dl>
+            </li>
+            <li>
+              <strong>4</strong>
+              <dl>
+                <dt>UX/UI Design</dt>
+                <dd>포시락 모바일 UX/UI 디자인 (Team project)</dd>
+              </dl>
+            </li>
+            <li>
+              <strong>5</strong>
+              <dl>
+                <dt>Microsite Design</dt>
+                <dd>슈퍼마리오 브라더스 마이크로사이트 디자인</dd>
+              </dl>
+            </li>
+          </ol>
+
+          <div class="portfolio-slider-wrap slider-wrap">
+            <div class="slider">
+              <div class="slide-item">
+                <figure>
+                  <img src="./img/portfolio01.png" alt="개인 포트폴리오 웹사이트" />
+                </figure>
+                <div class="btn-wrap">
+                  <a href="portfolio/personal/personal-process.html" target="_blank" class="btn-portfolio">PROCESS</a>
+                  <!-- <a href="#" class="btn-portfolio">DESIGN</a> -->
+                </div>
+              </div>
+              <div class="slide-item">
+                <figure>
+                  <img src="./img/portfolio02.png" alt="하파크리스틴 웹사이트 리디자인" />
+                </figure>
+                <div class="btn-wrap">
+                  <a
+                    href="./portfolio/hapacristine/coding/hapacristine-process.html"
+                    class="btn-portfolio"
+                    target="_blank"
+                    >PROCESS</a
+                  >
+                  <a href="./portfolio/hapacristine/coding/index.html" class="btn-portfolio" target="_blank">DESIGN</a>
+                </div>
+              </div>
+              <div class="slide-item">
+                <figure>
+                  <img src="./img/portfolio03.png" alt="신전떡볶이 웹사이트 리디자인" />
+                </figure>
+                <div class="btn-wrap">
+                  <a href="./portfolio/sinjeon/coding/sinjeon-process.html" class="btn-portfolio" target="_blank"
+                    >PROCESS</a
+                  >
+                  <a href="./portfolio/sinjeon/coding/index.html" class="btn-portfolio" target="_blank">DESIGN</a>
+                </div>
+              </div>
+              <div class="slide-item">
+                <figure>
+                  <img src="./img/portfolio04.png" alt="포시락 모바일 UX/UI 디자인" />
+                </figure>
+                <div class="btn-wrap">
+                  <a href="./portfolio/posirak/posirak-process.html" class="btn-portfolio" target="_blank">PROCESS</a>
+                  <a
+                    href="https://www.figma.com/proto/tEg4E4EXeYIooBevVYArdg/%ED%8F%AC%EC%8B%9C%EB%9D%BD-%3A-%EC%9C%BC%EC%8C%B0%EC%9C%BC%EC%8C%B0?page-id=227%3A4130&type=design&node-id=773-9290&viewport=261%2C80%2C0.13&scaling=min-zoom&starting-point-node-id=773%3A9290&mode=design"
+                    class="btn-portfolio"
+                    target="_blank"
+                    >DESIGN</a
+                  >
+                </div>
+              </div>
+              <div class="slide-item">
+                <figure>
+                  <img src="./img/portfolio05.png" alt="슈퍼마리오 브라더스 마이크로사이트 디자인" />
+                </figure>
+                <div class="btn-wrap">
+                  <!-- <a href="#" class="btn-portfolio">PROCESS</a> -->
+                  <a href="./portfolio/super-mario/index.html" target="_blank" class="btn-portfolio">DESIGN</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="scroll scroll-port"></span>
+    </main>
+  </body>
+</html>

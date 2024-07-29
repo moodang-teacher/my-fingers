@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about me</title>
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/hover-min.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/about-me.css" />
+
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="js/common-script.js"></script>
+    <script src="js/script-aboutme.js"></script>
+  </head>
+
+  <body>
+    <!-- loading - spinner -->
+
+    <div class="spinner-wrap">
+      <div class="container">
+        <div class="spinner">
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+      </div>
+    </div>
+    <svg>
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="
+                                                             1 0 0 0 0 
+                                                             0 1 0 0 0
+                                                             0 0 1 0 0
+                                                             0 0 0 50 -8"
+            result="goo"
+          />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+
+    <!-- menu -->
+    <div class="menu-wrap">
+      <ul class="menu-list">
+        <li class="menu1"><a href="./home-index.html">Home</a></li>
+        <li class="menu2"><a href="./aboutme-index.html">About me</a></li>
+        <li class="menu3"><a href="./myworks.html">My works</a></li>
+        <li class="menu4"><a href="./experience.html">Experience</a></li>
+      </ul>
+      <button class="close"></button>
+    </div>
+
+    <!-- cursor -->
+    <div class="cursor"></div>
+    <div class="spark"></div>
+
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="./index.html"><i class="hidden">SH</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a class="hvr-float hvr-underline-reveal" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="hvr-float hvr-underline-reveal" href="./aboutme-index.html">About me</a>
+          </li>
+          <li>
+            <a class="hvr-float hvr-underline-reveal" href="./myworks-index.html">My works</a>
+          </li>
+          <li>
+            <a class="hvr-float hvr-underline-reveal" href="./experience-index.html">Experience</a>
+          </li>
+        </ul>
+        <div class="wrap">
+          <div class="contact-me">
+            <strong
+              >contact <br />
+              <b>me!</b></strong
+            >
+          </div>
+          <div class="menu"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="container">
+      <!-- deco-bg -->
+      <div class="deco-bg1">
+        <img src="./images/aboutme-bg1.png" alt="bg1" />
+      </div>
+      <div class="deco-bg2">
+        <img src="./images/aboutme-bg2.png" alt="bg2" />
+      </div>
+      <div class="deco-bg3">
+        <img src="./images/aboutme-bg3.png" alt="bg3" />
+      </div>
+      <div class="deco-bg4">
+        <img src="./images/aboutme-bg4.png" alt="bg4" />
+      </div>
+      <div class="deco-bg5">
+        <img src="./images/aboutme-bg5.png" alt="bg5" />
+      </div>
+      <!-- s:about-me -->
+      <div class="about-me">
+        <div class="deco-spark deco-spark1">
+          <img src="./images/main-deco-spark.png" alt="" />
+        </div>
+        <div class="inner">
+          <h2 class="title">About (<em class="me">Me</em>)</h2>
+          <div class="about-me-wrap">
+            <div class="about-me-info">
+              <p class="letter-deco wmf-deco1">Hello</p>
+              <strong
+                >안녕하세요. <br />
+                지금뿐만 아니라<span data-splitting> 다음도 기대되는</span> <br /><em>물</em>과 같은 디자이너(<b
+                  data-splitting
+                  >김세희</b
+                >)입니다.</strong
+              >
+            </div>
+            <figure>
+              <img src="./images/aboutme-myphoto.png" alt="김세희 이미지" />
+            </figure>
+          </div>
+
+          <a href="#personality" class="btn btn-nextpg"><i class="hidden">next</i></a>
+          <div class="aboutme-deco1">
+            <img src="./images/aboutme-deco-1.png" alt="waterdeco1" />
+          </div>
+        </div>
+      </div>
+      <!-- //e:about-me -->
+      <!-- s:personality -->
+      <div id="personality" class="personality">
+        <div class="inner">
+          <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><b>I</b>’m</h2>
+          <div class="personality-wrap">
+            <div class="personality-list">
+              <div data-aos="fade-down-right" class="personalitys personality1">
+                <h3>FAITHFUL</h3>
+                <div class="deco-spark deco-spark2">
+                  <img src="./images/main-deco-spark.png" alt="" />
+                </div>
+              </div>
+              <div data-aos="fade-up-left" class="personalitys personality2">
+                <h3>FLEXIBLE</h3>
+                <div class="deco-spark deco-spark3">
+                  <img src="./images/main-deco-spark.png" alt="" />
+                </div>
+              </div>
+              <div class="plus"><img src="./images/plus.png" alt="plus" /></div>
+            </div>
+            <div class="personality-info">
+              <strong>(<b data-splitting>성실</b>)하며 (<b data-splitting>유연</b>)하게 대처하고 적응합니다.</strong>
+              <p>
+                책임감이 주어지는 일뿐만 아니라 모든 일에<br />
+                긍정적으로 받아들이며 끝까지 해내려고 하는 성격입니다. <br />
+                쉽게 포기하지 않고 성실하게 임합니다. <br />
+                결과에 도달하기 위한 과정에서의 힘든 일도 금방 털어내려 하며<br />
+                유연하게 대처합니다.
+              </p>
+            </div>
+          </div>
+          <a href="#wmf" class="btn btn-nextpg"><i class="hidden">next</i></a>
+        </div>
+      </div>
+      <!-- //e:personality -->
+      <!-- s:wmf -->
+      <div id="wmf" class="wmf">
+        <div class="inner">
+          <div class="wmf-wrap">
+            <h2 data-aos="fade-right">What’s my <b>favorite</b> ?</h2>
+            <strong data-splitting>내가 좋아하는 일은 무엇일까?</strong>
+            <div class="wmf-info">
+              <p>
+                저는 꾸준히 내가 좋아하는 것은 무엇일까 잘 하는게 무엇일지 고민을 해왔습니다. <br />
+                그런 고민 후 제품 디자인을 배우며 저는 항상 ‘모두가 가능한’, ‘함께’라는 키워드를 가지고 모든 사람이
+                직관적으로 알고 사용할 수 있는 제품을 디자인하는 것을 목표로 제품을 디자인했습니다.
+              </p>
+              <p>
+                제품 졸업 전시를 준비하면서 부졸전으로 UX/UI디자인을 처음 배우게 되었습니다. 하나의 앱을 만들기 위해서는
+                여러 절차를 거쳐 만들어지는 것을 알게 되었고 그러한 절차들을 조사하고 경험해보며 재미를 느꼈고
+                팀원들과의 조화를 통해 이해와 배려를 배웠었습니다.
+                <br />모두가 직관적으로 알 수 있는 아이콘 하나하나를 스케치하며 의미를 지닌 아이콘들로 이루어진 모바일
+                디자인을 진행하며 항상 지니고 있던 키워드와 맞아 떨어진다는 생각이 들었고 모바일 화면을 제작하는데
+                흥미를 느껴 더 배우고 싶어졌습니다.
+              </p>
+            </div>
+          </div>
+          <a href="#work-style" class="btn btn-nextpg"><i class="hidden">next</i></a>
+        </div>
+        <div data-aos="zoom-in" class="letter-deco wmf-deco2">favorite?</div>
+        <div class="deco-water1">
+          <img src="./images/aboutme-deco-2.png" alt="waterdeco2" />
+        </div>
+        <div class="deco-spark deco-spark4">
+          <img src="./images/main-deco-spark.png" alt="spark" />
+        </div>
+      </div>
+      <!-- //e:wmf -->
+      <!-- s:work-style -->
+      <div id="work-style" class="work-style">
+        <div class="inner">
+          <h2 data-aos="fade-left">My <b>work style</b></h2>
+          <div class="work-style-wrap">
+            <div data-aos="fade-down-right" class="schedule">
+              <figure>
+                <img src="./images/work-style1.jpg" alt="schedule" />
+              </figure>
+              <dl>
+                <dt>(<b data-splitting>계획</b>)을 짜고 나아갑니다.</dt>
+                <dd>
+                  노는 것 뿐만 아니라 일에서도 어떤 순서로 진행을 할 것인지 계획을 짜고 진행하는 것을 좋아합니다. 물론
+                  다 지키긴 어려울 때도 있지만 계획을 짜고 진행을 하면 원하는 결과를 얻을 수 있는 것 같습니다.
+                </dd>
+              </dl>
+            </div>
+            <div data-aos="fade-up-left" class="check">
+              <dl>
+                <dt>한 번 더 (<b data-splitting>확인</b>)합니다.</dt>
+                <dd>
+                  책임감이 주어지는 일뿐만 아니라 모든 일에 긍정적으로 받아들이며 끝까지 해내려고 하는 성격입니다. 쉽게
+                  포기하지 않고 성실하게 임합니다. 결과에 도달하기 위한 과정에서의 힘든 일도 금방 털어내려 하며 유연하게
+                  대처합니다.
+                </dd>
+              </dl>
+              <figure>
+                <img src="./images/work-style2.jpg" alt="check" />
+              </figure>
+            </div>
+          </div>
+          <a href="#myskills" class="btn btn-nextpg"><i class="hidden">next</i></a>
+        </div>
+      </div>
+      <!-- //e:work-style -->
+      <!-- s:My skills -->
+      <div id="myskills" class="myskills">
+        <h2 data-aos="fade-up">My <b>skills</b></h2>
+
+        <ul class="myskills-list">
+          <li>
+            <figure>
+              <img src="./images/myskills1.png" alt="photoshop" />
+            </figure>
+            <div class="ms-deco-spark deco-spark5">
+              <img src="./images/main-deco-spark.png" alt="spark" />
+            </div>
+          </li>
+          <li>
+            <figure>
+              <img src="./images/myskills2.png" alt="illustrator" />
+            </figure>
+            <div class="ms-deco-spark deco-spark6">
+              <img src="./images/main-deco-spark.png" alt="spark" />
+            </div>
+          </li>
+          <li>
+            <figure><img src="./images/myskills3.png" alt="Xd" /></figure>
+            <div class="ms-deco-spark deco-spark7">
+              <img src="./images/main-deco-spark.png" alt="spark" />
+            </div>
+          </li>
+          <li>
+            <figure><img src="./images/myskills4.png" alt="figma" /></figure>
+            <div class="ms-deco-spark deco-spark8">
+              <img src="./images/main-deco-spark.png" alt="spark" />
+            </div>
+          </li>
+          <li>
+            <figure>
+              <img src="./images/myskills5.png" alt="visual studio" />
+            </figure>
+            <div class="ms-deco-spark deco-spark9">
+              <img src="./images/main-deco-spark.png" alt="spark" />
+            </div>
+          </li>
+          <li>
+            <figure><img src="./images/myskills6.png" alt="html" /></figure>
+            <div class="ms-deco-spark deco-spark10">
+              <img src="./images/main-deco-spark.png" alt="spark" />
+            </div>
+          </li>
+          <li>
+            <figure><img src="./images/myskills7.png" alt="css" /></figure>
+            <div class="ms-deco-spark deco-spark11">
+              <img src="./images/main-deco-spark.png" alt="spark" />
+            </div>
+          </li>
+          <li>
+            <figure><img src="./images/myskills8.png" alt="jquery" /></figure>
+            <div class="ms-deco-spark deco-spark12">
+              <img src="./images/main-deco-spark.png" alt="spark" />
+            </div>
+          </li>
+        </ul>
+        <a href="#favorite-things " class="btn btn-skills"><i class="hidden">next</i></a>
+      </div>
+      <!-- //e:My skills -->
+      <!-- s:favorite things -->
+      <div id="favorite-things" class="favorite-things">
+        <div class="inner">
+          <h2 data-aos="fade-right"><b>Favorite</b> things</h2>
+          <p>
+            저는 풍경사진을 찍고 그림을 끄적이는 것을 좋아하고 <br />맛있는 음식과 디저트를 좋아해 맛집, 카페를 다니는
+            것을 좋아합니다.
+          </p>
+        </div>
+        <div class="favorite-things-wrap">
+          <div data-aos="fade-down-right" class="letter-deco ft-deco1">Favorite Things</div>
+          <div data-aos="fade-up-left" class="letter-deco ft-deco2">Favorite Things</div>
+          <div class="favorite-slider swiper">
+            <ul class="favorite-things-list swiper-wrapper">
+              <li class="swiper-slide">
+                <img src="./images/favorite-things1-dim.png" alt="cake" />
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/favorite-things2-dim.png" alt="puppy" />
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/favorite-things3-dim.png" alt="sea" />
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/favorite-things4-dim.png" alt="catus" />
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/favorite-things5-dim.png" alt="gardening" />
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/favorite-things6-dim.png" alt="flower" />
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/favorite-things7-dim.png" alt="food" />
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/favorite-things8-dim.png" alt="cat" />
+              </li>
+            </ul>
+            <div class="paging">
+              <button class="ft-btn favorite-prev">
+                <i class="hidden">Prev</i>
+              </button>
+
+              <button class="ft-btn favorite-next">
+                <i class="hidden">Next</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //e:favorite things -->
+    </main>
+
+    <footer id="footer">
+      <div class="inner">
+        <div class="foot-info">
+          <strong>contact(<b>me</b>)!</strong>
+          <p>010-3018-3998</p>
+          <p>bobbby3998@naver.com</p>
+        </div>
+      </div>
+      <div class="letter-deco foot-deco">
+        <span>
+          &copy;KIMSEHEE PORTFOLIO &copy;KIMSEHEE PORTFOLIO &copy;KIMSEHEE PORTFOLIO &copy;KIMSEHEE PORTFOLIO
+          &copy;KIMSEHEE PORTFOLIO
+        </span>
+        <span>
+          &copy;KIMSEHEE PORTFOLIO &copy;KIMSEHEE PORTFOLIO &copy;KIMSEHEE PORTFOLIO &copy;KIMSEHEE PORTFOLIO
+          &copy;KIMSEHEE PORTFOLIO
+        </span>
+      </div>
+    </footer>
+
+    <div class="go-top">
+      <a href="#top"
+        ><figure><img src="./images/go-top.png" alt="" /></figure
+      ></a>
+    </div>
+  </body>
+</html>

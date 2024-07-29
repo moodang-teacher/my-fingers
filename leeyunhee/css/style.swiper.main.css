@@ -1,0 +1,233 @@
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+/* .swiper-slide {
+  display: flex;
+  justify-content: center;
+} */
+.swiper-wrapper {
+  margin: 0 auto;
+}
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  /* padding: 10px 0; */
+}
+.mySwiper .btn-down {
+  background: #4345c0;
+}
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.work-con {
+  height: 11.5rem;
+}
+.sub-menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-wrap {
+  position: relative;
+  /* z-index: 1000; */
+  /* width: 220rem; */
+}
+.menu-wrap::before {
+  position: absolute;
+  content: '';
+  left: -15rem;
+  width: 15rem;
+  height: 100%;
+  background: #7f58ee;
+}
+.menu-wrap ul {
+  /* gap: 7rem; */
+  padding: 3rem 0 3rem 0;
+  background: #7f58ee;
+}
+.menu-wrap ul::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 10rem;
+  height: 100%;
+  background: #7f58ee;
+}
+.menu-wrap ul::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: -80rem;
+  width: 80rem;
+  height: 100%;
+  background: #7f58ee;
+  z-index: -1;
+}
+
+.menu-wrap ul li {
+  width: 24.4rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 2rem 0 2rem; */
+  cursor: pointer;
+}
+.menu-wrap ul li h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.menu-wrap ul li figure {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  /* margin-top: 1.2rem; */
+  overflow: hidden;
+}
+.menu-wrap ul li figure img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.menu-wrap ul li:nth-child(1) figure img {
+  background: #ffdfb9;
+  object-position: 50% 2rem;
+}
+.menu-wrap ul li:nth-child(2) figure img {
+  background: #5255df;
+  object-position: 50% 0;
+}
+.menu-wrap ul li:nth-child(3) figure img {
+  background: #ff8f8f;
+  object-position: 1rem 1.5rem;
+}
+.menu-wrap ul li:nth-child(4) figure img {
+  background: #cdedd2;
+  /* object-position: 2rem 3rem; */
+  object-fit: contain;
+}
+
+.menu-wrap ul li:nth-child(5) figure img {
+  object-fit: contain / 50%;
+  background: linear-gradient(
+    45deg,
+    rgba(252, 208, 55, 1),
+    rgba(255, 63, 155, 1),
+    rgba(188, 45, 255, 1)
+  );
+}
+
+.work-wrap .sub-img {
+  height: 90rem;
+}
+.work-wrap div.sub-img figure img {
+  width: 80%;
+  top: 0;
+  right: -10rem;
+  position: absolute;
+}
+
+.btn-down {
+  display: flex;
+  gap: 1rem;
+  border-radius: 2rem;
+  padding: 0.3rem 1.5rem 0.3rem;
+  background: #666;
+  margin-top: 2rem;
+  justify-content: center;
+  width: 16rem;
+  position: relative;
+  align-items: center;
+  font-size: 1.6rem;
+}
+.menu-wrap ul li:hover .btn-down {
+  color: #fdfdfd;
+  background: #4345c0 !important;
+}
+
+.btn-down span {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(../img/arrow-on.svg) no-repeat 0 50% / contain;
+}
+
+.work-wrap {
+  padding: 5rem 0;
+}
+
+.work-info {
+  width: 41rem;
+  position: absolute;
+  margin: 0 auto;
+  justify-content: center;
+  z-index: 1;
+}
+.work-info strong {
+  font-size: 2rem;
+  font-weight: 100;
+}
+.work-info p {
+  font-size: 1.6rem;
+  font-weight: 100;
+  margin-top: 3rem;
+}
+.work-info ul {
+  display: flex;
+  gap: 3rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+.work-info ul li {
+  width: 9.8rem;
+  height: 12.4rem;
+  text-align: center;
+}
+.work-info ul li figure {
+  width: 9.8rem;
+  height: 9.8rem;
+  background: linear-gradient(135deg, rgba(62, 62, 62, 1), rgba(34, 34, 34, 1));
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.work-info ul li figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.work-info .sub-img {
+  position: absolute;
+  top: 0;
+  right: -20rem;
+}
+.work-info ul li strong {
+  display: block;
+  color: #fff;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}

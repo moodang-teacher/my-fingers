@@ -1,0 +1,78 @@
+.micro-con {
+  margin-top: 1rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.app-con {
+  margin-top: 1rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.respon-con {
+  margin-top: 1rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.micro-con figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app-con figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.respon-con figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  background: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-size: 1.4rem;
+  align-items: center;
+  color: #fff;
+}
+
+.more a:hover {
+  color: #561f9b;
+  /* transform: scale(1.05); */
+}
+
+.btn-right span {
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/arrow.svg) no-repeat 0 0 / contain;
+}
+
+/* 슬라이더 */
+.swiper-container {
+  width: 100%;
+  /* padding-top: 90px;
+  padding-bottom: 10px; */
+  transition: all 0.5s linear;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide figure img {
+  width: 70rem;
+}

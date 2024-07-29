@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <link rel="stylesheet" href="./css/hover-min.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+    <script src="js/common-script.js"></script>
+    <script src="js/script-home.js"></script>
+  </head>
+  <body>
+    <!-- loading -->
+    <div class="wc-wrap">
+      <div class="wc">
+        <span class="wc-row">
+          <span class="wc-text">Welcome</span>
+        </span>
+        <span class="wc-row wc-row--sibling" aria-hidden="true">
+          <span class="wc-text">Welcome</span>
+        </span>
+        <span class="wc-row wc-row--sibling" aria-hidden="true">
+          <span class="wc-text">Welcome</span>
+        </span>
+        <span class="wc-row wc-row--sibling" aria-hidden="true">
+          <span class="wc-text">Welcome</span>
+        </span>
+        <span class="wc-row wc-row--sibling" aria-hidden="true">
+          <span class="wc-text">Welcome</span>
+        </span>
+        <span class="wc-row wc-row--sibling" aria-hidden="true">
+          <span class="wc-text">Welcome</span>
+        </span>
+      </div>
+
+      <div class="wrapper">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
+    </div>
+    <!-- loading -->
+
+    <div class="cursor"></div>
+    <div class="spark"></div>
+    <div class="bg"></div>
+    <a href="#container" class="hidden">본문 바로가기</a>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="./index.html"><i class="hidden">SH</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a class="hvr-float hvr-underline-reveal" href="./index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="hvr-float hvr-underline-reveal"
+              href="./aboutme-index.html"
+              >About me</a
+            >
+          </li>
+          <li>
+            <a
+              class="hvr-float hvr-underline-reveal"
+              href="./myworks-index.html"
+              >My works</a
+            >
+          </li>
+          <li>
+            <a
+              class="hvr-float hvr-underline-reveal"
+              href="./experience-index.html"
+              >Experience</a
+            >
+          </li>
+        </ul>
+        <div class="wrap">
+          <div class="contact-me">
+            <strong
+              >contact <br />
+              <b>me!</b></strong
+            >
+          </div>
+          <div class="contact-me-info"></div>
+          <div class="menu"></div>
+        </div>
+      </nav>
+      <div class="menu-wrap">
+        <ul class="menu-list">
+          <li class="menu1"><a href="./index.html">Home</a></li>
+          <li class="menu2"><a href="./aboutme-index.html">About me</a></li>
+          <li class="menu3"><a href="./myworks-index.html">My works</a></li>
+          <li class="menu4">
+            <a href="./experience-index.html">Experience</a>
+          </li>
+        </ul>
+        <button class="close"></button>
+      </div>
+    </header>
+    <main id="container">
+      <div class="inner">
+        <div class="main">
+          <div class="main-typo">
+            <div class="main-typo1">
+              <div class="deco-circle"></div>
+              <div class="deco-circle2">
+                <div></div>
+              </div>
+              <strong
+                >다음이 더 기대되는
+                <b data-splitting>디자이너 김세희</b>입니다.</strong
+              >
+              <div class="text-wrap1">
+                <h2>My NExT</h2>
+              </div>
+            </div>
+            <div class="main-typo2">
+              <div class="text-wrap2">
+                <h2>LEVel</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- deco -->
+      <div class="deco-wrap">
+        <div class="deco1">
+          <div class="video">
+            <video src="./videos/video.mp4" muted loop autoplay></video>
+          </div>
+        </div>
+        <div class="deco2">
+          <figure><img src="./images/main-deco-2.png" alt="deco2" /></figure>
+        </div>
+        <div class="deco3">
+          <figure><img src="./images/main-deco-3.png" alt="deco3" /></figure>
+        </div>
+        <div class="deco4">
+          <figure><img src="./images/main-deco-4.png" alt="deco4" /></figure>
+        </div>
+        <div class="deco5">
+          <figure><img src="./images/main-deco-5.png" alt="deco5" /></figure>
+        </div>
+        <div class="deco6">
+          <figure><img src="./images/main-deco-6.png" alt="deco6" /></figure>
+        </div>
+      </div>
+
+      <!-- deco-bubble -->
+      <div class="bubble-wrap">
+        <div class="deco-bubble1">
+          <figure><img src="./images/main-deco-bubble.png" alt="" /></figure>
+        </div>
+        <div class="deco-bubble2">
+          <figure><img src="./images/main-deco-bubble.png" alt="" /></figure>
+        </div>
+        <div class="deco-bubble3">
+          <figure><img src="./images/main-deco-bubble.png" alt="" /></figure>
+        </div>
+        <div class="deco-bubble4">
+          <figure><img src="./images/main-deco-bubble.png" alt="" /></figure>
+        </div>
+      </div>
+
+      <!-- deco-spark -->
+      <div class="deco-spark1">
+        <figure><img src="./images/main-deco-spark.png" alt="" /></figure>
+      </div>
+      <div class="deco-spark2">
+        <figure><img src="./images/main-deco-spark.png" alt="" /></figure>
+      </div>
+
+      <!-- deco-gra -->
+      <div class="deco-gra1"></div>
+      <div class="deco-gra2"></div>
+    </main>
+  </body>
+</html>

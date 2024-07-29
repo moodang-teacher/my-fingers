@@ -1,0 +1,308 @@
+@charset 'utf-8';
+
+body {
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
+body::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  height: 200px;
+  z-index: 999;
+}
+
+.indicator {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  top: 50%;
+  left: 110px;
+  transform: translateY(-50%);
+  z-index: 999;
+}
+.indicator a.on {
+  background-image: url(../img/indicator_active.png);
+}
+
+section {
+  display: flex;
+  align-items: center;
+  gap: 145px;
+  height: 100vh;
+}
+
+.content-info {
+  width: calc(100% - 1138px);
+}
+section:nth-child(even) .content-info {
+  padding-left: 220px;
+  transform: translateY(40px);
+}
+section:nth-child(odd) .content-info {
+  padding-right: 130px;
+}
+section:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+section:nth-child(odd) .content-info {
+  display: flex;
+  align-items: end;
+}
+
+section:nth-child(even) .visual-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section:nth-child(even) .visual-wrap figure {
+  margin-top: 20px;
+}
+
+.visual-wrap {
+  width: 1138px;
+  position: relative;
+}
+
+.index {
+  font-size: 48px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title > .more-view {
+  margin-top: 50px;
+}
+
+.content-info h3 {
+  font-size: 64px;
+  margin-top: 45px;
+}
+
+section:nth-child(even) .content-info dl {
+  margin-top: 100px;
+}
+.content-info dl {
+  font-family: 'Pretendard';
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 355px;
+  font-size: 16px;
+  color: #333;
+  margin-top: 170px;
+}
+.content-info dl dt {
+  width: 100px;
+  border-right: 1px solid var(--point-color);
+  margin-top: 15px;
+}
+.content-info dl dd {
+  width: 70%;
+  margin-top: 15px;
+  padding: 0 10px;
+}
+
+.tool-list {
+  display: flex;
+  gap: 10px;
+}
+.tool-list li figure {
+  width: 35px;
+  height: 35px;
+  filter: drop-shadow(var(--sticker-shadow));
+}
+.tool-list li figure img {
+  object-fit: contain;
+}
+
+.visual-wrap figure {
+  width: 1138px;
+  height: 634px;
+  box-shadow: var(--img-shadow);
+}
+
+.more-view {
+  font-size: 28px;
+  display: flex;
+  gap: 20px;
+}
+
+.more-view li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 136px;
+  height: 48px;
+  background: url(../img/nametag-work.png) no-repeat 50% / contain;
+  filter: drop-shadow(var(--sticker-shadow));
+}
+
+section:nth-child(odd) .more-view {
+  flex-direction: column;
+}
+
+.coffee-festival .visual-wrap figure::before {
+  content: '';
+  display: block;
+  width: 330px;
+  height: 110px;
+  background: url(../img/work-visual-coffee-tape1.png) no-repeat 50% / contain;
+  opacity: 0.7;
+
+  position: absolute;
+  top: -30px;
+  left: -80px;
+}
+.coffee-festival .visual-wrap figure::after {
+  content: '';
+  display: block;
+  width: 316px;
+  height: 105px;
+  background: url(../img/work-visual-coffee-tape2.png) no-repeat 50% / contain;
+  opacity: 0.7;
+
+  position: absolute;
+  bottom: -50px;
+  right: -80px;
+}
+
+.beauty-kurly .visual-wrap figure::before {
+  content: '';
+  display: block;
+  width: 290px;
+  height: 95px;
+  background: url(../img/work-visual-kurly-tape1.png) no-repeat 50% / contain;
+  opacity: 0.5;
+
+  position: absolute;
+  top: 0px;
+  right: -80px;
+  transform: rotate(40deg);
+}
+
+.forsirok .visual-wrap figure::before {
+  content: '';
+  display: block;
+  width: 280px;
+  height: 233px;
+  background: url(../img/work-visual-forsirok-tape1.png) no-repeat 50% / contain;
+
+  position: absolute;
+  top: -40px;
+  left: -60px;
+}
+
+.forsirok .visual-wrap figure::after {
+  content: '';
+  display: block;
+  width: 305px;
+  height: 70px;
+  background: url(../img/work-visual-forsirok-tape2.png) no-repeat 50% / contain;
+  opacity: 0.7;
+
+  position: absolute;
+  bottom: -35px;
+  right: 180px;
+}
+
+.fast-slow-disco .visual-wrap figure::before {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 64px;
+  background: url(../img/work-visual-fsdmv-tape1.png) no-repeat 50% / contain;
+  opacity: 0.6;
+
+  position: absolute;
+  top: -30px;
+  left: 750px;
+}
+
+.fast-slow-disco .visual-wrap figure::after {
+  content: '';
+  display: block;
+  width: 250px;
+  height: 87px;
+  background: url(../img/work-visual-fsdmv-tape2.png) no-repeat 50% / contain;
+  opacity: 0.6;
+
+  position: absolute;
+  bottom: -20px;
+  right: -80px;
+  transform: rotate(-35deg);
+}
+
+@keyframes showRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes showLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.coffee-festival .visual-wrap.on {
+  animation: showRight 1.5s 0.4s both;
+}
+.beauty-kurly .visual-wrap.on {
+  animation: showLeft 1.5s 0.4s both;
+}
+.forsirok .visual-wrap.on {
+  animation: showRight 1.5s 0.4s both;
+}
+.fast-slow-disco .visual-wrap.on {
+  animation: showLeft 1.5s 0.4s both;
+}
+
+.chapter strong {
+  position: relative;
+  /* border: 1px solid #000; */
+  display: inline-block;
+  width: 180px;
+}
+.chapter strong::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 50px;
+  background: url(../img/work_highlighter.png) no-repeat 0 0 / cover;
+  opacity: 0.8;
+  transform: rotate(-2deg);
+
+  position: absolute;
+  bottom: -15px;
+  left: -18px;
+  z-index: -1;
+
+  animation: highlighter 1s both linear 0.5s;
+}
+
+@keyframes highlighter {
+  100% {
+    width: 100%;
+  }
+}

@@ -1,0 +1,167 @@
+@charset 'utf-8';
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+:root {
+  --mainViaual-color: #ffd954;
+  --sub-color-Indigo: #4e598c;
+  --sub-color-SoftRed: #e56b6f;
+  --sub-color-lightPink: #f4eaeb;
+  --sub-color-brown: #280000;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--mainViaual-color);
+  z-index: 9992;
+}
+
+.loading .loading_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 13px;
+  animation: slide-fwd-center 0.9s;
+}
+
+/* 이미지 시작 */
+.loa-logo_bg_1 {
+  width: 356px;
+  height: 212px;
+  position: relative;
+  transform: rotate(-12deg);
+}
+
+.loa-logo_bg_1 svg {
+  position: absolute;
+  top: 13%;
+  left: 10%;
+  transform: rotate(5deg);
+}
+
+.loa-visual_04 {
+  width: 18px;
+  height: 16px;
+  position: absolute;
+  top: 11%;
+  left: 38%;
+  offset-path: path(
+    'M9.99961 77.5C-11.2004 41.1 9.49961 14 22.4996 5C55.4992 -14.5 62.5 39 69.5 52C76.5 65 100.5 79.5 120 88.5C139.5 97.5 152 98 158.5 113C165 128 148.5 132.5 127.5 143.5C106.5 154.5 98.5 147 81 143.5C63.5 140 36.4996 123 9.99961 77.5Z'
+  );
+  offset-distance: 0%;
+  animation: mapleAni 3s infinite;
+  background: url(../img/visual_04.png) 0 0 / cover no-repeat;
+}
+
+.loa-visual_05 {
+  width: 44px;
+  height: 40px;
+  position: absolute;
+  top: 11%;
+  left: 38%;
+  offset-path: path(
+    'M9.99961 77.5C-11.2004 41.1 9.49961 14 22.4996 5C55.4992 -14.5 62.5 39 69.5 52C76.5 65 100.5 79.5 120 88.5C139.5 97.5 152 98 158.5 113C165 128 148.5 132.5 127.5 143.5C106.5 154.5 98.5 147 81 143.5C63.5 140 36.4996 123 9.99961 77.5Z'
+  );
+  offset-distance: 0%;
+  animation: mapleAni 2s infinite;
+  z-index: 2;
+}
+
+.loa-visual_06 {
+  width: 22px;
+  height: 20px;
+  background: url(../img/visual_06.png) 0 0 / cover no-repeat;
+  position: absolute;
+  top: 26%;
+  left: 20%;
+  z-index: 1;
+  offset-path: path(
+    'M23.5 26C18.7 32.4 6.5 44.3333 1 49.5C3.5 51 6.5 49.5 12.5 44C18.5 38.5 16.5 40.5 27 44C37.5 47.5 38.5 47 40.5 53C42.5 59 37 62.5 35 68.5C33 74.5 32 81.5 42 68.5C52 55.5 50.5 22 50.5 11C50.5 -5.72205e-06 42 -1.00001 38.5 3.99999C35 8.99999 29.5 18 23.5 26Z'
+  );
+  offset-distance: 0%;
+  animation: mapleAni 3s infinite;
+}
+
+.loa-visual_07_Leaf {
+  width: 10px;
+  height: 11px;
+  position: absolute;
+  top: 68%;
+  left: 68%;
+  animation: slide-fwd-center2 0.8s infinite;
+}
+
+.loa-mark {
+  width: 30px;
+  height: 49px;
+  position: absolute;
+  top: 20%;
+  left: 70%;
+}
+
+.loa-A {
+  width: 61px;
+  height: 100px;
+  transform: rotate(20deg);
+  position: absolute;
+  top: 28%;
+  left: 18%;
+}
+.loa-A svg {
+  width: 52px;
+  transform: rotate(-20deg);
+  position: absolute;
+  top: 15px;
+  left: 0px;
+}
+
+.loa-txt {
+  width: 150px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--sub-color-Indigo);
+}
+
+@keyframes slide-fwd-center {
+  0% {
+    transform: scale(0);
+    transform: rotate(20deg);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: scale(100%);
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-fwd-center2 {
+  0% {
+    transform: scale(0);
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: scale(100%);
+    transform: rotate(0);
+  }
+}
+
+@keyframes mapleAni {
+  100% {
+    offset-distance: 100%;
+  }
+}

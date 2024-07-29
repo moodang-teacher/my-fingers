@@ -1,0 +1,14 @@
+@charset 'utf-8';
+
+body {
+  background: radial-gradient(#2e2f3e, #0f0e17);
+  overflow: hidden;
+}
+
+div {
+  display: flex;
+  place-content: center;
+  width: 100vw;
+  height: 100vh;
+  color: #a7a9be;
+}
