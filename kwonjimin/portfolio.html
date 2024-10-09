@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jimin | Portfolio</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/sub.css" />
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+    <script src="./js/script.js"></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="inner">
+        <nav>
+          <h1 class="logo">
+            <a href="./index.html">
+              <strong><img src="./img/logo-img.png" alt="" /></strong>
+              <div class="logo-title">
+                <p>Kwon jimin</p>
+                <p>UX / UI Designer</p>
+              </div>
+            </a>
+          </h1>
+          <div class="menu">
+            <ul class="gnb">
+              <li><a href="processes.html">Processes</a></li>
+              <li><a href="about.html">About</a></li>
+              <li class="active"><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+            <button type="button" class="btn-contact">CONTACT</button>
+            <div class="contact-con">
+              <div class="contact-name">
+                <strong>jimin</strong>
+              </div>
+              <div class="contact-info-wrap">
+                <div class="contact-addr">
+                  <p>010-9012-4899</p>
+                  <button class="btn-copy" data-clipboard-text="010 9012 4899"><i class="hidden">복사</i></button>
+                </div>
+                <div class="contact-addr">
+                  <p>jimin00study@gmail.com</p>
+                  <button class="btn-copy" data-clipboard-text="jimin00study@gmail.com">
+                    <i class="hidden">복사</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <hr />
+
+    <main id="container">
+      <div class="sub-title portfolio-title">
+        <div class="inner">
+          <h2>PORTFOLIO</h2>
+          <strong>제가 만든 작업물을 소개합니다!</strong>
+        </div>
+      </div>
+
+      <section class="portfolio">
+        <div class="inner">
+          <!-- 팝업창 -->
+          <div class="dim"></div>
+          <div class="popup">
+            <div class="gallery-content"></div>
+            <button class="btn-close" type="button">닫기</button>
+          </div>
+
+          <!-- 탭메뉴와 컨텐츠 -->
+          <div class="portfolio-tab">
+            <!-- 탭메뉴 -->
+            <ul class="tab-menu">
+              <li>
+                <a href="#"># All</a>
+              </li>
+              <li>
+                <a href="#"># Project</a>
+              </li>
+              <li>
+                <a href="#"># Graphic</a>
+              </li>
+            </ul>
+            <!-- 탭 메뉴별 콘텐츠 -->
+            <div class="tab-con-wrap">
+              <ul class="tab-con-all tab-con">
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/76/48/bf/7648bffaf240a1a79d240292482892e6.jpg" alt="" />
+                  </figure>
+
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/f7/8c/2e/f78c2e49d198fde73a5c95563edb8e10.jpg"" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!--  <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/81/d8/e6/81d8e6d6889b017cf273114bbf9446c3.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+
+                <li class="item-project tab-all-item">
+                  <figure><img src="./img/motto-img.png" alt="" data-prosess="./img/임시이미지3.png" /></figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드</span>
+                      <span>임시키워드</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn-wrap">
+                      <div class="more-btn process-btn">
+                        <a>PROCESS VIEW</a>
+                      </div>
+                      <div class="more-btn design-btn" data-link="https://www.naver.com/">
+                        <a>DESIGN VIEW</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img src="	https://i.pinimg.com/236x/c0/b1/c9/c0b1c99890eba799238e2d36289a3f08.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img
+                      src="https://i.pinimg.com/236x/4c/45/61/4c4561deae66989cc5a5ed4d983a1a99.jpg
+                    "
+                      alt=""
+                    />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+
+                <li class="item-project tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/fc/00/89/fc00892ce531eba84cf0490d1c4a6fd6.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!--  <div class="keyword-wrap">
+                      <span>임시키워드</span>
+                      <span>임시키워드</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn-wrap">
+                      <div class="more-btn process-btn">
+                        <a>PROCESS VIEW</a>
+                      </div>
+                      <div class="more-btn design-btn" data-link="https://www.naver.com/">
+                        <a>DESIGN VIEW</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img
+                      src="https://i.pinimg.com/236x/88/be/42/88be423335234b01a85b1afe7a1d9a7e.jpg
+                    "
+                      alt=""
+                    />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img src="	https://i.pinimg.com/236x/4c/da/81/4cda81e65af34d176cdff2d11a963937.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img src="	https://i.pinimg.com/236x/a4/e3/68/a4e36837cd2b91a8d2c1402af24a543b.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/bc/8d/a7/bc8da7d7a6503c0a8a2268a7d6c6bb11.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+
+                <li class="item-project tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/fc/00/89/fc00892ce531eba84cf0490d1c4a6fd6.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드</span>
+                      <span>임시키워드</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn-wrap">
+                      <div class="more-btn process-btn">
+                        <a>PROCESS VIEW</a>
+                      </div>
+                      <div class="more-btn design-btn" data-link="https://www.naver.com/">
+                        <a>DESIGN VIEW</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="item-project tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/fc/00/89/fc00892ce531eba84cf0490d1c4a6fd6.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드</span>
+                      <span>임시키워드</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn-wrap">
+                      <div class="more-btn process-btn">
+                        <a>PROCESS VIEW</a>
+                      </div>
+                      <div class="more-btn design-btn" data-link="https://www.naver.com/">
+                        <a>DESIGN VIEW</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="tab-con-project tab-con">
+                <li class="item-project tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/fc/00/89/fc00892ce531eba84cf0490d1c4a6fd6.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드</span>
+                      <span>임시키워드</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn-wrap">
+                      <div class="more-btn process-btn">
+                        <a>PROCESS VIEW</a>
+                      </div>
+                      <div class="more-btn design-btn" data-link="https://kwonjimin22.github.io/coca-cola/">
+                        <a>DESIGN VIEW</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="item-project tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/fc/00/89/fc00892ce531eba84cf0490d1c4a6fd6.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드</span>
+                      <span>임시키워드</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn-wrap">
+                      <div class="more-btn process-btn">
+                        <a>PROCESS VIEW</a>
+                      </div>
+                      <div class="more-btn design-btn" data-link="https://www.naver.com/">
+                        <a>DESIGN VIEW</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="item-project tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/fc/00/89/fc00892ce531eba84cf0490d1c4a6fd6.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드</span>
+                      <span>임시키워드</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn-wrap">
+                      <div class="more-btn process-btn">
+                        <a>PROCESS VIEW</a>
+                      </div>
+                      <div class="more-btn design-btn" data-link="https://www.naver.com/">
+                        <a>DESIGN VIEW</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="item-project tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/fc/00/89/fc00892ce531eba84cf0490d1c4a6fd6.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드</span>
+                      <span>임시키워드</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn-wrap">
+                      <div class="more-btn process-btn">
+                        <a>PROCESS VIEW</a>
+                      </div>
+                      <div class="more-btn design-btn" data-link="https://www.naver.com/">
+                        <a>DESIGN VIEW</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="tab-con-graphic tab-con">
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/76/48/bf/7648bffaf240a1a79d240292482892e6.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/f7/8c/2e/f78c2e49d198fde73a5c95563edb8e10.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/81/d8/e6/81d8e6d6889b017cf273114bbf9446c3.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/c0/b1/c9/c0b1c99890eba799238e2d36289a3f08.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/4c/45/61/4c4561deae66989cc5a5ed4d983a1a99.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/88/be/42/88be423335234b01a85b1afe7a1d9a7e.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/4c/da/81/4cda81e65af34d176cdff2d11a963937.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/a4/e3/68/a4e36837cd2b91a8d2c1402af24a543b.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+
+                <li class="item-graphic tab-all-item">
+                  <figure>
+                    <img src="https://i.pinimg.com/236x/bc/8d/a7/bc8da7d7a6503c0a8a2268a7d6c6bb11.jpg" alt="" />
+                  </figure>
+                  <div class="con-info">
+                    <strong>작업물 제목 영역</strong>
+                    <p>2023. 12. 28</p>
+                    <!-- <div class="keyword-wrap">
+                      <span>임시키워드1121515181185</span>
+                      <span>음</span>
+                      <span>임시키워드3</span>
+                    </div> -->
+                    <div class="more-btn view-btn"><a>VIEW MORE</a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer id="footer">
+      <div class="inner">
+        <strong class="foot-logo">jimin</strong>
+        <div class="foot-contact">
+          <strong>CONTACT</strong>
+          <div class="contact-con-info">
+            <div class="addr">
+              <p>010 - 9012 - 4899</p>
+              <button class="btn-copy" data-clipboard-text="010 9012 4899"><i class="hidden">복사</i></button>
+            </div>
+            <div class="addr">
+              <p>jimin00study@gmail.com</p>
+              <button class="btn-copy" data-clipboard-text="jimin00study@gmail.com"><i class="hidden">복사</i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="go-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>

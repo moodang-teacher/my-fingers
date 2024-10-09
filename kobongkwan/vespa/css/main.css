@@ -1,0 +1,491 @@
+@charset 'utf-8';
+
+.visual {
+  height: 100vh;
+}
+.main-visual {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.visual-img,
+.visual-img figure {
+  width: 100%;
+  height: 100%;
+}
+
+.visual-img figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-position: 0 0; */
+}
+.visual-title {
+  position: absolute;
+  bottom: 14rem;
+  right: 3rem;
+  /*  display: flex;
+  flex-direction: column; */
+  font-size: 2.5rem;
+  color: #fff;
+  /* gap: 4.8rem; */
+}
+.visual-title a {
+  display: block;
+  margin-top: 4.8rem;
+  border-bottom: 1px solid #fff;
+}
+.visual-title a:hover {
+  /* color: #000; */
+  border-bottom: 1px solid #38a385;
+}
+
+.models {
+  margin-top: 16rem;
+  padding-bottom: 16rem;
+  position: relative;
+}
+
+.models h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.model-list {
+  margin-top: 14rem;
+  display: flex;
+  justify-content: center;
+  gap: 6.8rem;
+  position: relative;
+}
+
+.item {
+  width: 45rem;
+  width: 23.6593%;
+}
+
+.model-list div:nth-child(2) {
+  transform: scale(1.2);
+}
+
+.model-list p {
+  margin-top: 4rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 7.6rem;
+  height: 7.6rem;
+  background: #5f5;
+}
+
+.btn-prev {
+  /* left: 5rem; */
+  left: 3.546099290780142%;
+  background: url(../img/arrow-left.png) no-repeat 0 50% / contain;
+}
+.btn-next {
+  /* right: 5rem; */
+  right: 3.546099290780142%;
+  background: url(../img/arrow-right.png) no-repeat 0 50% / contain;
+}
+
+.more-btn {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  background: url(../img/more-button.png) no-repeat 0 0 / cover;
+  margin: 0 auto;
+  margin-top: 13rem;
+  /* margin-bottom: 17rem; */
+}
+
+.history {
+  background: #f8f8f8;
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+  text-align: center;
+}
+
+.history h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.history-card {
+  margin-top: 10rem;
+}
+.history-card ul {
+}
+
+.history-card li {
+  display: flex;
+  width: 100%;
+  /* border: 1px solid #000; */
+}
+.history2 {
+  margin-top: 6rem;
+}
+.history-card li {
+  height: 51rem;
+}
+.history-card div {
+  width: 61rem;
+  width: 43.2624%;
+  background: #fff;
+  padding: 0 4rem;
+}
+.history-card li strong {
+  display: block;
+  font-weight: 700;
+  font-size: 6rem;
+  margin-top: 10rem;
+  line-height: 1.1;
+}
+.history-card li p {
+  font-weight: 500;
+  font-size: 2.6rem;
+  margin-top: 3rem;
+}
+
+.history-card li .history-text {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-top: 4rem;
+  color: #666;
+  /* text-align: left; */
+}
+.history-card figure {
+  width: 80rem;
+  width: 56.7376%;
+  height: 100%;
+}
+.history-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vespa-world {
+  padding: 20rem 0 20rem;
+  position: relative;
+}
+
+.vespa-world h4 {
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.world-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+  gap: 7.5rem;
+  /* position: relative; */
+}
+
+.world-card div {
+  width: 43rem;
+  width: 22.6078%;
+  /* height: 50rem; */
+}
+/* .world-card div:nth-child(2) {
+  transform: scale(1.2);
+} */
+.world-card figure {
+  width: 100%;
+  height: 81.9672%;
+}
+.world-card img {
+  width: 100%;
+  height: 35rem;
+  /* height: 81.9672%; */
+}
+.world-card p {
+  margin-top: 4rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.control-2 {
+  display: flex;
+  gap: 1.6rem;
+  justify-content: center;
+  margin-top: 15rem;
+}
+.control-2 a {
+  width: 2rem;
+  height: 2rem;
+  background: #d9d9d9;
+  border-radius: 1.4rem;
+}
+
+.control-2 a.on {
+  background: #38a385;
+}
+
+/* inner 크기에 맞춘 분기점 생성 */
+@media (max-width: 1410px) {
+  .history .inner {
+    width: 100%;
+  }
+}
+
+/* 태블릿버전 */
+@media (max-width: 1024px) {
+  #header {
+    height: 8rem;
+  }
+  .visual {
+    height: 80rem;
+  }
+  .visual-title {
+    font-size: 1.8rem;
+  }
+  .models h2 {
+    font-size: 3.5rem;
+  }
+  .model-list p {
+    font-size: 2rem;
+  }
+  .btn {
+    top: 40%;
+    width: 4rem;
+    height: 4rem;
+  }
+  .btn-prev {
+    left: 2rem;
+  }
+  .btn-next {
+    right: 2rem;
+  }
+  .more-btn {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .history h3 {
+    font-size: 3.5rem;
+  }
+  .history-card li {
+    height: 37.5rem;
+  }
+  .history-card div {
+    width: 44.5rem;
+    width: 43.457%;
+    /* height: 37.5rem; */
+  }
+  .history-card figure {
+    width: 57.7rem;
+    width: 56.3477%;
+    /* height: 37.5rem; */
+  }
+  .history-card li strong {
+    font-size: 4rem;
+    margin-top: 5rem;
+  }
+  .history-card li p {
+    font-size: 2.2rem;
+  }
+  .history-card li .history-text {
+    font-size: 1.7rem;
+    margin-top: 4rem;
+  }
+
+  .vespa-world {
+    padding: 15rem 0 20rem;
+  }
+
+  .vespa-world h4 {
+    font-size: 3.5rem;
+  }
+  .world-card {
+    /* width: 1000px; */
+    flex-wrap: wrap;
+    /* border: 1px solid #000; */
+    justify-content: center;
+    gap: 1rem;
+  }
+  .world-card div {
+    width: 28rem;
+    width: 27.3438%;
+    gap: 1rem;
+  }
+  /* .world-card div:nth-child(2) {
+    transform: scale(1);
+  } */
+  .world-card .btn {
+    display: none;
+  }
+  .control-2 {
+    display: none;
+  }
+  .world-card figure {
+  }
+  .world-card img {
+    height: 81.9672%;
+  }
+  .world-card p {
+    font-size: 2.1rem;
+  }
+}
+/* 필요에 의한 분기 */
+@media (max-width: 750px) {
+  #header {
+    height: 6rem;
+  }
+  .visual-title {
+    display: none;
+  }
+  .control-1 {
+    display: flex;
+    gap: 2.3rem;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: 3rem;
+    transform: translateX(-50%);
+  }
+  .control-1 a {
+    width: 2rem;
+    height: 2rem;
+    background: #d9d9d9;
+    border-radius: 1.4rem;
+  }
+
+  .control-1 a.on {
+    background: #38a385;
+  }
+
+  .history {
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+  }
+  .history h3 {
+    font-size: 3rem;
+  }
+  .history-card li {
+    flex-direction: column; /* fxdc */
+    height: auto;
+  }
+  .history-card li.history1 {
+    flex-direction: column-reverse;
+  }
+  .history-card figure {
+    width: 39rem;
+    width: 100%;
+  }
+  .history-card div {
+    width: 39rem;
+    width: 100%;
+    padding: 3.5rem 3rem;
+  }
+  .history-card li strong {
+    font-size: 3rem;
+  }
+
+  .history-card li p {
+    font-size: 1.8rem;
+  }
+  .history-card li .history-text {
+    font-size: 1.5rem;
+  }
+  .world-card {
+    gap: 5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .world-card div {
+    width: 50%;
+  }
+  .world-card img {
+    width: 100%;
+    height: 37.3333vw;
+  }
+}
+/* 모바일버전 */
+/* 430px 390px */
+@media (max-width: 430px) {
+  .visual {
+    height: auto;
+  }
+  .visual-title {
+    display: none;
+  }
+  .models h2 {
+    font-size: 3rem;
+  }
+
+  .model-list {
+    margin-top: 0rem;
+    /* overflow: hidden; */
+
+    gap: 1rem;
+  }
+
+  .item {
+    width: 19rem;
+    margin-top: 10rem;
+  }
+  .model-list div:nth-child(2) {
+    transform: scale(1);
+  }
+  .btn {
+    display: none;
+  }
+  .more-btn {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 8rem;
+  }
+  .control-1 {
+    display: flex;
+    gap: 2.3rem;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: 3rem;
+    transform: translateX(-50%);
+  }
+  .control-1 a {
+    width: 2rem;
+    height: 2rem;
+    background: #d9d9d9;
+    border-radius: 1.4rem;
+  }
+
+  .control-1 a.on {
+    background: #38a385;
+  }
+
+  .vespa-world {
+    padding: 11rem 0 11rem;
+  }
+  .vespa-world h4 {
+    font-size: 3rem;
+  }
+  .world-card {
+    margin-top: 7rem;
+    gap: 4rem;
+  }
+  .world-card div:nth-child(2) {
+    transform: scale(1);
+  }
+  .world-card div {
+  }
+  .world-card p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  .world-card img {
+  }
+}

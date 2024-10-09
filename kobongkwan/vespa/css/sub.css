@@ -1,0 +1,465 @@
+@charset 'utf-8';
+
+.top-menu {
+  margin-top: 13rem;
+}
+.model-list {
+  background: #d4e1de;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2.6rem;
+  text-align: center;
+}
+.model-list li {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  background: #fff;
+  flex: 1 1 auto;
+  flex-grow: ;
+  flex-basis: ;
+  flex-shrink: ;
+  min-width: 156px;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.model-list li a {
+  display: block;
+  padding: 1rem 2rem;
+}
+
+.model-visual {
+  margin-top: 16rem;
+  margin-top: 8.3333vw;
+  /* height: 118rem; */
+  background: #ff5;
+  padding-bottom: 15rem;
+  padding-bottom: 7.8125vw;
+  background: rgb(101, 184, 219);
+  background: linear-gradient(
+    0deg,
+    rgba(101, 184, 219, 1) 0%,
+    rgba(101, 184, 219, 1) 62%,
+    rgba(255, 255, 255, 1) 62%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.model-visual figure {
+  text-align: center;
+}
+
+.model-visual img {
+  width: 102.5rem;
+  width: 53.3854%;
+}
+
+.model-info {
+  /* background: #65b8db; */
+  text-align: center;
+  width: 100%;
+}
+.model-info h1 {
+  font-weight: 800;
+  font-size: 4.5rem;
+}
+.model-info strong {
+  display: block;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 3.5rem;
+}
+
+.model-info p {
+  width: 93rem;
+  width: 48.4375%;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 3rem auto 0;
+  text-align: center;
+}
+.spec .inner {
+  width: 95.3125%;
+}
+.spec-list {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 15rem;
+}
+.specs {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  width: 59rem;
+  width: 30.7292%;
+  /* height: 78rem; */
+  text-align: center;
+  padding: 4rem 3rem;
+}
+.spec-card strong {
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+.spec-card figure {
+  margin: 3rem 0 3rem;
+  width: 100%;
+  aspect-ratio: 1/0.7450980392156863;
+}
+.spec-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.spec-card dt {
+  font-weight: 600;
+  font-size: 3rem;
+}
+.spec-card dd {
+  margin-top: 2.4rem;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #555;
+  padding: 0 2rem;
+}
+.spec1 {
+  background: #fdf4ec;
+}
+.spec2 {
+  background: #d2e5e0;
+}
+.spec3 {
+  background: #d7f6e7;
+}
+.all-models {
+  background: #f5f5f5;
+  padding: 12rem 0 24rem;
+  padding: 6.25vw 0 12.5vw;
+  margin-top: 25rem;
+  margin-top: 13.0208%;
+}
+.all-models .inner {
+  width: 95.3125%;
+}
+.all-models h3 {
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: center;
+}
+.all-models ul {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 8rem;
+}
+.all-models li {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  /* width: 45rem; */
+  width: 31.9149%;
+  padding: 3.5rem 2.5rem;
+}
+.all-models figure {
+  width: 40rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.all-models img {
+}
+
+.all-models dl {
+  text-align: center;
+}
+.all-models dt {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+.all-models dd {
+  font-size: 2.4rem;
+  margin-top: 1.6rem;
+}
+
+/* inner 크기에 맞춘 분기점 생성 */
+@media (max-width: 1410px) {
+  .history .inner {
+    width: 100%;
+  }
+  .spec-list {
+    flex-direction: column;
+  }
+  .specs {
+    width: 100%;
+  }
+  .spec-card {
+    display: flex;
+    position: relative;
+    gap: 8rem;
+  }
+  .spec-card strong {
+    position: absolute;
+    left: 46rem;
+    left: 35.8814%;
+    font-size: 3.8rem;
+  }
+  .spec-card dl {
+    position: absolute;
+    width: 60%;
+    top: 8rem;
+    left: 46rem;
+    left: 35.8814%;
+
+    text-align: left;
+  }
+  .spec-card dt {
+    font-size: 2.8rem;
+  }
+  .spec-card dd {
+    padding: 0;
+  }
+  .spec-card figure {
+    width: 32.3713%;
+  }
+}
+/* 태블릿버전 */
+@media (max-width: 1024px) {
+  .inner {
+    width: 84.4rem;
+    width: 82.4219%;
+  }
+  .top-menu {
+    margin-top: 9.5rem;
+  }
+  .model-visual {
+  }
+  .model-visual figure {
+  }
+  .model-info {
+  }
+  .model-info h1 {
+    font-size: 4.2rem;
+  }
+  .model-info strong {
+    font-size: 2.7rem;
+  }
+  .model-info p {
+    font-size: 2.2rem;
+    width: 84.4rem;
+    width: 82.4219%;
+  }
+
+  .spec .inner {
+    width: 90%;
+  }
+  .spec-list {
+    flex-wrap: wrap;
+  }
+  .specs {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 40%;
+    min-width: 40rem;
+    padding: 6rem 3rem;
+  }
+
+  .spec-card {
+    gap: 4rem;
+  }
+  .spec-card strong {
+    font-size: 3.8rem;
+    left: 50%;
+  }
+
+  .spec-card figure {
+    width: 45%;
+    /* height: 37.1094vw; */
+    /* margin: 5rem auto; */
+  }
+  .spec-card dl {
+    /* padding-top: 12rem; */
+    text-align: left;
+    width: 50%;
+    top: 8rem;
+    top: 23.0548%;
+    left: 46rem;
+    left: 50%;
+  }
+  .spec-card dt {
+    font-size: 2.5rem;
+  }
+
+  .spec-card dd {
+    margin: 0 auto;
+    margin-top: 2.4rem;
+    font-size: 1.7rem;
+  }
+  .all-models {
+    padding: 12rem 0 24rem;
+    padding: 11.71875% 0 23.4375%;
+  }
+
+  .all-models .inner {
+    width: 90%;
+  }
+
+  .all-models ul {
+    gap: 2rem;
+  }
+  .all-models li {
+    width: 40rem;
+    width: 47.3934%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30%;
+    min-width: 29rem;
+  }
+  .all-models figure {
+  }
+  .all-models img {
+  }
+  .all-models dl {
+  }
+  .all-models dt {
+    font-size: 3rem;
+  }
+  .all-models dd {
+    font-size: 2rem;
+  }
+}
+/* 필요에 의한 분기 */
+@media (max-width: 750px) {
+  .spec-card {
+    display: block;
+  }
+  .spec-card figure {
+    width: 100%;
+  }
+  .spec-card strong {
+    position: static;
+  }
+  .spec-card dl {
+    position: static;
+    text-align: center;
+    width: 100%;
+    padding-top: 0rem;
+  }
+}
+/* 모바일버전 */
+/* 430px 390px */
+@media (max-width: 430px) {
+  .inner {
+    width: 33rem;
+    width: 76.7442%;
+  }
+  .top-menu {
+    margin-top: 7rem;
+  }
+  .model-list {
+    gap: 1.5rem;
+  }
+  .model-list li {
+    width: 11rem;
+    height: 4rem;
+    font-size: 1.3rem;
+  }
+  .model-visual {
+    margin-top: 13rem;
+    margin-top: 30.2326vw;
+    background: linear-gradient(
+      0deg,
+      rgba(101, 184, 219, 1) 0%,
+      rgba(101, 184, 219, 1) 70%,
+      rgba(255, 255, 255, 1) 70%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    padding-bottom: 7rem;
+  }
+  .model-visual img {
+    width: 34rem;
+    width: 79.0698%;
+  }
+  .model-info {
+  }
+  .model-info h1 {
+    font-size: 3rem;
+  }
+  .model-info strong {
+    font-size: 2.2rem;
+  }
+  .model-info p {
+    font-size: 1.6rem;
+  }
+  .spec-list {
+    margin-top: 10rem;
+    margin-top: 23.2558vw;
+    gap: 0;
+  }
+  .specs {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    min-width: 35rem;
+  }
+  .spec-card strong {
+    font-size: 3rem;
+  }
+  .spec-card figure {
+    width: 33rem;
+    width: 85.2713%;
+    width: 100%;
+    height: auto;
+    /* height: 23rem;
+    height: 53.4884vw; */
+  }
+  .spec-card dt {
+    font-size: 2.5rem;
+  }
+  .spec-card dd {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .all-models {
+    margin-top: 10rem;
+    margin-top: 23.2558vw;
+  }
+  .all-models .inner {
+    width: 80%;
+  }
+  .all-models h3 {
+    font-size: 3rem;
+  }
+  .all-models ul {
+    gap: 2rem;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+  .all-models li {
+    padding: 2rem 1rem;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 80%;
+  }
+  .all-models figure {
+    width: 100%;
+    height: 21rem;
+    height: 48.8372vw;
+  }
+  .all-models dl {
+    margin-top: 2rem;
+  }
+  .all-models dt {
+    font-size: 2rem;
+  }
+  .all-models dd {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+}

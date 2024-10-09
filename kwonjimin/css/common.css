@@ -1,0 +1,353 @@
+@charset 'utf-8';
+
+/* 웹폰트 정의 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+@font-face {
+  font-family: 'Jalnan';
+  src: url('../fonts/JalnanOTF.woff2') format('woff2'), url('JalnanOTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-size: 62.5%; /*10px*/
+  --main-color-light: #5c8eff;
+  --main-color: #004dff;
+  --main-color-dark: #111441;
+
+  --sub-color-1: #a201ff;
+  --sub-color-2: #fe504f;
+  --sub-color-3: #ff9841;
+
+  --bg-light: #f5f5f5;
+
+  --text-color: #333333;
+}
+
+::selection {
+  background: var(--main-color);
+  color: #fff;
+}
+
+/* 스크롤 이동상황에서 부드럽게 움직임 */
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+hr,
+.hidden {
+  position: absolute;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+label,
+button {
+  /* cup, 버튼 위에서는 커서가 손가락 모양으로 바뀌게하는 명령*/
+  cursor: pointer;
+}
+
+body {
+  font: 1rem/1.5 'Montserrat', 'Pretendard', sans-serif;
+
+  color: var(--text-color);
+  /* overflow-x: hidden; */
+  word-break: keep-all; /* 글자단위 줄바꿈 */
+  text-transform: capitalize; /* 첫글자 대문자 표시 */
+}
+
+.inner {
+  width: 118rem;
+  margin: 0 auto;
+  height: 100%;
+  /* background: #ff5; */
+}
+#header .inner,
+#footer .inner {
+  width: 164.4rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* s: header */
+#header {
+  position: fixed;
+  top: 2.2rem;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  transition: 0.4s;
+}
+#header.hide {
+  top: -100px;
+}
+nav {
+  width: 100%;
+  display: flex;
+  gap: 3.4rem;
+}
+.logo a {
+  width: 26.8rem;
+  height: 7.4rem;
+  border-radius: 4rem;
+  background: var(--bg-light);
+  padding: 0 3.4rem;
+
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+}
+.logo strong {
+  width: 5rem;
+  height: 5rem;
+}
+.logo-title p {
+  font-family: 'Pretendard';
+  line-height: 100%;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+.logo-title p + p {
+  margin-top: 4px;
+  font-size: 1.2rem;
+  color: var(--main-color-light);
+}
+.menu {
+  position: relative;
+
+  width: 134.2rem;
+  height: 7.4rem;
+  border-radius: 4rem;
+  background: var(--bg-light);
+  padding: 0 3.4rem;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 3rem;
+}
+.gnb {
+  display: flex;
+}
+.gnb li.active a {
+  font-weight: 700;
+  color: var(--main-color);
+
+  position: relative;
+}
+.gnb li.active a::after {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--main-color);
+
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%);
+
+  display: none;
+}
+.gnb li.active a::after {
+  display: block;
+}
+.gnb li a {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--text-color);
+
+  padding: 2rem;
+}
+.btn-contact {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #fff;
+
+  width: 13.4rem;
+  height: 4.6rem;
+  border-radius: 4rem;
+  background: var(--main-color-dark);
+}
+
+/* contact 내용 */
+.contact-con.active {
+  display: block;
+}
+.contact-con {
+  display: none;
+
+  position: absolute;
+  bottom: -21.6rem;
+  right: 0;
+
+  width: 32rem;
+  height: 20rem;
+  border-radius: 2rem;
+  padding: 1.4rem 2.2rem;
+
+  background: var(--bg-light);
+}
+
+.contact-name {
+  font-weight: 700;
+  font-size: 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.contact-name::before {
+  content: '';
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  background: url(../img/logo-img.png) no-repeat 50% / 90%;
+}
+
+.contact-info-wrap {
+  position: absolute;
+  left: 3px;
+  bottom: 3px;
+  width: calc(100% - 6px);
+
+  border-radius: 0 0 2rem 2rem;
+
+  padding: 2rem 1.7rem;
+  background: #fff;
+}
+.contact-addr + .contact-addr {
+  margin-top: 1rem;
+}
+.contact-addr {
+  font-family: 'Pretendard';
+  font-weight: 500;
+  font-size: 1.8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-addr .btn-copy {
+  border: none;
+  background-color: var(--bg-light);
+  background-image: url(../img/btn-copy-icon-dark.svg);
+}
+
+.contact-addr .btn-copy:hover {
+  background-color: #cccccc;
+}
+
+.contact-addr .btn-copy.success {
+  background-image: url(../img/btn-copy-icon-success.svg);
+  background-color: var(--bg-light);
+}
+.contact-addr .btn-copy.error {
+  background-image: url(../img/btn-copy-icon-error.svg);
+  background-color: var(--bg-light);
+}
+/* e: header */
+
+/* s: go-top */
+.go-top {
+  /* display: none; */
+
+  position: fixed;
+  bottom: 3.2rem;
+  right: 4.4rem;
+  width: 6.8rem;
+  height: 6.8rem;
+  border-radius: 50%;
+  background: var(--main-color-dark) url(../img/go-top.svg) no-repeat 50%;
+  box-shadow: 0px 7px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* e: go-top */
+
+/* s: footer */
+/* main푸터, margin-top대용 */
+#footer.about-footer {
+  margin-top: 0;
+}
+#footer.processes-footer {
+  margin-top: 0;
+}
+.main-content {
+  padding-bottom: 3rem;
+}
+#fullpage-container #footer {
+  margin-top: 0;
+  padding: 11rem 0 7.6rem;
+}
+
+#footer {
+  margin-top: 16.4rem;
+
+  background: var(--main-color-dark);
+  color: #fff;
+  padding: 11rem 0 7.6rem;
+}
+.foot-logo {
+  font-size: 8rem;
+  font-weight: 800;
+  color: #fff;
+}
+.foot-contact strong {
+  font-weight: 700;
+  font-size: 4.4rem;
+}
+.contact-info {
+  margin-top: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.addr {
+  font-family: 'Pretendard';
+  font-size: 2.2rem;
+  font-weight: 700;
+
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+.btn-copy {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1.4rem;
+  border: 2px solid #090b2e;
+  background: var(--main-color-dark) url(../img/btn-copy-icon.svg) no-repeat 50%;
+}
+
+.btn-copy:hover {
+  background-color: #0f0324;
+}
+
+#footer .btn-copy.success {
+  background-image: url(../img/btn-copy-icon-success.svg);
+  background-color: var(--main-color-dark);
+}
+#footer .btn-copy.error {
+  background-image: url(../img/btn-copy-icon-error.svg);
+  background-color: var(--main-color-dark);
+}
+/* e: footer */
