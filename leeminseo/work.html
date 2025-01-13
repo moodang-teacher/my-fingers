@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>work</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/sub.css" />
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.4/dist/lenis.min.js"></script>
+    <script src="./js/js.work.js"></script>
+  </head>
+  <style>
+    body {
+      background: #000 url(../img/work-bg.png) 50% 0 no-repeat;
+    }
+  </style>
+
+  <body>
+    <!-- 헤더 S -->
+    <a href="#container" class="skip hidden">본문 바로가기</a>
+    <header id="header">
+      <div class="inner">
+        <nav>
+          <h1 class="logo">
+            <a href="index.html"><i class="hidden">MinseoLee</i></a>
+          </h1>
+          <ul class="gnb">
+            <li>
+              <a href="aboutme.html">About Me</a>
+            </li>
+            <li>
+              <a href="work.html">Work</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <hr />
+    <!-- 헤더 E -->
+    <main id="container">
+      <section class="project">
+        <div class="tab-wrap">
+          <div class="tab-menu">
+            <a href="#" class="tab-web">Web</a>
+            <a href="#" class="tab-app">App</a>
+            <a href="#" class="tab-graphic">Graphic</a>
+          </div>
+          <!-- swiper.js 구조를 먼저 돌려보고 swiper-slide 안에 work-slide를 복붙  -->
+          <div class="tab-con">
+            <div class="swiper project-slider project-slider-web">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="project-slide">
+                    <figure>
+                      <img src="./img/Group 51.png" alt="" />
+                    </figure>
+                    <div class="project-slide-con">
+                      <div class="project-slide-text">
+                        <strong>UXUI / Web Design</strong>
+                        <h2>Portfolio Web site</h2>
+                        <p>
+                          소통하고 협력하는 디자이너를 ‘우주를 항해하는 우주선’에 비유하여 <br>우주 컨셉의 포트폴리오를 제작했습니다.
+                          
+                        </p>
+                        <div class="project-slide-tool">
+                          <h3>Tool</h3>
+                          <ul class="project-slide-tool-list">
+                            <li><img src="./img/Vector-1.png" alt="" /></li>
+                            <li><img src="./img/tool-ai.png" alt="" /></li>
+                            <li><img src="./img/tool-ae.png" alt="" /></li>
+                            <li><img src="./img/tool-figma.png" alt="" /></li>
+                            <li><img src="./img/tool-html.png" alt="" /></li>
+                            <li><img src="./img/tool-css.png" alt="" /></li>
+                            <li><img src="./img/too-js.png" alt="" /></li>
+                          </ul>
+                        </div>
+                        <div class="links">
+                          <a href="portpolioprocess.html" target="_blank">Process Page</a>
+                          <a href="https://leeminseo2.github.io/portfolio/" target="_blank">Web Site</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="project-slide">
+                    <figure>
+                      <img src="./img/project-list-1.png" alt="" />
+                    </figure>
+                    <div class="project-slide-con">
+                      <div class="project-slide-text">
+                        <strong>UXUI / Resposive Web Site Redesign</strong>
+                        <h2>Arcterycx web site</h2>
+                        <p>
+                          등산 브랜드 아크테릭스의 광활함과 고급스러운
+                          분위기를<br />반영하여, 웹사이트를 반응형 디자인으로
+                          <br />
+                          새롭게 제작했습니다.
+                        </p>
+                        <div class="project-slide-tool">
+                          <h3>Tool</h3>
+                          <ul class="project-slide-tool-list">
+                            <li><img src="./img/Vector-1.png" alt="" /></li>
+                            <li><img src="./img/tool-figma.png" alt="" /></li>
+                            <li><img src="./img/tool-html.png" alt="" /></li>
+                            <li><img src="./img/tool-css.png" alt="" /></li>
+                            <li><img src="./img/too-js.png" alt="" /></li>
+                          </ul>
+                        </div>
+                        <div class="links">
+                          <a href="arcterycxprocess.html" target="_blank">Process Page</a>
+                          <a href="https://leeminseo2.github.io/arcterycx./" target="_blank">Web Site</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="swiper-slide">
+                  <div class="project-slide">
+                    <figure>
+                      <img src="./img/Group 52.png" alt="" />
+                    </figure>
+                    <div class="project-slide-con">
+                      <div class="project-slide-text">
+                        <strong>UXUI /Web Site Redesign</strong>
+                        <h2>Gongcha web site</h2>
+                        <p>
+                          카페 브랜드인 공차의 기존 웹사이트의 단점을 보완하여<br>심플하고 신선한 분위기로 리디자인하였습니다.
+                         
+                        </p>
+                        <div class="project-slide-tool">
+                          <h3>Tool</h3>
+                          <ul class="project-slide-tool-list">
+                            <li><img src="./img/Vector-1.png" alt="" /></li>
+                            <li><img src="./img/tool-figma.png" alt="" /></li>
+                            <li><img src="./img/tool-html.png" alt="" /></li>
+                            <li><img src="./img/tool-css.png" alt="" /></li>
+                            <li><img src="./img/too-js.png" alt="" /></li>
+                          </ul>
+                        </div>
+                        <div class="links">
+                          <a href="#" target="_blank">Process Page</a>
+                          <a href="#" target="_blank">Web Site</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <div class="swiper-slide">
+                  <div class="project-slide">
+                    <figure><img src="./img/SLIDER-WONKA.png" alt="" /></figure>
+                    <div class="project-slide-con">
+                      <div class="project-slide-text">
+                        <strong>UXUI / Micro Web Site Design</strong>
+                        <h2>Wonka<br />micro Web site</h2>
+                        <p>
+                          영화 "웡카"의 신비롭고 환상적인 분위기를 강조하여<br>마이크로사이트를 디자인하였습니다.
+                        </p>
+                        <div class="project-slide-tool">
+                          <h3>Tool</h3>
+                          <ul class="project-slide-tool-list">
+                            <li><img src="./img/Vector-1.png" alt="" /></li>
+                            <li><img src="./img/tool-ai.png" alt="" /></li>
+                            <li><img src="./img/tool-figma.png" alt="" /></li>
+                          </ul>
+                        </div>
+                        <div class="links">
+                          <a href="wonkaprocess.html" target="_blank">Process Page</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-wrap-white">
+                <button type="button" class="btn-prev-white">
+                  <i class="hidden">prev</i>
+                </button>
+                <button type="button" class="btn-next-white">
+                  <i class="hidden">next</i>
+                </button>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper project-slider project-slider-sub">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="project-slide">
+                    <figure>
+                      <img src="./img/Group 2184.png" alt="" /> 
+                    </figure>
+                    <div class="project-slide-con">
+                      <div>
+                        <strong>UXUI / App Design</strong>
+                        <h2>Greensweet app</h2>
+                        <p>
+                          라이프 스타일에 맞는 식물 추천, 맞춤형 식물 관리,<br> 식물 정보 제공 등의 기능을 갖춘 식물 애호가들을 위한 <br>맞춤형 어플리케이션 '그린스윗'을 제작하였습니다
+                        </p>
+                        <div class="project-slide-tool">
+                          <h3>Tool</h3>
+                          <ul class="project-slide-tool-list">
+                            <li><img src="./img/Vector-1.png" alt="" /></li>
+                            <li><img src="./img/tool-ai.png" alt="" /></li>
+                            <li><img src="./img/tool-figma.png" alt="" /></li>
+                          </ul>
+                        </div>
+                        <div class="links">
+                          <a href="greensweetprocess.html" target="_blank">Process Page</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-wrap-white">
+                <button type="button" class="btn-prev-white">
+                  <i class="hidden">prev</i>
+                </button>
+                <button type="button" class="btn-next-white">
+                  <i class="hidden">next</i>
+                </button>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper project-slider project-slider-sub">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="project-slide">
+                    <figure>
+                      <img
+                        src="./img/Restaurant Window PSD Mockup.png"
+                        alt=""
+                      />
+                    </figure>
+                    <div class="project-slide-con">
+                      <div>
+                        <strong>Graphic / Branding Design</strong>
+                        <h2>CHLOE DAY CAFE</h2>
+                        <p>
+                          프랑스식 베이커리 카페인 'Chloe Day'를 <br>프랑스 극기에서 영감을 받아 <br>친근하고 매력적인 느낌으로 브랜딩 디자인했습니다.
+                        </p>
+                        <div class="project-slide-tool">
+                          <h3>Tool</h3>
+                          <ul class="project-slide-tool-list">
+                            <li><img src="./img/Vector-1.png" alt="" /></li>
+                            <li><img src="./img/tool-ai.png" alt="" /></li>
+                          </ul>
+                        </div>
+                        <div class="links">
+                          <a href="chloedayprocess.html" target="_blank">Process Page</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="project-slide">
+                    <figure>
+                      <img
+                        src="./img/brain-work.jpg"
+                        alt=""
+                      />
+                    </figure>
+                    <div class="project-slide-con">
+                      <div>
+                        <strong>Graphic / Catalog Design</strong>
+                        <h2>BRAIN DEAD</h2>
+                        <p>
+                          의류 브랜드 Brain Dead의 개성을 충실히 반영하여<br>반항적인 정신과 문화적 다양성을 표현했습니다
+                        </p>
+                        <div class="project-slide-tool">
+                          <h3>Tool</h3>
+                          <ul class="project-slide-tool-list">
+                            <li><img src="./img/tool-id.png" alt="" /></li>
+                            <li><img src="./img/Vector-1.png" alt="" /></li>
+                            <li><img src="./img/tool-ai.png" alt="" /></li>
+                          </ul>
+                        </div>
+                        <div class="links">
+                          <a href="braindeadprocess.html" target="_blank">Process Page</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="project-slide">
+                    <figure>
+                      <img src="./img/Group 10.jpg" alt="" />
+                    </figure>
+                    <div class="project-slide-con">
+                      <div>
+                        <strong>Graphic / Promotion Design</strong>
+                        <h2>Maybe from</h2>
+                        <p>
+                          2024 한밭대학교 대동제 'Maybe From'의 프로모션 디자인을 진행했습니다. <br>여름밤의 환상적인 축제 분위기를 반영하였고, <br>축제의 열기와 즐거움을 표현했습니다
+                         
+                        </p>
+                        <div class="project-slide-tool">
+                          <h3>Tool</h3>
+                          <ul class="project-slide-tool-list">
+                            <li><img src="./img/Vector-1.png" alt="" /></li>
+                            <li><img src="./img/tool-ai.png" alt="" /></li>
+                          </ul>
+                        </div>
+                        <div class="links">
+                          <a href="maybefrom.html" target="_blank">Process Page</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="project-slide">
+                    <figure>
+                      <img src="./img/Group 12.png" alt="" />
+                    </figure>
+                    <div class="project-slide-con">
+                      <div>
+                        <strong
+                          >Graphic / Title Design, Character Design</strong
+                        >
+                        <h2>멍들 물어보시개</h2>
+                        <p>
+                          유튜브 채널 '멍들 물어보시개'의 타이틀 디자인과<br>캐릭터 일러스트를 제작했습니다. 채널의 캐릭터와 콘텐츠를 잘 반영하도록 <br>심플하고 재미있는 스타일로 구성했습니다.
+                        </p>
+                        <div class="project-slide-tool">
+                          <h3>Tool</h3>
+                          <ul class="project-slide-tool-list">
+                            <li><img src="./img/tool-ai.png" alt="" /></li>
+                          </ul>
+                        </div>
+                        <div class="links">
+                          <a href="meongdel.html" target="_blank">Process Page</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-wrap-white">
+                <button type="button" class="btn-prev-white">
+                  <i class="hidden">prev</i>
+                </button>
+                <button type="button" class="btn-next-white">
+                  <i class="hidden">next</i>
+                </button>
+              </div>
+              <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <h3>
+        <a href="aboutme.html"><em>C</em>ontact</a>
+      </h3>
+
+      <ul class="foot-con-list">
+        <li class="foot-con-list-item">
+          <a href="#">Call</a>
+          <div class="foot-con-list-item-hover">
+            <!-- <p>+82 010 7741 9308</p> -->
+          </div>
+        </li>
+        <li class="foot-con-list-item">
+          <a href="#">E.mail</a>
+          <div class="foot-con-list-item-hover">
+            <!-- <p>lms316497@naver.com</p> -->
+          </div>
+        </li>
+        <li class="foot-con-list-item">
+          <a href="#">Instagram</a>
+          <div class="foot-con-list-item-hover">
+            <!-- <p>@minseo.111</p> -->
+          </div>
+        </li>
+        <li class="foot-con-list-item">
+          <a class="point" href="aboutme.html">Contact Me</a>
+        </li>
+      </ul>
+      <strong>LMSportfolio.com</strong>
+    </footer>
+    <button class="topButton" aria-label="Go to top">Top</button>
+  </body>
+</html>

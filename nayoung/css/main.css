@@ -1,0 +1,286 @@
+#container {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  mix-blend-mode: difference;
+}
+#container p {
+  font-family: 'Pretendard';
+  font-size: 2rem;
+  line-height: 1.2;
+  height: 5rem;
+  padding: 1rem 0;
+}
+#container p b {
+  display: block;
+}
+.visual {
+  position: relative;
+  height: calc(100% - 5rem);
+}
+.visual-img {
+  position: absolute;
+  width: 0rem;
+  /* width: 6.6225%; */
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.visual-img figure {
+  height: 100%;
+}
+
+.pic {
+  visibility: hidden;
+}
+.sub-img1 {
+  position: absolute;
+  top: 6%;
+  right: 4%;
+  /* width: 31rem; */
+  width: 20vw;
+  /* height: 54rem; */
+  height: 68vh;
+  filter: brightness(0.8);
+}
+.sub-img1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+/* 
+.sub-img2 {
+  position: absolute;
+  top: 7%;
+  right: 8%;
+  width: 21.3rem;
+  height: 34.8rem;
+}
+.sub-img3 {
+  position: absolute;
+  bottom: 16%;
+  left: 14%;
+  width: 43rem;
+  height: 24.3rem;
+} */
+.visual-img figure img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/* splitting strong:first-child */
+@keyframes noise-anim {
+  0% {
+    clip: rect(71px, 9999px, 23px, 0);
+  }
+  5% {
+    clip: rect(84px, 9999px, 56px, 0);
+  }
+  10% {
+    clip: rect(89px, 9999px, 82px, 0);
+  }
+  15% {
+    clip: rect(98px, 9999px, 30px, 0);
+  }
+  20% {
+    clip: rect(68px, 9999px, 49px, 0);
+  }
+  25% {
+    clip: rect(18px, 9999px, 8px, 0);
+  }
+  30% {
+    clip: rect(38px, 9999px, 72px, 0);
+  }
+  35% {
+    clip: rect(51px, 9999px, 36px, 0);
+  }
+  40% {
+    clip: rect(45px, 9999px, 27px, 0);
+  }
+  45% {
+    clip: rect(6px, 9999px, 41px, 0);
+  }
+  50% {
+    clip: rect(25px, 9999px, 98px, 0);
+  }
+  55% {
+    clip: rect(57px, 9999px, 55px, 0);
+  }
+  60% {
+    clip: rect(49px, 9999px, 73px, 0);
+  }
+  65% {
+    clip: rect(78px, 9999px, 79px, 0);
+  }
+  70% {
+    clip: rect(8px, 9999px, 67px, 0);
+  }
+  75% {
+    clip: rect(19px, 9999px, 81px, 0);
+  }
+  80% {
+    clip: rect(50px, 9999px, 69px, 0);
+  }
+  85% {
+    clip: rect(73px, 9999px, 44px, 0);
+  }
+  90% {
+    clip: rect(37px, 9999px, 93px, 0);
+  }
+  95% {
+    clip: rect(29px, 9999px, 20px, 0);
+  }
+  100% {
+    clip: rect(88px, 9999px, 1px, 0);
+  }
+}
+.creative::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  /* background: black; */
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(53px, 9999px, 46px, 0);
+  }
+  5% {
+    clip: rect(45px, 9999px, 91px, 0);
+  }
+  10% {
+    clip: rect(95px, 9999px, 91px, 0);
+  }
+  15% {
+    clip: rect(39px, 9999px, 26px, 0);
+  }
+  20% {
+    clip: rect(53px, 9999px, 35px, 0);
+  }
+  25% {
+    clip: rect(16px, 9999px, 94px, 0);
+  }
+  30% {
+    clip: rect(23px, 9999px, 82px, 0);
+  }
+  35% {
+    clip: rect(82px, 9999px, 3px, 0);
+  }
+  40% {
+    clip: rect(2px, 9999px, 64px, 0);
+  }
+  45% {
+    clip: rect(78px, 9999px, 68px, 0);
+  }
+  50% {
+    clip: rect(94px, 9999px, 5px, 0);
+  }
+  55% {
+    clip: rect(9px, 9999px, 17px, 0);
+  }
+  60% {
+    clip: rect(74px, 9999px, 44px, 0);
+  }
+  65% {
+    clip: rect(95px, 9999px, 36px, 0);
+  }
+  70% {
+    clip: rect(24px, 9999px, 11px, 0);
+  }
+  75% {
+    clip: rect(20px, 9999px, 84px, 0);
+  }
+  80% {
+    clip: rect(37px, 9999px, 26px, 0);
+  }
+  85% {
+    clip: rect(47px, 9999px, 1px, 0);
+  }
+  90% {
+    clip: rect(76px, 9999px, 44px, 0);
+  }
+  95% {
+    clip: rect(41px, 9999px, 57px, 0);
+  }
+  100% {
+    clip: rect(69px, 9999px, 83px, 0);
+  }
+}
+.creative::before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 var(--main-color);
+  top: 0;
+  color: white;
+  /*  background: black; */
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+.visual-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*   border: 1px solid #f00; */
+  width: 145.5rem;
+  height: 34.7rem;
+  line-height: 1;
+}
+.visual-text h2 strong:first-child {
+  font-size: 10rem;
+}
+
+.visual-text h2 b {
+  font-size: 14rem;
+  font-family: 'Kalnia';
+  color: #ccc;
+  opacity: 50%;
+  position: absolute;
+  top: 18%;
+  left: 43%;
+}
+
+/* title splitting */
+.title {
+  font-family: 'Kalnia';
+  font-size: 18rem;
+  position: absolute;
+  bottom: 8%;
+  left: 45%;
+  white-space: nowrap;
+}
+
+.next-button {
+  text-indent: -999px;
+  overflow: hidden;
+  display: block;
+  width: 11.3rem;
+  height: 8rem;
+  background: url(../img/main-next.svg) no-repeat 0 0 / cover;
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+}
+.next-button.on {
+  background-image: url(../img/main-next-b.svg);
+  animation: buttonAni 2s infinite alternate;
+  animation-timing-function: cubic-bezier(0, 0.28, 0.65, 1.15);
+}
+@keyframes buttonAni {
+  to {
+    transform: translateX(15%);
+  }
+}

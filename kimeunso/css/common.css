@@ -1,0 +1,97 @@
+@charset 'utf-8';
+
+/* pretendard */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+/* ivypresto headline */
+@import url('https://use.typekit.net/ajl0sdf.css');
+
+:root {
+  font-size: 62.5%; /* 10px */
+  --black-color: #000;
+  --white-color: #fff;
+  --text-color: #666;
+  --gray-color: #eaeaea;
+  --gray2-color: #d9d9d9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--black-color);
+  cursor: none;
+}
+
+button:hover {
+  cursor: none;
+}
+
+/* 블럭설정 */
+::selection {
+  background: var(--black-color);
+  color: var(--white-color);
+}
+
+hr,
+.hidden {
+  position: absolute;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.inner {
+  /* width: 172rem; */
+  width: 89.5834%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font: 2.6rem 'Pretendard', sans-serif;
+  color: #000;
+  line-height: 1.2;
+  cursor: none;
+}
+
+.section h2 {
+  pointer-events: none;
+  user-select: none;
+}
+
+/* s: cursor events */
+.custom-cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  border: 2px solid #000;
+  border-radius: 50%;
+  /* 마우스에 걸리적 거리지 말 것 */
+  pointer-events: none;
+  /* 드래그 */
+  user-select: none;
+  z-index: 2000;
+}
+
+.custom-cursor.hover {
+  /* transition: 0.4s; */
+  width: 80px;
+  height: 80px;
+}
+
+.custom-cursor.light {
+  /* transition: 0.4s; */
+  width: 80px;
+  height: 80px;
+  border-color: #fff;
+}
+/* //e: cursor events */

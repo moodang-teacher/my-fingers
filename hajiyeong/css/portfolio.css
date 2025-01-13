@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  font-family: 'Pretendard';
+  overflow-x: hidden;
+  background: #000;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Helvetica93-ExtendedBlack', sans-serif; /* 제목 폰트 설정 */
+}
+
+h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+}
+p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .hero {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/por2.png) no-repeat 50% 50%;
+  background-size: cover;
+} */
+.hero {
+  width: 100vw;
+  height: 100vh;
+  /* background: url(../img/por2.png) no-repeat 50% 50%; */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  position: relative; /* 텍스트가 비디오 위에 겹쳐지도록 상대 위치 지정 */
+  font-size: 200px;
+  color: white;
+  text-align: center;
+  z-index: 1; /* 텍스트가 비디오 위에 보이도록 설정 */
+}
+.footer {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/pore.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.services {
+  /* background: url(../img/bg2.png) no-repeat; */
+  background: #000;
+  padding: 8em 2em;
+  display: flex;
+  flex-direction: column;
+}
+.services-header {
+  width: 100%;
+  display: flex;
+  gap: 4em;
+}
+.services-header .col:nth-child(1) {
+  flex: 2;
+}
+.services-header .col:nth-child(2) {
+  flex: 5;
+  padding: 1em;
+}
+.service {
+  display: flex;
+  gap: 2em;
+  height: 150px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  padding: 20px;
+}
+
+.service-info {
+  flex: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+}
+.service-img {
+  flex: 5;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+.img {
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  background-color: #444; /* 이미지 배경과 유사한 색상 */
+  padding: 20px 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  text-decoration: none;
+  width: 118px;
+  text-align: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: #fff; /* 이미지 배경과 유사한 색상 */
+  color: #000;
+}
+/* .service .service-info strong {
+  font-size: 40px;
+} */
+
+/* lenis scroll */
+html.lenis,
+html.lenis body {
+  height: 500vh;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}

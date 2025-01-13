@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about Me</title>
+    <link rel="shortcut icon" href="./img/hyun-sun.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/jquery.fullpage.min.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/jquery.fullpage.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/script.js"></script>
+
+    <script>
+      $(function () {
+        const $header = $("#header");
+        const $btnTop = $(".btn-top");
+
+        const $aniEl = $("[data-aos]");
+
+        $("#fullpage").fullpage({
+          menu: ".indicator",
+
+          anchors: ["about-visual-1", "about-visual-2"],
+
+          scrollingSpeed: 800,
+
+          verticalCentered: false,
+
+          afterLoad: function (anchorLink, index) {
+            console.log("영역에 진입한 후");
+            console.log(anchorLink, index);
+
+            AOS.init();
+            $aniEl.addClass("aos-animate");
+          },
+
+          onLeave: function (index, nextIndex, direction) {
+            console.log("영역을 떠나갈 때");
+            console.log(index, nextIndex, direction);
+
+            if (index === 4 || direction === "up") {
+              $btnTop.fadeOut();
+            }
+            $aniEl.removeClass("aos-animate");
+          },
+        });
+
+        const $window = $(window);
+        let x = 0;
+        let y = 0;
+        let mx = 0;
+        let my = 0;
+        const speed = 0.03;
+
+        $window.on("mousemove", (e) => {
+          console.log(e);
+
+          x = Math.max(-100, Math.min(400, e.pageX - $window.innerWidth() / 2));
+          y = Math.max(-50, Math.min(300, e.pageY - $window.innerHeight() / 2));
+        });
+
+        function moving() {
+          mx += (x - mx) * speed;
+          my += (y - my) * speed;
+
+          $(".about-gradation1 , .contact-gradation1").css({
+            transform: `translate(${mx}px, ${my}px)`,
+            // transform: `translateX(${mx}px)`,
+            // filter: `blur(${mx * 0.05}px)`,
+          });
+
+          // $('.hyun-pic').css({
+          //   transform: `translate(${mx * 0.4}px, ${my}px)`,
+          // });
+
+          $(".hyun-pic, .contact-pic").css({
+            transform: `translate(${-mx * 0.1}px)`,
+          });
+
+          requestAnimationFrame(moving);
+        }
+        moving();
+
+        AOS.init();
+      });
+    </script>
+  </head>
+  <body>
+    <header id="header" class="sub-header">
+      <div class="inner">
+        <nav>
+          <h1 class="logo">
+            <a href="./index.html">SongHyun</a>
+          </h1>
+
+          <ul class="gnb">
+            <li class="on"><a href="./aboutme.html">About ME</a></li>
+            <li><a href="./Project.html">Project</a></li>
+            <li><a href="./Graphic.html">Graphic</a></li>
+          </ul>
+        </nav>
+        <hr />
+      </div>
+    </header>
+
+    <div class="pointer"><i class="hidden">포인터</i></div>
+
+    <main id="fullpage">
+      <section class="section about-visual-1">
+        <div class="about-gradation1">
+          <i class="hidden">그라데이션 장식</i>
+        </div>
+        <div class="about-gradation2">
+          <i class="hidden">그라데이션 장식</i>
+        </div>
+        <div class="inner">
+          <div class="about-wrap">
+            <div class="hyun-pic">
+              <div class="hyun-name"><i class="hidden">현</i></div>
+              <p>[햇빛: 현]</p>
+            </div>
+            <div class="hyun-con">
+              <h2 data-aos="fade-left">
+                햇살처럼 다채롭고<br />
+                <b data-aos="fade-left" data-aos-delay="500"
+                  >활기찬 디자이너 송현입니다.</b
+                >
+              </h2>
+              <p data-aos="fade-left" data-aos-delay="600">
+                저는 이름처럼 밝고 활기찬 성격과 태양과 같이 따뜻한 에너지를
+                품고 있습니다. <br />햇살 속의 다채로운 색감처럼 다양하고
+                아름다운 디자인을 만드는 것을 좋아하고 <br />매일 같은 자리에
+                꾸준함과 책임감을 갖고 열심히 책임에 임하고 있습니다.
+                <br />디자인은 혼자서만 하는 것이 아니라 함께 만드는 것이라고
+                생각합니다. <br />
+                함께하면 즐거운 디자이너, 힘이 넘치는 디자이너가 되기 위해
+                노력하겠습니다.
+              </p>
+            </div>
+          </div>
+          <div class="about-scroll-mouse">
+            <i class="hidden">스크롤 마우스</i>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-visual-2">
+        <h2 data-aos="fade-up">contact me</h2>
+        <div class="contact-gradation1">
+          <i class="hidden">그라데이션 장식</i>
+        </div>
+        <div class="contact-gradation2">
+          <i class="hidden">그라데이션 장식</i>
+        </div>
+        <div class="inner">
+          <div class="contact-wrap">
+            <div class="contact-pic"><i class="hidden">얼굴사진</i></div>
+            <div class="contact-con">
+              <dl>
+                <dt data-aos="fade-left">Name</dt>
+                <dd data-aos="fade-left" data-aos-delay="300">송현</dd>
+              </dl>
+              <dl>
+                <dt data-aos="fade-left">Birth</dt>
+                <dd data-aos="fade-left" data-aos-delay="300">2000.04.03</dd>
+              </dl>
+              <dl>
+                <dt data-aos="fade-left">E-mail</dt>
+                <dd data-aos="fade-left" data-aos-delay="300">
+                  hyun_design00@naver.com
+                </dd>
+              </dl>
+              <dl>
+                <dt data-aos="fade-left">Phone</dt>
+                <dd data-aos="fade-left" data-aos-delay="300">010-5870-0502</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

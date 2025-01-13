@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>graphic</title>
+    <link rel="shortcut icon" href="./img/hyun-sun.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script src="./js/aos.js"></script>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <script>
+      $(function () {
+        const $window = $(window);
+        const $header = $(".sub-header");
+        const $sns = $(".sns h2");
+        const visualTL = gsap.timeline({
+          // 타임라인의 기본 세팅
+          defaults: { duration: 2, ease: "power4.inOut" },
+        });
+
+        let scrollTop = $window.scrollTop();
+        setWhiteBackground();
+
+        function setWhiteBackground() {
+          const sns = $(".sns h2").outerHeight();
+          if (scrollTop >= sns) {
+            $header.addClass("w-bg");
+          } else {
+            $header.removeClass("w-bg");
+          }
+        }
+
+        let x = 0;
+        let y = 0;
+
+        let mx = 0;
+        let my = 0;
+
+        //기본 속도
+        let speed = 0.01;
+
+        //마우스가 움직이면
+        $window.on("mousemove", function (e) {
+          //좌표값 가져와서 x, y변수에 할당
+          //마우스 좌표의 시작을 화면 중식으로 이동
+          // console.log(e);
+          x = e.pageX;
+          y = e.pageY;
+        });
+
+        // 마우스 위치값을 기본으로 해서 어떤 값을 만들자
+        function moving() {
+          //이게 6만원, 애니메이션 동작 만드는 공식이라고 생각하세요.
+          mx += (x - mx) * speed;
+          my += (y - my) * speed;
+
+          //cursor의 좌표값으로 적용 /* 마우스 커서의 중심을 가운데로 이동 */
+          $(".graphic-gradation").css({
+            transform: `translate(${mx}px, ${my}px)`,
+          });
+
+          //부드러운 반복
+          requestAnimationFrame(moving);
+        }
+
+        moving();
+
+        //AOS
+        AOS.init({});
+
+        // 이미지 클릭 이벤트
+        $(".sns-list li, .Banner-list li").on("click", "img", function () {
+          var imgSrc = $(this).attr("src");
+          $("#popup-img").attr("src", imgSrc);
+          $("#dim-background, #popup").fadeIn();
+        });
+
+        $(".DetailPage-list li").on("click", "img", function () {
+          var imgSrc = $(this).attr("src");
+          $("#popup").css("height", "90%");
+          $("#popup-img").attr("src", imgSrc);
+          $("#dim-background, #popup").fadeIn();
+        });
+
+        // 팝업 닫기 이벤트
+        $("#popup-close, #dim-background").on("click", function () {
+          $("#dim-background, #popup").fadeOut();
+          $("#popup").css("height", "auto");
+        });
+
+        // top버튼
+
+        $(".btn-gotop").on("click", () => {
+          $("html, body").stop().animate({
+            scrollTop: 0,
+          });
+        });
+
+        // 원하는 지점부터 버튼 In
+        gsap.from(".btn-gotop", {
+          autoAlpha: 0,
+          y: 30,
+          scrollTrigger: {
+            trigger: ".Banner",
+            start: "top 50%",
+            toggleActions: "play none reverse reverse",
+
+            onEnter: () => console.log("Enter"),
+            onLeave: () => console.log("Leave"),
+            onEnterBack: () => console.log("EnterBack"),
+            onLeaveBack: () => console.log("LeaveBack"),
+          },
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header id="header" class="sub-header">
+      <div class="inner">
+        <nav>
+          <h1 class="logo">
+            <a href="./index.html">SongHyun</a>
+          </h1>
+
+          <ul class="gnb">
+            <li><a href="./aboutme.html">About ME</a></li>
+            <li><a href="./Project.html">Project</a></li>
+            <li class="on"><a href="./Graphic.html">Graphic</a></li>
+          </ul>
+        </nav>
+        <hr />
+      </div>
+    </header>
+
+    <div class="pointer"><i class="hidden">포인터</i></div>
+
+    <div class="graphic-gradation">
+      <i class="hidden">그라데이션 장식</i>
+    </div>
+
+    <div class="sns">
+      <div class="Graphic-inner">
+        <h2 class="Graphic-title" data-aos="fade-up">SNS Design</h2>
+        <ul class="sns-list" data-aos="fade-up" data-aos-delay="300">
+          <li data-aos="fade-up" data-aos-delay="300">
+            <figure>
+              <img src="./img/sns-ikea.png" alt="이케아 의자" />
+            </figure>
+            <dl class="detail-info">
+              <dt>IKEA</dt>
+              <dd>armchair</dd>
+              <dd>SNS Design</dd>
+            </dl>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="300">
+            <figure>
+              <img src="./img/sns-starbucks.png" alt="스타벅스 라임주스" />
+            </figure>
+            <dl class="detail-info">
+              <dt>STARBUCKS</dt>
+              <dd>Sweetie Grapefruit & Lime Blended</dd>
+              <dd>SNS Design</dd>
+            </dl>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="300">
+            <figure>
+              <img src="./img/sns-Skinfood.jpg" alt="스킨푸드 당근주스" />
+            </figure>
+            <dl class="detail-info">
+              <dt>SKIN FOOD</dt>
+              <dd>Carrot Carotene Calming Water Pad</dd>
+              <dd>SNS Design</dd>
+            </dl>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="300">
+            <figure>
+              <img
+                src="./img/sns-peripera.png"
+                alt="페리페라 잉크무드 글로이 틴트"
+              />
+            </figure>
+            <dl class="detail-info">
+              <dt>PeriPera</dt>
+              <dd>Ink Mood Glowy Tint</dd>
+              <dd>SNS Design</dd>
+            </dl>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="300">
+            <figure>
+              <img src="./img/sns-hwanho.jpg" alt="화노 단독콘서트" />
+            </figure>
+            <dl class="detail-info">
+              <dt>Hwanho</dt>
+              <dd>화노밴드 단독콘서트</dd>
+              <dd>SNS Design</dd>
+            </dl>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="300">
+            <figure>
+              <img src="./img/sns-McDonald.png" alt="맥도날드 썸머 스페셜" />
+            </figure>
+            <dl class="detail-info">
+              <dt>MacDonald</dt>
+              <dd>Summer Special</dd>
+              <dd>SNS Design</dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="Banner">
+      <div class="Graphic-inner">
+        <h2 class="Graphic-title" data-aos="fade-up">Banner Design</h2>
+        <ul class="Banner-list">
+          <li data-aos="fade-up" data-aos-delay="300">
+            <figure>
+              <img src="./img/banner-ikea.png" alt="이케아 의자 배너" />
+            </figure>
+            <dl class="detail-info">
+              <dt>IKEA</dt>
+              <dd>armchair</dd>
+              <dd>Banner Design</dd>
+            </dl>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="300">
+            <figure>
+              <img
+                src="./img/banner-Starbucks.png"
+                alt="스타벅스 라임주스 배너"
+              />
+            </figure>
+            <dl class="detail-info">
+              <dt>STARBUCKS</dt>
+              <dd>Sweetie Grapefruit & Lime Blended</dd>
+              <dd>Banner Design</dd>
+            </dl>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="300">
+            <figure>
+              <img
+                src="./img/banner-Skinfood.png"
+                alt="스킨푸드 당근패드 배너"
+              />
+            </figure>
+            <dl class="detail-info">
+              <dt>SKIN FOOD</dt>
+              <dd>Carrot Carotene Calming Water Pad</dd>
+              <dd>Banner Design</dd>
+            </dl>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="300">
+            <figure>
+              <img src="./img/banner-dog.jpg" alt="한끼바 강아지 사료" />
+            </figure>
+            <dl class="detail-info">
+              <dt>한끼바</dt>
+              <dd>간편휴대 신개념 강아지 사료</dd>
+              <dd>Banner Design</dd>
+            </dl>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="300">
+            <figure>
+              <img src="./img/banner-oioi.jpg" alt="오아이오아이 컬렉션" />
+            </figure>
+            <dl class="detail-info">
+              <dt>OIOI COLLECTION</dt>
+              <dd>오아이오아이 컬렉션</dd>
+              <dd>Banner Design</dd>
+            </dl>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="300">
+            <figure>
+              <img src="./img/banner-yupdduk.jpg" alt="엽기떡볶이" />
+            </figure>
+            <dl class="detail-info">
+              <dt>Yupgi Tteokbokki</dt>
+              <dd>로제엽떡 VS 엽떡</dd>
+              <dd>Banner Design</dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="DetailPage">
+      <div class="Graphic-inner">
+        <h2 class="Graphic-title" data-aos="fade-up">Detail Page Design</h2>
+        <ul class="DetailPage-list">
+          <li data-aos="fade-up" data-aos-delay="300">
+            <figure>
+              <img
+                src="./img/Deatail-Samsung.jpg"
+                alt="삼성세탁기 상세페이지"
+              />
+            </figure>
+            <dl class="detail-info">
+              <dt>SAMSUNG</dt>
+              <dd>2024 BESPOKE 그랑데 Ai</dd>
+              <dd>Detail Page Design</dd>
+            </dl>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="300">
+            <figure>
+              <img
+                src="./img/Deatail-wellage.jpg"
+                alt="삼성세탁기 상세페이지"
+              />
+            </figure>
+            <dl class="detail-info">
+              <dt>WELLAGE</dt>
+              <dd>리얼 히알루로닉 블루</dd>
+              <dd>Detail Page Design</dd>
+            </dl>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="300">
+            <figure>
+              <img src="./img/deatail-steambase.jpg" alt="스팀베이스" />
+            </figure>
+            <dl class="detail-info">
+              <dt>STEAMBASE</dt>
+              <dd>티트리 스칼프 워투 스케일러</dd>
+              <dd>Detail Page Design</dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 팝업 부분 -->
+    <div id="dim-background"></div>
+    <div id="popup">
+      <span id="popup-close">Close</span>
+      <div id="popup-content">
+        <img id="popup-img" src="" alt="Popup Image" />
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="inner">
+        <h2 class="Graphic-title">Thank You</h2>
+        <div class="footer-con">
+          <dl>
+            <dt>Name</dt>
+            <dd>송현</dd>
+          </dl>
+          <dl>
+            <dt>Birth</dt>
+            <dd>2000.04.03</dd>
+          </dl>
+          <dl>
+            <dt>E-mail</dt>
+            <dd>hyun_design00@naver.com</dd>
+          </dl>
+          <dl>
+            <dt>Phone</dt>
+            <dd>010-5870-0502</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <div class="top-btn">
+      <button type="button" class="btn-gotop">
+        <img src="./img/top-black.svg" alt="top" />
+      </button>
+    </div>
+  </body>
+</html>

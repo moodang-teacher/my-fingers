@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Border with CSS Variables</title>
+  <style>
+    :root {
+      --primary-color: #ff7f50;
+      /* Coral */
+      --secondary-color: #1e90ff;
+      /* DodgerBlue */
+    }
+
+    .gradient-border {
+      position: relative;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      line-height: 160px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .gradient-border::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      z-index: -1;
+      border-radius: inherit;
+      mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+      -webkit-mask-composite: xor;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="gradient-border">Gradient Border</div>
+</body>
+
+</html>

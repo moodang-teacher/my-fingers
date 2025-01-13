@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lmsportfolio</title>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.4/dist/lenis.min.js"></script>
+  <script src="./js/script.js"></script>
+
+</head>
+
+<body>
+  <!-- 헤더 S -->
+
+  <a href="#container" class="skip hidden">본문 바로가기</a>
+  <header id="header">
+    <div class="inner">
+      <nav>
+        <h1 class="logo"><a href="#"><i class="hidden">minseo lee</i></a></h1>
+        <ul class="gnb">
+          <li>
+            <a href="aboutme.html">About Me</a>
+          </li>
+          <li>
+            <a href="work.html">Work</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <hr>
+  <!-- 헤더 E -->
+
+  <!-- 메인 S -->
+  <main id="container">
+
+    <section class="visual">
+
+      <div class="planet">
+        <video autoplay loop muted>
+          <source src="./img/real.webm" type="video/webm">
+          <!-- 다른 비디오 형식도 추가할 수 있습니다 -->
+        </video>
+      </div>
+
+      <img class="gra gra1" src="./img/gra1.png" alt="">
+      <img class="gra gra2" src="./img/gra2.png" alt="">
+      <img class="gra gra3" src="./img/gra3.png" alt="">
+
+
+      <div class="inner">
+
+        <div class="visual-title">
+          <h2><em>P</em>ort<em>F</em>olio</h2>
+          <strong>Designer In Orbit</strong>
+          <p>"<b>공전</b>하며 소통하는 디자이너 <b>이민서</b>입니다"</p>
+        </div>
+
+        <div class="visual-info">
+          <p>-2024</p>
+          <div class="visual-info-major">
+            <p>Ux/Ui</p>
+            <p>graphic</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="about">
+      <div class="inner">
+        <h3><em>D</em>isigner in <em>O</em>rbit</h3>
+        <div class="about-con-wrap">
+          <div class="about-bg"></div>
+          <div class="about-con">
+            <h4><b>공전</b>하며 소통하는 <br>
+              디자이너 <b>이민서</b>입니다.</h4>
+            <p>다양한 이해관계자들과<br>
+              긴밀하게 상호작용하며, 공전하는 행성처럼<br>
+              유연하고 조화롭게 협력하는 디자이너입니다.</p>
+            <a href="aboutme.html" class="btn-about-me">About Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="work">
+      <div class="work-wrap">
+        <div class="work-title">
+          <h3><em>W</em>ork</h3>
+          <p>어플 및 웹 디자인 등 UX/UI 디자인과 브랜딩, 포스터,<br>
+            카드 뉴스 등 그래픽 디자인을 포함한 다양한
+            프로젝트 <br>모음입니다</p>
+          <a href="work.html" class="btn-more">More</a>
+        </div>
+
+
+
+
+
+
+        <div class="work-slider-wrap">
+
+          <div class="swiper work-slider">
+
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="work-list">
+                  <figure><img src="./img/wk1.png" alt="work1" />
+                    <div class="links">
+                      <a href="portpolioprocess.html" target="_blank">Process Page</a>
+                      <a href="https://leeminseo2.github.io/portfolio/" target="_blank">Web Site</a>
+                    </div>
+                  </figure>
+                  <div class="work-list-con">
+                    <dl>
+                      <dt>Portfolio Web Site</dt>
+                      <dd>UXUI / Web Design</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="work-list">
+                  <figure>
+                    <img src="./img/work-list1.png" alt="work1" />
+                    <div class="links">
+                      <a href="arcterycxprocess.html" target="_blank">Process Page</a>
+                      <a href="https://leeminseo2.github.io/arcterycx./">Web Site</a>
+                    </div>
+                  </figure>
+                  <div class="work-list-con">
+                    <dl>
+                      <dt>Arcteryx Web Site</dt>
+                      <dd>UXUI / Resposive Web Site Redesign</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="swiper-slide">
+                <div class="work-list">
+                  <figure>
+                    <img src="./img/wk3.png" alt="work1" />
+                    <div class="links">
+                      <a href="#" target="_blank">Process Page</a>
+                      <a href="#" target="_blank">Web Site</a>
+                    </div>
+                  </figure>
+                  <div class="work-list-con">
+                    <dl>
+                      <dt>Gongcha Web Site</dt>
+                      <dd>UXUI /Web Site Redesign</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div> -->
+              <div class="swiper-slide">
+                <div class="work-list">
+                  <figure>
+                    <img src="./img/SLIDER-WONKA.png" alt="work1" />
+                    <div class="links">
+                      <a href="wonkaprocess.html" target="_blank">Process Page</a>
+
+                    </div>
+                  </figure>
+                  <div class="work-list-con">
+                    <dl>
+                      <dt>Wonka Micro Web site </dt>
+                      <dd>UXUI / Micro Web Site Design</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="work-list">
+                  <figure>
+                    <img src="./img/wk5.png" alt="work1" />
+                    <div class="links">
+                      <a href="greensweetprocess.html" target="_blank">Process Page</a>
+                      
+                    </div>
+                  </figure>
+                  <div class="work-list-con">
+                    <dl>
+                      <dt>Greensweet App </dt>
+                      <dd>UXUI / App Design</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="work-list">
+                  <figure>
+                    <img src="./img/Restaurant Window PSD Mockup.png" alt="work1" />
+                    <div class="links">
+                      <a href="chloedayprocess.html" target="_blank">Process Page</a>
+                    </div>
+                  </figure>
+                  <div class="work-list-con">
+                    <dl>
+                      <dt>Chloe Day Cafe</dt>
+                      <dd>Graphic / Branding Design</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="work-list">
+                  <figure>
+                    <img src="./img/brain-wor.jpg" alt="work1" />
+                    <div class="links">
+                      <a href="braindeadprocess.html" target="_blank">Process Page</a>
+                    </div>
+                  </figure>
+                  <div class="work-list-con">
+                    <dl>
+                      <dt>Brain Dead</dt>
+                      <dd>Graphic / Catalog Design</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="work-list">
+                  <figure>
+                    <img src="./img/work-maybe.png" alt="work1" />
+                    <div class="links">
+                      <a href="maybefrom.html" target="_blank">Process Page</a>
+                    </div>
+                  </figure>
+                  <div class="work-list-con">
+                    <dl>
+                      <dt>Maybe From</dt>
+                      <dd>Graphic / Promotion Design</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="work-list">
+                  <figure>
+                    <img src="./img/work-meong.png" alt="work1" />
+                    <div class="links">
+                      <a href="meongdel.html" target="_blank">Process Page</a>
+                    </div>
+                  </figure>
+                  <div class="work-list-con">
+                    <dl>
+                      <dt>멍들 물어보시개</dt>
+                      <dd>Graphic / Title Design, Character Design</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="btn-wrap">
+              <button type="button" class="btn-prev"><i class="hidden">prev</i></button>
+              <button type="button" class="btn-next"><i class="hidden">next</i></button>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <!-- 메인 E -->
+
+
+  <footer id="footer">
+
+    <h3><a href="#"><em>C</em>ontact</a></h3>
+
+    <ul class="foot-con-list">
+      <li class="foot-con-list-item"><a href="#">Call</a>
+        <div class="foot-con-list-item-hover">
+          <!-- <p>+82 010 7741 9308</p> -->
+        </div>
+      </li>
+      <li class="foot-con-list-item"><a href="#">E.mail</a>
+        <div class="foot-con-list-item-hover">
+          <!-- <p>lms316497@naver.com</p> -->
+        </div>
+      </li>
+      <li class="foot-con-list-item"><a href="#">Instagram</a>
+        <div class="foot-con-list-item-hover">
+          <!-- <p>@minseo.111</p> -->
+        </div>
+      </li>
+      <li class="foot-con-list-item"><a class="point" href="aboutme.html">Contact Me</a>
+      </li>
+    </ul>
+    <strong>LMSportfolio.com</strong>
+
+
+  </footer>
+
+  <button class="topButton" aria-label="Go to top">Top</button>
+
+  <div class="fake"></div>
+</body>
+
+</html>
