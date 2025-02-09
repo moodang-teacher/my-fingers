@@ -17,7 +17,12 @@
         .then(response => response.json())
         .then(data => {
           const fileLinksDiv = document.getElementById('file-links');
-          for (const folder in data) {
+
+          // JSON 파일에서 폴더 이름을 가져와서 배열로 변환
+          const folders = Object.keys(data); // JSON의 키(폴더 이름)를 배열로 가져옴
+
+          // 폴더 순서에 따라 링크 생성
+          folders.forEach(folder => {
             const folderHeader = document.createElement('h3');
             folderHeader.textContent = folder;
             fileLinksDiv.appendChild(folderHeader);
@@ -35,7 +40,7 @@
             } else {
               fileLinksDiv.appendChild(document.createTextNode(files)); // 오류 메시지 표시
             }
-          }
+          });
         })
         .catch(error => console.error('파일을 가져오는 중 오류 발생:', error));
     });
