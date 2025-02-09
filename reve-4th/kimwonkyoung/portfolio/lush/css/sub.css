@@ -1,0 +1,295 @@
+@charset "utf-8";
+
+.sub-img {
+    max-width: 100%;
+    /* height: 600px; */
+    height: 31.25vw;
+    margin: 0 auto;
+    background: 50% 50%/cover url(../images/sub_visual.png) no-repeat;
+}
+
+.sub-container {
+    margin: 0 auto;
+}
+
+.bread-crumbs ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bread-crumbs ul li {
+    display: block;
+    padding: 15px 10px;
+    position: relative;
+}
+
+.bread-crumbs ul li:last-child {
+    color: #000;
+    font-weight: 700;
+}
+
+.bread-crumbs ul li::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url(../images/icon-breadcrumbs.png);
+    position: absolute;
+    top: 40%;
+    right: -10%;
+}
+
+.bread-crumbs ul li:last-child::after {
+    display: none;
+}
+
+.page-title {
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    /* margin-top: 95px; */
+    margin-top: 6.2914vw;
+}
+
+.category {
+    background: #f4f4f4;
+    border-bottom: 1px solid #999;
+    height: 58px;
+    /* margin-top: 80px; */
+    margin-top: 5.298vw;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.category-list a {
+    display: block;
+    /* width: 120px; */
+    width: 7.947%;
+    height: 100%;
+    line-height: 58px;
+    text-align: center;
+    /* background: #ff0; */
+}
+
+.category-list .on {
+    color: #000;
+    font-weight: 700;
+}
+
+.face-mask {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.face-mask li {
+    width: 25%;
+    position: relative;
+    /* margin: 117px 0 0; */
+    margin: 7.7483vw 0 0;
+}
+
+.face-mask li figure img {
+    transition: 0.5s;
+}
+
+.face-mask li .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.face-mask li:hover .img-hover {
+    /* display: block; */
+    opacity: 1;
+}
+
+.face-mask li .img-basic {
+    opacity: 1;
+}
+
+.face-mask li:hover .img-basic {
+    /* display: none; */
+    opacity: 0;
+}
+
+.face-mask dl {
+    text-align: center;
+    width: 100%;
+}
+
+.face-mask dl dt {
+    color: #000;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.face-mask dl dd {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.face-mask .badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.face-mask .badge2 {
+    top: 20%;
+}
+
+.paging {
+    text-align: center;
+    line-height: 50px;
+    /* margin-top: 200px; */
+    margin-top: 10.4167vw;
+}
+
+.paging a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    vertical-align: top;
+    margin: 0 4px;
+}
+
+.paging .on {
+    background: #000;
+    color: #fff;
+}
+
+.paging .btn-page-prev {
+    border: none;
+    background: 50% 50% url(../images/icon_prevpage.png) no-repeat;
+}
+
+.paging .btn-page-next {
+    border: none;
+    background: 50% 50% url(../images/btn_mobile_next.png) no-repeat;
+}
+
+
+@media(max-width: 1300px) {
+    .face-mask .badge{
+        width: 70px;
+        height: 70px;
+    }
+
+    .face-mask .badge2{
+        top: 22%;
+    }
+}
+
+
+@media(max-width: 1024px) {
+    .page-title{
+        font-size: 30px;
+    }
+
+    .bread-crumbs{display: none;}
+
+    .face-mask {
+        /* justify-content: space-between; */
+        justify-content: flex-start;
+    }
+
+    .face-mask li {
+        /* width: 315px; */
+        width: 33.3%;
+    }
+
+    .category-list a {
+    width: 100%;
+    padding: 0 20px;
+}
+
+}
+
+@media(max-width: 650px) {
+    .category {
+        margin: 50px 0;
+    }
+
+    .face-mask .badge{
+        width: 55px;
+        height: 55px;
+    }
+
+    .face-mask .badge2{
+        top: 22%;
+    }
+
+    .paging {
+        line-height: 35px;
+    }
+
+    .paging a {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 420px) {
+    .page-title{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .category {
+        display: none;
+    }
+
+    .product-list{
+        margin-top: 30px;
+    }
+
+    .face-mask li{
+        width: 50%;
+    }
+
+    .face-mask dl dt{
+        font-size: 18px;
+    }
+
+    .face-mask dl dd{
+        font-size: 15px;
+    }
+
+    .face-mask .badge{
+        width: 50px;
+        height: 50px;
+    }
+
+    .face-mask .badge2{
+        top: 20%;
+    }
+
+    .paging {
+        line-height: 20px;
+    }
+
+    .paging a {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        margin: 10px 0;
+    }
+
+    .paging a:nth-child(3),
+    .paging .btn{
+        display: none;
+    }
+}

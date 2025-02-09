@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, button,
+caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+img{
+    vertical-align: top;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    font: 18px/1 'Noto serif SC','Eulyoo1945-Regular','Eulyoo1945-SemiBold', serif;
+	color: #3E0204; line-height: 1;overflow-y: hidden;
+    background: #EDE9E0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{text-decoration: none; color: inherit;}
+a:hover{text-decoration: none; color: #3E0204;}
+
+*,
+body,
+a,
+a:hover{cursor: none;}
+
+.clear::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+}
+
+@font-face {
+    font-family: 'Eulyoo1945-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eulyoo1945-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cursor{
+    position: absolute;
+    top: -30px;
+    left: 0;
+    z-index: 9999;
+    user-select: none;
+    pointer-events: none;
+}
+
+.cursor-img{
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 73px;
+    height: 43px;
+    /* background: url(../images/branch-cursor.png) 0 0/cover no-repeat; */
+    user-select: none;
+    pointer-events: none;
+    /* z-index: 9999; */
+}
+
+.cursor-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.cursor.click{
+    width: 73px;
+    height: 43px;
+    background: url(../images/branch-cursor-hover2.png) 0 0/cover no-repeat;
+    z-index: 9999;
+}
+
+.bird-mouse{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(70%,-95%);
+    width: 39px;
+    height: 38px;
+    user-select: none;
+    pointer-events: none;
+    background: url(../images/bird-mouse2.png) 50% /cover no-repeat;
+    transition: 0.4s;
+    z-index: 9999;
+}
+
+/* .progress{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #FFF7EB;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.progress-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #3E0204;
+    transition: 0.4s;
+} */

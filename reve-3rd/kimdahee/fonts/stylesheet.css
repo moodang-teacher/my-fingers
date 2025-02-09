@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Albra';
+    src: url('AlbraBold.eot');
+    src: url('AlbraBold.eot?#iefix') format('embedded-opentype'),
+        url('AlbraBold.woff2') format('woff2'),
+        url('AlbraBold.woff') format('woff'),
+        url('AlbraBold.ttf') format('truetype'),
+        url('AlbraBold.svg#AlbraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra';
+    src: url('AlbraMedium.eot');
+    src: url('AlbraMedium.eot?#iefix') format('embedded-opentype'),
+        url('AlbraMedium.woff2') format('woff2'),
+        url('AlbraMedium.woff') format('woff'),
+        url('AlbraMedium.ttf') format('truetype'),
+        url('AlbraMedium.svg#AlbraMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra';
+    src: url('AlbraRegular.eot');
+    src: url('AlbraRegular.eot?#iefix') format('embedded-opentype'),
+        url('AlbraRegular.woff2') format('woff2'),
+        url('AlbraRegular.woff') format('woff'),
+        url('AlbraRegular.ttf') format('truetype'),
+        url('AlbraRegular.svg#AlbraRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra';
+    src: url('AlbraLight.eot');
+    src: url('AlbraLight.eot?#iefix') format('embedded-opentype'),
+        url('AlbraLight.woff2') format('woff2'),
+        url('AlbraLight.woff') format('woff'),
+        url('AlbraLight.ttf') format('truetype'),
+        url('AlbraLight.svg#AlbraLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

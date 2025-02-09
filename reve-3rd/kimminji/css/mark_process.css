@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+b{
+    color: #105628;
+}
+
+.visual-wrap{
+    background: url(../images/mark_process/main-visual.png) 0/cover no-repeat;
+    padding-top: 100px;
+    position: relative;
+    height: 950px;
+}
+.visual-wrap h1 strong{
+    color: #105628;
+}
+.visual-wrap figure{
+    position: absolute;
+    top: 390px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.overview-wrap{
+    padding: 100px 0;
+}
+.color-wrap{
+    padding: 100px 0;
+    background: #cee7d6;
+}
+.color-wrap .inner{
+    width: 1085px;
+}
+.color-wrap ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 100px;
+}
+.color-wrap ul li p{
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 500;
+}
+.font-wrap{
+    padding: 100px 0;
+}
+.font-wrap .inner{
+    width: 1265px;
+}
+.font-wrap ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.page-wrap{
+    padding: 100px 0;
+    background: #cee7d6;
+    display: flex;
+    flex-wrap: wrap;
+}
+.page-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 73px;
+}
+.pc-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+}
+
+.pc-con p::after{
+    content: '';
+    display: block;
+    width: 1480px;
+    height: 24px;
+    background: url(../images/mark_process/ruler_pc.png) 0/cover no-repeat;
+    margin: 10px 0 40px;
+}
+
+.pc-con img{
+    width: 100%;
+}
+.tablet-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.tablet-con p::after{
+    content: '';
+    display: block;
+    width: 476px;
+    height: 24px;
+    background: url(../images/mark_process/ruler_tablet.png) 0/cover no-repeat;
+    margin: 10px 0 30px;
+}
+.mobile-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.mobile-con p::after{
+    content: '';
+    display: block;
+    width: 250px;
+    height: 22px;
+    background: url(../images/mark_process/ruler_mobile.png) 0/cover no-repeat;
+    margin: 10px 0 30px;
+}
+.page-text{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 40px;
+}
+.page-text p{
+    margin: 12px 0;
+}
+.page-text p:last-child{
+    margin-bottom: 30px;
+}
+
+.thank-wrap{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 48px;
+    color: #105628;
+    position: relative;
+}
+.thank-wrap::before{
+    content: '';
+    display: block;
+    width: 437px;
+    height: 377px;
+    background: url(../images/mark_process/thank_bg.png) 0 no-repeat;
+    opacity: 0.3;
+    position: absolute;
+    bottom: 44px;
+    right: 150px;
+}
+.btn-wrap{
+    border-top: 5px dashed #cee7d6;
+}
+.btn.btn-view{
+    border: 2px solid #394;
+    color: #105628;
+}
+.btn.btn-process{
+    background: #105628;
+}
+.btn-view:hover{
+    background: #394;
+    color: #f1e9e9;
+}
+.process-list{
+    background: #cee7d6;
+}
+.process-list a:hover{
+    background: #394;
+    color: #f1e9e9;
+}

@@ -1,0 +1,680 @@
+@charset "utf-8";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+input,
+button,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    font: 1.25rem 'Pretendard-Regular', sans-serif;
+    /* 20px  */
+    line-height: 1;
+    color: #222;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera*/
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    /* 셀들의 보더를 합친다 */
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.4s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FF5D5D;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+body,
+a,
+a:hover {
+    cursor: none;
+}
+
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Black';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 햄버거메뉴 */
+
+.dim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 9;
+}
+
+.slide-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: #FFE88A;
+    z-index: 10;
+    padding: 5%;
+    transition: 0.4s;
+}
+
+.slide-menu.active {
+    right: 0;
+}
+
+.slide-menu nav {
+    width: 50%;
+    margin: 200px auto 0;
+}
+
+.menu {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'GmarketSansBold', serif;
+    color: #fff;
+}
+
+.menu li {
+    margin-bottom: 80px;
+}
+
+.menu li a {
+    position: relative;
+}
+
+.menu li a::after {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ff5d5d;
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    opacity: 0;
+    transition: 0.4s;
+}
+.menu li a:hover::after {
+    top: -20px;
+    right: -26px;
+    opacity: 1;
+    animation: wobble-hor-bottom 0.8s both;
+    animation-delay: 0.7s;
+}
+.menu li:nth-child(1) a:hover::after {
+    animation-delay: 0.5s;
+}
+
+.menu li a:hover .word .char {
+    animation: wobble-hor-bottom 0.8s both;
+    animation-delay: calc(100ms * var(--char-index));
+}
+@keyframes wobble-hor-bottom {
+
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        transform: translateX(-15px) rotate(-6deg);
+    }
+
+    30% {
+        transform: translateX(7px) rotate(6deg);
+    }
+
+    45% {
+        transform: translateX(-7px) rotate(-3.6deg);
+    }
+
+    60% {
+        transform: translateX(5px) rotate(2.4deg);
+    }
+
+    75% {
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+/* 햄버거버튼 애니메이션 */
+
+
+
+.menu-btn {
+    display: block;
+    width: 38px;
+    height: 25px;
+    transition: 0.4s;
+    z-index: 120;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-btn b {
+    display: block;
+    width: 38px;
+    height: 2px;
+    background: #222;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.menu-btn::before,
+.menu-btn::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background: #222;
+    position: absolute;
+    transition: 0.4s;
+}
+
+.menu-btn::before {
+    top: 0;
+    right: 0;
+}
+
+.menu-btn::after {
+    bottom: 0;
+    left: 0;
+}
+
+.menu-btn:hover::before,
+.menu-btn:hover::after {
+    width: 100%;
+}
+
+/* 효과 */
+.menu-btn.active {
+    width: 60px;
+    height: 60px;
+}
+
+.menu-btn.active {
+    width: 40px;
+    height: 40px;
+}
+
+.menu-btn.active::before,
+.menu-btn.active::after {
+    width: 100%;
+    top: 50%;
+}
+
+.menu-btn.active::before {
+    transform: rotate(45deg);
+}
+
+.menu-btn.active::after {
+
+    transform: rotate(-45deg);
+}
+
+.menu-btn.active>b {
+    left: 200%;
+}
+
+
+/* 효과 */
+.menu-btn.active {
+    width: 40px;
+    height: 40px;
+}
+
+.menu-btn.active::before,
+.menu-btn.active::after {
+    width: 100%;
+    top: 50%;
+}
+
+.menu-btn.active::before {
+    transform: rotate(45deg);
+}
+
+.menu-btn.active::after {
+
+    transform: rotate(-45deg);
+}
+
+.menu-btn.active>b {
+    left: 200%;
+}
+
+
+/* 공통명령 */
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    clip: rect(0 0 0 0);
+}
+
+.inner {
+    width: 86.5625%;
+    margin: 0 auto;
+}
+
+.sub-title {
+    font-family: 'GmarketSansBold', serif;
+    font-size: 2.25rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.con-title {
+    font-family: 'Pretendard-Bold', serif;
+    font-size: 2.8125rem;
+}
+
+/* 커서 */
+.cursor {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+    pointer-events: none;
+    background: url(../images/gfico.png) 50%/cover no-repeat;
+    z-index: 999;
+}
+
+
+.spark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fbbd84c5;
+    pointer-events: none;
+    transition: 0.4s;
+    transform: translate(calc(-50% + 40px), -50%);
+    z-index: 999;
+}
+
+.spark.active {
+    animation: spark-ani 0.4s 1;
+}
+
+@keyframes spark-ani {
+    100% {
+        width: 70px;
+        height: 70px;
+        opacity: 0;
+    }
+}
+
+
+
+/* 스크롤 아이콘 영역 */
+.scroll-ico {
+    width: 68px;
+    height: 38px;
+    border-radius: 50px;
+    border: 3px solid #222;
+    position: absolute;
+    bottom: -23%;
+    left: 7%;
+    transition: 0.4s;
+}
+
+.scroll-ico span:nth-of-type(1) {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: #222;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: scroll-move 2s infinite;
+}
+
+.scroll-ico span:nth-of-type(2),
+.scroll-ico span:nth-of-type(3) {
+    position: absolute;
+    top: 50%;
+    left: 120%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 2px solid #222;
+    border-bottom: 2px solid #222;
+    transform: translateY(-50%) rotate(-135deg);
+    animation: scroll-arrow-move 2s infinite;
+    opacity: 0;
+}
+
+.scroll-ico span:nth-of-type(3) {
+    left: 145%;
+
+}
+
+.scroll-ico span:nth-of-type(2) {
+    animation-delay: 0s;
+}
+
+.scroll-ico span:nth-of-type(3) {
+    top: 16px;
+    animation-delay: .15s;
+}
+
+.go-top {
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ff5d5d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Pretendard-SemiBold';
+    box-shadow: 0px 3px #FFE88A;
+
+}
+
+
+
+.go-top:hover {
+    background: #FBBE84;
+    font-family: 'Pretendard-Bold', serif;
+}
+
+
+
+
+/* s:헤더 영역 */
+header {
+    width: 100%;
+    height: 150px;
+}
+
+header .inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+h1 a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/logo_b.png) 50%/90% auto no-repeat;
+}
+
+.gnb {
+    font-family: 'GmarketSansMedium', serif;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+.gnb ul {
+    display: flex;
+}
+
+.gnb ul li a {
+    display: block;
+    padding: 30px 30px;
+}
+
+/* e:헤더 영역 */
+
+
+/* 애니메이션 */
+@keyframes scroll-arrow-move {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes scroll-move {
+    0% {
+        left: 20%;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        left: 60%;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

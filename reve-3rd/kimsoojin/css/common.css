@@ -1,0 +1,456 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Gmarket Sans TTF';
+    src: url('../fonts/GmarketSansTTFLight.eot');
+    src: url('../fonts/GmarketSansTTFLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GmarketSansTTFLight.woff2') format('woff2'),
+        url('../fonts/GmarketSansTTFLight.woff') format('woff'),
+        url('../fonts/GmarketSansTTFLight.ttf') format('truetype'),
+        url('../fonts/GmarketSansTTFLight.svg#GmarketSansTTFLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gmarket Sans TTF';
+    src: url('../fonts/GmarketSansTTFBold.eot');
+    src: url('../fonts/GmarketSansTTFBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GmarketSansTTFBold.woff2') format('woff2'),
+        url('../fonts/GmarketSansTTFBold.woff') format('woff'),
+        url('../fonts/GmarketSansTTFBold.ttf') format('truetype'),
+        url('../fonts/GmarketSansTTFBold.svg#GmarketSansTTFBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gmarket Sans TTF';
+    src: url('../fonts/GmarketSansTTFMedium.eot');
+    src: url('../fonts/GmarketSansTTFMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GmarketSansTTFMedium.woff2') format('woff2'),
+        url('../fonts/GmarketSansTTFMedium.woff') format('woff'),
+        url('../fonts/GmarketSansTTFMedium.ttf') format('truetype'),
+        url('../fonts/GmarketSansTTFMedium.svg#GmarketSansTTFMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+p, a, h1, h2, h3, h4, h5, h6, strong {
+    transform: skew(-0.1deg);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, button
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+img{vertical-align: top; max-width: 100%;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+.hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+body{
+    line-height: 1.5;
+    font: 16px 'Gmarket Sans TTF', 'Montserrat', sans-serif;
+    background: #FEFFEF;
+    height: 100vh;
+    overflow-y: hidden;
+    cursor: none;
+}
+
+button{cursor: none;}
+
+/* 스크롤바 */
+body::-webkit-scrollbar{
+    background: transparent;
+    width: 10px; 
+    height: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background: #F9B813;
+    border-radius: 30px;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{text-decoration: none; color: inherit;cursor: none;}
+a:hover{text-decoration: none;cursor: none;}
+
+#header{
+    height: 160px;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    margin-top: 42px;
+    position: fixed;
+    z-index: 100;
+}
+
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.gnb{
+    display: flex;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.gnb a{
+    display: inline-block;
+    padding: 14px 10px;
+    font-size: 20px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 20px;
+    right:300px;
+    /* background: #f0f; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.gnb a:nth-of-type(1){
+    left:770px;
+    width: 90px;
+}
+
+.gnb a:nth-of-type(2){
+    left: 915px;
+    width: 160px;
+}
+
+.gnb a:nth-of-type(3){
+    left: 1090px;
+    width: 130px;
+}
+
+.gnb a:nth-of-type(4){
+    left:1250px;
+    width: 130px;
+}
+
+
+.gnb a:nth-of-type(1):before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 80px;
+    background: #000;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 12px;
+    left: 67px;
+}
+
+.gnb a:nth-of-type(2):before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 60px;
+    background: #000;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 21px;
+    left: 117px;
+}
+
+.gnb a:nth-of-type(3):before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 80px;
+    background: #000;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 12px;
+    left: 80px;
+}
+
+.gnb a:nth-of-type(4):before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 60px;
+    background: #000;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 22px;
+    left: 94px;
+}
+
+.gnb a:nth-of-type(1)::after{
+    position: absolute;
+    top: 22px;
+    left: 129px;
+    content: '';
+    display: block;
+    background: #3683F8;
+    width: 5px;
+    height: 60px;
+    transform: rotate(-90deg);
+}
+
+.gnb a:nth-of-type(2)::after{
+    position: absolute;
+    top: 21px;
+    left: 165px;
+    content: '';
+    display: block;
+    background: #FAD330;
+    width: 5px;
+    height: 60px;
+    transform: rotate(-90deg);
+}
+
+.gnb a:nth-of-type(3)::after{
+    position: absolute;
+    top: 19px;
+    left: 146px;
+    content: '';
+    display: block;
+    background: #3683F8;
+    width: 5px;
+    height: 65px;
+    transform: rotate(-90deg);
+}
+
+.gnb a:nth-of-type(4)::after{
+    position: absolute;
+    top: 22px;
+    left: 150px;
+    content: '';
+    display: block;
+    background: #FAD330;
+    width: 5px;
+    height: 60px;
+    transform: rotate(-90deg);
+}
+
+.gnb a:hover span {transition: .7s;}
+
+/* gnb 호버효과 home */
+.gnb a:nth-of-type(1):hover span:nth-of-type(1){padding-left: 50px;margin-right: 2px;}
+.gnb a:nth-of-type(1):hover span:nth-of-type(2){margin-right: 2px; color: #FAD330;}
+.gnb a:nth-of-type(1):hover span:nth-of-type(3){margin-right: 2px;}
+.gnb a:nth-of-type(1):hover span:nth-of-type(4){margin-right: 2px;}
+
+
+/* gnb 호버효과 personalweb */
+.gnb a:nth-of-type(2):hover span:nth-of-type(1){padding-left: 50px; margin-right: 2px;}
+.gnb a:nth-of-type(2):hover span:nth-of-type(2){margin-right: 2px;}
+.gnb a:nth-of-type(2):hover span:nth-of-type(3){margin-right: 2px;}
+.gnb a:nth-of-type(2):hover span:nth-of-type(4){margin-right: 2px;}
+.gnb a:nth-of-type(2):hover span:nth-of-type(5){margin-right: 2px; color: #FAD330;}
+.gnb a:nth-of-type(2):hover span:nth-of-type(6){margin-right: 2px;}
+.gnb a:nth-of-type(2):hover span:nth-of-type(7){margin-right: 2px;}
+.gnb a:nth-of-type(2):hover span:nth-of-type(8){margin-right: 2px;}
+.gnb a:nth-of-type(2):hover span:nth-of-type(9){margin-right: 2px;}
+.gnb a:nth-of-type(2):hover span:nth-of-type(10){margin-right: 2px;}
+
+
+/* gnb 호버효과 portfolio */
+.gnb a:nth-of-type(3):hover span:nth-of-type(1){padding-left: 50px; margin-right: 2px;}
+.gnb a:nth-of-type(3):hover span:nth-of-type(2){margin-right: 2px; color: #FAD330;}
+.gnb a:nth-of-type(3):hover span:nth-of-type(3){margin-right: 2px;}
+.gnb a:nth-of-type(3):hover span:nth-of-type(4){margin-right: 2px;}
+.gnb a:nth-of-type(3):hover span:nth-of-type(5){margin-right: 2px;}
+.gnb a:nth-of-type(3):hover span:nth-of-type(6){margin-right: 2px; color: #FAD330;}
+.gnb a:nth-of-type(3):hover span:nth-of-type(7){margin-right: 2px;}
+.gnb a:nth-of-type(3):hover span:nth-of-type(8){margin-right: 2px;}
+.gnb a:nth-of-type(3):hover span:nth-of-type(9){color: #FAD330;}
+
+/* gnb 호버효과 about me */
+.gnb a:nth-of-type(4):hover span:nth-of-type(1){padding-left: 50px; margin-right: 2px;}
+.gnb a:nth-of-type(4):hover span:nth-of-type(2){margin-right: 2px;}
+.gnb a:nth-of-type(4):hover span:nth-of-type(3){margin-right: 2px; color: #FAD330;}
+.gnb a:nth-of-type(4):hover span:nth-of-type(4){margin-right: 2px;}
+.gnb a:nth-of-type(4):hover span:nth-of-type(5){margin-right: 2px;}
+.gnb a:nth-of-type(4):hover span:nth-of-type(6){margin-right: 2px;}
+
+.gnb a.on span{font-weight: 700; color:brown;}
+
+#header .btn-menu {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right:4%;
+    z-index: 999;
+}
+
+#header .btn-menu .line{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+
+#header .btn-menu .line:nth-child(1) {
+    display: block;
+    width: 40px;
+    height: 6px;
+    background: #FAD330;
+}
+
+#header .btn-menu .line:nth-child(2) {
+    display: block;
+    width: 40px;
+    height: 6px;
+    background: #3683F8;
+    top: 12px;
+}
+
+#header .btn-menu .line:nth-child(3) {
+    display: block;
+    width: 40px;
+    height: 6px;
+    background: #222B59;
+    top: 23px;
+}
+
+#header .btn-menu.active>.line:nth-child(1){
+    top: 10px;
+    transform: rotate(45deg);
+}
+#header .btn-menu.active>.line:nth-child(2){
+    top: 10px;
+    transform: rotate(-45deg);
+}
+#header .btn-menu.active>.line:nth-child(3){
+    top: 33px;
+    transform: rotate(none);
+}
+
+/* 햄버거 메뉴목록 */
+
+#header .menu-wrap {
+    position: fixed;
+    z-index: 10;
+    top: -120%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#header .menu-wrap .menu1{
+    width: 33.333333333%;
+    height: 100vh;
+    background: #FEFFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .menu-wrap .menu2{
+    width: 33.333333%;
+    height: 100vh;
+    background: #FFFBD2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header .menu-wrap .menu3{
+    width: 33.333333%;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .menu-wrap a {
+    font-size: 45px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding: 300px 120px;
+    color: #222B59;
+}
+
+#header .menu-wrap .menu1 a::before{
+    content: '';
+    display: block;
+    background: #FAD330;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 7px auto;
+}
+
+#header .menu-wrap .menu2 a::before{
+    content: '';
+    display: block;
+    background: #3683F8;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 7px auto;
+}
+
+#header .menu-wrap .menu3 a::before{
+    content: '';
+    display: block;
+    background: #FAD330;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 7px auto;
+}

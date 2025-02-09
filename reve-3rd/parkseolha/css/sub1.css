@@ -1,0 +1,455 @@
+@charset "utf-8";
+
+.progress{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #FFF7EB;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.progress-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #3E0204;
+    transition: 0.4s;
+}
+
+#header{
+    position: relative;
+}
+
+.header-contents{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 277px;
+    z-index: 200;
+}
+
+.now-page .menu-aboutme{
+    height: 275px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 70px;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.now-page .menu-aboutme::before{
+    content: '';
+    display: block;
+    width: 44px;
+    height: 95px;
+    margin-bottom: 35px;
+    background: url(../images/menu-aboutme.png) 50%/cover no-repeat;
+}
+
+.now-page .menu-aboutme::after{
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: -120px;
+    background: url(../images/sub-nowpage-deco.png) 50%/cover no-repeat;
+    
+}
+
+#header .gnb{
+    width: 205px;
+    height: 277px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.gnb .menu{
+    display: block;
+    font-family: 'Eulyoo1945-Regular';
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.gnb .menu-home{
+    height: 102px;
+    overflow: hidden;
+}
+
+.gnb .menu-portfolio{
+    height: 112px;
+    overflow: hidden;
+}
+
+.gnb .menu-process{
+    height: 121px;
+    overflow: hidden;
+}
+
+.gnb .menu:hover{
+    overflow: visible;
+}
+
+.gnb .menu-home::before{
+    content: '';
+    display: block;
+    width: 44px;
+    height: 102px;
+    margin-bottom: 10px;
+    background: url(../images/home.png) 50%/cover no-repeat;
+}
+
+.gnb .menu-portfolio::before{
+    content: '';
+    display: block;
+    width: 52px;
+    height: 112px;
+    margin-bottom: 10px;
+    background: url(../images/menu-portfolio.png) 50%/cover no-repeat;
+}
+
+.gnb .menu-process::before{
+    content: '';
+    display: block;
+    width: 39px;
+    height: 121px;
+    margin-bottom: 10px;
+    background: url(../images/menu-process.png) 50%/cover no-repeat;
+}
+/* 
+#main{
+    width: 200%;
+    height: 100%;
+    display: flex;
+} */
+
+.sub1-contents section{
+    height: 100vh;
+    width: 200%;
+}
+
+#main .about1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    border-right: 1px solid #69380E;
+}
+
+#main .about1::before{
+    content: '';
+    position: absolute;
+    top: 60px;
+    right: 318px;
+    width: 491px;
+    height: 491px;
+    z-index: -999;
+    background: url(../images/sub1-about1-deco-leaves.png) 50%/cover no-repeat;
+}
+
+#main .about1::after{
+    content: '';
+    position: absolute;
+    top: 138px;
+    right: 0;
+    width: 290px;
+    height: 531px;
+    z-index: -999;
+    background: url(../images/sub1-about1-deco-bird.png) 0 0/cover no-repeat;
+}
+
+.about1 .about1-img{
+    margin-bottom: 130px;
+    margin-left: 157px;
+}
+
+.about1-img .window{
+    position: relative;
+}
+
+.about1-img .picture{
+    position: absolute;
+    top: 300px;
+    left: 300px;
+}
+
+.about1-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 570px;
+    margin-bottom: 230px;
+}
+
+.about1-text h3{
+    font-size: 64px;
+    font-weight: bold;
+    width: 836px;
+    height: 191px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about1-text .title2{
+    text-align: right;
+    margin-top: 10px;
+}
+
+.about1-text p{
+    width: 648px;
+    height: 300px;
+    line-height: 1.2;
+    font-size: 24px;
+    margin-left: 200px;
+    color: #69380E;
+}
+
+#main .about2{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#main .about2::after{
+    content: '';
+    position: absolute;
+    top: 27px;
+    left: 316px;
+    width: 1008px;
+    height: 997px;
+    z-index: -999;
+    background: url(../images/sub1-about2-bg.png) 0 0/cover no-repeat;
+}
+
+#main .about2-contents{
+    width: 1453px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about2 .skill{
+    display: flex;
+    position: relative;
+    width: 170px;
+}
+
+.about2 .skill h3{
+    font-size: 40px;
+    width: 40px;
+}
+
+.about2 .skill h3 span:first-child{
+    font-family: 'Eulyoo1945-SemiBold';
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 40px;
+    line-height: 1.175;
+}
+
+.about2 .skill h3 span:last-child{
+    font-family: 'Noto Serif SC';
+    color: #D5AF89;
+    line-height: 1.425;
+    font-weight: 700;
+}
+
+.about2 .skill ul li{
+    text-indent: -999px;
+    overflow: hidden;
+    margin-left: 55px;
+    background: url() 50%/cover no-repeat;
+}
+
+.about2 .skill ul .photoshop{
+    width: 75px;
+    height: 75px;
+    background-image: url(../images/sub1-skill-photoshop.png);
+}
+.about2 .skill ul .illust{
+    margin-top: 35px;
+    width: 75px;
+    height: 75px;
+    background-image: url(../images/sub1-skill-illust.png);
+}
+.about2 .skill ul .vscode{
+    margin-top: 35px;
+    width: 76px;
+    height: 76px;
+    background-image: url(../images/sub1-xihuan-vscode.png);
+}
+
+.about2 .like{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 1065px;
+}
+
+.about2 .like h3{
+    font-size: 40px;
+    width: 40px;
+    margin-top: 100px;
+}
+
+.about2 .like h3 span:first-child{
+    font-family: 'Eulyoo1945-SemiBold';
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    width: 40px;
+    line-height: 1.175;
+}
+
+.about2 .like h3 span:last-child{
+    font-family: 'Noto Serif SC';
+    color: #D5AF89;
+    line-height: 1.425;
+    font-weight: 700;
+}
+
+.about2 .like p{
+    line-height: 1.45;
+    font-size: 24px;
+    color: #B7875F;
+    text-align: center;
+    font-family: 'Eulyoo1945-Regular';
+}
+
+.about2 .like ul{
+    display: flex;
+}
+.about2 .like ul li{
+    width: 325px;
+    height: 513px;
+    display: flex;
+}
+
+.like ul .hobby1{
+    position: relative;
+    width: 325px;
+    height: 513px;
+    transition: 0.3s;
+}
+
+.like ul .hobby1 a{
+    transition: 0.3s;
+}
+
+.like ul .hobby1 a::after{
+    content: '';
+    width: 283px;
+    height: 405px;
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    opacity: 0;
+    background: url(../images/sub1-xihuan-hover.png) 0 0/cover no-repeat;
+}
+
+.like ul .hobby1:hover a::after{
+    opacity: 1;
+}
+
+.like ul .hobby1 p{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+.like ul .hobby1:hover p{
+    opacity: 1;
+}
+
+.like ul .hobby2{
+    position: relative;
+    width: 325px;
+    height: 513px;
+    transition: 0.3s;
+}
+
+.like ul .hobby2 a{
+    transition: 0.3s;
+}
+
+.like ul .hobby2 a::after{
+    content: '';
+    width: 283px;
+    height: 405px;
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    opacity: 0;
+    background: url(../images/sub1-xihuan-hover.png) 0 0/cover no-repeat;
+}
+
+.like ul .hobby2:hover a::after{
+    opacity: 1;
+}
+
+.like ul .hobby2 p{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+.like ul .hobby2:hover p{
+    opacity: 1;
+}
+
+.like ul .hobby3{
+    position: relative;
+    width: 325px;
+    height: 513px;
+    transition: 0.3s;
+}
+
+.like ul .hobby3 a{
+    transition: 0.3s;
+}
+
+.like ul .hobby3 a::after{
+    content: '';
+    width: 283px;
+    height: 405px;
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    opacity: 0;
+    background: url(../images/sub1-xihuan-hover.png) 0 0/cover no-repeat;
+}
+
+.like ul .hobby3:hover a::after{
+    opacity: 1;
+}
+
+.like ul .hobby3 p{
+    width: 221px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+.like ul .hobby3:hover p{
+    opacity: 1;
+}

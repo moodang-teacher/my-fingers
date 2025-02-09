@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/sub.js"></script>
+    <title>Pororo</title>
+</head>
+
+<body>
+
+<!-- 메뉴영역 -->
+<div class="dim"></div>
+<div class="menu-wrap">
+    <div class="menu-con">
+        <div class="menu-close">닫기</div>
+        <ul class="menu-list">
+            <li>
+                <a href="#">뽀로로소개</a>
+                <ul class="submenu-m">
+                    <li><a href="sub1.html">뽀로로?</a></li>
+                    <li><a href="sub1.html">캐릭터 소개</a></li>
+                    <li><a href="sub1.html">프로그램 소개</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">미디어</a>
+                <ul class="submenu-m">
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">모바일 앱</a></li>
+                    <li><a href="#">음악</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">다시보기</a>
+                <ul class="submenu-m">
+                    <li><a href="#">뽀롱뽀롱 뽀로로</a></li>
+                    <li><a href="#">뽀로로와 노래해요</a></li>
+                    <li><a href="#">똑똑박사 에디</a></li>
+                    <li><a href="#">요리공주 루피</a></li>
+                    <li><a href="#">뽀로로 동화나라</a></li>
+                    <li><a href="#">뽀로로 잉글리쉬쇼</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">갤러리</a>
+                <ul class="submenu-m">
+                    <li><a href="#">바탕화면</a></li>
+                    <li><a href="#">캐릭터 앨범</a></li>
+                    <li><a href="#">동영상 앨범</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">뽀로로몰</a>
+                <ul class="submenu-m">
+                    <li><a href="#">바로가기</a></li>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu-bottom">
+        <div class="menu-logo">
+            <img src="images/menu-logo.png" alt="메뉴로고">
+        </div>
+        <div class="menu-sns">
+            <a href="#">youtube</a>
+            <a href="#">insta</a>
+        </div>
+    </div>
+</div>
+
+    <!-- s:헤더영역 -->
+    <header id="header" class="fixed">
+        <div class="inner">
+            <h1 class="logo"><a href="index.html"><img src="images/h-logo.png" alt="pororo"></a></h1>
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="sub1.html">뽀로로소개</a>
+                        <ul class="submenu">
+                            <li><a href="sub1.html">뽀로로?</a></li>
+                            <li><a href="sub1.html">캐릭터 소개</a></li>
+                            <li><a href="sub1.html">프로그램 소개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">미디어</a>
+                        <ul class="submenu">
+                            <li><a href="#">YOUTUBE</a></li>
+                            <li><a href="#">TV</a></li>
+                            <li><a href="#">모바일 앱</a></li>
+                            <li><a href="#">음악</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">다시보기</a>
+                        <ul class="submenu">
+                            <li><a href="#">뽀롱뽀롱 뽀로로</a></li>
+                            <li><a href="#">뽀로로와 노래해요</a></li>
+                            <li><a href="#">똑똑박사 에디</a></li>
+                            <li><a href="#">요리공주 루피</a></li>
+                            <li><a href="#">뽀로로 동화나라</a></li>
+                            <li><a href="#">뽀로로 잉글리쉬쇼</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">갤러리</a>
+                        <ul class="submenu">
+                            <li><a href="#">바탕화면</a></li>
+                            <li><a href="#">캐릭터 앨범</a></li>
+                            <li><a href="#">동영상 앨범</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://pororomall.com/">뽀로로몰</a>
+                        <ul class="submenu">
+                            <li class="pororo-mall"><a href="http://pororomall.com/">
+                                    <figure><img src="images/h-go-mall.png" alt="바로가기"></figure>
+                                </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="util-menu">
+                <div class="lang">
+                    <a href="#">한국어</a>
+                    <ul>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">日本語</a></li>
+                        <li><a href="#">中文</a></li>
+                    </ul>
+                    <div id="lang-bg"></div>
+                </div>
+                <div class="head-sns">
+                    <a href="#">youtube</a>
+                    <a href="#">insta</a>
+                </div>
+            </div>
+            <div class="btn-menu">menu</div>
+        </div>
+    </header>
+    <div id="nav-bg"></div>
+    <!-- e:헤더영역 -->
+
+
+    <!-- s:메인영역 -->
+    <main id="contents">
+        <div class="sub-visual-wrap">
+            <h2>뽀로로소개</h2>
+        </div>
+
+        <div class="page-location">
+
+            <div class="inner">
+                <a href="sub1.html">뽀로로?</a>
+                <a href="sub1.html" class="on">캐릭터 소개</a>
+                <a href="sub1.html">프로그램 소개</a>
+            </div>
+        </div>
+
+        <section class="character-wrap">
+            <!-- <div class="inner"> -->
+                <h3>캐릭터 소개</h3>
+                <div class="character-list">
+                    <ul>
+                        <li>
+                            <figure>
+                                <img src="images/sub-character11.png" alt="뽀로로">
+                            </figure>
+                            <dl>
+                                <dt>뽀로로</dt>
+                                <dt class="nick-name">호기심 많은 꼬마 펭귄</dt>
+                                <dd>
+                                    뭐든지 궁금한 건 참지 못하고 직접
+                                    해보고야마는 성격으로, 항상 새로운 일에
+                                    씩씩하게 도전하는 용감한 친구예요.
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/sub-character22.png" alt="크롱">
+                            </figure>
+                            <dl>
+                                <dt>크롱</dt>
+                                <dt class="nick-name">재롱둥이 아기 공룡</dt>
+                                <dd>
+                                    항상 뽀로로를 따라다니며 말썽을 부리는 사고뭉치지만, 아직은 알고 싶은 것도, 하고싶은것도 많은 귀여운 막내랍니다.
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+
+                            <figure>
+                                <img src="images/sub-character33.png" alt="패티">
+                            </figure>
+                            <dl>
+                                <dt>패티</dt>
+                                <dt class="nick-name">활발한 꼬마 펭귄</dt>
+                                <dd>
+                                    명랑한 성격에 리더십이 강한 패티는 다른 친구들보다 운동을 잘해서 친구들이 모두 부러워해요.
+                                </dd>
+                            </dl>
+
+                        </li>
+                        <li>
+
+                            <figure>
+                                <img src="images/sub-character44.png" alt="루피">
+                            </figure>
+                            <dl>
+                                <dt>루피</dt>
+                                <dt class="nick-name">다정한 꼬마 비버</dt>
+                                <dd>
+                                    항상 뽀로로를 따라다니며 말썽을 부리는 사고뭉치지만, 아직은 알고 싶은 것도, 하고싶은것도 많은 귀여운 막내랍니다.
+                                </dd>
+                            </dl>
+
+                        </li>
+                        <li>
+
+                            <figure>
+                                <img src="images/sub-character55.png" alt="에디">
+                            </figure>
+                            <dl>
+                                <dt>에디</dt>
+                                <dt class="nick-name">영리한 발명왕 꼬마 여우</dt>
+                                <dd>
+                                    에디가 만들어 내는 발명품들은 항상 크고 작은 사건을 일으키지만, 친구들에게 멋진 추억을 안겨 준답니다.
+                                </dd>
+                            </dl>
+
+                        </li>
+                        <li>
+
+                            <figure>
+                                <img src="images/sub-character66.png" alt="로디">
+                            </figure>
+                            <dl>
+                                <dt>로디</dt>
+                                <dt class="nick-name">에디의 조수 로봇</dt>
+                                <dd>
+                                    로봇이기 때문에 친구들과 다르다는것에 실망하기도 하지만, 항상 사이좋게 친구들과 어울려 지내는 로디입니다.
+                                </dd>
+                            </dl>
+
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/sub-character77.png" alt="포비">
+                            </figure>
+                            <dl>
+                                <dt>포비</dt>
+                                <dt class="nick-name">듬직한 꼬마 백곰</dt>
+                                <dd>
+                                    커다란 덩치만큼 마음도 넓어 친구들이 어려울 때 마다 제일 먼저 도와주는 마음씨 착한 친구랍니다.
+                                </dd>
+                            </dl>
+
+                        </li>
+                        <li>
+
+                            <figure>
+                                <img src="images/sub-character88.png" alt="해리">
+                            </figure>
+                            <dl>
+                                <dt>해리</dt>
+                                <dt class="nick-name">노래하기 좋아하는 벌새</dt>
+                                <dd>
+                                    눈치가 없어 친구들을 곤란에 빠트리기도 하지만, 특유의 밝고 명랑한 분위기로 친구들을 즐겁게 만들어 준답니다.
+                                </dd>
+                            </dl>
+
+                        </li>
+                        <li>
+
+                            <figure>
+                                <img src="images/sub-character99.png" alt="통통이">
+                            </figure>
+                            <dl>
+                                <dt>통통이</dt>
+                                <dt class="nick-name">신기한 마법사 용</dt>
+                                <dd>
+                                    멋진 지팡이를 이용해 뽀로로 친구들을 멋진 마법의 세계로 초대하기도 하고, 크게 변신해 하늘을 나는 멋진 친구예요.
+                                </dd>
+                            </dl>
+
+                        </li>
+                        <li>
+
+                            <figure>
+                                <img src="images/sub-character1010.png" alt="삐삐, 뽀뽀">
+                            </figure>
+                            <dl>
+                                <dt>삐삐, 뽀뽀</dt>
+                                <dt class="nick-name">호기심많은 외계인 친구들</dt>
+                                <dd>활발한 성격의 삐삐와 소심한 성격의 뽀뽀는 따뜻한 마음과 장난기 넘치는 친구예요.</dd>
+                            </dl>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    </div>
+
+
+    <!-- s:푸터영역 -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="foot-wrap">
+                <div class="foot-logo">
+                    <img src="images/foot-logo.png" alt="foot-logo">
+                </div>
+                <div class="foot-sns">
+                    <a href="#">youtube</a>
+                    <a href="#">insta</a>
+                </div>
+                <div class="foot-con">
+                    <p>(우)463-400 경기도 성남시 분당구 판교로 255번길 64 (주)아이코닉스</p>
+                    <p>대표전화 : 1566-0855 팩스 : 031-8060-2702</p>
+                    <p>Copyright ⓒ All right reserved by ICONIX, Co, LTD</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- s:푸터영역 -->
+
+
+    <a href="#top" class="top">TOP</a>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+b{
+    color: #040F41;
+}
+
+.visual-wrap{
+    background: url(../images/lostark_process/main_visual.png) 50% no-repeat;
+    padding-top: 100px;
+    position: relative;
+    height: 950px;
+}
+.visual-wrap h1 strong{
+    color: #040F41;
+}
+.visual-wrap figure{
+    position: absolute;
+    bottom: -50px;
+    right: 205px;
+}
+.overview-wrap{
+    padding: 100px 0;
+}
+.color-wrap{
+    padding: 100px 0;
+    background: #bcc1d8;
+}
+.color-wrap .inner{
+    width: 1085px;
+}
+.color-wrap ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 100px;
+}
+.color-wrap ul li p{
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 500;
+}
+.font-wrap{
+    padding: 100px 0;
+}
+.font-wrap .inner{
+    width: 1265px;
+}
+.font-wrap ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto 0;
+    width: 641px;
+}
+.design-wrap{
+    padding: 100px 0;
+    background: #bcc1d8;
+}
+.design-wrap figure{
+    margin-top: 73px;
+}
+.thank-wrap{
+    color: #040F41;
+    text-align: center;
+    font-weight: 500;
+    font-size: 96px;
+}
+.btn-wrap{
+    border-top: 5px dashed #bcc1d8;
+}
+.btn.btn-view{
+    border: 2px solid #4E539F;
+    color: #222;
+}
+.btn.btn-process{
+    background: #040F41;
+}
+.process-list{
+    background: #9EA6CA;
+}
+.process-list a:hover{
+    background: #566195;
+    color: #fff;
+}
+.btn-view:hover{
+    background: #4E539F; 
+    color: #fff;
+}

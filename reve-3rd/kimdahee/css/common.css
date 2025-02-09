@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+/* albra 폰트 */
+
+@font-face {
+    font-family: 'Albra';
+    src: url('../fonts/AlbraBold.eot');
+    src: url('../fonts/AlbraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbraBold.woff2') format('woff2'),
+        url('../fonts/AlbraBold.woff') format('woff'),
+        url('../fonts/AlbraBold.ttf') format('truetype'),
+        url('../fonts/AlbraBold.svg#AlbraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra';
+    src: url('../fonts/AlbraMedium.eot');
+    src: url('../fonts/AlbraMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbraMedium.woff2') format('woff2'),
+        url('../fonts/AlbraMedium.woff') format('woff'),
+        url('../fonts/AlbraMedium.ttf') format('truetype'),
+        url('../fonts/AlbraMedium.svg#AlbraMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra';
+    src: url('../fonts/AlbraRegular.eot');
+    src: url('../fonts/AlbraRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbraRegular.woff2') format('woff2'),
+        url('../fonts/AlbraRegular.woff') format('woff'),
+        url('../fonts/AlbraRegular.ttf') format('truetype'),
+        url('../fonts/AlbraRegular.svg#AlbraRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra';
+    src: url('../fonts/AlbraLight.eot');
+    src: url('../fonts/AlbraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbraLight.woff2') format('woff2'),
+        url('../fonts/AlbraLight.woff') format('woff'),
+        url('../fonts/AlbraLight.ttf') format('truetype'),
+        url('../fonts/AlbraLight.svg#AlbraLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+ /* 초기화  */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,input, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,*::after,*::before {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+img{vertical-align: top; /* max-width: 100%; */}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    font: 20px 'Noto Sans KR', sans-serif;/* fz16 */
+	line-height: 1;
+    font-weight: 400;
+    color: #222;
+    position: relative;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{text-decoration: none; color:inherit;}
+
+
+
+.inner{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.logo-dark, .btn-menu-dark{
+    filter: drop-shadow(0 0 10px rgba(67, 39, 103, 0.25));
+}
+
+.logo-light, .btn-menu-light{
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.25));
+}
+
+
+
+
+/* ㅡㅡㅡㅡ 햄버거메뉴 ㅡㅡㅡㅡ */
+
+.dim{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 8888;
+    display: none;
+}
+
+.menu-wrap{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: -100%;
+    width: 700px;
+    height: 100vh;
+    background: #727abc;
+    background: linear-gradient(60deg, rgba(114, 122, 188, 1) 0%, rgba(161, 138, 200, 1) 20%, rgba(176, 173, 219, 1) 47%, rgba(154, 190, 228, 1) 86%, rgba(96, 168, 216, 1) 100%);
+    color:#fff;
+    box-shadow: 0 0 20px rgba(114, 121, 188, 0.5);
+}
+
+
+
+.menu-con{
+    height: 100%;
+    width: 100%;
+}
+
+
+.menu-con .menu-list{
+    height: 100%;  
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.menu-con .menu-list a{
+    display: block;
+    height: 140px;
+    padding-left: 120px;
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+    color: #fff;
+    font-weight: 700;
+}
+
+.menu-con .btn-close{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 33px;
+    left: 66.5%;
+    display: none;
+    background: url(../images/ico-menu-close.png) 50% no-repeat;
+}
+
+.menu-con .menu-list a:hover{
+    background: rgba(114, 121, 188, 0.8);
+    color: #fff;
+    
+}
+
+
+
+
+
+
+
+

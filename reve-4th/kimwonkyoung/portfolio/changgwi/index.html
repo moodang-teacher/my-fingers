@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>창귀 :: 프로모션 사이트</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main">
+            <figure><img src="images/main.png" alt="메인"></figure>
+            <ul class="indicator">
+                <li><a href="#"><i class="hidden">0</i></a></li>
+                <li><a href="#"><i class="hidden">1</i></a></li>
+                <li><a href="#"><i class="hidden">2</i></a></li>
+                <li><a href="#"><i class="hidden">3</i></a></li>
+                <li class="end"><a href="#"><i class="hidden">4</i></a></li>
+            </ul>
+
+            <div class="center-do-not-use">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section1">
+            <figure><img src="images/section1.png" alt="인포메이션"></figure>
+        </section>
+
+        <section class="section2">
+            <figure><img src="images/section2.png" alt="뮤직비디오"></figure>
+            <div class="video-wrap">
+                <div class="video"></div>
+            </div>
+        </section>
+
+        <section class="section3">
+            <a href="#" class="gallery">
+                <figure><img src="images/section3.png" alt="갤러리"></figure>
+            </a>
+        </section>
+        
+        <section class="section4">
+            <figure><img src="images/section4.png" alt="엔드롤"></figure>
+        </section>
+    </main>
+    
+    <!-- s: modal -->
+    <div class="modal"></div>
+    <div class="modal-content">
+        <figure><img src="images/modal.png" alt="modal"></figure>
+        <a href="#" class="close"><i class="hidden">닫기</i></a>
+    </div>
+    <!-- e: modal -->
+
+    <script>
+    // modal
+    var $gallery = $('.gallery');
+    var $modal = $('.modal');
+    var $modalContent = $('.modal-content');
+    var $close = $('.close');
+
+    $gallery.on('click', function(e){
+        e.preventDefault();
+        
+        $modal.add($modalContent).fadeIn();
+    });
+    
+    $close.on('click', function(e){
+        e.preventDefault();
+        $modal.add($modalContent).fadeOut();
+    });
+    </script>
+</body>
+
+</html>

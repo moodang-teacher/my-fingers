@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About ME</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/sub.scss">
+    <link rel="stylesheet" href="css/sub.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        $(function () {
+            AOS.init();
+
+            var $goTop = $('.go-top');
+
+            $goTop.on('click', function (e) {
+                e.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: 0
+                });
+                
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <main id="main">
+        <div class="inner">
+        <div class="visual-wrap">
+                <h1>ABOUT ME</h1>
+                <div class="visual-box">
+                    <figure><img src="./images/aboutme.jpg" alt="visual"></figure>
+                    <div class="visual-txt">
+                        <p class="art" data-aos="fade-up" data-aos-duration="1500">YOUR ART</p>
+                        <p class="direc" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">DIREC<strong>TION</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="jung">
+            <div class="inner">
+                <div class="naming" data-aos="fade-up" data-aos-duration="1500">
+                    <p>KIM</p>
+                    <h2>JUNG WOO</h2>
+                </div>
+
+                <div class="jung-txt">
+                    <p class="junt1" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+                        감각적이고 자연스레 스며드는<br>
+                        디자이너 김정우입니다
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ui">
+            <div class="inner">
+                <div class="ui-bg"></div>
+                <div class="ui-txt">
+                    <h2 data-aos="fade-up" data-aos-duration="1500">
+                        Web De<strong>sign</strong><br>
+                        UI<strong><span>&</span>UX</strong>
+                    </h2>
+                </div>
+
+                <div class="photo" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+                    <p><strong>Photoshop / ill</strong>ustrator / Figma</p>
+                    <p class="html"><strong>Ht</strong>ml / css / jQuery</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="inspire">
+            <div class="inspire-bg"></div>
+            <h2 class="imst" data-aos="fade-up" data-aos-duration="1500">
+                WHERE<br>
+                <strong>DID</strong><br>
+                YO<strong>U GET</strong><br>
+                <span>INSPIR<i>ATION</i></span>
+            </h2>
+
+            <div class="inspire-txt">
+                <p class="inst2" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+                    사람들과의 관계를 소중히 생각하는 저는<br>
+                    심리학 관련 서적을 읽으며<br>
+                    영감을 받습니다
+                </p>
+            </div>
+
+        </section>
+
+        <section id="personality">
+            <div class="inner">
+                <h2 class="pert1" data-aos="fade-up" data-aos-duration="1500">
+                    WHAT'S<br>
+                    YOUR<br>
+                    PERSONALITY
+                </h2>
+
+                <div class="person-txt">
+                    <p class="pert1" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+                        적극적이며 주변사람들에게<br>
+                        선한 영향력을 주며<br>
+                        소통을 중요시 생각하는<br>
+                        디자이너 입니다
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="start">
+            <div class="start-bg"></div>
+
+            <h2 class="st1" data-aos="fade-up" data-aos-duration="1500">
+                WHY<br>
+                DID<br>
+                YOU START<br>
+                <strong>DESIGN</strong>
+            </h2>
+
+            <div class="start-txt">
+                <p class="st2" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+                    심플함 뿐만 아니라 트렌디하고<br>
+                    개성적인 느낌도 추구하여<br>
+                    디자인으로 표현하기 시작하였습니다
+                </p>
+            </div>
+
+        </section>
+
+        <section id="never">
+
+            <h2 class="hidden">never</h2>
+            <figure class="better"><img class="nevert" data-aos="fade-up" data-aos-duration="1500" src="./images/never.jpg" alt="never"></figure>
+
+            <div class="never-txt">
+                <p class="better2" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+                    늦었다고 생각한 순간이<br>
+                    가장 빠른 때 라는 말이 있듯이<br>
+                     빠른 속도로 성장하는 디자이너가 되겠습니다
+                </p>
+            </div>
+
+        </section>
+    </main>
+
+
+    <footer id="footer">
+        <div class="inner">
+            <div class="aboutA">
+                <a href="http://jungwookim.com/process.html" class="hvr-overline-from-left">PROCESS</a>
+                <a href="http://jungwookim.com/handicraft.html" class="home hvr-overline-from-left">PORTFOLIO</a>
+            </div>
+
+            <a href="#" class="go-top">TOP</a>
+        </div>
+    </footer>
+</body>
+
+</html>

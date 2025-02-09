@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Regular.eot');
+    src: url('PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('PlayfairDisplay-Regular.woff') format('woff'),
+        url('PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nathanos';
+    src: url('Nathanos.eot');
+    src: url('Nathanos.eot?#iefix') format('embedded-opentype'),
+        url('Nathanos.woff2') format('woff2'),
+        url('Nathanos.woff') format('woff'),
+        url('Nathanos.ttf') format('truetype'),
+        url('Nathanos.svg#Nathanos') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Maelstrom';
+    src: url('Maelstrom-Bold.eot');
+    src: url('Maelstrom-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Maelstrom-Bold.woff2') format('woff2'),
+        url('Maelstrom-Bold.woff') format('woff'),
+        url('Maelstrom-Bold.ttf') format('truetype'),
+        url('Maelstrom-Bold.svg#Maelstrom-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Maelstrom Sans';
+    src: url('MaelstromSans-Bold.eot');
+    src: url('MaelstromSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MaelstromSans-Bold.woff2') format('woff2'),
+        url('MaelstromSans-Bold.woff') format('woff'),
+        url('MaelstromSans-Bold.ttf') format('truetype'),
+        url('MaelstromSans-Bold.svg#MaelstromSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+

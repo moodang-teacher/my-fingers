@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+.inner{
+	width: 1510px;
+	margin: 0 auto;
+}
+
+#header{
+	width: 100%;
+	height: 65px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 50px;
+	z-index: 10000;
+}
+
+.mobile-menu{display: none;}
+nav{
+	display: flex;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 25px;
+}
+nav > div{
+    position: relative;
+	margin: 0 20px;
+	text-transform: uppercase;
+    text-align: center;
+    transition: 0.1s;
+}
+
+nav > div:hover{
+    font-size: 28px;
+}
+
+.visual-wrap{
+    position: relative;
+    overflow: hidden;
+}
+.video-wrap{
+    width: 100%;
+    /* height: 1080px */
+    height: 56.25vw;
+}
+
+.btn-wrap{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    opacity: 0;
+    animation: btn-ani 1.2s 2s forwards; 
+}
+
+.btn{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    width: 240px;
+    height: 76px;
+    padding: 20px;
+    border: 3px solid #fff;
+    background: none;
+    text-transform: uppercase;
+    transition: background 0.4s;
+}
+
+.btn:hover{
+    background: #105628;
+    cursor: pointer;
+}
+
+.btn-login{
+    margin-left: 50px;
+}
+
+@keyframes btn-ani {
+    100% {
+        top: 55%;
+        opacity: 1;
+    }
+}
+
+.game-list{
+    width: 1063px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+    transition: 0.4s;
+}
+.game-list > div{
+    width: 338px;
+    height: 190px;
+}
+.game-list > div:hover{
+    transform: scale(1.1);
+}
+.game-list > div img{
+    width: 100%;
+    height: 100%;
+}
+.btn-game{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-game::after{
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url(../images/nav_ico.png) 50% no-repeat;
+    margin-left: 5px;
+    transition: 0.4s;
+}
+
+.btn-game.on::after{
+    transform: rotate(180deg);
+}
+
+
+.foot-top{
+    background: #383737;
+    /* padding: 40px 0 36px; */
+    padding: 3.083333vw 0 1.875vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.foot-top .sns-link{
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+.sns-link a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: 50%/cover no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.sns-link a:nth-child(1){background-image: url(../images/foot_ico_insta.png);}
+.sns-link a:nth-child(2){background-image: url(../images/foot_ico_twit.png);}
+.sns-link a:nth-child(3){background-image: url(../images/foot_ico_youtu.png);}
+.sns-link a:nth-child(4){background-image: url(../images/foot_ico_face.png);}
+
+.foot-top .company{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.company a{
+    display: block;
+    width: 170px;
+    height: 100px;
+    background: 50%/100% no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.company a:nth-child(1){background-image: url(../images/foot_ico_modang.png);}
+.company a:nth-child(2){background-image: url(../images/foot_ico_xbox.png);}
+.company a:nth-child(3){background-image: url(../images/foot_ico_micro.png);}
+
+.foot-bottom{
+    background: #000;
+    /* padding: 48px 0; */
+    padding: 2.5vw 0;
+    display: flex;
+    justify-content: center;
+}
+.foot-bottom a{
+    display: block;
+    margin: 0 20px;
+    color: #777;
+    font-size: 1.125rem;
+}
+.foot-bottom a:hover{
+    color: #999;
+}

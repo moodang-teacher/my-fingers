@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123.02 89.4" data-llp-composed="true" id="maintag_1" class="lazy-line-painter">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: none;
+                    stroke: #333;
+                    stroke-linecap: round;
+                    stroke-miterlimit: 10;
+                }
+            </style>
+        </defs>
+        <title>main-tag_1</title>
+        <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_5" data-name="Layer 5">
+                <path class="cls-1" d="M.5,88.9S7.56,64.11,37.22,56.85C47,54.38,50.63,65,46.93,68.27S30.78,67.2,39,52.63s26.18-18.2,45.39-15" data-llp-id="maintag_1-0"
+                    data-llp-duration="910" data-llp-delay="0" fill-opacity="0" />
+                <path class="cls-1" d="M106.24.56s-9,21.49-12.7,24.81" data-llp-id="maintag_1-1" data-llp-duration="910" data-llp-delay="910" fill-opacity="0" />
+                <path class="cls-1" d="M117.24.5S109.6,20.36,103,25.41" data-llp-id="maintag_1-2" data-llp-duration="910" data-llp-delay="1820" fill-opacity="0" />
+                <line class="cls-1" x1="94.72" y1="8.06" x2="122.52" y2="13.02" data-llp-id="maintag_1-3" data-llp-duration="910" data-llp-delay="2730" fill-opacity="0" />
+                <path class="cls-1" d="M95.66,13.5s14.19,6.72,20.18,7.38" data-llp-id="maintag_1-4" data-llp-duration="910" data-llp-delay="3640" fill-opacity="0" />
+            </g>
+        </g>
+    </svg>
+    
+    <script src="js/lazy-line-painter-1.9.6.min.js"></script>
+    <script>
+        // document.onreadystatechange = () => {
+        
+            //     if (document.readyState === 'complete') {
+        
+                    /**
+                     * Setup your Lazy Line element.
+                     * see README file for more settings
+                     */
+        
+                     let el = document.querySelector('#maintag_1');
+                    let myAnimation = new LazyLinePainter(el, {
+                        "ease": "easeInSine",
+                        "strokeWidth": 1,
+                        "strokeOpacity": 1,
+                        "strokeColor": "#333333",
+                        "strokeCap": "square"
+                    });
+                    myAnimation.paint();
+        
+            //     }
+        
+            // }
+    </script>
+</body>
+</html>

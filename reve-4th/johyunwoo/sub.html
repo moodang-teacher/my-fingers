@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=x, initial-scale=1.0" />
+    <title>about me</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <style>
+        [data-aos="showAni"].aos-animate{
+        animation: head-animation 1s both;
+    }
+        @keyframes head-animation {
+        0% {
+            opacity: 0;
+            filter: blur(50px);
+        }
+        100%{
+            opacity: 1;
+            filter: blur(0);
+        }
+    }
+    </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/lodash.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/hover-to-blur.js"></script>
+    <script>
+        $(function () {
+            AOS.init({
+                duration: 300,
+                easing: 'ease-in-sine'
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<nav class="gnb">
+    <a href="index.html">// main</a>
+    <a href="index.html#port-for">// portfolio</a>
+    <a href="sub.html">// about me</a>
+</nav>
+
+<main>
+    <div class="back-wrap">
+    </div>
+    <!-- s: about-me -->
+    <section class="about-me">
+        <div class="inner">
+            <div class="about-top">
+                <div class="about-text">
+                    <h2>about<br>
+                        <strong>me</strong></h2>
+                    <div class="name-tag">
+                        <strong>조현우</strong>
+                        <p>JO HYEON WOO</p>
+                        <p>1996.04.13</p>
+                    </div>
+                    <div class="flavor-01">
+                        <h3 class="trigger-first">“ 관심은<br>
+                            호기심과 탐구를 낳는다. ”</h3>
+                        <p data-aos="fade-in"
+                            data-aos-anchor=".trigger-first"
+                            data-aos-anchor-placement="top-center"
+                            data-aos-delay="300">대중 문화를 향한 관심을 시작으로,<br>
+                            호기심과 취미 영역에서 시작했던 디자인은<br>
+                            지속적인 관심과 탐구심으로<br>
+                            이제는 자신의 일부로 자리 잡았습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="img-wrap">
+                    <figure>
+                        <img src="images/me.png" alt="its me">
+                    </figure>
+                </div>
+            </div>
+            
+            <div class="about-bottom">
+                <div class="inner">
+                    <div class="flavor-02">
+                        <h3 class="trigger-second">“ 사람의<br>
+                            경험을 탐하다. ”</h3>
+                        <p data-aos="fade-in"
+                        data-aos-anchor=".trigger-second"
+                        data-aos-anchor-placement="top-center"
+                        data-aos-delay="300">미려한 형태만으로 충분히 아릅답지만,<br>
+                            동시에 실용성 또한 갖춰야한다고 생각합니다.<br>
+                            형태를 지녔고, 사람의 손이 닿는 것이라면 결국<br>
+                            사람의 경험이 되어야 한다는 철학으로 디자인합니다.
+                        </p>
+                    </div>
+                    <div class="elements">
+                        <strong>Elements</strong>
+                        <div class="elements-wrap">
+                            <p class="humanity">HUMANITY</p>
+                            <p class="photoshop">Photoshop</p>
+                            <p class="illust">Illustrator</p>
+                            <p class="html">HTML</p>
+                            <p class="css">CSS</p>
+                            <p class="figma">Figma</p>
+                        </div>
+                    </div>
+                    <div class="end-flavor">
+                        <strong data-aos="showAni"
+                                data-aos-anchor=".end-flavor">
+                            “ 사람의 경험을 위해<br>
+                            고민하고, 생각하고, 도전합니다. ”
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- e: about-me -->
+    <div class="process-btn">
+        <a href="portfolio-process.html">View Process</a>
+    </div>
+</main>
+
+<footer>
+    <p>2021. JO-YANG. ALL RIGHT RESERVED.</p>
+</footer>
+    
+</body>
+</html>

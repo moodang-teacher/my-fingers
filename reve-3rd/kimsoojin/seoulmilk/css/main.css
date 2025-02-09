@@ -1,0 +1,662 @@
+@charset "utf-8";
+
+.visual-wrap{
+    position: relative;
+    height: 719px;
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.visual-wrap .visual-img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.visual-img li{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.visual-wrap .visual-img .text-main{
+    position: absolute;
+    top: 230px;
+    left: 415px;
+    z-index: 5;
+}
+
+.visual-wrap .status{
+    position: relative;
+    top: 224px;
+    left: 420px;
+    width: 260px;
+    height: 3px;
+    background: #333;
+    
+}
+
+.visual-wrap .status .slick-dots{
+    width: 260px;
+    height: 3px;
+    display: flex;
+    /* text-indent: -999px; */
+    /* overflow: hidden; */
+    /* background: #333333; */
+    
+}
+
+.visual-wrap .status .slick-dots li{
+    width: 86.66666666666667px;
+    height: 3px;
+    
+}
+
+.visual-wrap .status .slick-dots li button{
+    background: #333;
+    width: 86.66666666666667px;
+    height: 3px;
+    text-indent: -999px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.visual-wrap .status .slick-dots li.slick-active button{
+    background: #fff;
+}
+
+.visual-wrap .status .bar1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33.333333333333%;
+    height: 100%;
+    background: #fff;
+    transition: 0.4s;
+}
+
+.visual-wrap .btn2{
+    position: absolute;
+    z-index: 5;
+    top: 430px;
+    left: 416px;
+}
+
+.visual-wrap a{
+    display: inline-block;
+    text-indent: -999px;
+    overflow: hidden;
+    width: 39px;
+    height: 39px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 2px;
+    
+}
+
+.visual-wrap a.btn-prev{
+    background: url(../images/main-btn-prev.png) 50% no-repeat;
+}
+.visual-wrap a.btn-next{
+    background: url(../images/main-btn-next.png) 50% no-repeat;
+}
+
+
+.visual-con h2{
+    display: block;
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 25px;
+}
+.visual-con p{
+    display: block;
+    color: rgba(255,255,255,0.9);
+    text-align: left;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.firm-wrap h2{
+    font-size: 42px;
+    text-align: left;
+    margin-top: 230px;
+    color: #222222;
+}
+
+.firm-wrap{
+    max-width: 1920px;
+    height: 550px;
+    margin: 0 auto;
+}
+
+.firm-wrap::after{
+    content: '';
+    display: block;
+    max-width: 1920px;
+    height: 550px;
+    background: url(../images/banner1.png) 0 0 no-repeat;
+    margin-top: -365px;
+}
+
+.firm-wrap .firm-ment{
+    width: 1240px;
+    height: 309px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.firm-wrap .firm-ment dl{
+    display: flex;
+    align-content: center;
+    /* justify-content: center; */
+    padding-top: 100px;
+    text-align: center;
+    flex-direction: column;    
+    margin-top: 200px;
+    height: 318px;
+    width: 290px;
+}
+
+.firm-wrap .firm-ment dl:nth-of-type(1){position: relative;}
+.firm-wrap .firm-ment dl:nth-of-type(2){position: relative;}
+.firm-wrap .firm-ment dl:nth-of-type(3){position: relative;}
+.firm-wrap .firm-ment dl:nth-of-type(4){position: relative;}
+
+.firm-wrap .firm-ment dl:nth-of-type(1):before{
+    content: '';
+    display: block;
+    width: 53px;
+    height: 43px;
+    background: url(../images/num1.png) 0 0 no-repeat;
+    position: absolute;
+    top: -21px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.firm-wrap .firm-ment dl:nth-of-type(2):before{
+    content: '';
+    display: block;
+    width: 53px;
+    height: 43px;
+    background: url(../images/num2.png);
+    position: absolute;
+    top: -21px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+.firm-wrap .firm-ment dl:nth-of-type(3):before{
+    content: '';
+    display: block;
+    width: 53px;
+    height: 43px;
+    background: url(../images/num3.png);
+    position: absolute;
+    top: -21px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+.firm-wrap .firm-ment dl:nth-of-type(4):before{
+    content: '';
+    display: block;
+    width: 53px;
+    height: 43px;
+    background: url(../images/num4.png);
+    position: absolute;
+    top: -21px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+
+
+
+.firm-wrap .firm-ment dl dt{
+    font-size: 25px;
+    font-weight: bold;
+    color: #272727;
+    z-index: 6;
+}
+
+.firm-wrap .firm-ment dl dd{
+    font-size: 18px;
+    color: #272727;
+    margin-top: 26px;
+    z-index: 2;
+}
+
+.firm-wrap .firm-ment dl::after{
+    content: '';
+    display: block;
+    width: 290px;
+    height: 318px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.selling-milk{
+    position: relative;
+    margin-bottom: 740px;
+}
+
+.selling-milk h2{
+    font-size: 42px;
+    color: #222222;
+    text-align: right;
+    margin-top: 440px;
+}
+
+.selling-milk span{
+    font-family: 'poppins';
+    position: absolute;
+    top: 165px;
+    left: 0;
+    font-size: 120px;
+    color: #fff;
+    text-shadow: -1px 0 rgba(0, 128, 0, 0.3), 0 1px rgba(0, 128, 0, 0.3), 1px 0 rgba(0, 128, 0, 0.3), 0 -1px rgba(0, 128, 0, 0.3);
+}
+
+.selling-milk .product-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 266px;
+    right: -130px;
+    position: absolute;
+}
+
+.product-wrap .btn-wrap {
+    position: absolute;
+    top: 249px;
+    left: -219px;
+    width: 160px;
+    height: 70px;
+    text-indent: -999px;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .product-wrap .btn-wrap a{
+    background: rgba(57, 148, 37, 0.514);
+    padding: 22px 37px;
+    border-radius: 2px;
+    
+} */
+
+.selling-milk .product-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selling-milk .product-img dl{
+    margin-right: 100px;
+}
+
+.selling-milk .product2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selling-milk .product2 figure{
+    margin-left: 100px;
+}
+
+.selling-milk .product2 dl{
+    display: none;
+}
+
+.selling-milk dl dt{
+    font-size: 27px;
+    color: #373737;
+    font-weight: 800;
+}
+
+.selling-milk dl dd{
+    margin-top: 25px;
+    color: #6d6d6d;
+    font-weight: 600;
+}
+
+.selling-milk .btn{
+    padding: 14px 37px 12px;
+    display: inline-block;
+    position: absolute;
+    top: 533px;
+    left: 289px;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 3px;
+    transition: 0.4s;
+    color: #6d6d6d;
+    font-weight: 600;
+}
+
+/* btn 호버 */
+
+.selling-milk .btn:hover{
+    background: #3a9425;
+    border-color: #3a9425;
+    color: #fff;
+    font-weight: 600;
+}
+
+.delivery-shop{
+    background: url(../images/delivery-banner.png) 0 187px no-repeat;
+    margin: 0 auto;
+    height: 651px;
+    max-width: 1920px;
+}
+
+.delivery-shop h2{
+    font-size: 42px;
+    color: #222222;
+    text-align:left;
+    margin-top: 284px;
+}
+
+.delivery-shop::after{
+    content: '';
+    display: block;
+    max-width: 1920px;
+    height: 444px;
+    background: url(../images/shopping-banner.png) 0 0 no-repeat;
+    margin-top: -25px;
+}
+
+.delivery-shop .delivery dt{
+    font-size: 40px;
+    font-weight: bold;
+    color: #232323;
+    margin-top: 240px;
+}
+
+.delivery-shop .delivery dd{
+    font-size: 20px;
+    color: #2f2f2f;
+    margin-top: 15px;
+}
+
+.delivery-shop .shop{
+    font-size: 40px;
+    font-weight: bold;
+    color: #232323;
+    margin-top: 280px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.delivery-shop a{
+    display: inline-block;
+    padding: 13px 39px 11px;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 3px;
+    margin-top: 25px;
+    transition: 0.4s;
+}
+
+.delivery-shop a:nth-of-type(2){
+    float: right;
+}
+
+.delivery-shop a:hover{
+    background: #3a9425;
+    border-color: #3a9425;
+    color: #fff;
+    font-weight: 600;
+}
+
+.about-milk h2{
+    font-size: 42px;
+    color: #222222;
+    text-align:center;
+    margin-top: 760px;
+}
+
+.about-milk ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    padding-bottom: 230px;
+}
+
+.about-milk ul li a figure{
+    overflow: hidden;
+}
+
+.about-milk ul li a figure img{
+    transition: 0.4s;
+}
+
+
+/* 호버효과 */
+
+
+.about-milk ul li:nth-child(1){
+    position: relative;
+}
+
+.about-milk ul li:nth-child(2){
+    position: relative;
+}
+
+.about-milk ul li:nth-child(3){
+    position: relative;
+}
+
+.about-milk ul li:nth-child(4){
+    position: relative;
+}
+
+.about-milk ul li:nth-child(5){
+    position: relative;
+}
+
+.about-milk ul li:nth-child(6){
+    position: relative;
+}
+
+.about-milk ul li:nth-child(7){
+    position: relative;
+}
+
+.about-milk ul li:nth-child(8){
+    position: relative;
+}
+
+.about-milk ul li:nth-child(1) a::after{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    content: '';
+    display: block;
+    width: 261px;
+    height: 251px;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.about-milk ul li:nth-child(1):hover a::after{
+    opacity: 1;
+}
+
+.about-milk ul li:nth-child(2) a::after{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    content: '';
+    display: block;
+    width: 261px;
+    height: 251px;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.about-milk ul li:nth-child(2):hover a::after{
+    opacity: 1;
+}
+
+.about-milk ul li:nth-child(3) a::after{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    content: '';
+    display: block;
+    width: 261px;
+    height: 251px;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.about-milk ul li:nth-child(3):hover a::after{
+    opacity: 1;
+}
+
+.about-milk ul li:nth-child(4) a::after{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    content: '';
+    display: block;
+    width: 261px;
+    height: 251px;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.about-milk ul li:nth-child(4):hover a::after{
+    opacity: 1;
+}
+
+.about-milk ul li:nth-child(5) a::after{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    content: '';
+    display: block;
+    width: 261px;
+    height: 251px;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.about-milk ul li:nth-child(5):hover a::after{
+    opacity: 1;
+}
+
+.about-milk ul li:nth-child(6) a::after{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    content: '';
+    display: block;
+    width: 261px;
+    height: 251px;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.about-milk ul li:nth-child(6):hover a::after{
+    opacity: 1;
+}
+
+
+.about-milk ul li:nth-child(7) a::after{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    content: '';
+    display: block;
+    width: 261px;
+    height: 251px;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.about-milk ul li:nth-child(7):hover a::after{
+    opacity: 1;
+}
+
+
+.about-milk ul li:nth-child(8) a::after{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    content: '';
+    display: block;
+    width: 261px;
+    height: 251px;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.about-milk ul li:nth-child(8):hover a::after{
+    opacity: 1;
+}
+
+
+/* 이미지스케일 */
+
+.about-milk ul li:nth-child(1):hover img{
+    transform: scale(1.1);
+}
+
+.about-milk ul li:nth-child(2):hover img{
+    transform: scale(1.1);
+}
+
+.about-milk ul li:nth-child(3):hover img{
+    transform: scale(1.1);
+}
+
+.about-milk ul li:nth-child(4):hover img{
+    transform: scale(1.1);
+}
+
+.about-milk ul li:nth-child(5):hover img{
+    transform: scale(1.1);
+}
+
+.about-milk ul li:nth-child(6):hover img{
+    transform: scale(1.1);
+}
+
+.about-milk ul li:nth-child(7):hover img{
+    transform: scale(1.1);
+}
+
+.about-milk ul li:nth-child(8):hover img{
+    transform: scale(1.1);
+}

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ABOUT ME</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/splitting.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/sub.css" />
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/splitting.min.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		$(function () {
+			AOS.init({
+				duration: 1000,
+				easing: 'ease-in-cubic'
+			})
+			var $window = $(window);
+			var $section = $('main > section');
+			var $whoAmI = $('.whoami-wrap');
+			var $personality = $('.personality-wrap');
+			var sec1pos;
+			var sec2pos;
+			var sec3pos;
+			var executed = false;
+			var $rate = $('.rate');
+			var $changeTxt = $('change-txt');
+
+			getPosition();
+
+
+			$window.on('scroll', function () {
+				var scrollTop = $(this).scrollTop();
+				if (scrollTop >= sec1pos && scrollTop < sec2pos) {
+					$whoAmI.addClass('on');
+				} else if (scrollTop >= sec2pos && scrollTop < sec3pos) {
+					$whoAmI.removeClass('on');
+					$personality.addClass('on');
+
+
+				} else {
+					$personality.removeClass('on');
+				};
+
+
+				if (!executed) {
+					if (scrollTop >= sec1pos && scrollTop < sec2pos) {
+						count();
+						executed = true;
+					}
+				}
+
+			});
+
+			function getPosition() {
+
+				sec1pos = $section.eq(4).offset().top - 300;
+				sec2pos = $section.eq(5).offset().top - 300;
+				sec3pos = $section.eq(6).offset().top;
+			};
+
+
+			function count() {
+
+
+				setTimeout(function () {
+					$({
+						rating: 0
+					}).animate({
+						rating: 100
+					}, {
+						duration: 2000,
+						progress: function () {
+							var now = this.rating;
+							$rate.text(Math.floor((now * 10) / 10));
+						},
+						complete: function () {
+
+							setTimeout(function () {
+								$('.change-txt').fadeIn(500)
+
+							}, 500);
+						}
+					}, );
+				}, 700);
+
+
+			}
+			// Go TOP 버튼
+
+			var $section = $('main > section');
+			var secPos = $section.eq(1).offset().top;
+			var $goTop = $('.go-top');
+
+			$goTop.css('opacity', 0)
+			$window.on('scroll', function () {
+				var scrollTop = $(this).scrollTop();
+				if (scrollTop < secPos) {
+					$goTop.css('opacity', 0)
+				} else {
+					$goTop.css('opacity', 1)
+				}
+			});
+
+			$goTop.on('click', function (e) {
+				e.preventDefault();
+				$('html,body').animate({
+					scrollTop: 0
+				}, 300);
+			});
+
+
+
+		});
+	</script>
+</head>
+
+<body class="about-body">
+	<!-- 커서 영역 -->
+	<div class="cursor"></div>
+	<div class="spark"></div>
+	<!-- s: 메뉴버튼 클릭  -->
+	<div class="dim"></div>
+	<div class="slide-menu">
+		<nav>
+			<ul class="menu">
+				<li><a href="index.html" data-splitting>home</a></li>
+				<li><a href="about.html" data-splitting>about me</a></li>
+				<li><a href="portfolio.html" data-splitting>portfolio</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- e: 메뉴버튼 클릭  -->
+
+	<!-- s:헤더 영역 -->
+	<header>
+		<div class="inner">
+			<h1>
+				<a href="index.html"><i class="hidden">LOGO</i></a>
+			</h1>
+			<nav class="gnb">
+				<ul>
+					<li><a href="index.html">home</a></li>
+					<li><a href="about.html">about me</a></li>
+					<li><a href="portfolio.html">portfolio</a></li>
+				</ul>
+			</nav>
+			<a href="#" class="menu-btn"><b><i class="hidden">menu</i></b></a>
+		</div>
+	</header>
+	<!-- e:헤더 영역 -->
+
+	<!-- s:메인 영역 -->
+	<main>
+		<!-- s: freshible -->
+		<section>
+			<div class="inner">
+				<h2 class="sub-title">ABOUT ME</h2>
+				<div class="freshible-wrap">
+					<div class="freshible-cont">
+						<div class="freshible-mean">
+							<p data-aos="fade-down-right">fresh</p>
+							<span></span>
+							<p data-aos="fade-up-left">flexible</p>
+						</div>
+						<div class="freshible-con">
+							<h3>freshible</h3>
+							<p>신선하고 유연한 디자이너 신지은 입니다.</p>
+						</div>
+					</div>
+					<figure><img src="images/pic.png" alt="신지은" /></figure>
+				</div>
+			</div>
+		</section>
+		<!-- e: freshible -->
+		<!-- s: experience -->
+		<section class="experience-wrap">
+			<div class="inner">
+				<div class="con-wrap">
+					<h3 class="con-title">
+						저는 6년 동안 일본에서 혼자 생활하였습니다.
+					</h3>
+					<p>
+						6년이란 시간 속에 도전과 실패를 극복하는 방법을 배웠습니다. <br />
+						이런 도전과 노력들을 바탕으로 웹디자이너를 향한 또 다른 도전을
+						시작하게 되었습니다.
+					</p>
+				</div>
+				<ul class="experience-list">
+					<li data-aos="fade-down">
+						<strong>22</strong>
+						<ul class="keyword-list">
+							<li>#첫도전</li>
+							<li>#유학</li>
+						</ul>
+					</li>
+					<li data-aos="fade-up">
+						<strong>23</strong>
+						<ul class="keyword-list">
+							<li>#도전</li>
+							<li>#현지 취업</li>
+						</ul>
+					</li>
+					<li data-aos="fade-down">
+						<strong>24</strong>
+						<ul class="keyword-list">
+							<li>#노력</li>
+							<li>#취업 성공</li>
+						</ul>
+					</li>
+					<li data-aos="fade-up">
+						<strong>25</strong>
+						<ul class="keyword-list">
+							<li>#인정</li>
+							<li>#승진</li>
+						</ul>
+					</li>
+					<li data-aos="fade-down">
+						<strong>27</strong>
+						<ul class="keyword-list">
+							<li>#귀국</li>
+							<li>#새로운 도전</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- e: experience -->
+		<!-- s: why design -->
+		<section class="whydesign-wrap">
+			<div class="inner">
+				<div class="whydesign-con con-wrap">
+					<h3 class="con-title" data-aos="fade-right" data-aos-duration="500">내가 진짜 하고 싶은 일은 무엇일까?</h3>
+					<div class="about-text-con" data-aos="fade-right" data-aos-delay="500">
+						<p>
+							일본에서 6년을 보내는 동안 내가 진짜 하고 싶은 일은 무엇일까? 라는 고민을 항상 해왔습니다.
+						</p>
+						<p>
+							그러던 와중 코로나로 인해 귀국하게 되었고 이것을 터닝포인트로 삼아 제가 좋아하는 것을 찾아보기로 결심하였습니다.
+							전자기기, 웹서핑, 액세서리나 비누공예와 같이 손수 만들어보는 것. 좋아하는 것을 하나하나 나열하는 과정에서 웹사이트를 만드는 UI/UX 웹디자인을 접하게
+							되었습니다.
+						</p>
+						<p>
+							항상 봐왔던 웹 사이트는 물론이고 아이콘까지 직접 디자인 해 만들 수 있다는 것에 큰 매력을 느끼게 되어 UI/UX 웹디자인이라는 분야로 새로운 도전을 시작하게
+							되었습니다.
+
+						</p>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- e: why design -->
+		<!-- s: what is UI/UX -->
+		<section class="uxui-wrap">
+			<div class="inner">
+				<div class="uxui-con con-wrap">
+					<h3 class="con-title" data-aos="fade-left" data-aos-duration="500">UI/UX는 배려라고 생각합니다.</h3>
+					<div class="about-text-con" data-aos="fade-left" data-aos-delay="500">
+						<p>
+							상대를 배려하지 않은 UI/UX는 좋은 UI/UX라 말할 수 없다고 생각합니다.
+						</p>
+						<p>
+							일본에서 핸드폰 판매직을 하는 동안 손님들에게 모바일 UI에 대한 질문을 자주 받았습니다. <br>
+							가장 기억에 남는 질문은, 핸드폰 하단 영역에 동그라미는 무슨 의미인가? 라는 질문입니다. <br>
+							저는 당연하게 홈버튼이라고 안내를 하였는데, 손님께서는 동그라미가 홈버튼을 의미하는 <br> 이유를 궁금해하셨습니다.
+						</p>
+						<p>
+						</p>
+						<p>
+							저는 이 계기로 인해 보편화되어있는 UI도 누군가에겐 당연하지 않다는 것을 깨달았고, <br>
+							그것에 대해 고민하는 시간을 가지게 되었습니다.
+						</p>
+						<p>
+							이렇듯 다양한 연령대가 인터넷을 사용하는 시대에 맞춰
+							모든 사람들을 배려할 수 있는 <br> UI/UX가 필요하다고 생각합니다.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- e: what is UI/UX -->
+		<!-- s: who am I- -->
+		<section class="whoami-wrap">
+			<div class="inner">
+				<figure><img src="images/pic.png" alt="신지은" /></figure>
+				<div class="whoami-con">
+					<div class="whoami-title-wrap">
+						<h3>
+							<strong>저는</strong>
+							<div class="rate-box">
+								<span class="rate">0</span>
+								<span class="change-txt">%</span>
+							</div>
+							<strong>입니다.</strong>
+						</h3>
+					</div>
+					<div class="whoami-text">
+						<strong>%는 0부터 무궁무진한 숫자를 넣을 수 있는 단위입니다.</strong>
+						<p>저는 이제 막 스타트라인에 선 0%입니다.</p>
+						<p>
+							100%를 넘어선 발전을 일으킬 수 있는 <br>
+							가능성이 있는 디자이너가되고 싶습니다.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- e: who am I- -->
+		<!-- s: personality -->
+		<section class="personality-wrap">
+			<h3 class="con-title">
+				<strong>친화력 100%!</strong>
+				<strong>활기 100%!</strong>
+				<strong>적응력 100%!</strong>
+			</h3>
+			<ul class="personality-list">
+				<li>친화력</li>
+				<li>활기</li>
+				<li>적응력</li>
+			</ul>
+			<p>
+				도합 <strong>300%</strong>의 역량을 가진 에너지 넘치는 인생을 살고
+				있습니다.
+			</p>
+		</section>
+		<!-- e: personality -->
+		<!-- s: Software Skills - -->
+		<section class="skills">
+			<div class="inner">
+				<h3 class="con-title">Software Skills</h3>
+				<ul class="skills-list">
+					<li>
+						<span class="ball"><i class="hidden">포토샵</i></span>
+						<span class="shadow"></span>
+					</li>
+					<li>
+						<span class="ball"><i class="hidden">일러스트레이터</i></span>
+						<span class="shadow"></span>
+					</li>
+					<li>
+						<span class="ball"><i class="hidden">피그마</i></span>
+						<span class="shadow"></span>
+					</li>
+					<li>
+						<span class="ball"><i class="hidden">vscode</i></span>
+						<span class="shadow"></span>
+					</li>
+					<li>
+						<span class="ball"><i class="hidden">제이쿼리</i></span>
+						<span class="shadow"></span>
+					</li>
+					<li>
+						<span class="ball"><i class="hidden">Sass</i></span>
+						<span class="shadow"></span>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- e: Software Skills - -->
+		<!-- TOP 버튼 -->
+		<a href="#" class="go-top">top</a>
+
+	</main>
+	<!-- e:메인 영역 -->
+
+</body>
+
+</html>

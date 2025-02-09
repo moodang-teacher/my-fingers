@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'CookieRun';
+    src: url('../fonts/CookieRunOTF-Bold00.eot');
+    src: url('../fonts/CookieRunOTF-Bold00.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CookieRunOTF-Bold00.woff2') format('woff2'),
+        url('../fonts/CookieRunOTF-Bold00.woff') format('woff'),
+        url('../fonts/CookieRunOTF-Bold00.ttf') format('truetype'),
+        url('../fonts/CookieRunOTF-Bold00.svg#CookieRunOTF-Bold00') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CookieRun';
+    src: url('../fonts/CookieRunOTF-Black00.eot');
+    src: url('../fonts/CookieRunOTF-Black00.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CookieRunOTF-Black00.woff2') format('woff2'),
+        url('../fonts/CookieRunOTF-Black00.woff') format('woff'),
+        url('../fonts/CookieRunOTF-Black00.ttf') format('truetype'),
+        url('../fonts/CookieRunOTF-Black00.svg#CookieRunOTF-Black00') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CookieRun';
+    src: url('../fonts/CookieRunOTF-Regular00.eot');
+    src: url('../fonts/CookieRunOTF-Regular00.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CookieRunOTF-Regular00.woff2') format('woff2'),
+        url('../fonts/CookieRunOTF-Regular00.woff') format('woff'),
+        url('../fonts/CookieRunOTF-Regular00.ttf') format('truetype'),
+        url('../fonts/CookieRunOTF-Regular00.svg#CookieRunOTF-Regular00') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Maplestory';
+    src: url('../fonts/MaplestoryLight.eot');
+    src: url('../fonts/MaplestoryLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MaplestoryLight.woff2') format('woff2'),
+        url('../fonts/MaplestoryLight.woff') format('woff'),
+        url('../fonts/MaplestoryLight.ttf') format('truetype'),
+        url('../fonts/MaplestoryLight.svg#MaplestoryLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Maplestory';
+    src: url('../fonts/MaplestoryBold.eot');
+    src: url('../fonts/MaplestoryBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MaplestoryBold.woff2') format('woff2'),
+        url('../fonts/MaplestoryBold.woff') format('woff'),
+        url('../fonts/MaplestoryBold.ttf') format('truetype'),
+        url('../fonts/MaplestoryBold.svg#MaplestoryBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('../fonts/ImcreSoojinOTFRegular.eot');
+    src: url('../fonts/ImcreSoojinOTFRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ImcreSoojinOTFRegular.woff2') format('woff2'),
+        url('../fonts/ImcreSoojinOTFRegular.woff') format('woff'),
+        url('../fonts/ImcreSoojinOTFRegular.ttf') format('truetype'),
+        url('../fonts/ImcreSoojinOTFRegular.svg#ImcreSoojinOTFRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('../fonts/ImcreSoojin_Regular.eot');
+    src: url('../fonts/ImcreSoojin_Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ImcreSoojin_Regular.woff2') format('woff2'),
+        url('../fonts/ImcreSoojin_Regular.woff') format('woff'),
+        url('../fonts/ImcreSoojin_Regular.ttf') format('truetype'),
+        url('../fonts/ImcreSoojin_Regular.svg#ImcreSoojin_Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, button
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+img{vertical-align: top; max-width: 100%;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+.hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+body{
+    line-height: 1.5;
+    font: 1rem 'CookieRun','Maplestory', 'ImcreSoojin', sans-serif; /* fz16 */
+    color: #551919;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{text-decoration: none; color: inherit;}
+a:hover{text-decoration: none; color: #ffffff;}
+

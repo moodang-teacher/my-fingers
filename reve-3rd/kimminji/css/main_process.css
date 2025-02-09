@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+b{
+    color: #b08b7f;
+}
+.visual-wrap{
+    background: url(../images/main_process/main_bg.png) 0/cover no-repeat;
+    padding: 150px 0 110px;
+}
+.visual-wrap h1 strong{
+    color: #b08b7f;
+}
+.visual-wrap figure{
+    margin-top: 80px;
+}
+.overview-wrap{
+    padding: 100px 0;
+    background: #f1e9e9;
+}
+.color-wrap{
+    padding: 100px 0;
+}
+.color-wrap ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 100px;
+}
+.color-wrap ul li p{
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 500;
+}
+.font-wrap{
+    padding: 100px 0;
+    background: #f1e9e9;
+}
+.font-wrap ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 100px;
+}
+.font-wrap ul dl dt{
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 500;
+}
+.page-wrap{
+    padding: 100px 0;
+}
+.page-wrap p{
+    font-size: 20px;
+    line-height: 1.6;
+}
+.page-title{
+    font-size: 36px;
+    font-weight: 700;
+    color: #b08b7f;
+}
+.page-text{
+    font: 600 48px 'Cormorant Upright', serif;
+}
+.page-text1{
+    margin: 24px 0 0 25px;
+}
+.page-text2{
+    color: #CECCCC;
+    text-align: right;
+    margin-right: 45px;
+}
+.page-wrap .main-page{
+    display: flex;
+    align-items: center;
+    margin-top: 73px;
+}
+.main-con{
+    margin-left: 40px;
+}
+.main-con h2{
+    display: flex;
+    align-items: center;
+}
+.main-con h2::after{
+    content: '';
+    display: block;
+    width: 326px;
+    height: 2px;
+    background: #b08b7f;
+    margin-left: 20px;
+}
+.main-page p{
+    margin: 20px 0 0 27px;
+}
+.page-wrap .about-page{
+    display: flex;
+    flex-direction: column;
+    margin-top: 170px;
+}
+.about-img{
+    position: relative;
+    min-height: 660px;
+    margin-top: 73px;
+}
+.about-img figure{
+    position: absolute;
+}
+.about-img figure:nth-child(1){
+    top: 0;
+    left: 0;
+}
+.about-img figure:nth-child(2){
+    top: 140px;
+    right: 0;
+}
+.about-page h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-page h2::before{
+    content: '';
+    display: block;
+    width: 326px;
+    height: 2px;
+    background: #b08b7f;
+    margin-right: 20px;
+}
+.about-page h2::after{
+    content: '';
+    display: block;
+    width: 326px;
+    height: 2px;
+    background: #b08b7f;
+    margin-left: 20px;
+}
+.about-con{
+    position: relative;
+}
+.about-con .page-text{
+    position: absolute;
+}
+.about-con .page-text1{
+    top: -180px;
+    left: 50px;
+}
+.about-con .page-text2{
+    top: -90px;
+    left: 300px;
+}
+.about-con p{
+    text-align: center;
+    margin-top: 100px;
+}
+.page-wrap .portfolio-page{
+    display: flex;
+    align-items: center;
+    margin-top: 170px;
+}
+.portfolio-con{
+    margin-right: 40px;
+}
+.portfolio-con h2{
+    display: flex;
+    align-items: center;
+}
+.portfolio-con h2::before{
+    content: '';
+    display: block;
+    width: 326px;
+    height: 2px;
+    background: #b08b7f;
+    margin-right: 20px;
+}
+.portfolio-con .page-text1{
+    margin-left: 45px;
+}
+.portfolio-con .page-text2{
+    margin-right: 100px;
+}
+.portfolio-con p{
+    margin: 47px 26px 0 0;
+    text-align: right;
+}
+.portfolio-con p:last-child{
+    margin-top: 27px;
+}
+.thank-wrap{
+    background: #f1e9e9;
+    font: 600 96px 'Cormorant Upright', serif;
+}
+.btn-view:hover{
+    background: #bda39d;
+    color: #f1e9e9;
+}

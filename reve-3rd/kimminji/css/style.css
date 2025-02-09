@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+body{
+	background: #ccc1c0;
+    overflow: hidden;
+}
+.inner{
+    width: 1630px;
+    margin: 0 auto;
+}
+.gnb {
+    display: flex;
+    justify-content: flex-end;
+    margin: 150px 0 25px;
+}
+
+.gnb a {
+    position: relative;
+    text-transform: uppercase;
+    margin-right: 70px;
+}
+.gnb a:last-child{
+    margin-right: 0;
+}
+
+.gnb a::before{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #f1e9e9;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.2s 0.2s;
+}
+.gnb a:hover::before{
+    opacity: 1;
+}
+
+.main-wrap {
+    position: relative;
+}
+
+.main-text {
+    position: absolute;
+    top: 90px;
+    left: 135px;
+    color: #f1e9e9;
+    z-index: 10000;
+}
+
+.main-text h1 {
+    font-size: 200px;
+    width: 700px;
+    margin-top: 45px;
+}
+
+
+.main-text h2 {
+    width: 400px;
+    text-align: center;
+    font-size: 90px;
+    margin-top: -110px;
+    margin-left: 125px;
+}
+.text-fill{
+    display: none;
+    position: absolute;
+}
+h1.text-fill{
+    top: 10px;
+    left: 5px;
+}
+h2.text-fill{
+    top: 305px;
+    left: 0;
+}
+
+.main-image {
+    background: #bda39d;
+    height: 530px;
+}
+
+.image-wrap {
+    display: flex;
+    justify-content: flex-end;
+    padding: 55px 0;
+    position: relative;
+    height: 100%;
+}
+
+.image-wrap figure {
+    width: 320px;
+    height: 420px;
+    /* margin-right: 34px; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.first{right: 716px;}
+.second{right: 354px;}
+.third{right: 0}
+.image-wrap figure:last-child{
+    margin-right: 0;
+}
+
+.lensflare-bottom {
+    position: absolute;
+    top: 75%;
+    right: -240px;
+    transform: translateY(-50%);
+    /* opacity: 0; */
+    animation: flare-bot 5s 2s;
+}
+.lensflare-top{
+    position: absolute;
+    top: 10%;
+    left: -60px;
+    /* opacity: 0; */
+    transform: translateY(-50%);
+    animation: flare-top 5s 2s;
+}
+
+@keyframes flare-bot {
+    0%{
+        opacity: 0;
+        top: 50%;
+        right: -200px;
+    }
+    50%{
+        opacity: 1;
+        
+    }
+    100%{
+        top: 75%;
+        right: -240px;
+    }
+}
+
+@keyframes flare-top {
+    0%{
+        opacity: 0;
+        top: 50%;
+        left: -200px;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        top: 10%;
+        left: -60px;
+    }
+}

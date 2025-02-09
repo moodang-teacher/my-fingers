@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pororo</title>
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/bubble.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery-canvas-sparkles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript"></script>
+</head>
+<body>
+
+    <!-- 메뉴영역 -->
+<div class="dim"></div>
+<div class="menu-wrap">
+    <div class="menu-con">
+        <div class="menu-close">닫기</div>
+        <ul class="menu-list">
+            <li>
+                <a href="#">뽀로로소개</a>
+                <ul class="submenu-m">
+                    <li><a href="sub1.html">뽀로로?</a></li>
+                    <li><a href="sub1.html">캐릭터 소개</a></li>
+                    <li><a href="sub1.html">프로그램 소개</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">미디어</a>
+                <ul class="submenu-m">
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">모바일 앱</a></li>
+                    <li><a href="#">음악</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">다시보기</a>
+                <ul class="submenu-m">
+                    <li><a href="#">뽀롱뽀롱 뽀로로</a></li>
+                    <li><a href="#">뽀로로와 노래해요</a></li>
+                    <li><a href="#">똑똑박사 에디</a></li>
+                    <li><a href="#">요리공주 루피</a></li>
+                    <li><a href="#">뽀로로 동화나라</a></li>
+                    <li><a href="#">뽀로로 잉글리쉬쇼</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">갤러리</a>
+                <ul class="submenu-m">
+                    <li><a href="#">바탕화면</a></li>
+                    <li><a href="#">캐릭터 앨범</a></li>
+                    <li><a href="#">동영상 앨범</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">뽀로로몰</a>
+                <ul class="submenu-m">
+                    <li><a href="#">바로가기</a></li>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu-bottom">
+        <div class="menu-logo">
+            <img src="images/menu-logo.png" alt="메뉴로고">
+        </div>
+        <div class="menu-sns">
+            <a href="#">youtube</a>
+            <a href="#">insta</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- s:헤더영역 -->
+<header id="header" class="fixed">
+    
+    <div class="inner">
+        <h1 class="logo"><a href="index.html"><img src="images/h-logo.png" alt="pororo"></a></h1>
+        <nav class="gnb">
+            <ul>
+                <li>
+                    <a href="sub1.html">뽀로로소개</a>
+                    <ul class="submenu">
+                        <li><a href="sub1.html">뽀로로?</a></li>
+                        <li><a href="sub1.html">캐릭터 소개</a></li>
+                        <li><a href="sub1.html">프로그램 소개</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">미디어</a>
+                    <ul class="submenu">
+                        <li><a href="#">YOUTUBE</a></li>
+                        <li><a href="#">TV</a></li>
+                        <li><a href="#">모바일 앱</a></li>
+                        <li><a href="#">음악</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">다시보기</a>
+                    <ul class="submenu">
+                        <li><a href="#">뽀롱뽀롱 뽀로로</a></li>
+                        <li><a href="#">뽀로로와 노래해요</a></li>
+                        <li><a href="#">똑똑박사 에디</a></li>
+                        <li><a href="#">요리공주 루피</a></li>
+                        <li><a href="#">뽀로로 동화나라</a></li>
+                        <li><a href="#">뽀로로 잉글리쉬쇼</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">갤러리</a>
+                    <ul class="submenu">
+                        <li><a href="#">바탕화면</a></li>
+                        <li><a href="#">캐릭터 앨범</a></li>
+                        <li><a href="#">동영상 앨범</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="http://pororomall.com/">뽀로로몰</a>
+                    <ul class="submenu">
+                        <li class="pororo-mall"><a href="http://pororomall.com/">
+                                <figure><img src="images/h-go-mall.png" alt="바로가기"></figure>
+                            </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="util-menu">
+            <div class="lang">
+                <a href="#">한국어</a>
+                <ul>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">日本語</a></li>
+                    <li><a href="#">中文</a></li>
+                </ul>
+                <div id="lang-bg"></div>
+            </div>
+            <div class="head-sns">
+                <a href="#">youtube</a>
+                <a href="#">insta</a>
+            </div>
+        </div>
+        <div class="btn-menu">menu</div>
+    </div>
+</header>
+<div id="nav-bg"></div>
+<!-- e:헤더영역 -->
+
+<main id="contents">
+    <!-- s:비주얼영역 -->
+    <div class="visual-wrap">
+        <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/wYkJOh6HVeA?autoplay=1&loop=1&mute=1&playlist=wYkJOh6HVeA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- e:비주얼영역 -->
+    
+    <!-- s:인트로영역 -->
+    <section class="intro-wrap">
+        <div class="inner">
+            <h2><img src="images/intro-tit.png" alt="뽀롱뽀롱 뽀로로는?"><span class="hidden">뽀롱뽀롱 뽀로로는?</span></h2>
+            <p class="main-intro">
+                온통 새하얀 눈과 얼음으로 뒤덮인 뽀롱뽀롱 마을에는 뽀로로와 친구들이 살고 있어요. 뽀롱뽀롱 마을 친구들은 생김새와 성격이 모두 달라서 매일 크고 작은 소동이 벌어지기도 하지만, 현명하게 문제를 해결하고 서로서로 도와주는 사이좋은 친구들 이에요.<br>
+                뽀로로와 친구들의 즐겁고 활기찬 이야기를 만나보세요!
+            </p>
+
+            <p class="mobile-intro">
+                온통 새하얀 눈과 얼음으로 뒤덮인 뽀롱뽀롱 마을에는 생김새와 성격이 모두 다른 뽀로로와 친구들이 살고있어요. 매일 크고 작은 소동이 벌어지만 항상 사이좋게 해결하는 사이좋은 친구들 이에요.
+                뽀로로와 친구들의 활기찬 이야기를 만나보세요!
+            </p>
+            <figure><img src="images/intro-img.png" alt=""></figure>
+        </div>
+    </section>
+    <!-- e:인트로영역 -->
+
+    <!-- s:수상 영역 -->
+    <section class="award-wrap">
+        <div class="inner">
+            <h2><span class="hidden">수상내역</span></h2>
+            <ul class="rlink text-outlined text-outlined_v6">
+                <li  class="text-outlined__label">
+                    <dl>
+                        <dt>YOUTUBE 조회수</dt>
+                        <dd>55억4천회</dd>
+                    </dl>
+                </li>
+                <li class="text-outlined__label">
+                    <dl>
+                        <dt>YOUTUBE 구독자수</dt>
+                        <dd>933만명</dd>
+                    </dl>
+                </li>
+                <li class="text-outlined__label">
+                    <dl>
+                        <dt>대한민국 캐릭터대상</dt>
+                        <dd>대통령상 수상</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- e:수상 영역 -->
+
+    <!-- s:프로그램 영역 -->
+    <section class="program-wrap">
+        <div class="inner">
+            <h2 class="sec-tit">프로그램 소개</h2>
+            <ul>
+                <li>
+                    <a href="#" class="hvr-float">
+                        <figure><img src="images/program-img1.jpg" alt="뽀롱뽀롱 뽀로로"></figure>
+                        <p>뽀롱뽀롱 뽀로로</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hvr-float">
+                        <figure><img src="images/program-img2.jpg" alt="뽀로로와 노래해요"></figure>
+                        <p>뽀로로와 노래해요</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hvr-float">
+                        <figure><img src="images/program-img3.jpg" alt="똑똑박사 에디"></figure>
+                        <p>똑똑박사 에디</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hvr-float">
+                        <figure><img src="images/program-img4.jpg" alt="요리공주 루피"></figure>
+                        <p>요리공주 루피</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hvr-float">
+                        <figure><img src="images/program-img5.jpg" alt="뽀로로 동화나라"></figure>
+                        <p>뽀로로 동화나라</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hvr-float">
+                        <figure><img src="images/program-img6.jpg" alt="뽀로로 잉글리쉬쇼"></figure>
+                        <p>뽀로로 잉글리쉬쇼</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="bg-beach-wrap">
+                <div class="bg-beach-item beach-name"></div>
+                <div class="bg-beach-item beach-parasol"></div>
+                <div class="bg-beach-item beach-ball"></div>
+                <div class="bg-beach-item beach-crab"></div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- e:프로그램 영역 -->
+
+    
+    <!-- s:미디어 영역 -->
+    <section class="media-wrap">
+
+        <div class="bg-wave">
+            <div class="bg-wave-item bg-wave-item1"></div>
+            <div class="bg-wave-item bg-wave-item2"></div>
+            <div class="bg-wave-item bg-wave-item3"></div>
+            <div class="bg-wave-item bg-wave-item4"></div>
+        </div>
+
+        <!-- 물방울애니 -->
+        <div class="inner">
+
+            <h2 class="sec-tit">미디어</h2>
+            <div class="media-list media-youtube">
+                <h3 class="sec-sub-tit">youtube</h3>
+                <ul class="youtube-slide">
+                    <li class="media-list-li">
+                        <a href="#">
+                            <figure><img src="images/media-youtube1.jpg" alt="썰매 만들기"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [뽀로로5기] 14화<br>
+                                    썰매 만들기
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <figure><img src="images/media-youtube2.jpg" alt="뽀롱뽀롱 장기자랑"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [뽀로로6기] 16화<br>
+                                    뽀롱뽀롱 장기자랑
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <figure><img src="images/media-youtube3.jpg" alt="우리들의 놀이터"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [뽀로로6기] 12화<br>
+                                    우리들의 놀이터
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <figure><img src="images/media-youtube1.jpg" alt="썰매 만들기"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [뽀로로5기] 14화<br>
+                                    썰매 만들기
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <figure><img src="images/media-youtube2.jpg" alt="뽀롱뽀롱 장기자랑"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [뽀로로6기] 16화<br>
+                                    뽀롱뽀롱 장기자랑
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <figure><img src="images/media-youtube3.jpg" alt="우리들의 놀이터"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [뽀로로6기] 12화<br>
+                                    우리들의 놀이터
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="indicator">
+                    <a href="#" class="off">1</a>
+                    <a href="#" class="on">2</a>
+                    <a href="#" class="off">3</a>
+                    <a href="#" class="off">4</a>
+                    <a href="#" class="off">5</a>
+                    <a href="#" class="off">6</a>
+                </div>
+
+                <div class="btn btn-prev btn-prev-youtube"><a href="#">이전</a></div>
+                <div class="btn btn-next btn-next-youtube"><a href="#">다음</a></div>
+            </div>
+            <div class="media-list media-app">
+                <h3 class="sec-sub-tit">모바일 앱</h3>
+                <ul class="app-slide">
+                    <li>
+                        <a href="#">
+                            <figure><img src="images/media-app1.jpg" alt="뽀로로와 동물친구들"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [ICONIX]<br>
+                                    뽀로로와 동물친구들
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><img src="images/media-app2.jpg" alt="뽀로로 식사하기"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [ICONIX]<br>
+                                    뽀로로 식사하기
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><img src="images/media-app3.jpg" alt="똑똑박사 에디의 수과학놀이"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [ICONIX]<br>
+                                    똑똑박사 에디의 수학놀이
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><img src="images/media-app1.jpg" alt="뽀로로와 동물친구들"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [ICONIX]<br>
+                                    뽀로로와 동물친구들
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><img src="images/media-app2.jpg" alt="뽀로로 식사하기"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [ICONIX]<br>
+                                    뽀로로 식사하기
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><img src="images/media-app3.jpg" alt="똑똑박사 에디의 수과학놀이"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [ICONIX]<br>
+                                    똑똑박사 에디의 수학놀이
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="indicator">
+                    <a href="#" class="off">1</a>
+                    <a href="#" class="on">2</a>
+                    <a href="#" class="off">3</a>
+                    <a href="#" class="off">4</a>
+                    <a href="#" class="off">5</a>
+                    <a href="#" class="off">6</a>
+                </div>
+
+                <div class="btn btn-prev btn-prev-app"><a href="#">이전</a></div>
+                <div class="btn btn-next btn-next-app"><a href="#">다음</a></div>
+            </div>
+
+            <div class="media-list media-music">
+                <h3 class="sec-sub-tit">음악</h3>
+                <ul class="music-slide">
+                    <li>
+                        <a href="">
+                            <figure><img src="images/media-music1.JPG" alt="뽀로로와 노래해요"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [뽀로로와 노래해요]<br>
+                                    학교가는길
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <figure><img src="images/media-music2.JPG" alt="뽀로로와 노래해요"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [뽀로로와 노래해요]<br>
+                                    반짝반짝 상쾌한하루
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <figure><img src="images/media-music3.JPG" alt="뽀로로와 노래해요"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [뽀로로와 노래해요]<br>
+                                    붕차카붕
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <figure><img src="images/media-music1.JPG" alt="뽀로로와 노래해요"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [뽀로로와 노래해요]<br>
+                                    학교가는길
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <figure><img src="images/media-music2.JPG" alt="뽀로로와 노래해요"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [뽀로로와 노래해요]<br>
+                                    반짝반짝 상쾌한하루
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <figure><img src="images/media-music3.JPG" alt="뽀로로와 노래해요"></figure>
+                            <div class="media-name">
+                                <strong>
+                                    [뽀로로와 노래해요]<br>
+                                    붕차카붕
+                                </strong>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="indicator">
+                    <a href="#" class="off">1</a>
+                    <a href="#" class="on">2</a>
+                    <a href="#" class="off">3</a>
+                    <a href="#" class="off">4</a>
+                    <a href="#" class="off">5</a>
+                    <a href="#" class="off">6</a>
+                </div>
+
+                <div class="btn btn-prev btn-prev-music"><a href="#">이전</a></div>
+                <div class="btn btn-next btn-next-music"><a href="#">다음</a></div>
+            </div>
+            <div class="whale"></div>
+            <div class="fishes"></div>
+            <div class="fishes2"></div>
+        </div>
+        <div class="container">
+            <div class="bubbles-container">
+                <svg class="bubbles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 701 1024" style="overflow: visible;">
+        
+                <g class="bubbles-large" stroke-width="7">
+                    <g>
+                        <g transform="translate(10 940)">
+                            <circle cx="35" cy="35" r="35"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(373 940)">
+                            <circle cx="35" cy="35" r="35"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(408 940)">
+                            <circle cx="35" cy="35" r="35"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(621 940)">
+                            <circle cx="35" cy="35" r="35"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(179 940)">
+                            <circle cx="35" cy="35" r="35"/>
+                        </g>
+                    </g>
+                </g>
+        
+                <g class="bubbles-small" stroke-width="4">
+                    <g>
+                        <g transform="translate(147 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(255 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(573 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(429 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(91 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(640 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(321 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(376 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(376 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(497 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                </g>
+        
+            </svg>
+            </div>
+            <!-- 물방울애니 -->
+
+              <!-- 물방울애니 -->
+        <div class="container">
+            <div class="bubbles-container bubbles-container2">
+                <svg class="bubbles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 701 1024" style="overflow: visible;">
+        
+                <g class="bubbles-large" stroke-width="7">
+                    <g>
+                        <g transform="translate(10 940)">
+                            <circle cx="35" cy="35" r="35"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(373 940)">
+                            <circle cx="35" cy="35" r="35"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(408 940)">
+                            <circle cx="35" cy="35" r="35"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(621 940)">
+                            <circle cx="35" cy="35" r="35"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(179 940)">
+                            <circle cx="35" cy="35" r="35"/>
+                        </g>
+                    </g>
+                </g>
+        
+                <g class="bubbles-small" stroke-width="4">
+                    <g>
+                        <g transform="translate(147 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(255 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(573 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(429 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(91 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(640 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(321 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(376 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(376 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g transform="translate(497 984)">
+                            <circle cx="15" cy="15" r="15"/>
+                        </g>
+                    </g>
+                </g>
+        
+            </svg>
+        </div>
+            <!-- 물방울애니 -->
+        
+        
+
+    </section>
+    <!-- e:미디어 영역 -->
+
+    <!-- s:갤러리영역 -->
+    <section class="gallery-wrap">
+        <div class="inner">
+            <h2 class="sec-tit">갤러리</h2>
+            <div class="bg-space">
+                <div class="space-craft">
+                    <figure><img src="images/gallery-spacecraft.png" alt="우주선"></figure>
+                    <ul>
+                        <li><a href="#"><figure><img src="images/gallery-img1.png" alt="배경화면"></figure></a></li>
+                        <li><a href="#"><figure><img src="images/gallery-img2.png" alt="캐릭터앨범"></figure></a></li>
+                        <li><a href="#"><figure><img src="images/gallery-img3.png" alt="동영상앨범"></figure></a></li>
+                    </ul>
+                </div>
+                <div class="gallery-earth"></div>
+            </div>
+        </div>
+        <div class="bg-space-wrap">
+            <div class="space-wave space-wave-item1"></div>
+            <div class="space-wave space-wave-item2"></div>
+            <div class="space-wave space-wave-item3"></div>
+        </div>
+    </section>
+    <!-- e:갤러리영역 -->
+</main>
+
+
+<!-- s:푸터영역 -->
+<footer id="footer">
+    <div class="inner">
+        <div class="foot-wrap">
+            <div class="foot-logo">
+                <img src="images/foot-logo.png" alt="foot-logo">
+            </div>
+            <div class="foot-sns">
+                <a href="#">youtube</a>
+                <a href="#">insta</a>
+            </div>
+            <div class="foot-con">
+                <p>(우)463-400 경기도 성남시 분당구 판교로 255번길 64 (주)아이코닉스</p>
+                <p>대표전화 : 1566-0855 팩스 : 031-8060-2702</p>
+                <p>Copyright ⓒ All right reserved by ICONIX, Co, LTD</p>
+            </div>
+        </div>
+    </div>
+</footer> 
+<!-- s:푸터영역 -->
+
+<!-- s:움직이는 뽀로로 아이콘 -->
+    <div class="pororo-ico-wrap">
+        <div class="pororo-ico"><img src="images/ico-pororo1.png" alt="움직이는 뽀로로 아이콘"></div>
+        <div class="pororo-ico"><img src="images/ico-pororo2.png" alt="움직이는 뽀로로 아이콘"></div>
+        <div class="pororo-ico"><img src="images/ico-pororo3.png" alt="움직이는 뽀로로 아이콘"></div>
+        <div class="pororo-ico"><img src="images/ico-pororo4.png" alt="움직이는 뽀로로 아이콘"></div>
+    </div>
+</div>
+
+<a href="#top" class="top">TOP</a>
+</body>
+</html>

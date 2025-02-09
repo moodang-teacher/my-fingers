@@ -1,0 +1,612 @@
+@charset "utf-8";
+
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    padding: 70px 0 0 130px;
+    z-index: 200;
+}
+
+.gnb {
+    display: flex;
+}
+
+.gnb a {
+    margin-right: 70px;
+    transition: 0.1s;
+}
+
+.gnb a:hover {
+    font-size: 26px;
+    margin-top: -5px;
+}
+
+.indicator {
+    position: fixed;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.indicator>a {
+    position: relative;
+    font-size: 22px;
+    letter-spacing: -1px;
+    margin: 0 37px;
+    text-align: center;
+}
+
+.indicator>a::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #F1E9E9;
+    position: absolute;
+    top: -5px;
+    right: -20px;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.2s 0.1s;
+}
+
+.indicator>a:nth-child(2)::before {
+    background: #BDA39D;
+}
+
+.indicator>a:nth-child(3)::before {
+    background: #BDA39D;
+}
+
+.indicator>a:nth-child(4)::before {
+    background: #F1E9E9;
+}
+
+.indicator>a.active::before {
+    opacity: 1;
+}
+
+.fp-tableCell {
+    vertical-align: top;
+}
+
+.experience-wrap {
+    background: #CCC1C0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.experience-wrap1 {
+    padding-left: 120px;
+    position: relative;
+}
+
+.ex-text {
+    margin-top: 150px;
+    position: relative;
+}
+
+.experience-wrap1 .ex-text::after {
+    content: '';
+    display: block;
+    width: 1317px;
+    height: 536px;
+    background: url(../images/about_me/trust.png) 0 no-repeat;
+    margin: -50px 100px 0 auto;
+}
+
+.ex-text h1 {
+    font-size: 60px;
+    line-height: 1.3;
+}
+
+.ex-text p {
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 10px 0 0 10px;
+    font-size: 20px;
+}
+
+.ex-title > strong::before{
+    content: '';
+    display: block;
+    width: 0;
+    height: 45%;
+    background: #b08b7f;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.ex-title > strong {
+    position: relative;
+    color: #f1e9e9;
+    font-weight: bold;
+}
+
+.ex-title.hilight > strong::before{
+    animation: hilighter 1s 0.2s forwards;
+}
+
+.swipe-ico{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.swipe-ico figure{
+    width: 28px;
+    height: 51px;
+    animation: mouse-moving 1.2s infinite;
+    transform: translateX(58px);
+}
+.swipe-ico figure{
+    width: 100%;
+    height: 100%;
+}
+.swipe-ico p{
+    font: 400 24px 'Cormorant Upright', serif;
+    color: #f1e9e9;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+@keyframes hilighter {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes mouse-moving {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+/* experience 세부내용 */
+
+.experience-wrap2,
+.experience-wrap3 {
+    padding-right: 120px;
+    position: relative;
+    width: 100%;
+}
+
+.ex-text2 {
+    margin-top: 120px;
+    text-align: right;
+}
+
+.ex-text2::after {
+    content: '';
+    display: block;
+    width: 945px;
+    height: 290px;
+    background: url(../images/about_me/faithful.png) 0 no-repeat;
+    position: absolute;
+    top: 70%;
+    left: 150px;
+    transform: translateY(-50%);
+}
+
+.experience-wrap3 .ex-text2::after {
+    width: 1375px;
+    height: 284px;
+    background-image: url(../images/about_me/responsibility.png);
+}
+
+.ex-text2 h1 {
+    font-size: 55px;
+    line-height: 1.4;
+}
+
+.ex-text2 p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 17px 20px 0 0;
+}
+
+.experience-wrap2 figure,
+.experience-wrap3 figure {
+    position: relative;
+    width: 615px;
+    margin-top: 50px;
+    margin-left: auto;
+    z-index: 200;
+}
+
+
+
+.caption {
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.btn-play{
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: url(../images/about_me/btn_play_ho.png) 50% no-repeat;
+    position: absolute;
+    top: 370px;
+    right: 690px;
+    text-indent: -999px;
+    overflow: hidden;
+    z-index: 300;
+    transition: 0.1s;
+}
+
+.btn-play:hover{
+    background-image: url(../images/about_me/btn_play.png);
+    transform: scale(0.9);
+}
+
+.trustful {
+    font: 600 36px 'Cormorant Upright', serif;
+    color: #f1e9e9;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 84px;
+    left: 100px;
+}
+
+.trustful::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    background: #f1e9e9;
+    margin-right: 10px;
+}
+.my-slide{
+    position: relative;
+}
+/* .slick-dots {
+    position: fixed;
+    bottom: 104px;
+    left: 600px;
+    display: flex;
+    width: 1230px;
+}
+
+.slick-dots li {
+    width: 33.33%;
+    height: 4px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.slick-dots li button {
+    width: 100%;
+    height: 100%;
+    text-indent: -999px;
+    overflow: hidden;
+    background: #d7cdcc;
+    transition: 0.4s;
+}
+
+.slick-dots li.slick-active button {
+    background: #f1e9e9;
+} */
+.btn-prev{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/about_me/btn_prev.png) 0 no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 115px;
+    left: 515px;
+}
+.btn-next{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/about_me/btn_next.png) 0 no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 115px;
+    left: 550px;
+}
+.progress-wrap{
+    position: fixed;
+    bottom: 102px;
+    left: 600px;
+    width: 1230px;
+}
+.progress{
+    position: relative;
+    width: 100%;
+    height: 4px;
+    border-radius: 20px;
+    background: #D7CDCC;
+    margin-top: 50px;
+}
+.progress-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33.33%;
+    height: 100%;
+    border-radius: 20px;
+    background: #F1E9E9;
+    transition: 0.4s;
+}
+.popup-wrap{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:#fff;
+    z-index: 10000;
+}
+
+.video-wrap{
+    width: 960px;
+    height: 540px
+}
+.video-wrap video{
+    width: 100%;
+    height: 100%;
+}
+.btn-close{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background: #B08B7F url(../images/about_me/popup_can.png) 50% no-repeat;
+    color: #fff;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.dim{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 10000;
+}
+.profile-wrap {
+    position: relative;
+    background: rgb(241, 226, 226);
+    background: linear-gradient(90deg, rgba(241, 226, 226, 1) 32%, rgba(212, 202, 201, 1) 89%);
+}
+
+.profile-wrap h1 {
+    position: absolute;
+    top: 50px;
+    left: 260px;
+    z-index: 1000;
+}
+
+.profile-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 994px;
+    height: 727px;
+    background: url(../images/about_me/profile_cam.png) 50% no-repeat;
+    margin: 110px 0 0 600px;
+    padding-top: 200px;
+}
+
+.table-wrap table {
+    height: 300px;
+    margin-left: 55px;
+}
+
+.table-wrap table tr {
+    margin: 23px 0;
+}
+
+.table-wrap table th {
+    color: #b08b7f;
+    font-size: 36px;
+}
+
+.table-wrap table td {
+    font: 400 28px 'Noto Sans KR', sans-serif;
+    padding-left: 30px;
+}
+
+
+.skill-wrap {
+    background: #f1e9e9;
+}
+
+.skill-wrap h1 {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 150px;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 540px;
+}
+
+.skill-ico {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-ico li {
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    transition: 0.1s;
+}
+
+.skill-ico li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.skill-ico li a img {
+    width: 100%;
+    height: 100%;
+}
+
+.skill-ico li:hover {
+    transform: rotate(10deg) scale(1.05);
+}
+.skill-ico li:hover:nth-child(odd) {
+    transform: rotate(-10deg);
+}
+.skill-con{
+    position: relative;
+    width: 540px;
+    height: 540px;
+}
+
+.skill-con dl {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: 50% no-repeat;
+    margin-left: 150px;
+}
+
+.skill-con dl.ps {
+    background-image: url(../images/about_me/bg_ps.png);
+}
+
+.skill-con dl.ai {
+    background-image: url(../images/about_me/bg_ai.png);
+}
+
+.skill-con dl.pr {
+    background-image: url(../images/about_me/bg_pr.png);
+}
+
+.skill-con dl.ae {
+    background-image: url(../images/about_me/bg_ae.png);
+}
+
+.skill-con dl.fi {
+    background-image: url(../images/about_me/bg_fi.png);
+}
+
+.skill-con dl.code {
+    background-image: url(../images/about_me/bg_code.png);
+}
+
+.skill-con dl dd {
+    text-align: center;
+    font: 400 28px/1.4 'Noto Sans KR', sans-serif;
+    margin-top: 25px;
+}
+.skill-con dl:first-child dd {
+    margin-top: 0;
+}
+.skill-con dl:nth-child(5) dd {
+    margin-top: 15px;
+}
+
+.refresh-wrap {
+    background: #d7cdcc;
+}
+
+.refresh-wrap h1 {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 150px;
+}
+
+.refresh-list {
+    width: 1290px;
+    display: flex;
+    justify-content: space-between;
+    margin: 75px auto;
+}
+
+.refresh-list li {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.refresh-list li figure {
+    margin: 0 auto;
+}
+
+.refresh-list li dl dt {
+    font-size: 36px;
+    text-align: center;
+    margin: 18px 0;
+}
+
+.refresh-list li dl dd {
+    font: 400 20px/1.2 'Noto Sans KR', sans-serif;
+    color: #666;
+    text-align: center;
+}
+
+.go-top {
+    position: fixed;
+    display: block;
+    bottom: 100px;
+    right: 100px;
+    width: 85px;
+    height: 85px;
+    text-align: center;
+    line-height: 85px;
+    color: #bda39d;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.go-top::after {
+    content: '';
+    display: block;
+    position: fixed;
+    width: 85px;
+    height: 85px;
+    bottom: 100px;
+    right: 100px;
+    background: url(../images/about_me/go_close.png) 50% no-repeat;
+    transition: 0.2s;
+}
+
+.go-top:hover {
+    color: #f1e9e9;
+}
+
+.go-top:hover::after {
+    transform: rotate(50deg);
+    background-image: url(../images/about_me/go-open.png);
+}

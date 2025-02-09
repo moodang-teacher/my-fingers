@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>PORTFOLIO</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/splitting.css">
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/sub.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/splitting.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		$(function () {
+
+			var $window = $(window);
+			var $portfolioWrap = $('.slide-visual');
+			var $pageNum = $('.page-num');
+
+			$portfolioWrap.slick({
+				arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: true,
+				dotsClass: 'paging',
+				customPaging: function (slider, index) {
+					return `<a href="#">${index + 1}</a>`;
+				},
+
+			});
+
+			$portfolioWrap.on('afterChange', function (event, slick, currentSlide) {
+				$pageNum.text(`0${currentSlide + 1}`);
+			});
+
+			$window.on('wheel DOMMouseScroll', (function (e) {
+
+				if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
+					$portfolioWrap.slick('slickPrev');
+				} else {
+					$portfolioWrap.slick('slickNext');
+				}
+			}));
+
+		});
+	</script>
+</head>
+
+<body class="portfolio-body">
+	<!-- 커서영역 -->
+	<div class="cursor"></div>
+	<div class="spark"></div>
+	<!-- s: 메뉴버튼 클릭  -->
+	<div class="dim"></div>
+	<div class="slide-menu">
+		<nav>
+			<ul class="menu">
+				<li><a href="index.html" data-splitting>home</a></li>
+				<li><a href="about.html" data-splitting>about me</a></li>
+				<li><a href="portfolio.html" data-splitting>portfolio</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- e: 메뉴버튼 클릭  -->
+
+	<!-- s:헤더 영역 -->
+	<header>
+		<div class="inner">
+			<h1>
+				<a href="index.html"><i class="hidden">LOGO</i></a>
+			</h1>
+			<nav class="gnb">
+				<ul>
+					<li><a href="index.html">home</a></li>
+					<li><a href="about.html">about me</a></li>
+					<li><a href="portfolio.html">portfolio</a></li>
+				</ul>
+			</nav>
+			<a href="#" class="menu-btn"><b><i class="hidden">menu</i></b></a>
+		</div>
+	</header>
+	<!-- e:헤더 영역 -->
+
+
+	<!-- s:메인 영역 -->
+	<main>
+		<section class="portfolio-sec">
+			<div class="inner">
+				<h2 class="sub-title">PORTFOLIO</h2>
+				<div class="slide-visual">
+					<!-- s: 개인사이트 -->
+					<div class="ps-wrap portfolio-wrap">
+						<div class="portfolio-con">
+							<div class="con-text-wrap">
+								<dl>
+									<dt>personal website</dt>
+									<dd>freshible</dd>
+									<dd>개인 포트폴리오</dd>
+								</dl>
+								<div class="btn-wrap">
+									<a href="process.html">Process View</a>
+								</div>
+							</div>
+						</div>
+						<div class="pic-info-wrap pic-sz">
+							<figure><img src="images/main_mockup.png" alt="메인페이지 이미지" /></figure>
+						</div>
+					</div>
+					<!-- e: 개인사이트 -->
+
+					<!-- s: rwd 리뉴얼 -->
+					<div class="rw-wrap portfolio-wrap">
+						<div class="portfolio-con">
+							<div class="con-text-wrap">
+								<dl>
+									<dt>responsive Web design</dt>
+									<dd>YG ENTERTAINMENT</dd>
+									<dd>Yg엔터테인먼트 반응형 웹디자인</dd>
+								</dl>
+								<div class="btn-wrap">
+									<a href="http://shinjieun.com/portfolio/yg/" target="_blank" rel="noreferrer" >Design View</a>
+									<a href="http://shinjieun.com/portfolio/yg/process.html" target="_blank" rel="noreferrer">Process View</a>
+								</div>
+							</div>
+						</div>
+						<div class="pic-info-wrap pic-sz">
+							<figure>
+								<img src="images/yg-mockup.png" alt="YG엔터페이지 이미지" />
+							</figure>
+						</div>
+					</div>
+					<!-- e: rwd 리뉴얼 -->
+
+					<!-- s: 웹사이트 리뉴얼1 -->
+					<div class="portfolio-wrap">
+						<div class="portfolio-con">
+							<div class="con-text-wrap">
+								<dl>
+									<dt>website renewal</dt>
+									<dd>krispykreme</dd>
+									<dd>크리스피 크림 웹사이트 리뉴얼</dd>
+								</dl>
+								<div class="btn-wrap">
+									<a href="http://shinjieun.com/portfolio/krispykreme/" target="_blank" rel="noreferrer">Design View</a>
+									<a href="http://shinjieun.com/portfolio/krispykreme/process.html" target="_blank" rel="noreferrer">Process View</a>
+								</div>
+							</div>
+						</div>
+						<div class="pic-info-wrap pic-sz">
+							<figure>
+								<img src="images/kc-mockup.png" alt="크리스피크림페이지 이미지" />
+							</figure>
+						</div>
+					</div>
+					<!-- e: 웹사이트 리뉴얼 -->
+
+					<!-- s: 웹사이트 리뉴얼2 -->
+					<div class="portfolio-wrap">
+						<div class="portfolio-con">
+							<div class="con-text-wrap">
+								<dl>
+									<dt>website renewal</dt>
+									<dd>VOLVO</dd>
+									<dd>볼보 웹사이트 리뉴얼</dd>
+								</dl>
+								<div class="btn-wrap">
+									<a href="http://shinjieun.com/portfolio/volvo/" target="_blank" rel="noreferrer" >Design View</a>
+									<a href="http://shinjieun.com/portfolio/volvo/process.html" target="_blank" rel="noreferrer">Process View</a>
+								</div>
+							</div>
+						</div>
+						<div class="pic-info-wrap">
+							<figure>
+								<img src="images/volvo-mockup.png" alt="볼보페이지 이미지" />
+							</figure>
+						</div>
+					</div>
+					<!-- e: 웹사이트 리뉴얼2 -->
+
+					<!-- s: 모바일 app 디자인 -->
+					<div class="portfolio-wrap">
+						<div class="portfolio-con">
+							<div class="con-text-wrap">
+								<dl>
+									<dt>Mobile APP Design</dt>
+									<dd>DAZZI</dd>
+									<dd>일기 플랫폼 APP UI/UX 디자인</dd>
+								</dl>
+								<div class="btn-wrap">
+									<a href="http://shinjieun.com/portfolio/dazzi/" target="_blank" rel="noreferrer">Design View</a>
+								</div>
+							</div>
+						</div>
+						<div class="pic-info-wrap">
+							<figure>
+								<img src="images/dazzi_mockup.png" alt="메인페이지 이미지" />
+							</figure>
+						</div>
+					</div>
+					<!-- e: 모바일 app 디자인 -->
+
+					<!-- s: 마이크로 사이트 디자인 -->
+					<div class="portfolio-wrap">
+						<div class="portfolio-con">
+							<div class="con-text-wrap">
+								<dl>
+									<dt>microsite design</dt>
+									<dd>avengers</dd>
+									<dd>어벤져스 마이크로 사이트 디자인</dd>
+								</dl>
+								<div class="btn-wrap">
+									<a href="http://shinjieun.com/portfolio/avengers/" target="_blank" rel="noreferrer">Design View</a>
+								</div>
+							</div>
+						</div>
+						<div class="pic-info-wrap">
+							<figure>
+								<img src="images/microsite-mockup.png" alt="메인페이지 이미지" />
+							</figure>
+						</div>
+					</div>
+					<!-- e: 마이크로 사이트 디자인 -->
+				</div>
+
+
+			</div>
+			<div class="scroll-ico">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="page-num-wrap">
+				<div class="page-num">01</div>
+			</div>
+
+
+		</section>
+	</main>
+	<!-- e:메인 영역 -->
+</body>
+
+</html>

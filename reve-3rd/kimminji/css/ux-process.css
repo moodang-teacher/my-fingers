@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+.btn.btn-view{
+    border: 2px solid #FFDF8C;
+    color: #312A2A;
+}
+.btn-view:hover{
+    background: #FFDF8C;
+}
+.btn.btn-process{
+    background: #FFBE1A;
+}
+.process-list{
+    background: #FEEBBB;
+}
+.process-list a:hover{
+    background: #FFE298;
+    color: #312A2A;
+}
+.popup-wrap{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:#fff;
+    z-index: 10000;
+    border-radius: 56px;
+}
+.video-wrap{
+    width: 440px;
+    height: 876px;
+}
+.video-wrap video{
+    width: 100%;
+    height: 100%;
+    border-radius: 56px;
+}
+.btn-close{
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 12px;
+    right: 17px;
+    padding: 10px;
+    background: #FFDF8C url(../images/portfolio/popup_can.png) 50% no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.dim{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 10000;
+}

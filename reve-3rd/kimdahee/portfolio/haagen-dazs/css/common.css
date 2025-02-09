@@ -1,0 +1,332 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, *::before,*::after{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+img{vertical-align: top;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font: 17px/1 'NanumSquare', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    /* background:palegreen; */
+    color: #333;
+    /* overflow-x: hidden; */
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 하겐다즈 시작 */
+
+a{text-decoration: none; color: inherit;}
+
+
+.clear::after{
+    content: '';
+    display: block;
+    clear: both;
+    height: 100%;
+}
+
+.inner{
+    /* background:lightsalmon; */
+    width: 1290px;
+    margin: 0 auto;
+    position: relative;
+    /* background:aqua; */
+        /* background:slateblue; */
+}
+
+.hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+}
+
+/* 전체적인 명령 종료 */
+
+/* 헤더 */
+
+
+#header .top-menu{
+    height: 30px;
+    background: #fff;
+    text-align: center;
+}
+
+.top-menu ul{
+    float: right;
+    margin-right: 50px;
+}
+
+.top-menu ul li{
+    float: left;
+    color: #555555;
+    font-size: 14px;
+    font-weight: normal;
+    height: 30px;
+}
+
+.top-menu a{
+    padding: 8px 20px;
+    display: block;
+}
+
+.top-menu ul li::before{
+    float: left;
+    content: '|';
+    display: inline-block;
+    top: 0;
+    right: 0; 
+    padding-top: 8px;
+}
+
+.top-menu ul li:nth-child(1):before{
+    content: '';
+    display: inline-block;
+}
+
+
+
+.top-menu .ico-search{
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    background: url(../images/ico-search.png) 50% no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+    padding: 8px 20px;
+    display: block;
+}
+
+.main-header{
+    height: 86px;
+    background: #7b213c;
+}
+
+.main-header a:hover h1{
+    opacity: 0.8;
+}
+
+.logo h1{
+    float: left;
+    margin-top: 20px;
+    margin-right: 64px;
+    transition: transform 0.2s;
+}
+
+
+.gnb{
+    float: left;
+    margin-top: 25px;
+}
+
+.gnb ul li{
+    float: left; 
+    color: #fff;
+    font-size: 17px;
+}
+
+.gnb li a{
+    padding: 10px 46px;
+    display: block;
+    transition: color, transform 0.2s;
+}
+
+.gnb li:hover a{
+    color:#df4d4e;
+    transform: scale(1.1);
+}
+
+.top-sns ul{
+    float: right;
+}
+
+.top-sns ul li{
+    float: left;
+    margin-right: 10px;
+    margin-top: 24px;
+}
+
+.top-sns ul li a{
+    width: 38px;
+    height: 38px;
+    /* text-indent: -999px;
+    overflow: hidden; */
+    background: 50% no-repeat;
+    display: block;
+    text-indent: -999px;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: 24px; */
+}
+
+.top-sns ul li a::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 38px;
+    height: 38px;
+    top: 0;
+    right: 0;
+    background: rgba(223, 77, 78, 0.5);
+    border-radius: 30px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.top-sns ul li:hover a::after{
+    opacity: 1;
+}
+
+.top-sns ul li:nth-child(1) a{background-image: url(../images/ico-sns-top1.png);}
+.top-sns ul li:nth-child(2) a{background-image: url(../images/ico-sns-top2.png);}
+.top-sns ul li:nth-child(3) a{background-image: url(../images/ico-sns-top3.png);}
+
+
+
+/* 푸터영역 */
+
+#footer{
+    background: #333;
+    position: relative;
+    color: #d1d1d1;
+}
+
+#footer{
+    margin-top: 150px;
+}
+
+#footer::before{
+    content: '';
+    border-bottom: 1px solid #1f1f1f;
+    width: 100%;
+    height: 1px;
+    display: block;
+    top: 57px;
+    left: 0;
+    position: absolute;
+}
+#footer .inner{
+    width: 850px;
+}
+
+
+.foot-top ul li{
+    float: left;
+}
+
+.foot-top ul li a{
+    display: block;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    font-weight: 700;
+}
+
+.foot-bottom{
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.foot-logo{
+    margin-top: 32px;
+}
+
+.foot-bottom .foot-con{
+    margin-top: 32px;
+}
+
+.foot-bottom .foot-con p{
+    margin-top: 10px;
+}
+
+.copyright{
+    margin-top: 26px;
+    font-size: 13px;
+    padding-bottom: 30px;
+    font-weight:600;
+}
+
+
+
+.btn-top::before{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 70px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50px;
+    background: rgba(108, 80, 82, 0.5);
+    border: 1px solid rgba(203, 185, 185);
+    position: absolute;
+    position:fixed;
+    z-index: 90;
+    transition: 0.4s;
+}
+
+.btn-top{
+    width: 70px;
+    height: 70px;
+    background: url(../images/ico-btn-top.png) 50% no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    opacity: 0.5;
+    transition: 0.4s;
+    z-index: 100;
+}
+
+.btn-top:hover{
+    opacity: 1;
+}
+
+.btn-top:hover::before{
+    background:rgba(108, 80, 82, 0.8);
+}

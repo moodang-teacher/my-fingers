@@ -1,0 +1,522 @@
+@charset "utf-8";
+
+.submenu_wrap{
+    z-index: 2;
+}
+
+.submenu_wrap .sub_visual{
+    background: #e8dcc6;
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    padding: 141px 0 87px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.visual_img{
+    transition:0.4s;
+}
+
+.submenu_wrap .sub_visual:hover .visual_img{
+    transform: scale(1.2);
+}
+
+.submenu_wrap .menu_bar{
+    background: #c83f33;
+    color: #fff;
+    min-height: 60px;
+    text-align: center;
+}
+
+.submenu_wrap .menu_bar ul li{
+    float: left;
+    width: 190px;
+    line-height: 60px;
+    border-right: 1px solid rgba(197, 120, 113, 0.2);
+}
+
+.submenu_wrap .menu_bar ul li a{
+    display: block;
+}
+
+.submenu_wrap .menu_bar ul li:nth-child(1){
+    width: 80px;
+    background: #ba3b2f;
+}
+.submenu_wrap .menu_bar ul li:nth-child(1) a{
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../images/sub1/01.home_ico.png) 50% no-repeat;
+}
+.submenu_wrap .menu_bar ul li:nth-child(2){
+    width: 140px;
+    background: url(../images/sub1/01.menu_down.png) 80% 53% no-repeat;
+}
+
+.submenu_wrap .menu_bar ul li:nth-child(3){background: #ba3b2f;}
+
+.submenu_wrap .menu_bar ul li:hover{background: #ba3b2f;}
+
+
+.chocopie_brand{
+    background: url(../images/sub1/02.background_img.png) 50% no-repeat;
+    min-height: 1880px;
+    padding-top: 110px;
+}
+
+.chocopie_brand .inner{
+    position: relative;
+}
+
+/* 오른쪽 maintitle */
+.chocopie_brand .main_title{
+    
+    width: 520px;
+    position: absolute;
+    top: 330px;
+    right: 0;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.chocopie_brand .main_title .main_text{
+    background: #c73d32;
+    padding: 95px 10px 105px 60px;
+}
+
+.chocopie_brand .main_title .main_text h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.chocopie_brand .main_title .main_text p{
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+.chocopie_brand .main_title .main_text p strong{
+    font-size: 22px;
+    /* font-weight: 500; */
+}
+/* en */
+
+/* first con */
+.chocopie_brand .main_con{
+    position: relative;
+}
+
+.chocopie_brand .main_con .top_con{
+    min-height: 462px;
+}
+
+.chocopie_brand .main_con .top_con figure{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.chocopie_brand .main_con .top_text{
+    width: 355px;
+    border-top: 3px solid #c73d32;
+    padding: 28px 0 0 26px;
+    position: absolute;
+    top: 50px;
+    right: 170px;
+    z-index: 1;
+}
+
+.chocopie_brand .main_con .top_text h3{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.chocopie_brand .main_con .top_text p strong{
+    font-size: 22px;
+    color: #333;
+}
+
+.chocopie_brand .main_con .top_text p{
+    color: #666;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+/* en */
+
+
+/* mid */
+.mid_con{
+    min-height: 522px;
+    position: absolute;
+    top: 620px;
+    left: -34px;
+}
+
+.mid_con figure{
+    float: right;
+}
+
+.mid_con p{
+    float: left;
+    min-height: 522px;
+    padding-top: 430px;
+    color: #666;
+    font-size: 22px;
+    line-height: 1.4;
+    text-align: right;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+.mid_con p b{
+    font-weight: bold;
+    color: #000;
+}
+
+/* en */
+
+/* finish */
+
+.fin_con{
+    min-height: 357px;
+    position: absolute;
+    top: 1293px;
+}
+
+.fin_con figure{
+    float: left;
+}
+
+.fin_con p{
+    float: right;
+    min-height: 357px;
+    margin-top: 285px;
+    padding-top: 14px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    position: relative;
+}
+
+.fin_con p::before{
+    content: '';
+    display: block;
+    width: 290px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 3px solid #c73d32;
+}
+/* en */
+
+/* recipe */
+.recipe_wrap{
+    background: rgb(232,220,198);
+    background: linear-gradient(0deg, rgba(232,220,198,1) 89%, rgba(255,255,255,1) 89%);
+    position: relative;
+}
+
+.recipe_wrap h2{
+    font-size: 80px;
+    text-align: right;
+    font-weight: bold;
+    color: #e8dcc6;
+}
+
+.recipe_wrap .sub_title{
+    font-size: 36px;
+    font-weight: 500;
+    text-align: right;
+    color: #fff;
+    margin-top: 8px;
+}
+
+.recipe_wrap .recipe_img{
+    padding: 150px 385px 145px 285px;
+}
+
+.recipe_con{
+    position: relative;
+    position: absolute;
+    width: 100%;
+    min-height: 400px;
+    top: 218px;
+    left: 0;
+}
+
+.recipe_con p{
+    font-size: 20px;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.recipe_con p strong{
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+}
+
+.recipe_con .special{
+    position: absolute;
+    text-align: right;
+    top: 0;
+    left: 160px;
+}
+
+.recipe_con .secret{
+    position: absolute;
+    text-align: right;
+    top: 305px;
+    left: 90px;
+}
+
+.recipe_con .real{
+    position: absolute;
+    top: 38px;
+    right: 140px;
+}
+
+.recipe_con .snow{
+    position: absolute;
+    top: 225px;
+    right: 130px;
+}
+
+/* en.recipe */
+
+/* flavor */
+.flavor_wrap{
+    padding-top: 150px;
+}
+.flavor_wrap ul li{
+    float: left;
+    width: 430px;
+    height: 430px;
+    font-weight: 700;
+    padding: 310px 48px 40px 40px;
+    background: #d9c4b1;
+    color: #412d2f;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.2s,
+}
+
+.flavor_wrap ul li::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.05);
+    background: 50% 30% no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s ;
+}
+.flavor_wrap ul li:nth-child(odd){background-color: #d9c4b1;}
+.flavor_wrap ul li:nth-child(even){background-color: #d0b4a4;}
+
+.flavor_wrap ul li:nth-child(1)::after{background-image: url(../images/sub1/03.pie_tiramisu.png);}
+.flavor_wrap ul li:nth-child(2)::after{background-image: url(../images/sub1/03.pie_original.png);}
+.flavor_wrap ul li:nth-child(3)::after{background-image: url(../images/sub1/03.pie_redvelvet.png);}
+.flavor_wrap ul li:nth-child(4)::after{background-image: url(../images/sub1/03.pie_hallabong.png);}
+.flavor_wrap ul li:nth-child(5)::after{background-image: url(../images/sub1/03.pie_caramel_salt.png);}
+.flavor_wrap ul li:nth-child(6)::after{background-image: url(../images/sub1/03.pie_cacao.png);}
+
+.flavor_wrap ul li a{
+    display: block;
+    width:350px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s 0.3s;
+}
+
+.flavor_wrap ul li p{
+    font-size: 38px;
+    position: absolute;
+    width: 350px;
+    top: 40%;
+    transition: top 0.3s 0.2s,font-size 0.4s 0.1s,font-weight 0.3s ;
+    font-weight: 700;
+}
+
+.flavor_wrap ul li h3{
+    font-size: 48px;
+    margin-top: 8px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: top 0.4s 0.3s;
+}
+
+
+
+
+
+
+/* .flavor_wrap ul li a::after{
+    content: '';
+    display: block;
+    width: 350px;
+    height: 110px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+    background:#d9c4b1;
+}
+
+.flavor_wrap ul li:nth-child(even) a::after{
+    background-color: #d0b4a4;
+} */
+
+.flavor_wrap .fresh{
+    color: #666;
+    font-size: 14px;
+    text-align: right;
+    margin-top: 14px;
+    line-height: 1.2;
+}
+
+
+/* flavor hover */
+
+.flavor_wrap ul li:hover::after{
+    transform: scale(1);
+    transform: translateY(-3%)
+}
+
+.flavor_wrap ul li:hover{
+    background-color: #e8dcc6;
+    color: #905746;
+}
+
+.flavor_wrap ul li:hover a{
+    color: #905746;
+}
+
+.flavor_wrap ul li:hover a p{
+    font-size: 24px;
+    top: 0;
+    left: 0;
+    font-weight: normal;
+}
+.flavor_wrap ul li:hover a h3{top: 30%;}
+
+/* .flavor_wrap ul li:nth-child(even):hover{
+    background-color: #e8dcc6;
+}
+.flavor_wrap ul li:nth-child(odd):hover{
+    background-color: #d9c4b1;
+} */
+
+/* .flavor_wrap ul li:hover a::after{
+    top: 290px;
+} */
+
+/* en */
+
+.flavor_gift{
+    padding-top: 118px;
+}
+
+.flavor_gift figure{float: left;}
+
+.flavor_gift .gift_con{
+    float: left;
+    margin-top: 80px;
+    border-top: 3px solid #c73d32;
+    font-weight: 500;
+    padding: 25px 48px 150px;
+}
+
+.flavor_gift .gift_con dl dt{
+    font-size: 22px;
+    margin-bottom: 26px;
+    line-height: 1.4;
+}
+
+.flavor_gift .gift_con dl dd{
+    margin-top: 10px;
+}
+
+.flavor_gift .gift_con a{
+    display: inline-block;
+    width: 178px;
+    height: 50px;
+    border: 1px solid #c73d32;
+    color: #c73d32;
+    margin-right: 12px;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.flavor_gift .gift_con a:hover{
+    background: #c73d32;
+    color: #fff;
+}
+
+.scroll{
+    position: fixed;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    z-index: 10000;
+    text-align: right;
+    padding-right: 15px;
+    /* font-size: 14px; */
+}
+
+.scroll::before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 218px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    border-right: 1px solid #999;
+}
+
+.scroll li{
+    width: 150px;
+    height: 18px;
+    /* background: url(../images/sub1/nav_off.png) 100% 50% no-repeat; */
+    margin-bottom: 55px;
+    color: #666;
+    position: relative;
+}
+
+.scroll li::after{
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url(../images/sub1/nav_off.png) 50% no-repeat;
+    position: absolute;
+    top: 4px;
+    /* transform: translateY(-50%); */
+    right: -21px;
+}
+
+.scroll li:last-child{
+    margin-bottom: 0;
+}
+
+.scroll .on{
+    color: #000;
+}
+
+.scroll .on::after{
+    background-image: url(../images/sub1/nav_on.png);
+}

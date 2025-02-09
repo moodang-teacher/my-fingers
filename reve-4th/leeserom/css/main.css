@@ -1,0 +1,297 @@
+:root{
+    --point-blue: #221FAA;
+    --sub-blue1: #4440AE;
+    --sub-blue2: #7F77B0;
+    --lightgrey: #f8f8ff;
+    --darkgrey: #141623;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* s : Main wrap -------------------------------------------------- */
+.main-wrap{
+    position: relative;
+}
+.main-wrap .inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* s : Main Text Intro -------------------------------------------------- */
+.main-cont{
+    width: 46.4285%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-cont h2{
+    font-family: 'Cormorant Upright';
+    font-weight: 500;
+    font-size: 5vw;
+    line-height: 1.2;
+}
+
+.main-cont h2 strong{
+    color: var(--point-blue);
+    font-weight: 700;
+}
+
+.main-cont.kr h2{
+    font-size: 64px;
+    font-family: 'Spoqa Han Sans Neo';
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+.main-cont.kr strong{
+    font-size: 82px;
+    line-height: 1.4;
+}
+
+.main-cont .char{
+    animation: title-ani 3s;
+    animation-delay: calc(60ms * var(--char-index));
+}
+
+@keyframes title-ani {
+    0%, 100%{
+        transform: translateY(0);
+        filter: blur(0)
+    }
+    50%{
+        transform: scale(1.8) translateY(70px);
+        filter: blur(5px);
+    }
+}
+
+.sns-wrap{
+    display: flex;
+    align-items: center;
+    margin-top: 160px;
+}
+
+.sns-wrap a{
+    display: block;
+    width: 40px;height: 40px;
+    margin-right: 24px;
+    background: 50% / 100% auto no-repeat;
+    opacity: 0.8;
+    transition: 0.3em;
+}
+
+.sns-wrap a:hover{
+    opacity: 1;
+}
+
+.sns-wrap a:nth-child(1){background-image: url(../img/icon-linkedin.png);}
+.sns-wrap a:nth-child(2){background-image: url(../img/icon-behance.png);}
+.sns-wrap a:nth-child(3){background-image: url(../img/icon-dribble.png);}
+
+/* e : Main Text Intro -------------------------------------------------- */
+
+
+/* s : Main Visual Photo Section ---------------------------------------------------- */
+.main-visual-wrap{
+    position: relative;
+    width: 60.7142%;
+    height: 754px;
+    display: flex;
+    align-items: center;justify-content: center;
+}
+
+.main-visual-wrap .deco-waves{
+    position: absolute;
+    top: 10%;
+    left: 8%;
+} 
+
+.main-img{
+    position: relative;
+    width: 330px;
+}
+
+.main-img figure{
+    overflow: hidden;
+    border-radius: 232px;
+}
+
+.main-img .deco-uiux{
+    position: absolute;
+    top: -15%;
+    right: -25%;
+    animation: ani-uiux 10s infinite linear;
+    z-index: -1;
+}
+
+.main-visual-wrap .deco-triangle{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;right: 10%;
+}
+
+.main-img figure{width: 100%;}
+
+.main-img figure img{
+    width: 100%;
+}
+
+/* e : Main Visual Photo Section ---------------------------------------------------- */
+
+/* s : NUMBERS ----------------------------------------------- */
+
+.number-wrap{
+    position: absolute;
+    top: 53%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 98;
+}
+
+.number-wrap span{
+    display: block;
+    width: 65px;
+    height: 120px;
+    background: 50% / 100% auto no-repeat;
+    margin-bottom: 20px;
+}
+
+.number-wrap span:nth-child(1){background-image: url(../img/main-no1.png);}
+.number-wrap span:nth-child(2){background-image: url(../img/main-no2.png);}
+.number-wrap span:nth-child(3){background-image: url(../img/main-no3.png);}
+.number-wrap span:nth-child(4){background-image: url(../img/main-no4.png);}
+.number-wrap span:nth-child(5){background-image: url(../img/main-no5.png); margin-bottom: 0;}
+
+.number-wrap.on span:nth-child(1){background-image: url(../img/main-no1-wht.png);}
+.number-wrap.on span:nth-child(2){background-image: url(../img/main-no2-wht.png);}
+.number-wrap.on span:nth-child(3){background-image: url(../img/main-no3-wht.png);}
+.number-wrap.on span:nth-child(4){background-image: url(../img/main-no4-wht.png);}
+.number-wrap.on span:nth-child(5){background-image: url(../img/main-no5-wht.png);}
+/* e : NUMBERS ----------------------------------------------- */
+
+
+/* s : Main Work Hover Wrap ----------------------------------------------- */
+.main-work-wrap{
+    width: 52%;
+    height: 100vh;
+    position: fixed;
+    right: 0;top: 0;
+    z-index: 97;
+    display: none;
+}
+
+.main-item::before{
+    content: '';
+    display: block;
+    width: 100%;height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    background: var(--point-blue);
+    opacity: 0.7;
+}
+.main-item{
+    width: 100%;
+    height: 100%;
+    background: 50% / cover no-repeat;
+    position: relative;
+    display: none;
+}
+
+.main-item.on{
+    display: block !important;
+}
+
+.main-item.main-shadie{
+    background-image: url(../img/thumbnail-shadie.png);
+    display: none;
+}
+.main-item.main-basquiat{
+    background-image: url(../img/thumbnail-basquiat.png);
+    display: none;
+}
+.main-item.main-sprout{
+    background-image: url(../img/thumbnail-sprout.png);
+    display: none;
+}
+.main-item.main-tway{
+    background-image: url(../img/thumbnail-tway.png);
+    display: none;
+}
+
+.main-item.main-avengers{
+    background-image: url(../img/thumbnail-avengers.png);
+    display: none;
+}
+
+.main-work-cont{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-work-cont dl{
+    color: var(--lightgrey);
+    text-align: center;
+    position: relative;
+}
+
+.main-work-cont dl dt{
+    font-family: 'Cormorant Upright';
+    font-size: 120px;
+    font-weight: 700;
+}
+
+.main-work-cont dl dd{
+    opacity: 0.8;
+    font-size: 18px;
+    font-weight: 300;
+    position: absolute;
+    top: -17px;
+    left: 5px;
+}
+
+.main-work-cont a{
+    margin-top: 80px;
+}
+
+.nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+
+@keyframes ani-uiux{
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+/* e : Main Work Hover Wrap ----------------------------------------------- */
+
+
+footer{
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    position: fixed;
+    bottom: 0;left: 50%;
+    transform: translateX(-50%);
+  
+}
+footer p{
+    font-size: 14px;
+    color: var(--sub-blue2);
+}

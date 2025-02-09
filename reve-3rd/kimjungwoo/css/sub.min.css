@@ -1,0 +1,568 @@
+.inner {
+  width: 86.4583333333%;
+  margin: 0 auto;
+}
+
+.hvr-overline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-overline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  top: 50%;
+  background: #212121;
+  height: 2px;
+  transition-property: right;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.hvr-overline-from-left:hover:before,
+.hvr-overline-from-left:focus:before,
+.hvr-overline-from-left:active:before {
+  right: 0;
+}
+
+.visual-wrap {
+  position: relative;
+}
+.visual-wrap h1 {
+  font: 200px "Nathanos", sans-serif;
+}
+.visual-wrap .visual-box {
+  margin-top: 100px;
+}
+.visual-wrap .art {
+  font: 110px "Nathanos", sans-serif;
+  color: #fff;
+  position: absolute;
+  letter-spacing: 15px;
+  top: 50%;
+  left: 16%;
+}
+.visual-wrap .direc {
+  font: 110px "Nathanos", sans-serif;
+  color: #fff;
+  position: absolute;
+  letter-spacing: 15px;
+  top: 65%;
+  left: 40.2%;
+}
+.visual-wrap .direc strong {
+  color: #212121;
+}
+
+#jung {
+  margin: 330px 0 0 40px;
+}
+#jung .naming {
+  font: 120px "Nathanos", sans-serif;
+}
+#jung .naming p {
+  font: 90px "Nathanos", sans-serif;
+  margin-left: 29px;
+}
+#jung .jung-txt {
+  font-size: 24px;
+  font-weight: 300;
+  position: relative;
+}
+#jung .jung-txt p {
+  margin-top: 180px;
+  text-align: right;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  line-height: 1.7;
+}
+#jung .jung-txt::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: #000;
+  text-align: right;
+  position: absolute;
+  right: 61.2%;
+  top: 130px;
+}
+
+#ui {
+  margin: 850px 578px 0 476px;
+}
+#ui .inner {
+  position: relative;
+}
+#ui .ui-bg {
+  width: 606px;
+  height: 606px;
+  background: url(../images/ui.jpg) 0 0/cover no-repeat;
+}
+#ui .ui-bg:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  background: #000000;
+  position: absolute;
+  top: 160%;
+  left: 34%;
+}
+#ui .ui-txt {
+  text-align: right;
+  position: absolute;
+  top: 20%;
+  left: -50%;
+  letter-spacing: 5px;
+}
+#ui .ui-txt h2 {
+  font: 100px "Playfair Display", sans-serif;
+}
+#ui .ui-txt h2 strong {
+  color: #fff;
+}
+#ui .ui-txt h2 span {
+  font: 100px "Nathanos", sans-serif;
+}
+#ui .photo {
+  font: 24px "Playfair Display", sans-serif;
+  margin-top: 70px;
+  color: #fff;
+  position: absolute;
+  top: 59%;
+  left: -26%;
+  text-align: right;
+  letter-spacing: 2.2px;
+}
+#ui .photo strong {
+  color: #212121;
+}
+#ui .photo .html {
+  margin-top: 20px;
+}
+
+#inspire {
+  margin: 900px 0 0 620px;
+  height: 700px;
+  position: relative;
+}
+#inspire .inspire-bg {
+  width: 614px;
+  min-height: 614px;
+  background: url(../images/inspire.jpg) 0 0/cover no-repeat;
+  margin-left: auto;
+}
+#inspire h2 {
+  font: 120px "Nathanos", sans-serif;
+  text-align: right;
+  position: absolute;
+  top: -12.5%;
+  left: 21.2%;
+  line-height: 0.73;
+}
+#inspire h2 strong {
+  letter-spacing: 4px;
+  color: #fff;
+}
+#inspire h2 i {
+  color: #fff;
+}
+#inspire h2 span {
+  font-size: 125px;
+}
+#inspire .inspire-txt p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.7;
+  text-align: right;
+  position: absolute;
+  top: 69%;
+  left: 16%;
+}
+#inspire .inspire-txt:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  top: 56%;
+  left: 39%;
+}
+
+#personality {
+  margin: 600px 506px 0 342px;
+  position: relative;
+}
+#personality h2 {
+  font: 120px "Nathanos", sans-serif;
+  line-height: 1.05;
+}
+#personality .person-txt p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.7;
+  text-align: right;
+  position: absolute;
+  top: 135%;
+  left: 56%;
+}
+#personality .person-txt:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  top: 117%;
+  left: 72%;
+}
+
+#start {
+  margin: 1000px 0 0 360px;
+  height: 800px;
+  position: relative;
+}
+#start .start-bg {
+  width: 800px;
+  min-height: 791px;
+  background: url(../images/start.jpg) 0 0/cover no-repeat;
+  margin-left: auto;
+}
+#start h2 {
+  font: 96px "Nathanos", sans-serif;
+  line-height: 0.9;
+  position: absolute;
+  top: 13%;
+  left: 5%;
+}
+#start .start-txt p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.7;
+  text-align: right;
+  position: absolute;
+  top: 77%;
+  left: 11%;
+}
+#start .start-txt:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  top: 71%;
+  left: 28.2%;
+}
+
+#never {
+  margin: 600px 100px 0 300px;
+  height: 770px;
+  position: relative;
+}
+#never figure {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+#never figure::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  background: #000;
+  text-align: right;
+  position: absolute;
+  right: 52%;
+  top: -65%;
+}
+#never .never-txt p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.7;
+  text-align: right;
+  position: absolute;
+  top: 86%;
+  left: 1%;
+}
+#never .never-txt:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  top: 71%;
+  left: 24.2%;
+}
+
+#footer {
+  margin: 1000px 0 200px 0;
+  text-align: center;
+  position: relative;
+}
+#footer .aboutA {
+  font: 48px "Nathanos", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+#footer .aboutA a {
+  width: 200px;
+  margin: 0 auto;
+}
+#footer .aboutA .home {
+  width: 260px;
+  margin-top: 70px;
+}
+
+.process-wrap {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/processhadow.png) 0 0/cover no-repeat;
+  background-size: cover;
+}
+.process-wrap h1 {
+  font: 200px "Nathanos", sans-serif;
+}
+.process-wrap .visual-txt {
+  margin-top: 200px;
+  position: relative;
+}
+.process-wrap .visual-txt .over {
+  display: flex;
+}
+.process-wrap .visual-txt .over dt {
+  font: 48px "Playfair Display", sans-serif;
+  margin-right: 200px;
+}
+.process-wrap .visual-txt .over:before {
+  content: "";
+  display: block;
+  width: 246px;
+  height: 1px;
+  background: #000;
+  position: absolute;
+}
+.process-wrap .visual-txt .over dd {
+  font-size: 24px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+.process-wrap .visual-txt .conc {
+  display: flex;
+  margin-top: 170px;
+}
+.process-wrap .visual-txt .conc dt {
+  font: 48px "Playfair Display", sans-serif;
+  margin-right: 220px;
+}
+.process-wrap .visual-txt .conc:before {
+  content: "";
+  display: block;
+  width: 224px;
+  height: 1px;
+  background: #000;
+  position: absolute;
+}
+.process-wrap .visual-txt .conc dd {
+  font-size: 24px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+#participation {
+  width: 100%;
+  min-height: 65.625vw;
+  background: #212121;
+  color: #fff;
+  padding: 125px 29px 37px 29px;
+}
+#participation h2 {
+  font: 64px "Playfair Display", sans-serif;
+}
+#participation i {
+  font: 200px "Nathanos", sans-serif;
+  color: #c4c4c4;
+  margin-right: 10px;
+}
+#participation .parti-box {
+  margin-top: 165px;
+}
+#participation .parti-box ul {
+  display: flex;
+  justify-content: space-between;
+}
+#participation .parti-box ul li {
+  width: 300px;
+  height: 680px;
+  margin-right: 50px;
+}
+#participation .parti-box ul li dl {
+  text-align: center;
+  position: relative;
+}
+#participation .parti-box ul li dl dt {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #c4c4c4;
+  padding-top: 98px;
+  line-height: 1.7;
+  font-size: 36px;
+  font-weight: 100;
+}
+#participation .parti-box ul li dl dt strong {
+  font: 36px "Playfair Display", sans-serif;
+}
+#participation .parti-box ul li dl dd {
+  margin-top: 140px;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 1.7;
+}
+#participation .parti-box ul li dl dd:before {
+  content: "";
+  display: block;
+  width: 190px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: 27%;
+  left: 18%;
+}
+
+#mindmap {
+  width: 100%;
+  padding: 125px 29px 37px 29px;
+}
+#mindmap h2 {
+  font: 64px "Playfair Display", sans-serif;
+}
+#mindmap i {
+  font: 200px "Nathanos", sans-serif;
+  color: #c4c4c4;
+  margin-right: 10px;
+}
+#mindmap figure {
+  margin-top: 100px;
+}
+
+#color-guide {
+  margin-top: 130px;
+  width: 100%;
+  min-height: 60.4166666667vw;
+  background: #212121;
+  color: #fff;
+  padding: 125px 29px 37px 29px;
+}
+#color-guide h2 {
+  font: 64px "Playfair Display", sans-serif;
+}
+#color-guide i {
+  font: 200px "Nathanos", sans-serif;
+  color: #c4c4c4;
+  margin-right: 10px;
+}
+#color-guide ul {
+  display: flex;
+  justify-content: space-between;
+  width: 784px;
+  margin: 130px auto;
+}
+#color-guide ul li {
+  width: 300px;
+  height: 300px;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  padding-top: 130px;
+}
+#color-guide ul .colorff {
+  background: #fff;
+  color: #212121;
+  border: none;
+}
+#color-guide .color-txt p {
+  font-size: 24px;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+#typhography {
+  width: 100%;
+  padding: 125px 29px 37px 29px;
+}
+#typhography h2 {
+  font: 64px "Playfair Display", sans-serif;
+}
+#typhography i {
+  font: 200px "Nathanos", sans-serif;
+  color: #c4c4c4;
+  margin-right: 10px;
+}
+#typhography .typho-box figure {
+  margin-top: 140px;
+}
+#typhography .typho-txt p {
+  margin-top: 130px;
+  font-size: 24px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+#Epilogue {
+  margin-top: 130px;
+  width: 100%;
+  min-height: 41.6666666667vw;
+  background: #212121;
+  color: #fff;
+  padding: 125px 29px 37px 29px;
+}
+#Epilogue h2 {
+  font: 64px "Playfair Display", sans-serif;
+}
+#Epilogue i {
+  font: 200px "Nathanos", sans-serif;
+  color: #c4c4c4;
+  margin-right: 10px;
+}
+#Epilogue .epil-txt p {
+  font-size: 24px;
+  color: #fff;
+  line-height: 1.7;
+  font-weight: 300;
+  margin-top: 100px;
+}
+
+#footerpro {
+  margin: 500px 0 200px 0;
+  text-align: center;
+  position: relative;
+}
+#footerpro .pro-home {
+  font: 48px "Nathanos", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+#footerpro .pro-home a {
+  width: 260px;
+  margin: 0 auto;
+}
+#footerpro .pro-home .prohome {
+  width: 150px;
+  margin-top: 70px;
+}

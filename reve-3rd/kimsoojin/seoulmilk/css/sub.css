@@ -1,0 +1,1019 @@
+@charset "utf-8";
+
+.bread li a{
+    float: left;
+    margin-right: 14px;
+    color: #9b9b9b;
+    font-size: 14px;
+}
+
+
+.bread li:nth-child(1) a::after{
+    content: '';
+    display: inline-block;
+    clear: both;
+    width: 7px;
+    height: 11px;
+    background: url(../images/bread.png) 50% 50% no-repeat;
+    margin-left: 17px;
+}
+
+.bread li:nth-child(2) a::after{
+    content: '';
+    display: inline-block;
+    clear: both;
+    width: 7px;
+    height: 11px;
+    background: url(../images/bread.png) 50% 50% no-repeat;
+    margin-left: 17px;
+}
+
+#main-contents{
+    margin-top: 70px;
+}
+
+.visual-wrap h2{
+    margin-top: 10px;
+    font-size: 42px;
+    color: #232323;
+}
+
+/* sub1-제품소개 */
+
+h2{
+    margin-top: 10px;
+    font-size: 42px;
+    color: #232323;
+}
+
+.banner-wrap h3{
+    text-align: center;
+    padding-top: 180px;
+    font-size: 34px;
+    color: #fff;
+}
+
+
+.banner-wrap{
+    height: 570px;
+    background: url(../images/menu-banner.png) 50% no-repeat;
+    margin-top: 32px;
+    position: relative;
+    animation: visual-sizing 1s both;
+}
+
+@keyframes visual-sizing{
+    0%{
+        background-size: 110%;
+    }
+
+    100%{
+        background-size: 100%;
+    }
+}
+
+.search{
+    margin-top: 29px;
+}
+
+
+.search .form-wrap{
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    width: 639px;
+    height: 70px;
+    border: 2px solid rgba(255,255,255,0.6);
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.search .form-wrap input[type="text"]{
+    text-align: center;
+    font-size: 24px;
+    padding-top: 21px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: #fff;
+}
+
+.search .form-wrap input[type="text"]::placeholder{
+    color: rgba(255,255,255,0.6);
+    font-weight: 300;
+}
+
+
+.search .form-wrap input[type="text"]:focus{
+    outline: none;
+}
+
+.search .form-wrap input[type="submit"]:focus{
+    outline: none;
+}
+
+.search .form-wrap input[type="submit"]{
+    width: 35px;
+    height: 35px;
+    background: url(../images/search-ico.png) 50% no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+    position: absolute;
+    top: 15px;
+    right: 6%;
+}
+
+
+.tag{
+    text-align: center;
+    padding-top: 49px;
+}
+
+.tag a{margin-right: 90px;
+       color: #fff;}
+
+.tag a:last-child{margin-right: 0;}
+
+
+/* 아이콘배너 시작 */
+
+.icon-banner{
+    height: 176px;
+    width: 1282px;
+    background: #fafafa;
+    border-radius: 3px;
+    display: flex;
+    margin: 159px auto;
+    
+    
+}
+
+.icon-banner li{
+    /* background: skyblue; */
+    width: 160px;
+    height: 100%;
+    margin-right: 15px;
+}
+
+.icon-banner li:last-child{margin-right: 0;}
+
+.icon-banner li:nth-child(1){
+    background: #3a9425;
+    width: 160px;
+    height: 176px;
+    border-radius: 3px;
+}
+
+.icon-banner li a{
+    display: block;
+    padding-top: 44px;
+    color: #000;
+    text-align: center;
+}
+
+
+
+.icon-banner li:nth-child(1) a{
+    display: block;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.icon-banner li a::before{
+    content: '';
+    display: block;
+    width: 89px;
+    height: 74px;
+    margin: 0 auto 10px;
+    background: url(../images/menu-ico1.png) 50% no-repeat;
+    
+}
+
+
+.icon-banner li:nth-child(2) a::before{background-image: url(../images/menu-ico2.png);transition: 0.2s;}
+.icon-banner li:nth-child(3) a::before{background-image: url(../images/menu-ico3.png);transition: 0.2s;}
+.icon-banner li:nth-child(4) a::before{background-image: url(../images/menu-ico4.png);transition: 0.2s;}
+.icon-banner li:nth-child(5) a::before{background-image: url(../images/menu-ico5.png);transition: 0.2s;}
+.icon-banner li:nth-child(6) a::before{background-image: url(../images/menu-ico6.png);transition: 0.2s;}
+.icon-banner li:nth-child(7) a::before{background-image: url(../images/menu-ico7.png);transition: 0.2s;}
+.icon-banner li:nth-child(8) a::before{background-image: url(../images/menu-ico8.png);transition: 0.2s;}
+
+
+/* icon banner 호버이펙트 */
+
+
+
+/* 제품나열 시작 */
+
+.product-wrap{
+    margin-top: 224px;
+    position: relative;
+}
+
+.product-wrap p{
+    margin-top: 16px;
+    font-size: 14px;
+    color: #5b5b5b;
+}
+
+.menu-pic ul{
+    margin-top: 55px;
+}
+
+.menu-pic ul li{
+    /* background: #f0f; */
+    float: left;
+    width: 300px;
+    height: 380px;
+    margin-right: 30px;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 37px;
+    position: relative;
+}
+
+.menu-pic ul li .menu-tit{
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.menu-pic ul li:nth-child(5){margin-top: 105px;}
+.menu-pic ul li:nth-child(6){margin-top: 105px;}
+.menu-pic ul li:nth-child(7){margin-top: 105px;}
+.menu-pic ul li:nth-child(8){margin-top: 105px;}
+
+.menu-pic ul li:nth-child(4n){margin-right: 0;}
+
+.menu-pic ul li figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    width: 300px;
+    height: 380px;
+    transition: 0.4s;
+    background: rgb(250, 252, 249);
+    overflow: hidden;
+}
+
+.menu-pic ul li figure img{
+    transition: 0.4s;
+}
+
+.menu-pic .more{
+    display: none;
+}
+
+/* 호버효과 */
+
+.menu-pic ul li:nth-child(1):hover figure{
+    background: #3A9425;
+}
+
+
+
+.menu-pic ul li:nth-child(1):hover img{
+    transform: rotate(5deg);
+}
+
+.menu-pic ul li:nth-child(2):hover img{
+    transform: rotate(5deg);
+}
+
+.menu-pic ul li:nth-child(3):hover img{
+    transform: rotate(5deg);
+}
+
+.menu-pic ul li:nth-child(4):hover img{
+    transform: rotate(5deg);
+}
+
+.menu-pic ul li:nth-child(5):hover img{
+    transform: rotate(5deg);
+}
+
+.menu-pic ul li:nth-child(6):hover img{
+    transform: rotate(5deg);
+}
+
+.menu-pic ul li:nth-child(7):hover img{
+    transform: rotate(5deg);
+}
+
+.menu-pic ul li:nth-child(8):hover img{
+    transform: rotate(5deg);
+}
+
+.menu-pic ul li:nth-child(2):hover figure{
+    background: #3A9425;
+}
+.menu-pic ul li:nth-child(3):hover figure{
+    background: #3A9425;
+}
+.menu-pic ul li:nth-child(4):hover figure{
+    background: #3A9425;
+}
+.menu-pic ul li:nth-child(5):hover figure{
+    background: #3A9425;
+}
+.menu-pic ul li:nth-child(6):hover figure{
+    background: #3A9425;
+}
+.menu-pic ul li:nth-child(7):hover figure{
+    background: #3A9425;
+}
+.menu-pic ul li:nth-child(8):hover figure{
+    background: #3A9425;
+}
+
+
+.menu-pic ul li:hover figure img{
+    filter: drop-shadow(10px 15px 20px rgba(94, 94, 94, 0.35));
+}
+
+.paging {
+    margin-top: 112px;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.paging a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: top;
+    margin-right: 4px;
+    border-radius: 3px;
+}
+
+.on1{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+    border-radius: 3px;
+    background: #3a9425;
+    color: #fff;
+}
+.on2{transition: 0.3s;}
+.on3{transition: 0.3s;}
+
+.on2:hover{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: top;
+    margin-right: 4px;
+    border-radius: 3px;
+    background: #3a9425;
+    color: #fff;
+}
+.on3:hover{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: top;
+    margin-right: 4px;
+    border-radius: 3px;
+    background: #3a9425;
+    color: #fff;
+}
+
+.btn{
+    text-indent: -999px;
+    overflow: hidden;
+    background: 50% 50% no-repeat;
+    border: 1px solid #d4d4d4;
+    border-radius: 3px;
+}
+
+.btn.btn-first{
+    background-image: url(../images/btn-first-menu.png);
+}
+
+
+.btn.btn-prev{
+    background-image: url(../images/btn-prev-menu.png);
+    margin-right: 15px;
+}
+
+
+.btn.btn-next{
+    background-image: url(../images/btn-next-menu.png);
+    margin-left: 10px;
+}
+
+
+.btn.btn-last{
+    background-image: url(../images/btn-last-menu.png);
+}
+
+
+
+/* sub2-사회공헌 */
+
+
+.sub2-banner-wrap{
+    height: 540px;
+    background: url(../images/sub2-banner.png) 50% no-repeat;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: visual-sizing 1s both;
+}
+
+/* .sub2-banner-wrap::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 440px;
+	background:white;
+    animation: show-image 1s both;
+} */
+
+
+@keyframes show-image{
+	0%{
+		transform:translate(0,0);
+        opacity: 1;
+	}
+	100%{
+		transform:translate(0,0);
+        opacity: 0;
+	}
+}
+
+.sub2-banner-wrap h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.campaign-wrap .btn-list {
+    display: table;
+    margin: 100px auto 0;
+    height: 100px;
+    width: 998px;
+    background: #f1f1f1;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -55px;
+}
+
+.campaign-wrap .btn-list li{
+    /* background: #f0f; */
+    float: left;
+    /* padding: 13px 0; */
+}
+
+.campaign-wrap .btn-list li a{
+    display: block;
+    padding: 37px 70px;
+    font-size: 22px;
+    border-radius: 3px;
+    /* transition: background 0.4s; */
+}
+
+/* .campaign-wrap .btn-list li a:hover{
+    background: #3a9425;    
+    color: #fff;
+    font-weight: 500;
+} */
+
+.campaign-wrap .btn-list li:nth-of-type(1) a{
+    background: #3a9425;
+    border-radius: 3px;
+    padding: 37px 70px;
+    color: white;
+    font-weight: 500;
+}
+
+
+.point-tit h3{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    color: #272727;
+}
+
+.point-tit h3>strong{
+    font-family: 'poppins';
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 140px;
+    color: #3a9425;
+    display: inline-block;
+}
+
+
+.point-tit{
+    height: 188px;
+}
+
+.point-tit .ico{
+    margin-top: 60px;
+}
+
+
+.point-tit .ico1{
+    height: 188px;
+    width: 188px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../images/child-ico.png) 50% no-repeat;
+    border-radius: 50%;
+    margin-left: 324px;
+    display: inline-block;
+    margin-right: 35px;
+}
+
+.point-tit .ico2{
+    height: 188px;
+    width: 188px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../images/love-ico.png) 50% no-repeat;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 35px;
+
+}
+
+.point-tit .ico3{
+    height: 188px;
+    width: 188px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../images/tree-ico.png) 50% no-repeat;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+.point-tit strong{
+    margin-top: 54px;
+    display: block;
+    text-align: center;
+    color: #464646;
+    font-size: 24px;
+    
+}
+
+.point-tit .sub-strong-p{
+    animation: tit-ani 3.5s infinite;
+}
+
+@keyframes tit-ani{
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+.sub2-banner-list .banner-img{
+    margin-top: 438px;
+    /* background: skyblue; */
+    border-radius: 3px;
+    height: 1339px;
+    
+}
+
+.sub2-banner-list .banner-img .milk-k{
+    background: url(../images/milk-kids-banner.png) 50% no-repeat;
+    height: 436px;
+}
+
+.sub2-banner-list .banner-img .milk-l{
+    background: url(../images/milk-love-banner.png) 50% no-repeat;
+    height: 459px;
+}
+
+.sub2-banner-list .banner-img .green-s{
+    background: url(../images/green-smile-banner.png) 50% no-repeat;
+    height: 443px;
+}
+
+.banner-img dl dt{
+    /* background: tomato; */
+    font-family: 'poppins';
+    font-size: 81px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.banner-img dl dd{
+    /* background: blueviolet; */
+    font-size: 18px;
+    color: #fff;
+    float: left;
+    margin-right: 20px;
+    padding: 15px 33px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 3px;
+    margin-top: 22px;
+}
+
+.milk-k dl{
+    padding-left: 126px;
+    padding-top: 166px;
+}
+
+.milk-l dl{
+    padding-left: 665px;
+    padding-top: 181px;
+    float: right;
+    margin-right: 140px;
+}
+
+.milk-l dl dd{
+    float: right;
+    margin-right: 20px;
+}
+
+.milk-l dl dd:nth-of-type(2){
+    float: right;
+    /* margin-left: 80px; */
+}
+
+.milk-l dl dd:nth-of-type(1){
+    float: right;
+    margin-right: 3px;
+}
+
+
+
+.green-s dl{
+    padding-left: 126px;
+    padding-top: 176px;
+}
+
+
+.campaign-btn a{
+    display: inline-block;
+    padding: 37px 81px;
+    background: #3a9425;
+    border-radius: 3px;
+    margin-top: 65px;
+    margin-bottom: 180px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    vertical-align: top;
+    line-height: 24px;
+    margin-right: 16px;
+}
+
+.campaign-btn::after{
+    content: '';
+    display: block;
+    height: 51px;
+    width: 344px;
+    background: url(../images/sub-logo.png) 50% no-repeat;
+    float: right;
+    margin-top: 115px;
+    margin-right: 34px;
+}
+
+
+
+/* 고객센터 */
+
+.sub3-banner-wrap{
+    height: 540px;
+    background: url(../images/sub3-banner.png) 50% no-repeat;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: visual-sizing 1s both;
+}
+
+.sub3-banner-wrap h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 10px;
+}
+
+/* .sub3-banner-wrap::after{
+    content: '';
+    position: absolute;
+    top: 344px;
+    left: 0;
+    width: 100%;
+    height: 356px;
+	background:white;
+    animation: show-image 1s both;
+} */
+
+.consultation-wrap .btn-list{
+    display: table;
+    margin: 100px auto 0;
+    height: 100px;
+    width: 998px;
+    background: #f1f1f1;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -55px;
+}
+
+.consultation-wrap .btn-list li{
+    float: left;
+    /* padding: 17px 0px;
+    background: #f0f;
+    font-size: 24px; */
+
+}
+
+.consultation-wrap .btn-list li a{
+    display: block;
+    font-size: 22px;
+    border-radius: 50px;
+    padding: 37px 80px;
+    /* transition: background 0.4s; */
+}
+
+.consultation-wrap .btn-list li:nth-child(1) a{
+    background: #3a9425;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 500;
+    padding: 37px 50px;
+}
+
+.sub-contents .call{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-contents .call strong{
+    font-size: 32px;
+    margin-top: 265px;
+    display: block;
+    text-align: center;
+    color: #333;
+}
+
+.sub-contents .call p{
+    font-size: 68px;
+    font-weight: 100;
+    margin-top: 80px;
+    color: #3a9425;
+    margin-left: 50px;
+}
+
+.sub-contents .call p::before{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: url(../images/call-ico.png) 0 0 no-repeat;
+    position: absolute;
+    top: 396px;
+    left: 291px;
+}
+
+
+.service-list ul{
+    margin-left: 111px;
+    margin-top: 180px;
+}
+
+.service-list ul li{
+    float: left;
+    
+}
+
+
+.service-list dl{
+    width: 280px;
+    height: 410px;
+    /* background: violet; */
+    /* text-align: center; */
+    margin-bottom: 250px;
+    margin-right: 100px;
+}
+
+.service-list li:nth-of-type(1) dl::before{
+    content: '';
+    display: block;
+    height: 235px;
+    width: 235px;
+    background: url(../images/sub1-ico1.png) 50% no-repeat;
+    border-radius: 50%;
+    margin: 0 auto;
+    line-height: 235px;
+    transition: 0.4s;
+}
+
+.service-list li:nth-of-type(2) dl::before{
+    content: '';
+    display: block;
+    height: 235px;
+    width: 235px;
+    background: url(../images/sub3-ico2.png) 50% no-repeat;
+    border-radius: 50%;
+    margin: 0 auto;
+    line-height: 235px;
+    transition: 0.4s;
+}
+
+.service-list li:nth-of-type(3) dl::before{
+    content: '';
+    display: block;
+    height: 235px;
+    width: 235px;
+    background: url(../images/sub3-ico3.png) 50% no-repeat;
+    border-radius: 50%;
+    margin: 0 auto;
+    line-height: 235px;
+    transition: 0.4s;
+}
+
+
+.service-list dl dt{
+    margin-top: 35px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+    color: #373737;
+}
+
+.service-list dd{
+    margin-top: 22px;
+    color: #464646;
+    font-size: 18px;
+    text-align: left;
+    text-align: center;
+}
+
+/* dl 아이콘 호버 */
+
+.service-list li:nth-of-type(1) dl:hover::before{
+    transform: scale(1.1);
+}
+
+.service-list li:nth-of-type(2) dl:hover::before{
+    transform: scale(1.1);
+}
+
+.service-list li:nth-of-type(3) dl:hover::before{
+    transform: scale(1.1);
+}
+
+
+/* sub4회사소개 */
+
+.sub4-banner-wrap{
+    height: 540px;
+    background: url(../images/sub4-banner.png) 50% no-repeat;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: visual-sizing 1s both;
+}
+
+/* .sub4-banner-wrap::after{
+    content: '';
+    position: absolute;
+    top: 344px;
+    left: 0;
+    width: 100%;
+    height: 356px;
+	background:white;
+    animation: show-image 1s both;
+} */
+
+.sub4-banner-wrap h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.greeting-wrap .btn-list{
+    display: table;
+    margin: 100px auto 0;
+    height: 100px;
+    width: 998px;
+    background: #f1f1f1;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -55px;
+}
+
+.greeting-wrap .btn-list li a{
+    display: block;
+    padding: 37px 45px;
+    font-size: 22px;
+    border-radius: 50px;
+    /* transition: background 0.4s; */
+}
+
+.greeting-wrap .btn-list li:nth-child(1) a{
+    background: #3a9425;
+    border-radius: 3px;
+    padding: 37px 45px;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.sub4-contents .greeting h3{
+    float: right;
+    display: block;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+
+.sub4-contents .greeting .text-p1{
+    float: right;
+    margin-top: -24px;
+}
+
+.sub4-contents .greeting h3>strong{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 700;
+    color: #3a9425;
+}
+
+
+.sub4-contents .greeting{
+    background: rgb(247, 247, 247);
+    float: right;
+    margin-top: -400px;
+    margin-right: -45px;
+    margin-left: 316px;
+    padding: 114px 127px 163px 102px;
+}
+
+.sub4-contents .greeting strong{
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(27, 27, 27);
+    margin-top: 20px;
+}
+
+.sub4-contents .greeting strong>.thanks{
+    display: inline-block;
+    margin-top: 100px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.sub4-contents .greeting .text2{
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.sub4-contents .greeting .text2>.love-firm{
+    display: inline-block;
+    margin-top: 65px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.sub4-contents .greeting p{
+    display: inline-block;
+    color: #464646;
+    margin-top: 48px;
+    line-height: 1.7;
+}
+
+.sub4-contents .greeting .bottom-t{
+    display: inline-block;
+    color: #464646;
+    line-height: 1.7;
+}
+
+
+.sub4-contents figure{
+    transform: scale(0.7);
+    margin-left: -80px;
+    display: inline-block;
+}

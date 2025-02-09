@@ -1,0 +1,101 @@
+/* 커서입니다 */
+
+.true-cursor{
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: 33px;
+    height: 33px;
+    background: url(../images/dark-cursor2.svg) 0 0 /
+    cover no-repeat;
+
+    /* 이 요소과 하위 요소의 텍스트를 선택하지 못하도록 */
+    user-select: none;
+
+    /* 포인터 관련 이벤트 막기 */
+    pointer-events: none;
+    z-index: 999999999999;
+}
+
+.true-cursor:hover{
+    background-position: 0px 0px;
+}
+
+.cursor{
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(250, 156, 48);
+    /* background: transparent; */
+    /* border: 1px dotted #FAD330; */
+    user-select: none;
+    pointer-events: none;
+    /* transition: 0.1s; */
+    z-index: 999999999999;
+    cursor: none !important;
+}
+
+.cursor::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px dotted #003585;
+    mix-blend-mode: hard-light;
+    opacity: 0;
+}
+
+/* .cursor::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -11px;
+    left: -12px;
+    border: 1px dotted #FAD330;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: cursor-ani 3s infinite;
+} */
+
+@keyframes cursor-ani {
+    0%{transform: scale(0);}
+    50%{transform: scale(1.2);}
+    100%{transform: scale(0);}
+}
+
+.cursor.on{
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    /* width: 80px;
+    height: 80px; */
+    background: #003585;
+    mix-blend-mode: hard-light;
+    /* background: #000; */
+    user-select: none;
+    pointer-events: none;
+    transition: 0.4s;
+    animation: rotate-m 1s infinite;
+    z-index: 3000;
+    border: none;
+    /* border: 5px dotted #3683F8; */
+}
+
+.cursor.on::before{
+    opacity: 1;
+}
+
+@keyframes rotate-m {
+    0%{transform: rotate(45deg) ;}
+    50%{transform: rotate(0deg) ;}
+    100%{transform: rotate(-45deg) ;}
+}

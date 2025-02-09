@@ -1,0 +1,195 @@
+@charset "utf-8";
+body{
+    overflow: hidden;
+    background: url(../images/background_pattern.png) 0 0;
+}
+
+.intro-wrap{
+    width: 100%;
+    height: 100vh;
+}
+
+.intro{
+    margin: 0 auto;   
+}
+
+.intro figure{
+    width: 514px;
+    height: 243px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.intro .scroll-wrap{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+.scroll-wrap .scroll-down{
+    display: block;
+    width: 96px;
+    height: 77px;
+    background: url(../images/scroll_down.png) 0 0 no-repeat;
+    animation: scrollmotion 1.3s linear 0s infinite;
+    margin-top: 0;
+}
+
+@keyframes scrollmotion {
+	0% {margin-top: 0px;}
+	20% {margin-top: 10px;}
+	40% {margin-top: 0px;}
+	60% {margin-top: 10px;}
+	80% {margin-top: 0px;}
+	100% {margin-top: 0px;}
+}
+
+.main-wrap{
+    max-width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-wrap h2{
+    font-family: 'Lemon/Milk', sans-serif;
+    font-size: 180px;
+    font-weight: 700;
+    width: 990px;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    transform: translateY(-55%);
+    z-index: 3;
+    pointer-events: none;
+    /* user-select: none; */
+}
+
+.obj1{
+    width: 750px;
+    height: 700px;
+    background: 50% 50% /cover url(../images/main_object1.png);
+    position: absolute;
+    top: -5%;
+    left: 5%;
+    animation: objmotion 1.2s linear 0s infinite alternate;
+}
+
+.obj2{
+    width: 750px;
+    height: 700px;
+    background: 50% 50% /cover url(../images/main_object2.png);
+    position: absolute;
+    bottom: -15%;
+    top: 46%;
+    left: 24%;
+    animation: objmotion 1.2s linear 0s infinite alternate;
+}
+
+@keyframes objmotion{
+    0%{
+        margin-top: 0px;
+    }
+
+    100%{
+        margin-top: 20px;
+    }
+}
+
+.main-wrap a{
+    display: block;
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    background: #0025E5;
+    position: absolute;
+    filter: drop-shadow(15px 15px 10px rgb(0, 0, 0, 0.25));
+}
+
+.go-menu{
+    position: relative;
+    z-index: 5;
+}
+
+.main-wrap a:hover > div{
+    height: 100%;
+    background: url(../images/main_icon_nasa.png) 0 0 /cover no-repeat;
+    animation: rotate_icon 3s linear infinite;
+}
+
+.main-wrap a::before{
+    content: '';
+    position: absolute;
+    bottom: -81%;
+    left: -85%;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #0025E5;
+    border-radius: 100%;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.main-wrap a::after{
+    content: '';
+    position: absolute;
+    bottom: -215%;
+    left: -215%;
+    width: 300px;
+    height: 300px;
+    border: 1px dashed #999;
+    border-radius: 100%;
+    animation: rotate_icon 15s linear infinite;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+@keyframes rotate_icon{
+	100% {
+    	transform: rotate(360deg);
+    }
+}
+
+.go-menu span{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    width: 120px;
+    height: 40px;
+    background: #0000a0;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -50%;
+    bottom: -120%;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.main-wrap a:hover::after,
+.main-wrap a:hover::before,
+.go-menu:hover span{
+    opacity: 1;
+}
+
+.go-process{
+    top: 25%;
+    right: 35%;
+}
+
+.go-portfolio{
+    bottom: 30%;
+    right: 10%;
+}
+
+.go-about{
+    bottom: 10%;
+    left: 10%;
+}

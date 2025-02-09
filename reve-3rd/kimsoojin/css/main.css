@@ -1,0 +1,413 @@
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+body::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    display: block;
+    width: 720px;
+    height: 504px;
+    background: #ffffff;
+}
+
+body::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 720px;
+    height: 450px;
+    background: #FFFBD3;
+    top: 504px;
+    right: 0;
+}
+
+
+/* 로딩2 */
+
+.loading-ani-b{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #FEFFEF;
+    z-index: 9999;
+    user-select: none;
+    pointer-events: none;
+}
+
+.loading-ani-b strong{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat';
+    color: #515151;
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.loading-ani-b strong span:nth-of-type(5){
+    animation: text-op 1s 1s both;
+}
+
+.loading-ball{
+    position: absolute;
+    top: 18px;
+    left: 255px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #fad330;
+    z-index: 9999;
+    opacity: 0;
+}
+
+@keyframes text-moving {
+    0%{color: #515151;}
+    50%{color: #FAD330;}
+    100%{color: #515151;}
+}
+
+@keyframes all-text-ani {
+    0%{transform: translate(-50%, 800%);}
+    100%{transform: translate(-50%, -50%);}
+}
+
+@keyframes text-op {
+    100%{opacity: 0;}
+}
+
+@keyframes text-op2 {
+    100%{opacity: 1;}
+}
+
+@keyframes scale-ani-ball {
+    0%{transform: scale(1);}
+    50%{transform: scale(0.8);}
+    100%{transform: scale(1);}
+}
+
+@keyframes opacity-ani {
+    100%{opacity: 1;}
+}
+
+/* 메인 css 시작 */
+
+#main .visual-wrap{
+    position: relative;
+}
+
+#main .visual-wrap figure{
+    position: absolute;
+    top: 320px;
+    left: 220px;
+}
+
+#main .visual-wrap strong{
+    font-family: 'Montserrat';
+}
+
+#main .visual-wrap .crazy{
+    font-weight: 800;
+    position: absolute;
+    top: 640px;
+    left: 165px;
+    font-size: 64px;
+    transform: rotate(-90deg);
+    -webkit-text-stroke: 1px #FAB530;
+    text-shadow: 0px 4px 7px rgb(220, 132, 1);
+    color: #fff;
+    z-index: 5;
+}
+
+#main .visual-wrap .yellow{
+    position: absolute;
+    top: 430px;
+    left: 345px;
+    font-weight: 800;
+    font-size: 36px;
+    -webkit-text-stroke: 1px #FAB530;
+    text-shadow: 0px 4px 7px rgb(220, 132, 1);
+    color: #fff;
+    z-index: 5;
+}
+
+#main .visual-wrap .ball{
+    position: absolute;
+    top: 475px;
+    left: 410px;
+    font-weight: 800;
+    font-size: 36px;
+    -webkit-text-stroke: 1px #FAB530;
+    text-shadow: 0px 4px 7px rgb(220, 132, 1);
+    color: #fff;
+    z-index: 5;
+}
+
+#main .visual-wrap .designer{
+    position: absolute;
+    z-index: 5;
+    font-weight: 800;
+    font-size: 100px;
+    top: 500px;
+    right: 470px;
+    font-size: 800;
+    color: #ffffff;
+    -webkit-text-stroke: 1px #FAB530;
+    text-shadow: 0px 4px 7px rgb(220, 132, 1);
+    /* animation: designer-ani 3s infinite; */
+}
+
+@keyframes designer-ani {
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#main .visual-wrap .name{
+    position: absolute;
+    top: 750px;
+    right: 910px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #FA7800;
+}
+
+#main .visual-wrap .text-yellow-ball{
+    background: #FAD330;
+    width: 358px;
+    height: 358px;
+    position: absolute;
+    top: 516px;
+    left: 1248px;
+    border-radius: 50%;
+    z-index: 2;
+    animation: text-yellow-ball-ani 3s infinite;
+}
+
+@keyframes text-yellow-ball-ani {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.03);}
+    100%{transform: scale(1);}
+}
+
+#main .visual-wrap .text-blue-ball{
+    position: absolute;
+    top: 573px;
+    left: 1317px;
+    content: '';
+    display: block;
+    width: 320px;
+    height: 320px;
+    background: #3683F8;
+    border-radius: 50%;
+    z-index: 1;
+    animation: text-blue-ball-ani 3s infinite;
+}
+
+@keyframes text-blue-ball-ani {
+    0%{transform: translate(10px, 0);}
+    50%{transform: translate(0, 0);}
+    100%{transform: translate(10px, 0);}
+}
+
+
+@keyframes ball-move1 {
+    0%{transform:scale(0.6);}
+    50%{transform: scale(0.9)}
+    100%{transform: scale(0.6)}
+}
+
+@keyframes ball-move2{
+    0%{transform:scale(0.3)}
+    0%{transform:scale(0.3) translate(10px, 20px)}
+    50%{transform: scale(0.5) translate(10px, -20px)}
+    100%{transform: scale(0.6) translate(-10px, 10px)}
+}
+
+@keyframes ball-move3{
+    0%{transform:scale(0.3)}
+    0%{transform:scale(0.3) translate(20px, 10px)}
+    50%{transform: scale(0.5) translate(-20px, 10px)}
+    100%{transform: scale(0.6) translate(10px, -10px)}
+}
+
+@keyframes ball-move4 {
+    0%{transform:scale(0.3)}
+    0%{transform:scale(0.7) translate(-10px, -10px)}
+    50%{transform: scale(1.1) translate(-20px, -30px)}
+    100%{transform: scale(0.6) translate(10px, -10px)}
+}
+@keyframes ball-move5{
+    0%{transform:scale(0.6)}
+    0%{transform:scale(0.6) translate(10px, 20px)}
+    50%{transform: scale(0.8) translate(10px, -20px)}
+    100%{transform: scale(0.7) translate(-10px, 10px)}
+}
+
+#main .visual-wrap .ball1{
+    position: absolute;
+    top: 259px;
+    left: 511px;
+    width: 16px;
+    height: 16px;
+    background: #FAD330;
+    border-radius: 50%;
+    animation: ball-move1 3s infinite linear;
+}
+
+#main .visual-wrap .ball2{
+    position: absolute;
+    top: 170px;
+    left: 550px;
+    width: 64px;
+    height: 64px;
+    background: #FAD330;
+    border-radius: 50%;
+    animation: ball-move2 2s infinite alternate;
+}
+
+#main .visual-wrap .ball3{
+    position: absolute;
+    top: 150px;
+    right: 340px;
+    width: 56px;
+    height: 56px;
+    background: #FAD330;
+    border-radius: 50%;
+    animation: ball-move3 5s infinite alternate;
+}
+
+#main .visual-wrap .ball4{
+    position: absolute;
+    top: 230px;
+    right: 280px;
+    width: 30px;
+    height: 30px;
+    background: #FAD330;
+    border-radius: 50%;
+    animation: ball-move1 4s infinite linear;
+}
+
+#main .visual-wrap .ball5{
+    position: absolute;
+    top: 430px;
+    right: 180px;
+    width: 18px;
+    height: 18px;
+    background: #FAD330;
+    border-radius: 50%;
+    animation: ball-move4 2s infinite alternate;
+}
+
+#main .visual-wrap .ball6{
+    z-index: 2;
+    position: absolute;
+    top: 600px;
+    right: 230px;
+    width: 12px;
+    height: 12px;
+    background: #FAD330;
+    border-radius: 50%;
+    animation: ball-move5 5s infinite alternate;
+}
+
+#main .visual-wrap .square1{
+    position: absolute;
+    top: 750px;
+    right: 610px;
+    z-index: 3;
+    width: 70px;
+    height: 360px;
+    background: #ffffff;
+    transform: rotate(30deg);
+    animation: main-square-ani 2.5s infinite;
+}
+
+#main .visual-wrap .square2{
+    position: absolute;
+    z-index: 3;
+    top: 780px;
+    right: 575px;
+    height: 360px;
+    width: 28px;
+    background: #ffffff;
+    transform: rotate(30deg);
+    animation: main-square-ani 3s infinite;
+}
+
+@keyframes main-square-ani {
+    0%{transform: translate(0, 30px) rotate(30deg);}
+    50%{transform: translate(10px, 0) rotate(30deg);}
+    100%{transform: translate(0, 30px) rotate(30deg);}
+}
+
+#main .visual-wrap .square3{
+    position: absolute;
+    top: 490px;
+    right: 100px;
+    z-index: 2;
+    height: 800px;
+    width: 27px;
+    background: #ffffff;
+    transform: rotate(30deg);
+}
+
+/* 메인 도형 덩어리 마우스 따라오는 효과 */
+
+.main-box-wrap{
+    transform-style: preserve-3d;
+    transform-origin: 50% 50%;
+    position: absolute;
+    top: 318px;
+    left: 224px;
+    width: 331px;
+    height: 523px;
+}
+
+#main .visual-wrap .main-box-wrap .main-blue-box{
+    position: absolute;
+    top: 377px;
+    left: 0px;
+    width: 298px;
+    height: 144px;
+    background: #3683F8;
+    transform: translateZ(5px); /* z값 4순위 */
+}
+#main .visual-wrap .main-box-wrap .main-yellow-box{
+    position: absolute;
+    top: 79px;
+    left: 0px;
+    width: 144px;
+    height: 298px;
+    background: #FAD330;
+    z-index: 5;
+    transform: translateZ(90px); /* z값 1순위 */
+}
+#main .visual-wrap .main-box-wrap .main-blue-circle{
+    position: absolute;
+    top: 0;
+    left: 61px;
+    width: 138px;
+    height: 138px;
+    border-radius: 50%;
+    background: #3683F8;
+    transform: translateZ(70px); /* z값 2순위 */
+    z-index: 4;
+}
+#main .visual-wrap .main-box-wrap .main-yellow-circle{
+    position: absolute;
+    top: 45px;
+    left: 77px;
+    width: 252px;
+    height: 252px;
+    border-radius: 50%;
+    background: #FAD330;
+    transform: translateZ(50px); /* z값 3순위 */
+    z-index: 2;
+}

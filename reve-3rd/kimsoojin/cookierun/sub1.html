@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿠키런 스토어</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="js/jquery-1.8.1.min.js"></script>
+    <script src="js/script1.js"></script>
+</head>
+
+<body>
+
+    <header id="mini-header">
+        <a href="#">쿠폰함</a>
+        <a href="#">장바구니</a>
+        <a href="#" class="log-in">로그인</a>
+        <a href="#" class="search">search</a>
+    </header>
+    
+    <header id="header">
+        <div class="inner">
+            <nav class="gnb">
+                <a href="#">공지사항</a>
+                <a href="#">쿠키런굿즈</a>
+                <h1 class="logo"><a href="#"><img src="images/store-logo.png" alt="스토어로고"></a></h1>
+                <a href="#">고객센터</a>
+                <a href="#">쇼핑스토리</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 메인비주얼 -->
+    <main id="contents">
+        <section class="banner-wrap">
+            <h2 class="hidden">배너영역</h2>
+            <div class="slide-wrap">
+                <ul class="slide">
+                    <li class="slide-item1" data-idx="0"><figure><img src="images/main-banner.png" alt="쿠키런스토어배너"></figure></li>
+                    <li class="slide-item2" data-idx="1"><figure><img src="images/subbanner2.png" alt="쿠키런스토어배너"></figure></li>
+                    <li class="slide-item3" data-idx="2"><figure><img src="images/subbanner3.png" alt="쿠키런스토어배너"></figure></li>
+                    <li class="slide-item4" data-idx="3"><figure><img src="images/subbanner4.png" alt="쿠키런스토어배너"></figure></li>
+                    <li class="slide-item5" data-idx="4"><figure><img src="images/subbanner5.png" alt="쿠키런스토어배너"></figure></li>
+                </ul>
+
+                <button class="btn btn-prev">이전</button>
+                <button class="btn btn-next">다음</button>
+            </div>
+
+            <div class="dot">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
+
+
+        </section>
+
+        <section class="best-wrap">
+            <div class="inner">
+                <h2>BEST GOODS</h2>
+                <div class="goods-best">
+                    <a href="#">
+                        <figure><img src="images/best-1.png" alt="쿠키런 젤리파티 스티커"></figure>
+                        <dl>
+                            <dt>쿠키런 젤리파티 스티커</dt>
+                            <dd class="price">2600원</dd>
+                            <dd class="sale">3000원</dd>
+                        </dl>
+                    </a>
+
+                    <a href="#">
+                        <figure><img src="images/best-2.png" alt="쿠키런 미스터리피규어 3탄"></figure>
+                        <dl>
+                            <dt>쿠키런 미스터리 피규어 3탄</dt>
+                            <dd class="price">6,900원</dd>
+                        </dl>
+                    </a>
+
+                    <a href="#">
+                        <figure><img src="images/best-3.png" alt="쿠키런 용감한쿠키 말랑인형"></figure>
+                        <dl>
+                            <dt>쿠키런 용감한 쿠키 말랑인형</dt>
+                            <dd class="price">13,500원</dd>
+                            <dd class="sale">14,500원</dd>
+                        </dl>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="goods-wrap">
+
+            <h2>GOODS LIST</h2>
+            <div class="menu-list">
+                <ul class="main-menu">
+                    <li><a href="#">전체</a></li>
+                    <li><a href="#">토이</a></li>
+                    <li><a href="#">문구팬시</a></li>
+                    <li><a href="#">패션잡화</a></li>
+                    <li><a href="#">리빙</a></li>
+                    <li><a href="#">테크</a></li>
+                </ul>
+                <ul class="sub-menu">
+                    <li><a href="#">인기도순</a></li>
+                    <li><a href="#">누적판매순</a></li>
+                    <li><a href="#">낮은가격순</a></li>
+                    <li><a href="#">최신등록순</a></li>
+                    <li><a href="#">리뷰많은순</a></li>
+                    <li><a href="#">평점높은순</a></li>
+                </ul>
+            </div>
+
+            <div class="inner">
+                <div class="goods-list">
+                    <a href="#">
+                        <span><img src="images/rank1.png" alt="1위"></span>
+                        <figure><img src="images/goods-1.png" alt="용감한쿠키 말랑인형"></figure>
+                        <dl>
+                            <dt>쿠키런 용감한 쿠키 말랑인형</dt>
+                            <dd class="price">13,500원</dd>
+                            <dd class="sale">14,500원</dd>
+                        </dl>
+                    </a>
+
+                    <a href="#">
+                        <span><img src="images/rank2.png" alt="2위"></span>
+                        <figure><img src="images/goods-2.png" alt="쿠키런 미스터리 피규어 4탄"></figure>
+                        <dl>
+                            <dt>쿠키런 미스터리 피규어 4탄</dt>
+                            <dd class="price">6,900원</dd>
+                            <dd></dd>
+                        </dl>
+                    </a>
+
+                    <a href="#">
+                        <span><img src="images/rank3.png" alt="3위"></span>
+                        <figure><img src="images/goods-3.png" alt="쿠키런 미스터리 피규어 3탄"></figure>
+                        <dl>
+                            <dt>쿠키런 미스터리 피규어 3탄</dt>
+                            <dd class="price">6,900원</dd>
+                            <dd></dd>
+                        </dl>
+                    </a>
+
+                    <a href="#">
+                        <figure><img src="images/goods-4.png" alt="쿠키런 페이스 도어범퍼 케이스 3종"></figure>
+                        <dl>
+                            <dt>쿠키런 페이스 도어범퍼 케이스 3종</dt>
+                            <dd class="price">19,900원</dd>
+                            <dd></dd>
+                        </dl>
+                    </a>
+
+                    <a href="#">
+                        <figure><img src="images/goods-5.png" alt="쿠키런 젤리파티 스티커"></figure>
+                        <dl>
+                            <dt>쿠키런 젤리파티 스티커</dt>
+                            <dd class="price">2,600원</dd>
+                            <dd class="sale">3,000원</dd>
+                        </dl>
+                    </a>
+
+                    <a href="#">
+                        <figure><img src="images/goods-6.png" alt="하트눈뿅뿅 솜사탕 핑크인형"></figure>
+                        <dl>
+                            <dt>하트눈뿅뿅 솜사탕 핑크인형</dt>
+                            <dd class="price">18,900원</dd>
+                            <dd class="sale">21,000원</dd>
+                        </dl>
+                    </a>
+                </div>
+
+                <a href="#" class="more">더보기</a>
+            </div>
+
+        </section>
+
+        <section class="review-wrap">
+            <div class="inner">
+                <h2>REVIEW</h2>
+
+                <div class="review-img">
+                    <div class="review-left">
+                        <div class="square1">
+                            <a href="#">
+                                <figure class="pic1"><img src="images/review1.png" alt="마우스패드"></figure>
+                                <dl>
+                                    <dt class="star">★★★★★</dt>
+                                    <dt class="p-name">쿠키런 무선충전 마우스패드</dt>
+                                    <dd class="comment">아주 귀엽고 사용하기 편해요!!</dd>
+                                    <dd class="user-id">오늘도 쿠키런</dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="square2">
+                            <a href="#">
+                                <figure class="pic2"><img src="images/review2.png" alt="스마트톡"></figure>
+                                <dl>
+                                    <dt class="star">★★★★★</dt>
+                                    <dt class="p-name">솜사탕맛 쿠키 스마트톡</dt>
+                                    <dd class="comment">아이가 정말 좋아합니다</dd>
+                                    <dd class="user-id">쿠키커터</dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right-img">
+                        <a href="#">
+                            <figure class="pic3"><img src="images/review3.png" alt="말랑인형"></figure>
+                            <dl>
+                                <dt class="star">★★★★★</dt>
+                                <dt class="p-name">쿠키런 용감한쿠키 말랑인형</dt>
+                                <dd class="comment">용기가 솟아나는인형이네요<br>
+                                    쿠키런 팬으로서 넘나 만족합니다</dd>
+                                <dd class="user-id">소심한쿠키</dd>
+                            </dl>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="more">더보기</a>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="shopping-wrap">
+            <div class="inner">
+                <h2>SHOPPING STORY</h2>
+                <div class="box1">
+                    <a href="#">
+                        <figure><img src="images/shpping1.png" alt="말랑인형"></figure>
+                        <dl>
+                            <dt>용감한쿠키 말랑 쿠션 & 인형!(1/27 5PM)</dt>
+                            <dd>마녀가 실수로 넣은 생명가루로<br>
+                                생명을 얻은 용감한쿠키!<br>
+                                더욱 용감하고 귀여운 모습으로 다시 돌아왔습니다~</dd>
+                        </dl>
+                    </a>
+                </div>
+
+                <div class="box2">
+                    <a href="#">
+                        <figure><img src="images/shopping2.png" alt="머그잔"></figure>
+                        <dl>
+                            <dt>COOKIERUN TOGETHER MUG SET (12.23.5PM)</dt>
+                            <dd>팬들이 기다리고 기다리던 그 만남! <br>
+                                코코아맛 쿠키와 민트초코 쿠키가 드디어 커플 머그잔으로 찾아왔습니다~<br>
+                                지난 겨울 너무 많은 사랑을 받았던 티타임 세트에 이어,<br>
+                                추운 겨울 우리 마음을 녹여줄 사랑스럽고 따뜻한 조합!
+                            </dd>
+                        </dl>
+                    </a>
+                </div>
+
+                <div class="box3">
+                    <a href="#">
+                        <figure><img src="images/shopping3.png" alt="티셔츠"></figure>
+                        <dl>
+                            <dt>쿠키런 DAILY COLLECTION!! (12.17.2PM)</dt>
+                            <dd>혹시 매일 아침 입을 옷이 없어서 고민하세요?<br>
+                                고민하지 마세요! 이제 해결해 드릴게요<br>
+                                바로 쿠키런이 준비한 데일리 컬렉션으로~!!</dd>
+                        </dl>
+                    </a>
+                </div>
+
+                <a href="#" class="more">전체보기</a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="inner">
+            <div class="foot-logo"><img src="images/footer-logo.png" alt="데브시스터즈로고"></div>
+
+            <div class="sns-list">
+                <a href="#" class="facebook">페이스북</a>
+                <a href="#" class="instargram">인스타</a>
+                <a href="#" class="twitter">트위터</a>
+            </div>
+
+            <div class="foot-con">
+                <ul>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">운영정책</a></li>
+                    <li><a href="#">회사소개</a></li>
+                </ul>
+            </div>
+            <p class="copyright">© 2021 Devsisters Corp. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

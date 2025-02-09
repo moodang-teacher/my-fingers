@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+b{
+    color: #E72F38;
+}
+
+.visual-wrap{
+    background: url(../images/orion_process/main_visual.png) 50% no-repeat;
+    padding-top: 100px;
+    position: relative;
+    height: 950px;
+}
+.visual-wrap h1 strong{
+    color: #E72F38;
+}
+.visual-wrap figure{
+    position: absolute;
+    bottom: 56px;
+    right: 205px;
+}
+.overview-wrap{
+    background: #fbeeee;
+    padding: 100px 0;
+}
+.color-wrap{
+    padding: 100px 0;
+}
+.color-wrap .inner{
+    width: 1085px;
+}
+.color-wrap ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 100px;
+}
+.color-wrap ul li p{
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 500;
+}
+.font-wrap{
+    padding: 100px 0;
+    background: #fbeeee;
+}
+.font-wrap .inner{
+    width: 1265px;
+}
+.font-wrap ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.design-wrap{
+    padding: 100px 0;
+}
+.design-wrap figure{
+    margin-top: 73px;
+}
+.thank-wrap{
+    background: #fbeeee;
+    color: #e72f38;
+    text-align: center;
+    font-weight: 500;
+    font-size: 96px;
+}
+.btn.btn-view{
+    border: 2px solid #FF8B8B;
+    color: #222;
+}
+.btn.btn-process{
+    background: #E72F38;
+}
+.process-list{
+    background: #FFC7BF;
+}
+.process-list a:hover{
+    background: #FB5A62;
+    color: #fff;
+}
+.btn-view:hover{
+    background: #FF8B8B; 
+    color: #fff;
+}

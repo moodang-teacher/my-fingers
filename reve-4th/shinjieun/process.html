@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal website process</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/splitting.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/splitting.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(function () {
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-in-cubic'
+            })
+
+            var $window = $(window);
+            var $section = $('main > section');
+            var $logoMove = $('.logo-pic-move');
+            var sec4pos = $section.eq(3).offset().top - 300;
+            var sec5pos = $section.eq(4).offset().top;
+
+
+
+            $window.on('scroll', function () {
+                var scrollTop = $(this).scrollTop();
+
+                if (scrollTop >= sec4pos && scrollTop < sec5pos) {
+                    $logoMove.addClass('active');
+                } else {
+                    $logoMove.removeClass('active');
+                };
+            });
+
+            // Go TOP 버튼
+
+            var $section = $('main > section');
+            var secPos = $section.eq(1).offset().top;
+            var $goTop = $('.go-top');
+
+            $goTop.css('opacity', 0)
+            $window.on('scroll', function () {
+                var scrollTop = $(this).scrollTop();
+                if (scrollTop < secPos) {
+                    $goTop.css('opacity', 0)
+                } else {
+                    $goTop.css('opacity', 1)
+                }
+            });
+
+            $goTop.on('click', function (e) {
+                e.preventDefault();
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 300);
+            });
+
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 커서영역 -->
+    <div class="cursor"></div>
+    <div class="spark"></div>
+    <!-- s: 메뉴버튼 클릭  -->
+    <div class="dim"></div>
+    <div class="slide-menu">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" data-splitting>home</a></li>
+                <li><a href="about.html" data-splitting>about me</a></li>
+                <li><a href="portfolio.html" data-splitting>portfolio</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- e: 메뉴버튼 클릭  -->
+
+    <!-- s:헤더 영역 -->
+    <header>
+        <div class="inner">
+            <h1>
+                <a href="index.html"><i class="hidden">LOGO</i></a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about me</a></li>
+                    <li><a href="portfolio.html">portfolio</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="menu-btn"><b><i class="hidden">menu</i></b></a>
+        </div>
+    </header>
+    <!-- e:헤더 영역 -->
+    <!-- s:메인 영역 -->
+    <main>
+        <!-- s: 프로세스 비주얼영역 -->
+        <section class="process-visual freshble-process">
+            <div class="inner">
+                <h2 class="sub-title">process</h2>
+                <div class="process-title-wrap">
+                    <h3 class="process-main-title freshble-title">freshible</h3>
+                    <div class="scroll-ico">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- e: 프로세스 비주얼영역 -->
+        <!-- s: 프로세스  overview 영역-->
+        <section class="overview-wrap">
+            <div class="inner process-con-wrap">
+                <h4 class="process-title">overview</h4>
+                <p class="process-text">
+                    제가 어떠한 아이덴티티를 가지고 있는지 보여주기 위한 목적으로 기획한 웹사이트입니다. <br>
+                    저를 나타내는 키워드 인 ‘FRESH’와 ‘FLEXIBLE’ 두 단어를 조합하여 제 아이덴티티를 효과적으로
+                    전달할 수 있도록 디자인하였습니다.
+                </p>
+            </div>
+        </section>
+        <!-- e: 프로세스  overview 영역-->
+        <!-- s: 프로세스  CONCEPT영역-->
+        <section class="concept-wrap process-sec-wrap">
+            <div class="inner process-con-wrap">
+                <h4 class="process-title">CONCEPT</h4>
+                <p class="process-text">
+                    저를 나타내는 키워드를 조합하여 ‘FRESHIBLE’이라는 새로운 단어를 도출하였습니다. <br>
+                    시각적으로 표현하기 위해 fresh에서 신선한 과일을 모티브로 저의 발랄한 성격을 나타낼 수 있는 과일인 자몽을
+                    테마로 정하여 flexible의 뜻처럼 유연하고 융통성 있는 도형인 원형을 사용하여 디자인하였습니다.
+                </p>
+            </div>
+        </section>
+        <!-- e: 프로세스  CONCEPT영역-->
+        <!-- s: 프로세스  logo영역-->
+        <section class="logo-wrap process-sec-wrap">
+            <div class="inner">
+                <div class="logo-text process-con-wrap">
+                    <h4 class="process-title">LOGO</h4>
+                    <p class="process-text">
+                        제 이름 신지은에서 자음을 따와 새롭게 배치하여 로고를 제작하였습니다. <br>
+                        새로운 배움에 필요한 연필을 형상화하였습니다.
+                    </p>
+                </div>
+                <div class="logo-pic-wrap">
+                    <ul class="logo-pic-mean">
+                        <li>
+                            <figure><img src="images/s.svg" alt="자음 ㅅ"></figure>
+                        </li>
+                        <li>
+                            <figure><img src="images/j.svg" alt="자음 ㅈ"></figure>
+                        </li>
+                        <li>
+                            <figure><img src="images/e.svg" alt="자음 ㅇ"></figure>
+                        </li>
+                    </ul>
+                    <div class="logo-pic-logo">
+                        <ul class="logo-pic-move">
+                            <li>
+                                <figure><img src="images/s2.svg" alt="자음 ㅅ"></figure>
+                            </li>
+                            <li>
+                                <figure><img src="images/j2.svg" alt="자음 ㅈ"></figure>
+                            </li>
+                            <li>
+                                <figure><img src="images/e2.svg" alt="자음 ㅇ"></figure>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- e: 프로세스  logo영역-->
+        <!-- s: 프로세스  Typhography영역-->
+        <section class="typhography-wrap process-sec-wrap">
+            <div class="inner">
+                <h4 class="process-title">Typography</h4>
+                <div class="process-font">
+                    <div class="font-wrap en-wrap" data-aos="fade-up">
+                        <strong>aAbB</strong>
+                        <dl>
+                            <dt>Gmarket Sans</dt>
+                            <dd>
+                                영문 폰트는 유연함을 표현하기 위해 둥근 고딕 서체인
+                                Gmarket Sans 폰트를 사용하였습니다.
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="font-wrap kr-wrap" data-aos="fade-up">
+                        <strong>가나다라</strong>
+                        <dl>
+                            <dt>Pretendard</dt>
+                            <dd>
+                                한글 폰트는 정보 전달을 위해 가독성이 좋은 고딕 서체인
+                                Pretendard를 사용하였습니다.
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- e: 프로세스  Typhography영역-->
+        <!-- s: 프로세스  color영역-->
+        <section class="color process-sec-wrap">
+            <div class="inner">
+                <h4 class="process-title">Color</h4>
+                <div class="color-wrap">
+                    <div class="point-color-wrap" data-aos="fade-up">
+                        <ul class="color-list">
+                            <li><i class="hidden">#FF5D5D</i></li>
+                            <li><i class="hidden">#FBBE84</i></li>
+                            <li><i class="hidden">#FFE88A</i></li>
+                        </ul>
+                        <p class="process-text">
+                            항상 활기 넘치는 저의 성격을 표현하고자 자몽을 모티브로 3가지 포인트 컬러를 선택하였습니다.
+                        </p>
+                    </div>
+                    <div class="base-color-wrap" data-aos="fade-up">
+                        <ul class="color-list">
+                            <li><i class="hidden">#222222</i></li>
+                            <li><i class="hidden">#666666</i></li>
+                            <li><i class="hidden">#F9F9F9</i></li>
+                            <li><i class="hidden">#FFFFFF</i></li>
+                        </ul>
+                        <p class="process-text">
+                            본문 영역에는 전체적인 안정감과 가독성을 위해 포인트 컬러와 상반되는 무채색 컬러를 활용하였습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- e: 프로세스  color영역-->
+        <!-- s: 프로세스  메인그리드영역-->
+        <section class="main-gd-wrap process-sec-wrap">
+            <div class="inner">
+                <div class="grid-text-wrap process-con-wrap">
+                    <h4 class="process-title">grid system</h4>
+                    <p class="process-text">
+                        시원시원한 인상을 주기 위해 그리드를 넓게 잡아 사이트를 디자인하였습니다.
+                    </p>
+                </div>
+                <div class="grid-wrap" data-aos="fade-up">
+                    <div class="page-sz-wrap">
+                        <dl>
+                            <dt>Page</dt>
+                            <dd>1920px</dd>
+                        </dl>
+                        <span></span>
+                    </div>
+                    <div class="page-sz-wrap contents-sz-wrap">
+                        <dl>
+                            <dt>Contents</dt>
+                            <dd>1662px</dd>
+                        </dl>
+                        <span></span>
+                    </div>
+                    <figure><img src="images/main_grid.png" alt="메인페이지 그리드"></figure>
+                    <ul class="details-wrap">
+                        <li>12 Column grid</li>
+                        <li>Width 120px</li>
+                        <li>Gutter 20px</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- e: 프로세스  메인그리드영역-->
+        <!-- s: 프로세스  메인디자인영역-->
+        <section class="main-dg-wrap process-sec-wrap">
+            <div class="inner">
+                <div class="process-con-wrap">
+                    <h4 class="process-title">MAIN DESIGN</h4>
+                    <p class="process-text">
+                        중앙에 FRESHIBLE 키워드를 배치해 저의 아이덴티티를 강조하였습니다. <br>
+                        FRESHIBLE를 시각적으로 표현하기 위해 원형 도형과 자몽을 활용하여 디자인하였습니다.
+                    </p>
+                </div>
+                <figure data-aos="fade-up" data-aos-offset="500"><img src="images/main.png" alt="메인페이지"></figure>
+            </div>
+        </section>
+        <!-- e: 프로세스  메인디자인영역-->
+        <!-- s: 프로세스  어바웃 미 디자인영역-->
+        <section class="about-dg-wrap process-sec-wrap">
+            <div class="about-dg">
+                <div class="about-dgcon-wrap">
+                    <h4 class="process-title">ABOUT ME DESIGN</h4>
+                    <p class="process-text">
+                        저를 소개하는 페이지입니다. <br>
+                        저의 경험과 디자인을 선택한 이유, 성격 등을 담았습니다. <br>
+                        저의 이야기를 효과적으로 전달할 수 있도록 아이콘을 활용하여 디자인하였습니다.
+                    </p>
+                </div>
+                <div class="dg-pic-wrap" data-aos="fade-left">
+                    <figure><img src="images/aboutme1.png" alt="어바웃미 페이지 1"></figure>
+                    <figure><img src="images/aboutme2.png" alt="어바웃미 페이지 2"></figure>
+                </div>
+            </div>
+        </section>
+        <!-- e: 프로세스  어바웃 미 디자인영역-->
+        <!-- s: 프로세스  포트폴리오 디자인영역-->
+        <section class="portfolio-dg-wrap process-sec-wrap">
+            <div class="portfolio-dg">
+                <div class="portfolio-dgcon-wrap">
+                    <h4 class="process-title">PORTFOLIO DESIGN</h4>
+                    <p class="process-text">
+                        저의 작업물을 담은 페이지입니다. <br>
+                        PC와 태블릿PC, 모바일을 활용하여 웹 작업물과 반응형, 모바일 작업물을
+                        직관적으로 나타낼 수 있도록 디자인하였습니다.
+                    </p>
+                </div>
+                <div class="dg-pic-wrap" data-aos="fade-right">
+                    <figure><img src="images/portfolio1.png" alt="포트폴리오 페이지 1"></figure>
+                    <figure><img src="images/portfolio2.png" alt="포트폴리오 페이지 2"></figure>
+                </div>
+            </div>
+        </section>
+        <!-- e: 프로세스  포트폴리오 디자인영역-->
+        <!-- s: 프로세스  코딩 디자인영역-->
+        <section class="publishing-dg-wrap process-sec-wrap">
+            <h4 class="process-title">Publishing</h4>
+            <div class="dg-pic-wrap" data-aos="fade-up">
+                <figure><img src="images/coding1.png" alt="코딩1"></figure>
+                <figure><img src="images/coding2.png" alt="코딩2"></figure>
+            </div>
+        </section>
+        <!-- e: 프로세스  코딩 디자인영역-->
+        <a href="#" class="go-top">top</a>
+    </main>
+    <!-- e: 메인영역 -->
+</body>
+
+</html>

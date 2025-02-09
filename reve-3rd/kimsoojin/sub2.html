@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/cursor2.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/common-script.js"></script>
+    <script src="js/sub2-script.js"></script>
+    <script src="js/mouse-script.js"></script>
+</head>
+
+<body>
+
+    <!-- 커서 -->
+    <div class="true-cursor"></div>
+    <div class="cursor"></div>
+
+
+    <header id="header">
+        <nav class="gnb">
+            <a href="index.html">
+                <span>h</span><span>o</span><span>m</span><span>e</span>
+            </a>
+            <a href="sub1.html">
+                <span>P</span><span>e</span><span>r</span><span>s</span><span>o</span><span>n</span><span>a</span><span>l&nbsp;</span>
+                <span>w</span><span>e</span><span>b</span>
+            </a>
+            <a href="sub2.html">
+                <span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+            </a>
+            <a href="sub3.html">
+                <span>A</span><span>b</span><span>o</span><span>u</span><span>t&nbsp;</span>
+                <span>M</span><span>e</span>
+            </a>
+        </nav>
+
+        <!-- 햄버거메뉴디자인 -->
+        <a href="#" class="btn-menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </a>
+
+        <!-- 햄버거 메뉴목록 -->
+        <div class="menu-wrap">
+            <div class="menu1"><a href="sub1.html">Personal web</a></div>
+            <div class="menu2"><a href="sub2.html">Portfolio</a></div>
+            <div class="menu3"><a href="sub3.html">About me</a></div>
+        </div>
+    </header>
+
+    <section class="portfolio-wrap">
+        <h1>PORT<br>
+            FOLIO
+        </h1>
+
+        <!-- 커스텀 페이징 -->
+        <!-- <ul class="paging"></ul> -->
+
+        <!-- 딤 -->
+        <div class="dim2"></div>
+
+        <!-- 팝업창 -->
+        <div class="popup-wrap2">
+            <img src="images/swalker-design.png" alt="스워커디자인">
+            <a href="#" class="btn-close">닫기</a>
+        </div>
+
+        <div class="popup-wrap3">
+            <video muted preload="auto" controls src="images/mobile.mp4"></video>
+            <a href="#" class="btn-close">닫기</a>
+        </div>
+
+        <!-- 내가 만드는 메뉴 -->
+        <ul class="my-menu">
+            <li><a href="#">micro site 1</a></li>
+            <li><a href="#">micro site 2</a></li>
+            <li><a href="#">renewal website</a></li>
+            <li><a href="#">responsible website</a></li>
+            <li><a href="#">shopping page design</a></li>
+            <li><a href="#">App design</a></li>
+            <li><a href="#">Drawing</a></li>
+        </ul>
+
+        <div class="slide-img-wrap tab-con-wrap">
+
+            <div data-title="micro site 1" class="portfolio-img-wrap">
+                <figure><img src="images/portfolio1.png" alt="포폴1"></figure>
+                <div class="big-blue-circle"></div>
+
+                <dl>
+                    <dt class="tit-1">마이크로 웹 사이트 디자인</dt>
+                    <dt class="tit-2">겨울왕국</dt>
+                    <dd><a href="micro1.html" target='_blank'>Design</a></dd>
+                </dl>
+            </div>
+
+            <div data-title="micro site 2" class="portfolio-img-wrap">
+                <figure><img src="images/portfolio2.png" alt="포폴2"></figure>
+                <div class="big-blue-circle"></div>
+                <dl>
+                    <dt class="tit-1">마이크로 웹 사이트 디자인</dt>
+                    <dt class="tit-2">암살</dt>
+                    <dd><a href="micro2.html" target='_blank'>Design</a></dd>
+                </dl>
+            </div>
+
+            <div data-title="renewal website" class="portfolio-img-wrap">
+                <figure><img src="images/portfolio3.png" alt="포폴3"></figure>
+                <div class="big-blue-circle"></div>
+                <dl>
+                    <dt class="tit-1">리뉴얼 웹 사이트 디자인</dt>
+                    <dt class="tit-2">서울우유</dt>
+
+                    <dd>
+                        <a href="seoulmilk/main.html" target='_blank'>Design</a>
+                        <a href="renewal-web.html" target='_blank'>Process</a>
+                    </dd>
+
+                </dl>
+            </div>
+
+            <div data-title="responsible website" class="portfolio-img-wrap">
+                <figure><img src="images/portfolio4.png" alt="포폴4"></figure>
+                <div class="big-blue-circle"></div>
+                <dl>
+                    <dt class="tit-1">반응형 웹 사이트 디자인</dt>
+                    <dt class="tit-2">쿠키런: 오븐브레이크</dt>
+
+                    <dd><a href="cookierun/index.html" target='_blank'>Design</a>
+                        <a href="responsive-web.html" target='_blank'>Process</a></dd>
+
+                </dl>
+            </div>
+
+            <div data-title="shopping page design" class="portfolio-img-wrap">
+
+
+
+                <figure><img src="images/portfolio5.png" alt="포폴5"></figure>
+                <div class="big-blue-circle"></div>
+                <dl>
+                    <dt class="tit-1">쇼핑몰 상세페이지 디자인</dt>
+                    <dt class="tit-2">스워커</dt>
+                    <dd><a class="open-popup2" href="#">Design</a></dd>
+                </dl>
+            </div>
+
+            <div data-title="App design" class="portfolio-img-wrap">
+                <figure><img src="images/portfolio6.png" alt="포폴6"></figure>
+                <div class="big-blue-circle"></div>
+                <dl>
+                    <dt class="tit-1">모바일 앱 디자인</dt>
+                    <dt class="tit-2">앗! 우산</dt>
+
+                    <dd>
+                        <a href="#" class="open-popup3" target='_blank'>Design</a>
+                        <a href="mobile-app.html" target='_blank'>Process</a>
+                    </dd>
+
+                </dl>
+            </div>
+
+            <div data-title="Drawing" class="portfolio-img-wrap">
+                <figure><img src="images/1portfolio7.png" alt="포폴7"></figure>
+                <div class="big-blue-circle"></div>
+                <dl>
+                    <dt class="tit-1">디자이너 수진</dt>
+                    <dt class="tit-2">Drawing</dt>
+                    <dd><a href="drawing.html">more</a></dd>
+                </dl>
+            </div>
+
+        </div>
+
+        <!-- 이전 다음 슬라이드 버튼 -->
+        <div class="btn-slide-set">
+            <a class="slick-prev">Previous</a>
+            <a class="slick-next">Next</a>
+        </div>
+
+        <div class="blue-square"></div>
+        <div class="yellow-square"></div>
+        <div class="blue-circle"></div>
+        <div class="yellow-circle"></div>
+        <div class="left-menu-color"></div>
+    </section>
+
+</body>
+
+</html>

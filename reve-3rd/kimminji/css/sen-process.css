@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.btn.btn-view{
+    border: 2px solid #F1C6FC;
+    color: #312A2A;
+}
+.btn-view:hover{
+    background: #F1C6FC;
+}
+.btn.btn-process{
+    background: #958DD6;
+}
+.process-list{
+    background: #DAD6FF;
+}
+.process-list a:hover{
+    background: #A09AD2;
+    color: #F1E9E9;
+}
