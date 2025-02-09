@@ -1,0 +1,23 @@
+{
+  "name": "git-my-fingers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moodang-teacher/my-fingers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moodang-teacher/my-fingers/issues"
+  },
+  "homepage": "https://github.com/moodang-teacher/my-fingers#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

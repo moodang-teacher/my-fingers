@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내 추억이자 내 손가락들</title>
+</head>
+
+<body>
+  <h1>내 추억이자 내 손가락들</h1>
+  <div id="file-links"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('data/files.json') // JSON 파일 경로
+        .then(response => response.json())
+        .then(data => {
+          const fileLinksDiv = document.getElementById('file-links');
+          for (const folder in data) {
+            const folderHeader = document.createElement('h3');
+            folderHeader.textContent = folder;
+            fileLinksDiv.appendChild(folderHeader);
+
+            const files = data[folder];
+            if (Array.isArray(files)) {
+              files.forEach(file => {
+                const link = document.createElement('a');
+                link.href = `${folder}/${file}`; // 링크 설정
+                link.target = "_blank"; // 새 탭에서 열기
+                link.textContent = file;
+                fileLinksDiv.appendChild(link);
+                fileLinksDiv.appendChild(document.createElement('br'));
+              });
+            } else {
+              fileLinksDiv.appendChild(document.createTextNode(files)); // 오류 메시지 표시
+            }
+          }
+        })
+        .catch(error => console.error('파일을 가져오는 중 오류 발생:', error));
+    });
+  </script>
+</body>
+
+</html>
