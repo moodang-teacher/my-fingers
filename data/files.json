@@ -1,4 +1,17 @@
 {
+  ".git": [
+    "COMMIT_EDITMSG",
+    "config",
+    "description",
+    "HEAD",
+    "hooks",
+    "index",
+    "info",
+    "logs",
+    "objects",
+    "packed-refs",
+    "refs"
+  ],
   "hi-1st": [
     "kimkiyoung",
     "kimsehee",
@@ -31,6 +44,7 @@
   "hi-4th": [
     "hongjiwon"
   ],
+  "hi-5th": [],
   "reve-3rd": [
     "kimdahee",
     "kimjungwoo",
