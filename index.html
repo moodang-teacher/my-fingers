@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내 추억이자 내 손가락들</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>내 추억이자 내 손가락들</title>
-</head>
+  <body>
+    <h1>내 추억이자 내 손가락들</h1>
+    <div id="file-links"></div>
 
-<body>
-  <h1>내 추억이자 내 손가락들</h1>
-  <div id="file-links"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("data/files.json") // JSON 파일 경로
+          .then((response) => response.json())
+          .then((data) => {
+            const fileLinksDiv = document.getElementById("file-links");
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      fetch('data/files.json') // JSON 파일 경로
-        .then(response => response.json())
-        .then(data => {
-          const fileLinksDiv = document.getElementById('file-links');
+            // JSON 파일에서 폴더 이름을 가져와서 배열로 변환
+            const folders = Object.keys(data); // JSON의 키(폴더 이름)를 배열로 가져옴
 
-          // JSON 파일에서 폴더 이름을 가져와서 배열로 변환
-          const folders = Object.keys(data); // JSON의 키(폴더 이름)를 배열로 가져옴
+            // 폴더 순서에 따라 링크 생성
+            folders.forEach((folder) => {
+              const folderHeader = document.createElement("h3");
+              folderHeader.textContent = folder;
+              fileLinksDiv.appendChild(folderHeader);
 
-          // 폴더 순서에 따라 링크 생성
-          folders.forEach(folder => {
-            const folderHeader = document.createElement('h3');
-            folderHeader.textContent = folder;
-            fileLinksDiv.appendChild(folderHeader);
+              const linkWrap = document.createElement("div");
+              linkWrap.className = "link-wrap";
+              fileLinksDiv.appendChild(linkWrap);
 
-            const files = data[folder];
-            if (Array.isArray(files)) {
-              files.forEach(file => {
-                const link = document.createElement('a');
-                link.href = `${folder}/${file}`; // 링크 설정
-                link.target = "_blank"; // 새 탭에서 열기
-                link.textContent = file;
-                fileLinksDiv.appendChild(link);
-                fileLinksDiv.appendChild(document.createElement('br'));
-              });
-            } else {
-              fileLinksDiv.appendChild(document.createTextNode(files)); // 오류 메시지 표시
-            }
-          });
-        })
-        .catch(error => console.error('파일을 가져오는 중 오류 발생:', error));
-    });
-  </script>
-</body>
-
+              const files = data[folder];
+              if (Array.isArray(files)) {
+                files.forEach((file) => {
+                  const link = document.createElement("a");
+                  link.href = `${folder}/${file}`; // 링크 설정
+                  link.target = "_blank"; // 새 탭에서 열기
+                  link.textContent = file;
+                  linkWrap.appendChild(link);
+                });
+              } else {
+                linkWrap.appendChild(document.createTextNode(files)); // 오류 메시지 표시
+              }
+            });
+          })
+          .catch((error) =>
+            console.error("파일을 가져오는 중 오류 발생:", error)
+          );
+      });
+    </script>
+  </body>
 </html>

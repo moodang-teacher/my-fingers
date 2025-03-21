@@ -1,0 +1,61 @@
+@charset 'utf-8';
+
+:root {
+  --main-color: #f00;
+  --sub-color: #f00;
+  --point-color: #f00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  padding: 2vw 5vw;
+}
+
+#file-links {
+  width: 100%;
+  margin: 50px auto;
+}
+
+#file-links h3:not(:first-child) {
+  margin-top: 30px;
+}
+
+.link-wrap {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.link-wrap a {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 50px;
+}
+
+.link-wrap a:hover {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  color: #fff;
+}

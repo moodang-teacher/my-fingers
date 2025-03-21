@@ -9,6 +9,8 @@ const PORT = 3000;
 const excludeFolders = [
   "node_modules",
   "data",
+  "css",
+  ".git",
   // 여기에 제외할 폴더 이름을 추가
 ];
 

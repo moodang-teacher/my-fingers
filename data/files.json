@@ -1,17 +1,4 @@
 {
-  ".git": [
-    "COMMIT_EDITMSG",
-    "config",
-    "description",
-    "HEAD",
-    "hooks",
-    "index",
-    "info",
-    "logs",
-    "objects",
-    "packed-refs",
-    "refs"
-  ],
   "hi-1st": [
     "kimkiyoung",
     "kimsehee",
