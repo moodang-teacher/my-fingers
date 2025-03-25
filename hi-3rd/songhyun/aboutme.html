@@ -19,36 +19,36 @@
 
     <script>
       $(function () {
-        const $header = $("#header");
-        const $btnTop = $(".btn-top");
+        const $header = $('#header');
+        const $btnTop = $('.btn-top');
 
-        const $aniEl = $("[data-aos]");
+        const $aniEl = $('[data-aos]');
 
-        $("#fullpage").fullpage({
-          menu: ".indicator",
+        $('#fullpage').fullpage({
+          menu: '.indicator',
 
-          anchors: ["about-visual-1", "about-visual-2"],
+          anchors: ['about-visual-1', 'about-visual-2'],
 
           scrollingSpeed: 800,
 
           verticalCentered: false,
 
           afterLoad: function (anchorLink, index) {
-            console.log("영역에 진입한 후");
+            console.log('영역에 진입한 후');
             console.log(anchorLink, index);
 
             AOS.init();
-            $aniEl.addClass("aos-animate");
+            $aniEl.addClass('aos-animate');
           },
 
           onLeave: function (index, nextIndex, direction) {
-            console.log("영역을 떠나갈 때");
+            console.log('영역을 떠나갈 때');
             console.log(index, nextIndex, direction);
 
-            if (index === 4 || direction === "up") {
+            if (index === 4 || direction === 'up') {
               $btnTop.fadeOut();
             }
-            $aniEl.removeClass("aos-animate");
+            $aniEl.removeClass('aos-animate');
           },
         });
 
@@ -59,7 +59,7 @@
         let my = 0;
         const speed = 0.03;
 
-        $window.on("mousemove", (e) => {
+        $window.on('mousemove', (e) => {
           console.log(e);
 
           x = Math.max(-100, Math.min(400, e.pageX - $window.innerWidth() / 2));
@@ -70,7 +70,7 @@
           mx += (x - mx) * speed;
           my += (y - my) * speed;
 
-          $(".about-gradation1 , .contact-gradation1").css({
+          $('.about-gradation1 , .contact-gradation1').css({
             transform: `translate(${mx}px, ${my}px)`,
             // transform: `translateX(${mx}px)`,
             // filter: `blur(${mx * 0.05}px)`,
@@ -80,7 +80,7 @@
           //   transform: `translate(${mx * 0.4}px, ${my}px)`,
           // });
 
-          $(".hyun-pic, .contact-pic").css({
+          $('.hyun-pic, .contact-pic').css({
             transform: `translate(${-mx * 0.1}px)`,
           });
 
@@ -179,7 +179,7 @@
               </dl>
               <dl>
                 <dt data-aos="fade-left">Phone</dt>
-                <dd data-aos="fade-left" data-aos-delay="300">010-5870-0502</dd>
+                <dd data-aos="fade-left" data-aos-delay="300">010 1234 5678</dd>
               </dl>
             </div>
           </div>

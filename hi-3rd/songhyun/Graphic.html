@@ -25,22 +25,22 @@
     <script>
       $(function () {
         const $window = $(window);
-        const $header = $(".sub-header");
-        const $sns = $(".sns h2");
+        const $header = $('.sub-header');
+        const $sns = $('.sns h2');
         const visualTL = gsap.timeline({
           // 타임라인의 기본 세팅
-          defaults: { duration: 2, ease: "power4.inOut" },
+          defaults: { duration: 2, ease: 'power4.inOut' },
         });
 
         let scrollTop = $window.scrollTop();
         setWhiteBackground();
 
         function setWhiteBackground() {
-          const sns = $(".sns h2").outerHeight();
+          const sns = $('.sns h2').outerHeight();
           if (scrollTop >= sns) {
-            $header.addClass("w-bg");
+            $header.addClass('w-bg');
           } else {
-            $header.removeClass("w-bg");
+            $header.removeClass('w-bg');
           }
         }
 
@@ -54,7 +54,7 @@
         let speed = 0.01;
 
         //마우스가 움직이면
-        $window.on("mousemove", function (e) {
+        $window.on('mousemove', function (e) {
           //좌표값 가져와서 x, y변수에 할당
           //마우스 좌표의 시작을 화면 중식으로 이동
           // console.log(e);
@@ -69,7 +69,7 @@
           my += (y - my) * speed;
 
           //cursor의 좌표값으로 적용 /* 마우스 커서의 중심을 가운데로 이동 */
-          $(".graphic-gradation").css({
+          $('.graphic-gradation').css({
             transform: `translate(${mx}px, ${my}px)`,
           });
 
@@ -83,46 +83,46 @@
         AOS.init({});
 
         // 이미지 클릭 이벤트
-        $(".sns-list li, .Banner-list li").on("click", "img", function () {
-          var imgSrc = $(this).attr("src");
-          $("#popup-img").attr("src", imgSrc);
-          $("#dim-background, #popup").fadeIn();
+        $('.sns-list li, .Banner-list li').on('click', 'img', function () {
+          var imgSrc = $(this).attr('src');
+          $('#popup-img').attr('src', imgSrc);
+          $('#dim-background, #popup').fadeIn();
         });
 
-        $(".DetailPage-list li").on("click", "img", function () {
-          var imgSrc = $(this).attr("src");
-          $("#popup").css("height", "90%");
-          $("#popup-img").attr("src", imgSrc);
-          $("#dim-background, #popup").fadeIn();
+        $('.DetailPage-list li').on('click', 'img', function () {
+          var imgSrc = $(this).attr('src');
+          $('#popup').css('height', '90%');
+          $('#popup-img').attr('src', imgSrc);
+          $('#dim-background, #popup').fadeIn();
         });
 
         // 팝업 닫기 이벤트
-        $("#popup-close, #dim-background").on("click", function () {
-          $("#dim-background, #popup").fadeOut();
-          $("#popup").css("height", "auto");
+        $('#popup-close, #dim-background').on('click', function () {
+          $('#dim-background, #popup').fadeOut();
+          $('#popup').css('height', 'auto');
         });
 
         // top버튼
 
-        $(".btn-gotop").on("click", () => {
-          $("html, body").stop().animate({
+        $('.btn-gotop').on('click', () => {
+          $('html, body').stop().animate({
             scrollTop: 0,
           });
         });
 
         // 원하는 지점부터 버튼 In
-        gsap.from(".btn-gotop", {
+        gsap.from('.btn-gotop', {
           autoAlpha: 0,
           y: 30,
           scrollTrigger: {
-            trigger: ".Banner",
-            start: "top 50%",
-            toggleActions: "play none reverse reverse",
+            trigger: '.Banner',
+            start: 'top 50%',
+            toggleActions: 'play none reverse reverse',
 
-            onEnter: () => console.log("Enter"),
-            onLeave: () => console.log("Leave"),
-            onEnterBack: () => console.log("EnterBack"),
-            onLeaveBack: () => console.log("LeaveBack"),
+            onEnter: () => console.log('Enter'),
+            onLeave: () => console.log('Leave'),
+            onEnterBack: () => console.log('EnterBack'),
+            onLeaveBack: () => console.log('LeaveBack'),
           },
         });
       });
@@ -367,7 +367,7 @@
           </dl>
           <dl>
             <dt>Phone</dt>
-            <dd>010-5870-0502</dd>
+            <dd>010 1234 5678</dd>
           </dl>
         </div>
       </div>
