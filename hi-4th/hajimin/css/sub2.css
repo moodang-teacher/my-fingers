@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 600vh; /* 스크롤 높이 */
+    background-color: var(--main-color);
+
+    overflow-x: hidden;
+}
+
+/* 슬라이더의 위치 */
+.slider-section {
+    height: 22vh;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    /* border: 1px solid #000; */
+}
+
+.wheel {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* 🚩 휠의 크기 */
+    width: 300vw;
+    height: 300vw;
+    max-width: 2000px;
+    max-height: 2000px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* border: 2px solid #00f; */
+}
+
+.wheel__card {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* 🚩 카드의 크기 */
+    width: 6%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: 999;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* 선택한 카드가 표시되는 영역 */
+.detail-info {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    backdrop-filter: blur(10px);
+    width: 430px;
+    border: 2px dashed rgba(0, 0, 0, 0.1);
+    min-height: 560px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.detail-image {
+    width: 100%;
+    aspect-ratio: 1 / 0.85;
+}
+
+.detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+.detail-title {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 3.5rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.3s ease-out;
+}
+
+.detail-text {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.3s ease-out;
+    overflow: hidden;
+}
+
+.detail-text strong {
+    display: block;
+    font-size: 1.4rem;
+}
+
+.detail-text.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.detail-btns {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.detail-btns a {
+    color: #000;
+    padding: 10px 20px;
+    border: 1px solid #000;
+
+    text-decoration: none;
+    transition: background 0.3s ease;
+
+    background-position: 50% 60%;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.detail-btns a:hover {
+    background: rgba(255, 255, 255, 0.7) url(../img/eye.png) no-repeat 50%;
+    border-color: #fff;
+    color: transparent; /* 텍스트 색을 투명하게 */
+}

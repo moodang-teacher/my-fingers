@@ -1,0 +1,166 @@
+@charset 'utf-8';
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+@font-face {
+    font-family: "BookkMyungjo-Bd";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2")
+        format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    font-size: 62.5%;
+    --main-color: #ff3b00;
+    --sub-color: #d3af1c;
+    --white20p: rgba(255, 255, 255, 0.2);
+    --white30p: rgba(255, 255, 255, 0.3);
+    --white80p: rgba(255, 255, 255, 0.8);
+    --black20p: rgba(0, 0, 0, 0.2);
+    --black80p: rgba(0, 0, 0, 0.8);
+    --e-font: " Anton SC";
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+body {
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+hr {
+    position: absolute;
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    background: #000;
+    font: 1.6rem/1 "Pretendard", "Anton SC";
+    color: #fff;
+    text-transform: capitalize;
+    word-break: keep-all;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.btn-wrap {
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    display: flex;
+    flex-direction: column-reverse;
+    z-index: 10;
+    align-items: flex-end;
+
+    margin: 3rem;
+    gap: 2rem;
+}
+
+.btn-hambugi {
+    width: 100%;
+
+    background: black;
+    /* border: 1px solid #fff; */
+
+    display: flex;
+    /* flex-direction: column-reverse; */
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+/* .btn-hambugi.active {
+    width: 45rem;
+} */
+
+.btn-hambugi i,
+.btn-home {
+    padding: 1rem;
+
+    background: transparent;
+    border: 2px solid #fff;
+    transition: 0.4s;
+    opacity: 0.3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-home:hover,
+.btn-hambugi i:hover {
+    /* transform: scale(1.1); */
+
+    opacity: 1;
+}
+
+.btn-home i,
+.btn-hambugi i {
+    font-size: 2rem;
+    color: #fff;
+    /* z-index: 3;/ */
+}
+
+.menu {
+    /* height: 100%; */
+    width: 0;
+    padding: 1.3rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    opacity: 0;
+
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+.btn-hambugi.active .menu {
+    width: 40rem;
+    opacity: 1;
+}
+
+.menu li {
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+}

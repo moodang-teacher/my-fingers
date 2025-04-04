@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PORTFOLIO::HEEJOO✌</title>
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./img/logo.svg" />
+        <link rel="icon" href="./img/logo.svg" />
+
+        <!-- open graph -->
+        <meta property="og:title" content="PORTFOLIO::HEEJOO✌" />
+        <meta property="og:image" content="./img/logo.svg" />
+        <meta property="og:description" content="정희주 웹디자인/퍼블리싱 포트폴리오 사이트입니다." />
+        <meta property="og:url" content="https://hihappyjoo.github.io/portfolio/heejoo.html" />
+        <meta property="og:type" content="website" />
+
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/heejoo.css" />
+
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <!-- matter.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+        <!-- GSAP -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+        <script src="./js/megaMenu.js"></script>
+        <script src="./js/hell-heejoo.js"></script>
+        <script src="./js/toggle.js"></script>
+    </head>
+    <body class="hell">
+        <!-- MEGA menu -->
+        <div class="mega-menu hell-only">
+            <div class="caution">
+                <dl>
+                    <dt>위험!</dt>
+                    <dd>DANGER!</dd>
+                </dl>
+                <dl>
+                    <dt>낙하물주의</dt>
+                    <dd>
+                        <p>CAUTION FALLING OBJECTS</p>
+                        <p>메뉴가 보이는 것보다 미끄럽습니다</p>
+                    </dd>
+                </dl>
+            </div>
+            <div id="canvas-container"></div>
+            <div class="text-container">
+                <div class="text-element logo">
+                    <a href="./index.html"><img src="./img/logo.svg" alt="희주의 포트폴리오" /></a>
+                </div>
+                <div class="text-element btn-close">
+                    <button type="button" id="btn-close"></button>
+                </div>
+                <div class="text-element menu home"><a href="./index.html">홈</a></div>
+                <div class="text-element menu name"><a href="./heejoo.html">정희주</a></div>
+                <div class="text-element menu contact"><a href="./contact.html">컨텍</a></div>
+                <div class="text-element menu project"><a href="./projects.html">프로젝트</a></div>
+                <div class="text-element menu-projectsub micro">
+                    <a href="projects.html#micro-site">마이크로사이트</a>
+                </div>
+                <div class="text-element menu-projectsub web"><a href="projects.html#web">웹디자인</a></div>
+                <div class="text-element menu-projectsub banner"><a href="projects.html#banner">배너디자인</a></div>
+                <div class="text-element menu-projectsub app"><a href="projects.html#app">앱디자인</a></div>
+                <div class="text-element menu-projectsub other"><a href="projects.html#other">외</a></div>
+                <div class="text-element line line1">신입특) 객기부림👎👎👎</div>
+                <div class="text-element line line2">근데 희주 ;</div>
+                <div class="text-element line line3">자아없음 모드 ON🤓👍</div>
+                <div class="text-element line line4">시키는거 다해요</div>
+                <div class="text-element line line5">🏆수상이력</div>
+                <div class="text-element line line6">울아빠 선정 용돈주고 싶은 딸 TOP1</div>
+                <div class="text-element line line7">
+                    정완두<i>(집고양이, 10살추정)</i> 선정 간식 뜯고 싶은 언니 1위
+                </div>
+                <div class="text-element line line8">홍대 외국인 관광객 선정 꽤괜ㅎ 리스트 등극</div>
+                <div class="text-element line line9">눈 아플땐 😇<i>HEAVEN</i>😇 모드</div>
+                <div class="text-element line line10">👇천국으로 가는 길</div>
+                <div class="text-element line-deco badge1">울엄마 보증</div>
+                <div class="text-element line-deco badge2">FR</div>
+                <div class="text-element line-deco badge3">오늘도 <b>원</b> 받음!!!</div>
+                <div class="text-element stroke"><img src="./img/hell-menu-stroke.png" alt="프로젝트 리스트" /></div>
+            </div>
+        </div>
+        <!-- e: MEGA menu -->
+        <header class="hell">
+            <nav>
+                <h1 class="logo">
+                    <a href="./index.html"><img src="./img/logo.svg" alt="희주의 포트폴리오" /></a>
+                </h1>
+                <ul class="gnb heaven-only">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li class="active"><a href="./heejoo.html">HEEJOO</a></li>
+                    <li><a href="./projects.html">PROJECT</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+                <button type="button" class="btn-menu hell-only"></button>
+            </nav>
+        </header>
+        <!-- e: header -->
+
+        <main class="hell">
+            <div class="hell-only">
+                <h2 class="active">정희주</h2>
+                <ul class="info-list">
+                    <li class="info about">ABOUT.</li>
+                    <li class="info education">EDUCATION.</li>
+                    <li class="info experince">EXPERIENCE.</li>
+                    <li class="info license">LICENSE.</li>
+                    <li class="info skills">SKILLS.</li>
+                </ul>
+                <div class="popup-list">
+                    <div class="popup about">
+                        <div class="name">
+                            <p>JUNG HEEJOO</p>
+                            <strong>정희주</strong>
+                        </div>
+                        <div class="address"><p>서울시 서대문구</p></div>
+                        <div class="birth"><p>1997. 09. 04</p></div>
+                        <div class="portrait">
+                            <figure><img src="./img/hell-portrait.jpg" alt="희주의 몽타주입니다." /></figure>
+                        </div>
+                        <div class="strength1"><p>외향적</p></div>
+                        <div class="strength2"><p>사회성</p></div>
+                        <div class="strength3"><p>근성</p></div>
+                    </div>
+                    <div class="popup education">
+                        <ul>
+                            <li>
+                                <strong>2016</strong>
+                                <dl>
+                                    <dt>선정고등학교</dt>
+                                    <dd>
+                                        <p>과학중점반</p>
+                                        <p>미술거점반</p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <strong>2019</strong>
+                                <dl>
+                                    <dt>단국대학교</dt>
+                                    <dd>
+                                        <p>커뮤니케이션디자인과</p>
+                                        <p>수석입학</p>
+                                        <p>중퇴</p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <strong>2025</strong>
+                                <dl>
+                                    <dt>하이미디어</dt>
+                                    <dd>
+                                        <p>UI/UX 반응형 웹디자인/웹퍼블리싱 과정</p>
+                                        <p>수료</p>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup experince">
+                        <div class="line1"></div>
+                        <div class="dot1"></div>
+                        <div class="dot2"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                        <ul>
+                            <li>
+                                <strong>2020. 08 - 2021. 04</strong>
+                                <dl>
+                                    <dt>닥터로빈 AK홍대점</dt>
+                                    <dd>서버 정직원</dd>
+                                    <dd>음료제조 고객응대 재고관리</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <strong>2022. 02 - 2024. 05</strong>
+                                <dl>
+                                    <dt>뷰맵 연남스토어</dt>
+                                    <dd>판매 매니저</dd>
+                                    <dd>외국어응대 인력/매출관리 SNS관리</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup license">
+                        <ul>
+                            <li>
+                                <strong>2022. 11</strong>
+                                <p>GTQ 1급</p>
+                            </li>
+                            <li>
+                                <strong>2023. 01</strong>
+                                <p>GTQi 1급</p>
+                            </li>
+                            <li>
+                                <strong>2023. 06</strong>
+                                <p>GTQid 1급</p>
+                            </li>
+                            <li>
+                                <strong>2024. 07</strong>
+                                <p>컴퓨터활용능력 1급</p>
+                            </li>
+                            <li>
+                                <strong>2024.09</strong>
+                                <p>TOEIC 825점</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup skills">
+                        <img src="./img/icon-skills-html.jpg" alt="HTML" />
+                        <img src="./img/icon-skills-css.jpg" alt="CSS" />
+                        <img src="./img/icon-skills-js.jpg" alt="JavaScript" />
+                        <img src="./img/icon-skills-jquery.jpg" alt="JQuery" />
+                        <img src="./img/icon-skills-figma.jpg" alt="figma" />
+                        <img src="./img/icon-skills-photoshop.jpg" alt="Photoshop" />
+                        <img src="./img/icon-skills-illustrator.jpg" alt="Illustrator" />
+                        <img src="./img/icon-skills-indesign.jpg" alt="Indesign" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="heaven-only">
+                <div class="sec-list">
+                    <section class="list1">
+                        <div class="name">
+                            <strong>JUNG HEEJOO</strong>
+                            <h2>정희주</h2>
+                        </div>
+                        <div class="address">
+                            <p>1997. 09. 04</p>
+                            <p>서울시 서대문구</p>
+                        </div>
+                        <figure><img src="./img/heaven-portrait.jpg" alt="희주의 몽타주입니다." /></figure>
+                        <ul class="strength">
+                            <li>외향적</li>
+                            <li>사회성</li>
+                            <li>근성</li>
+                        </ul>
+                    </section>
+                    <section class="list2">
+                        <div class="education">
+                            <h3>EDUCATION.</h3>
+                            <ul class="list-block">
+                                <li>
+                                    <strong>2016</strong>
+                                    <dl>
+                                        <dt>선정고등학교</dt>
+                                        <dd>
+                                            <p>과학중점반</p>
+                                            <p>미술거점반</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <strong>2019</strong>
+                                    <dl>
+                                        <dt>단국대학교</dt>
+                                        <dd>
+                                            <p>커뮤니케이션디자인과</p>
+                                            <p>수석입학</p>
+                                            <p>중퇴</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <strong>2025</strong>
+                                    <dl>
+                                        <dt>하이미디어</dt>
+                                        <dd>
+                                            <p>UI/UX 반응형 웹디자인/웹퍼블리싱 과정</p>
+                                            <p>수료</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="experience">
+                            <h3>EXPERIENCE.</h3>
+                            <ul class="list-block">
+                                <li>
+                                    <strong>
+                                        2020. 08 - <br />
+                                        2021. 04
+                                    </strong>
+                                    <dl>
+                                        <dt>닥터로빈 AK홍대점</dt>
+                                        <dd>
+                                            <p>서버</p>
+                                            <p>정직원</p>
+                                        </dd>
+                                        <dd>
+                                            <p>음료제조</p>
+                                            <p>고객응대</p>
+                                            <p>재고관리</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <strong>
+                                        2022. 02 - <br />
+                                        2024. 05
+                                    </strong>
+                                    <dl>
+                                        <dt>뷰맵 연남스토어</dt>
+                                        <dd>
+                                            <p>판매</p>
+                                            <p>매니저</p>
+                                        </dd>
+                                        <dd>
+                                            <p>외국어응대</p>
+                                            <p>인력/매출관리</p>
+                                            <p>SNS관리</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="list3">
+                        <div class="license">
+                            <h3>LICENSE.</h3>
+                            <ul class="list-block">
+                                <li>
+                                    <strong>2022. 11</strong>
+                                    <p>GTQ 1급</p>
+                                </li>
+                                <li>
+                                    <strong>2023. 01</strong>
+                                    <p>GTQi 1급</p>
+                                </li>
+                                <li>
+                                    <strong>2023. 06</strong>
+                                    <p>GTQid 1급</p>
+                                </li>
+                                <li>
+                                    <strong>2024. 07</strong>
+                                    <p>컴퓨터활용능력 1급</p>
+                                </li>
+                                <li>
+                                    <strong>2024.09</strong>
+                                    <p>TOEIC 825점</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="skills">
+                            <h3>SKILLS.</h3>
+                            <div class="icons">
+                                <img src="./img/icon-skills-html.jpg" alt="HTML" />
+                                <img src="./img/icon-skills-css.jpg" alt="CSS" />
+                                <img src="./img/icon-skills-js.jpg" alt="JavaScript" />
+                                <img src="./img/icon-skills-jquery.jpg" alt="JQuery" />
+                                <img src="./img/icon-skills-figma.jpg" alt="fimga" />
+                                <img src="./img/icon-skills-photoshop.jpg" alt="Photoshop" />
+                                <img src="./img/icon-skills-illustrator.jpg" alt="Illustrator" />
+                                <img src="./img/icon-skills-indesign.jpg" alt="Indesign" />
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <footer class="hell">
+            <div class="mode-wrap">
+                <input type="checkbox" id="mode" />
+                <label for="mode"><span>HEAVEN</span><span>HELL</span></label>
+            </div>
+            <div class="update">
+                <strong>LAST UPDATED.</strong>
+                <p>2025. 04. 02</p>
+            </div>
+        </footer>
+    </body>
+</html>

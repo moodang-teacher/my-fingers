@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Work</title>
+
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+
+        <!-- CDN  -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/sub2.css" />
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Flip.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
+        <script src="./js/common.js"></script>
+        <script src="./js/work.js"></script>
+    </head>
+    <body>
+        <!-- s:header -->
+        <header id="header">
+            <nav>
+                <h1 class="logo">
+                    <a href="./index.html">
+                        <i class="hidden">내 이모지</i>
+                    </a>
+                </h1>
+                <ul class="gnb">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./work.html">Work</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- e:header -->
+
+        <!-- 선택한 카드가 표시되는 영역 -->
+        <div class="detail-info">
+            <div class="detail-image"></div>
+            <h3 class="detail-title"></h3>
+            <p class="detail-text"></p>
+            <div class="detail-btns"></div>
+        </div>
+
+        <section class="slider-section">
+            <div class="wheel">
+                <!-- 🚩 이미지의 갯수는 상관없음 -->
+                <div class="wheel__card">
+                    <img
+                        src="./img/포트폴리오.png"
+                        alt="개인 포트폴리오 웹사이트 "
+                        data-title="Personal Website"
+                        data-link1="./process/process.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/피자헛.png"
+                        alt="피자헛  반응형 웹사이트 리디자인"
+                        data-title="WebsiteRedesign"
+                        data-link1="./process/process01.html"
+                        data-link2="https://hajimin10.github.io/pizzahut/"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/비앙글로.png"
+                        alt="Bienglo"
+                        data-title="Website Design(clone)"
+                        data-link2="https://hajimin10.github.io/Bienglo/"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/라라.png"
+                        alt="라라랜드 마이크로 사이트 디자인"
+                        data-title="Microsite Design"
+                        data-link2="./process/process02.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/따붕.png"
+                        alt="모바일 UX/UI 디자인(Team project)"
+                        data-title="UX/UI Design"
+                        data-link1="./process/process03.html"
+                        data-link2="https://www.figma.com/proto/O8OQwNkXIQwHtv2oOkKHKu/%EB%94%B0%EB%B6%95?node-id=324-1833&t=6ImqGt9d9mEEZmYh-1&scaling=scale-down&content-scaling=fixed&page-id=324%3A1682"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/아비쥬.png"
+                        alt="아비쥬"
+                        data-title="Graphic Design"
+                        data-link2="./process/process04.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/프링글스.png"
+                        alt="프링글스"
+                        data-title="Graphic Design"
+                        data-link2="./process/process05.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/GraphicDesign3.png"
+                        alt="베스킨라빈스"
+                        data-title="Graphic Design"
+                        data-link2="./process/process06.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/GraphicDesign8.png"
+                        alt="코닥"
+                        data-title="Graphic Design"
+                        data-link2="./process/process11.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/GraphicDesign7.png"
+                        alt="Winter festival"
+                        data-title="Graphic Design"
+                        data-link2="./process/process10.html"
+                    />
+                </div>
+
+                <div class="wheel__card">
+                    <img
+                        src="./img/GraphicDesign4.png"
+                        alt="YES24"
+                        data-title="Graphic Design"
+                        data-link2="./process/process07.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/스타벅스.png"
+                        alt="스타벅스"
+                        data-title="Graphic Design"
+                        data-link2="./process/process08.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/GraphicDesign6.png"
+                        alt="도전룰렛"
+                        data-title="Graphic Design"
+                        data-link2="./process/process09.html"
+                    />
+                </div>
+
+                <!-- 🚩 이미지의 갯수는 상관없음 -->
+                <div class="wheel__card">
+                    <img
+                        src="./img/포트폴리오.png"
+                        alt="개인 포트폴리오 웹사이트 "
+                        data-title="Personal Website"
+                        data-link1="./process/process.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/피자헛.png"
+                        alt="피자헛  반응형 웹사이트 리디자인"
+                        data-title="WebsiteRedesign"
+                        data-link1="./process/process01.html"
+                        data-link2="https://hajimin10.github.io/pizzahut/"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/비앙글로.png"
+                        alt="Bienglo"
+                        data-title="Website Design(clone)"
+                        data-link2="https://hajimin10.github.io/Bienglo/"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/라라.png"
+                        alt="라라랜드 마이크로 사이트 디자인"
+                        data-title="Microsite Design"
+                        data-link2="./process/process02.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/따붕.png"
+                        alt="모바일 UX/UI 디자인(Team project)"
+                        data-title="UX/UI Design"
+                        data-link1="./process/process03.html"
+                        data-link2="https://www.figma.com/proto/O8OQwNkXIQwHtv2oOkKHKu/%EB%94%B0%EB%B6%95?node-id=324-1833&t=6ImqGt9d9mEEZmYh-1&scaling=scale-down&content-scaling=fixed&page-id=324%3A1682"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/아비쥬.png"
+                        alt="아비쥬"
+                        data-title="Graphic Design"
+                        data-link2="./process/process04.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/프링글스.png"
+                        alt="프링글스"
+                        data-title="Graphic Design"
+                        data-link2="./process/process05.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/GraphicDesign3.png"
+                        alt="베스킨라빈스"
+                        data-title="Graphic Design"
+                        data-link2="./process/process06.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/GraphicDesign8.png"
+                        alt="코닥"
+                        data-title="Graphic Design"
+                        data-link2="./process/process11.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/GraphicDesign7.png"
+                        alt="Winter festival"
+                        data-title="Graphic Design"
+                        data-link2="./process/process10.html"
+                    />
+                </div>
+
+                <div class="wheel__card">
+                    <img
+                        src="./img/GraphicDesign4.png"
+                        alt="YES24"
+                        data-title="Graphic Design"
+                        data-link2="./process/process07.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/스타벅스.png"
+                        alt="스타벅스"
+                        data-title="Graphic Design"
+                        data-link2="./process/process08.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/GraphicDesign6.png"
+                        alt="도전룰렛"
+                        data-title="Graphic Design"
+                        data-link2="./process/process09.html"
+                    />
+                </div>
+                <!-- 🚩 이미지의 갯수는 상관없음 -->
+                <div class="wheel__card">
+                    <img
+                        src="./img/포트폴리오.png"
+                        alt="개인 포트폴리오 웹사이트 "
+                        data-title="Personal Website"
+                        data-link1="./process/process.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/피자헛.png"
+                        alt="피자헛  반응형 웹사이트 리디자인"
+                        data-title="WebsiteRedesign"
+                        data-link1="./process/process01.html"
+                        data-link2="https://hajimin10.github.io/pizzahut/"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/비앙글로.png"
+                        alt="Bienglo"
+                        data-title="Website Design(clone)"
+                        data-link2="https://hajimin10.github.io/Bienglo/"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/라라.png"
+                        alt="라라랜드 마이크로 사이트 디자인"
+                        data-title="Microsite Design"
+                        data-link2="./process/process02.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/따붕.png"
+                        alt="모바일 UX/UI 디자인(Team project)"
+                        data-title="UX/UI Design"
+                        data-link1="./process/process03.html"
+                        data-link2="https://www.figma.com/proto/O8OQwNkXIQwHtv2oOkKHKu/%EB%94%B0%EB%B6%95?node-id=324-1833&t=6ImqGt9d9mEEZmYh-1&scaling=scale-down&content-scaling=fixed&page-id=324%3A1682"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/아비쥬.png"
+                        alt="아비쥬"
+                        data-title="Graphic Design"
+                        data-link2="./process/process04.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/프링글스.png"
+                        alt="프링글스"
+                        data-title="Graphic Design"
+                        data-link2="./process/process05.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/GraphicDesign3.png"
+                        alt="베스킨라빈스"
+                        data-title="Graphic Design"
+                        data-link2="./process/process06.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/GraphicDesign8.png"
+                        alt="코닥"
+                        data-title="Graphic Design"
+                        data-link2="./process/process11.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/GraphicDesign7.png"
+                        alt="Winter festival"
+                        data-title="Graphic Design"
+                        data-link2="./process/process10.html"
+                    />
+                </div>
+
+                <div class="wheel__card">
+                    <img
+                        src="./img/GraphicDesign4.png"
+                        alt="YES24"
+                        data-title="Graphic Design"
+                        data-link2="./process/process07.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/스타벅스.png"
+                        alt="스타벅스"
+                        data-title="Graphic Design"
+                        data-link2="./process/process08.html"
+                    />
+                </div>
+                <div class="wheel__card">
+                    <img
+                        src="./img/GraphicDesign6.png"
+                        alt="도전룰렛"
+                        data-title="Graphic Design"
+                        data-link2="./process/process09.html"
+                    />
+                </div>
+            </div>
+        </section>
+        <div class="custom-cursor"></div>
+    </body>
+</html>

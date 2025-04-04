@@ -1,0 +1,118 @@
+@charset 'urf-8';
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+:root {
+    font-size: 100%; /* 16px --> 1rem */
+    font-size: 62.5%; /* fz62.5p --> 10Px --> 1rem */
+    --main-color: #b8fb00;
+    --sub-color: #000;
+    --bg-color: #fff;
+    --text-color: #000;
+}
+
+body {
+    font: 2.5em/1.5 Pretendard, sans-serif;
+    word-break: keep-all; /* 어절 단위 줄바꿈 */
+}
+
+.hidden {
+    display: none;
+}
+
+.inner {
+    width: 1416px;
+    margin: 0 auto;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 8rem;
+}
+
+#header nav {
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 252px;
+    background: rgba(255, 255, 255, 0.3); /* 투명도 */
+    backdrop-filter: blur(10px); /* 블러 효과 */
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo a {
+    display: block;
+    width: 5rem;
+    height: 6rem;
+    background: url(../img/logo.png) no-repeat 0 0 / contain;
+    animation: bounceVertical 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite; /* 자연스러운 바운스를 위한 cubic-bezier */
+}
+
+@keyframes bounceVertical {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-12px); /* 처음 튕기기 */
+    }
+    40% {
+        transform: translateY(0); /* 원위치로 돌아오기 */
+    }
+    60% {
+        transform: translateY(-10px); /* 두 번째 튕기기 */
+    }
+    80% {
+        transform: translateY(0); /* 원위치로 돌아오기 */
+    }
+    100% {
+        transform: translateY(-5px); /* 마지막에 살짝 튕기기 */
+    }
+}
+
+.gnb {
+    display: flex;
+    gap: 50px;
+}
+
+.gnb li a {
+    font-weight: 600;
+    color: #000;
+    font-size: 2rem;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+/* 기본 커서 스타일 */
+.custom-cursor {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    pointer-events: none;
+    /* transition: 0.4s ease-out; */
+    /* mix-blend-mode: difference; */
+    z-index: 9999;
+    transform: translate(-50%, -50%); /* 커서 중앙 정렬 */
+}
+
+.custom-cursor.active {
+    /* transform: scale(4); */
+    width: 50px;
+    height: 50px;
+    transition: 0.4s;
+    border: 1px solid #000;
+    background-color: transparent;
+}
